@@ -821,6 +821,13 @@ section {
   line-height: 1;
 }
 .flip__surface { font-size: 1.05rem; color: var(--creme); }
+.flip__price {
+  font-family: var(--font-titre);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--or);
+  line-height: 1.1;
+}
 .flip__back {
   transform: rotateY(180deg);
   background: var(--gris);
@@ -893,6 +900,7 @@ section {
 }
 .lot-card dt { color: var(--muted); }
 .lot-card dd { color: var(--creme); text-align: right; }
+.lot-card dd.lot-price { color: var(--or); font-weight: 500; font-size: 1.08rem; }
 .lot-card__feats {
   display: flex;
   flex-wrap: wrap;
