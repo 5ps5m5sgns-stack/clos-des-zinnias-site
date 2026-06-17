@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Clos des Zinnias · Lotissement Gardanne · 06 09 20 45 90</title>
+  <meta name="description" content="Contactez Le Clos des Zinnias à Gardanne (13). Téléphone 06 09 20 45 90, email zinias@ponthieu.fr. Réponse sous 48h pour toute demande de lot ou de visite.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="animations.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <a class="nav__brand" href="index.html">
+      <span class="name">Le Clos des Zinnias</span>
+      <span class="sub">Gardanne · 13</span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html">Accueil</a>
+      <a href="projet.html">Le Projet</a>
+      <a href="lots.html">Les Lots</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav__cta"><a class="btn btn-gold" href="contact.html">Nous contacter</a></div>
+    <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="projet.html">Le Projet</a>
+    <a href="lots.html">Les Lots</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-gold mm-cta" href="contact.html">Nous contacter</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero--50">
+      <div class="hero__media" data-parallax data-speed="0.4" style="filter:blur(3px);">
+        <picture><source srcset="images-optimized/zinnia-fleurs-macro-orange.webp" type="image/webp"><img src="images-optimized/zinnia-fleurs-macro-orange.webp" alt="Zinnias orange en fleurs"></picture>
+      </div>
+      <div class="hero__overlay hero__overlay--heavy"></div>
+      <div class="hero__inner">
+        <h1 class="hero-sub-title">Nous contacter</h1>
+        <p class="hero-sub-subtitle">Disponibles 7j/7 pour vos questions</p>
+      </div>
+    </section>
+
+    <!-- PRINCIPALE -->
+    <section class="bg-creme rule-top">
+      <div class="wrap">
+        <div class="contact-grid">
+
+          <!-- COLONNE GAUCHE -->
+          <div class="reveal-left">
+            <span class="label eyebrow">Informations</span>
+            <h2 class="section-title">Intéressé par un lot ?</h2>
+            <p class="lead mt-1">Nous vous répondons sous 48h.</p>
+
+            <div class="mt-3">
+              <a class="contact-card" href="tel:+33609204590">
+                <span class="ic">📞</span>
+                <span><span class="lbl">Téléphone</span><br><span class="val">06 09 20 45 90</span></span>
+              </a>
+              <a class="contact-card" href="mailto:zinias@ponthieu.fr">
+                <span class="ic">✉️</span>
+                <span><span class="lbl">Email principal</span><br><span class="val">zinias@ponthieu.fr</span></span>
+              </a>
+              <a class="contact-card" href="mailto:stephane@ponthieu.fr">
+                <span class="ic">✉️</span>
+                <span><span class="lbl">Email secondaire</span><br><span class="val">stephane@ponthieu.fr</span></span>
+              </a>
+              <div class="contact-card">
+                <span class="ic">📍</span>
+                <span><span class="lbl">Adresse projet</span><br><span class="val">Avenue du Pilon du Roy, 13120 Gardanne</span></span>
+              </div>
+            </div>
+
+            <div class="promo-block">
+              <h4>PONTHIEU DÉVELOPPEMENT HOLDING</h4>
+              <p>
+                Gérant : M. Stéphane PONTHIEU<br>
+                LA CARA — 418 ancienne route des Alpes<br>
+                13100 AIX-EN-PROVENCE<br>
+                Tél : 06 20 53 43 92
+              </p>
+            </div>
+
+            <figure class="figure mt-3 img-hover reveal" style="overflow:hidden;">
+              <picture><source srcset="images-optimized/aerial-lotissement-collines-gardanne.webp" type="image/webp"><img src="images-optimized/aerial-lotissement-collines-gardanne.webp" alt="Vue aérienne du lotissement dans les collines" loading="lazy"></picture>
+              <figcaption>Le Clos des Zinnias — Gardanne, Provence</figcaption>
+            </figure>
+          </div>
+
+          <!-- COLONNE DROITE — FORMULAIRE -->
+          <div class="reveal-right">
+            <form class="form" id="contact-form" action="https://formspree.io/f/xxxx" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="Demande Clos des Zinnias">
+              <input type="hidden" name="_replyto" value="">
+              <div class="form-row">
+                <div class="field">
+                  <label for="prenom">Prénom *</label>
+                  <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                </div>
+                <div class="field">
+                  <label for="nom">Nom *</label>
+                  <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="vous@email.com">
+                </div>
+                <div class="field">
+                  <label for="tel">Téléphone</label>
+                  <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00">
+                </div>
+              </div>
+              <div class="field">
+                <label for="lot">Lot souhaité</label>
+                <select id="lot" name="lot">
+                  <option value="tous">Tous les lots</option>
+                  <option value="1">Lot 1 (1133 m²)</option>
+                  <option value="2">Lot 2 (861 m²)</option>
+                  <option value="3">Lot 3 (703 m²)</option>
+                  <option value="4">Lot 4 (500 m² + jardin)</option>
+                  <option value="5">Lot 5 (637 m² + jardin)</option>
+                  <option value="6">Lot 6 (704 m²)</option>
+                  <option value="7">Lot 7 (782 m²)</option>
+                  <option value="8">Lot 8 (600 m²)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="objet">Objet</label>
+                <select id="objet" name="objet">
+                  <option value="info">Demande d'information</option>
+                  <option value="visite">Visite du terrain</option>
+                  <option value="simulation">Simulation IA</option>
+                  <option value="reservation">Réservation</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Votre message…"></textarea>
+              </div>
+              <div class="field checkbox">
+                <input type="checkbox" id="rgpd" name="rgpd" required>
+                <label for="rgpd">J'accepte que mes données soient utilisées pour traiter ma demande.</label>
+              </div>
+              <button type="submit" class="btn btn-gold">Envoyer ma demande</button>
+              <div class="form-success">
+                <span class="ck">✓</span>
+                <span>Merci, votre message a bien été envoyé. Nous vous répondrons sous 48h.</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALISATION -->
+    <section class="bg-noir rule-top">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label eyebrow">Plan d'accès</span>
+          <h2 class="section-title">Trouver le terrain</h2>
+        </div>
+        <div class="map-frame reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Avenue+du+Pilon+du+Roy,+13120+Gardanne,+France&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Carte — Avenue du Pilon du Roy, 13120 Gardanne"></iframe>
+        </div>
+        <div class="info-grid mt-3" data-stagger>
+          <div class="info-item reveal"><div class="t">En voiture</div><div class="d">Accès direct depuis l'A51 · 25 min de Marseille, 20 min d'Aix.</div></div>
+          <div class="info-item reveal"><div class="t">Transports</div><div class="d">Gare de Gardanne à 5 min · Aix TGV à 15 min.</div></div>
+          <div class="info-item reveal"><div class="t">Commerces &amp; écoles</div><div class="d">Centre de Gardanne à 10 min.</div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <hr class="divider footer__divider">
+      <div class="footer__grid">
+        <div class="footer__brand footer__col">
+          <div class="name">Le Clos des Zinnias</div>
+          <div class="sub">Gardanne · Bouches-du-Rhône</div>
+          <p>Lotissement premium de 8 terrains à bâtir viabilisés, au cœur de la Provence, à 20 minutes d'Aix-en-Provence.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Le Projet</a></li>
+            <li><a href="lots.html">Les Lots</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Informations légales</h5>
+          <ul>
+            <li><a href="projet.html">PA n° 013 041 22 K0001</a></li>
+            <li><a href="projet.html">Zone UD1 · PLU Gardanne</a></li>
+            <li><a href="projet.html">PA Modificatif 04/2026</a></li>
+            <li><a href="lots.html">Règlement de lotissement</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <p>Avenue du Pilon du Roy<br>13120 Gardanne</p>
+          <p><a href="tel:+33609204590">06 09 20 45 90</a></p>
+          <p><a href="mailto:zinias@ponthieu.fr">zinias@ponthieu.fr</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 PONTHIEU DÉVELOPPEMENT HOLDING · Réf. PA 013 041 22 K0001
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

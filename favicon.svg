@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0C0C0A"/>
+  <g transform="translate(32 32)">
+    <g fill="#C49A5A">
+      <g id="p"><ellipse cx="0" cy="-15" rx="5" ry="12"/></g>
+      <use href="#p" transform="rotate(45)"/>
+      <use href="#p" transform="rotate(90)"/>
+      <use href="#p" transform="rotate(135)"/>
+      <use href="#p" transform="rotate(180)"/>
+      <use href="#p" transform="rotate(225)"/>
+      <use href="#p" transform="rotate(270)"/>
+      <use href="#p" transform="rotate(315)"/>
+    </g>
+    <g fill="#E8C88A">
+      <ellipse cx="0" cy="-9" rx="3.2" ry="7.5"/>
+      <use href="#p" transform="rotate(22.5) scale(0.6)" fill="#E8C88A"/>
+    </g>
+    <circle r="7" fill="#6B7C5A"/>
+    <circle r="3.5" fill="#E8C88A"/>
+  </g>
+</svg>
