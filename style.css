@@ -50,11 +50,6 @@ body {
   color: var(--texte-inv);
   line-height: 1.65;
   overflow-x: hidden;
-  cursor: none;
-}
-
-@media (pointer: coarse) {
-  body { cursor: auto; }
 }
 
 img {
@@ -74,11 +69,7 @@ a {
 
 button {
   font-family: inherit;
-  cursor: none;
-}
-
-@media (pointer: coarse) {
-  button, a { cursor: pointer; }
+  cursor: pointer;
 }
 
 ul { list-style: none; }

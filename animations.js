@@ -202,7 +202,6 @@
 
   /* ---------- INIT ---------- */
   function init() {
-    initCursor();
     initReveal();
     initParallax();
     initCounters();
