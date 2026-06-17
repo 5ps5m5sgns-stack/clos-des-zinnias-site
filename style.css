@@ -6,7 +6,8 @@
 /* ---------- CUSTOM PROPERTIES ---------- */
 :root {
   --noir: #0C0C0A;
-  --creme: #F7F2EA;
+  --creme: #F7F2EA;          /* blanc cassé clair — texte sur fond sombre */
+  --beige: #EFE7D6;          /* blanc cassé beige chaud — fond des sections claires */
   --or: #C49A5A;
   --or-light: #E8C88A;
   --sauge: #6B7C5A;
@@ -152,7 +153,7 @@ section {
 }
 
 .bg-noir   { background: var(--noir);  color: var(--texte-inv); }
-.bg-creme  { background: var(--creme); color: var(--texte); }
+.bg-creme  { background: var(--beige); color: var(--texte); }
 .bg-gris   { background: var(--gris);  color: var(--texte-inv); }
 
 .bg-creme .label,
