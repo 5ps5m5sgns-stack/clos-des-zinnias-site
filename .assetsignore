@@ -1,0 +1,10 @@
+# Fichiers à NE PAS déployer publiquement (Cloudflare Workers static assets)
+.git
+.gitignore
+.gitattributes
+.assetsignore
+.wrangler
+wrangler.jsonc
+wrangler.toml
+node_modules
+*.log
