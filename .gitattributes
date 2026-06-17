@@ -1,0 +1,6 @@
+# Normalise les fins de ligne en LF dans le dépôt (sain pour Cloudflare Pages)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.svg text eol=lf
