@@ -1264,21 +1264,30 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 }
 @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
 
+.contact-list { display: grid; gap: 0.85rem; }
 .contact-card {
   background: var(--noir);
-  border: 1px solid rgba(196,154,90,0.3);
-  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(196,154,90,0.22);
+  padding: 1.1rem 1.35rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  transition: border-color 0.4s;
+  gap: 1.1rem;
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease), background 0.4s var(--ease);
 }
-.contact-card:hover { border-color: var(--or); }
-.contact-card .ic { font-size: 1.4rem; color: var(--or); }
-.contact-card .lbl { font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
-.contact-card .val { color: var(--creme); font-size: 1rem; }
-.contact-card .val:hover { color: var(--or-light); }
+.contact-card:hover { border-color: var(--or); transform: translateX(4px); }
+.contact-card__ic {
+  flex: none;
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(196,154,90,0.35);
+  color: var(--or);
+  transition: background 0.4s var(--ease), color 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.contact-card__ic svg { width: 20px; height: 20px; }
+.contact-card:hover .contact-card__ic { background: var(--or); color: var(--noir); border-color: var(--or); }
+.contact-card__txt { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.contact-card .lbl { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.contact-card .val { color: var(--creme); font-size: 1.02rem; word-break: break-word; }
 
 .promo-block {
   margin-top: 2rem;
@@ -1354,12 +1363,13 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .form-success.show { display: flex; }
 .form-success .ck {
   flex: none;
-  width: 26px; height: 26px;
+  width: 28px; height: 28px;
   border-radius: 50%;
   background: var(--sauge);
   color: var(--creme);
   display: flex; align-items: center; justify-content: center;
 }
+.form-success .ck svg { width: 16px; height: 16px; }
 
 /* map */
 .map-frame {
@@ -1417,6 +1427,38 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .stack > * + * { margin-top: 1.25rem; }
 .spacer { height: clamp(2rem, 5vw, 4rem); }
 .nowrap { white-space: nowrap; }
+
+/* ============================================================
+   RAFFINEMENTS — passe qualité (audit premium)
+   ============================================================ */
+
+/* Accessibilité : focus clavier visible (le curseur custom masque le focus souris) */
+:focus-visible { outline: 2px solid var(--or); outline-offset: 3px; }
+.btn:focus-visible { outline-offset: 4px; }
+
+/* Sélection de texte aux couleurs de la marque */
+::selection { background: var(--or); color: var(--noir); }
+
+/* Boutons : légère élévation tactile au survol, en plus du changement de fond */
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+/* Carte maître d'ouvrage — eyebrow signature */
+.promo-block .promo-eyebrow {
+  display: block;
+  font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 0.6rem;
+}
+
+/* Bandeau d'erreur du formulaire — cohérent avec le bandeau succès */
+.form-error {
+  display: flex; align-items: center; gap: 0.75rem;
+  background: rgba(176,92,92,0.14);
+  border: 1px solid rgba(176,92,92,0.5);
+  color: var(--creme);
+  padding: 1rem 1.25rem; margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

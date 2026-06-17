@@ -203,7 +203,7 @@
       form.querySelectorAll("input, select, textarea").forEach((el) => {
         if (el.type !== "submit") el.disabled = true;
       });
-      if (btn) { btn.textContent = "Message envoyé ✓"; btn.disabled = true; }
+      if (btn) { btn.textContent = "Message envoyé"; btn.disabled = true; }
       success?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
@@ -212,7 +212,6 @@
       if (!errEl) {
         errEl = document.createElement("div");
         errEl.className = "form-error";
-        errEl.style.cssText = "margin-top:1rem;color:#d99;font-size:0.88rem;";
         (success || form).after(errEl);
       }
       errEl.textContent = msg;
