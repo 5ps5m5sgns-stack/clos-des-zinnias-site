@@ -8,3 +8,5 @@ wrangler.jsonc
 wrangler.toml
 node_modules
 *.log
+*.bak
+*.map

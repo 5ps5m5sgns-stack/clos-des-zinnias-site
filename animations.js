@@ -1,6 +1,6 @@
 /* ============================================================
    LE CLOS DES ZINNIAS — animations.js
-   Cursor · Reveal on scroll · Parallax · Compteurs · Before/After
+   Reveal on scroll · Parallax · Compteurs animés
    Chargé en defer, autonome.
    ============================================================ */
 (function () {
@@ -10,63 +10,22 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ----------------------------------------------------------
-     1. CUSTOM CURSOR (dot + ring with lerp lag)
-     ---------------------------------------------------------- */
-  function initCursor() {
-    if (isTouch) return;
-
-    const dot = document.createElement("div");
-    const ring = document.createElement("div");
-    dot.className = "cursor-dot";
-    ring.className = "cursor-ring";
-    document.body.append(dot, ring);
-
-    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
-    let rx = mx, ry = my;
-
-    window.addEventListener("mousemove", (e) => {
-      mx = e.clientX; my = e.clientY;
-      dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
-    });
-
-    function loop() {
-      rx += (mx - rx) * 0.18;
-      ry += (my - ry) * 0.18;
-      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-      requestAnimationFrame(loop);
-    }
-    loop();
-
-    // hover targets
-    const hoverSel = "a, button, .flip, .btn, [data-cursor='hover']";
-    const imgSel = "img, .masonry__item, .figure, .split__media, .img-hover";
-
-    document.addEventListener("mouseover", (e) => {
-      if (e.target.closest(hoverSel)) ring.classList.add("is-hover");
-      else if (e.target.closest(imgSel)) ring.classList.add("is-image");
-    });
-    document.addEventListener("mouseout", (e) => {
-      if (e.target.closest(hoverSel)) ring.classList.remove("is-hover");
-      if (e.target.closest(imgSel)) ring.classList.remove("is-image");
-    });
-
-    document.addEventListener("mouseleave", () => {
-      dot.style.opacity = "0"; ring.style.opacity = "0";
-    });
-    document.addEventListener("mouseenter", () => {
-      dot.style.opacity = "1"; ring.style.opacity = "1";
-    });
-  }
-
-  /* ----------------------------------------------------------
-     2. REVEAL ON SCROLL (IntersectionObserver, staggered)
+     REVEAL ON SCROLL (IntersectionObserver, staggered)
      ---------------------------------------------------------- */
   function initReveal() {
-    const els = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+    const SEL = ".reveal, .reveal-left, .reveal-right, .reveal-img";
+    const els = [...document.querySelectorAll(SEL)];
     if (reduceMotion) {
       els.forEach((el) => el.classList.add("in"));
       return;
     }
+
+    // auto-stagger des groupes [data-stagger] — calculé avant l'observation
+    document.querySelectorAll("[data-stagger]").forEach((group) => {
+      const kids = group.querySelectorAll(SEL);
+      kids.forEach((k, i) => { if (!k.dataset.delay) k.dataset.delay = i * 90; });
+    });
+
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -76,19 +35,13 @@
           io.unobserve(el);
         }
       });
-    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
 
     els.forEach((el) => io.observe(el));
-
-    // auto-stagger for groups marked [data-stagger]
-    document.querySelectorAll("[data-stagger]").forEach((group) => {
-      const kids = group.querySelectorAll(".reveal, .reveal-left, .reveal-right");
-      kids.forEach((k, i) => { if (!k.dataset.delay) k.dataset.delay = i * 100; });
-    });
   }
 
   /* ----------------------------------------------------------
-     3. PARALLAX ([data-parallax] with data-speed)
+     PARALLAX ([data-parallax] with data-speed)
      ---------------------------------------------------------- */
   function initParallax() {
     if (reduceMotion || isTouch) return;
@@ -116,7 +69,7 @@
   }
 
   /* ----------------------------------------------------------
-     4. ANIMATED COUNTERS ([data-count], easeOutExpo)
+     ANIMATED COUNTERS ([data-count], easeOutExpo)
      ---------------------------------------------------------- */
   function initCounters() {
     const els = document.querySelectorAll("[data-count]");
@@ -162,50 +115,11 @@
     els.forEach((el) => io.observe(el));
   }
 
-  /* ----------------------------------------------------------
-     5. BEFORE / AFTER SLIDER (drag mouse + touch)
-     ---------------------------------------------------------- */
-  function initBeforeAfter() {
-    document.querySelectorAll(".ba").forEach((ba) => {
-      const after = ba.querySelector(".ba__after");
-      const handle = ba.querySelector(".ba__handle");
-      if (!after || !handle) return;
-      let dragging = false;
-
-      function setPos(clientX) {
-        const rect = ba.getBoundingClientRect();
-        let pct = ((clientX - rect.left) / rect.width) * 100;
-        pct = Math.max(0, Math.min(100, pct));
-        after.style.width = pct + "%";
-        handle.style.left = pct + "%";
-      }
-
-      const start = () => { dragging = true; };
-      const end = () => { dragging = false; };
-      const move = (e) => {
-        if (!dragging) return;
-        const x = e.touches ? e.touches[0].clientX : e.clientX;
-        setPos(x);
-      };
-
-      handle.addEventListener("mousedown", start);
-      ba.addEventListener("mousedown", (e) => { start(); setPos(e.clientX); });
-      window.addEventListener("mouseup", end);
-      window.addEventListener("mousemove", move);
-
-      handle.addEventListener("touchstart", start, { passive: true });
-      ba.addEventListener("touchstart", (e) => { start(); setPos(e.touches[0].clientX); }, { passive: true });
-      window.addEventListener("touchend", end);
-      window.addEventListener("touchmove", move, { passive: true });
-    });
-  }
-
   /* ---------- INIT ---------- */
   function init() {
     initReveal();
     initParallax();
     initCounters();
-    initBeforeAfter();
   }
 
   if (document.readyState === "loading") {

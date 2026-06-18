@@ -1,7 +1,7 @@
 /* ============================================================
    LE CLOS DES ZINNIAS — main.js
-   Navigation · Navbar scroll · Page transitions · Lightbox
-   Accordion · Ripple · Form · Active link
+   Navigation · Navbar auto-hide · Scroll progress · Page transitions
+   Lightbox · Accordion · Flip tap · Form · Active link
    ============================================================ */
 (function () {
   "use strict";
@@ -12,9 +12,52 @@
   function initNavbar() {
     const nav = document.querySelector(".nav");
     if (!nav) return;
-    const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 80);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    let last = window.scrollY;
+    let ticking = false;
+
+    function update() {
+      const y = window.scrollY;
+      nav.classList.toggle("scrolled", y > 80);
+
+      // Auto-hide hospitality : masque au défilement descendant, révèle au remontant.
+      // Jamais masqué près du haut, ni quand le menu mobile est ouvert.
+      const menuOpen = document.body.classList.contains("menu-open");
+      if (!menuOpen && y > 260 && y > last + 6) {
+        nav.classList.add("nav--hidden");
+      } else if (y < last - 6 || y < 260) {
+        nav.classList.remove("nav--hidden");
+      }
+      last = y;
+      ticking = false;
+    }
+
+    window.addEventListener("scroll", () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  }
+
+  /* ----------------------------------------------------------
+     SCROLL PROGRESS — fine barre dorée de lecture
+     ---------------------------------------------------------- */
+  function initScrollProgress() {
+    const bar = document.createElement("div");
+    bar.className = "scroll-progress";
+    document.body.appendChild(bar);
+    let ticking = false;
+
+    function update() {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const p = max > 0 ? h.scrollTop / max : 0;
+      bar.style.transform = `scaleX(${p})`;
+      bar.classList.toggle("visible", h.scrollTop > 120);
+      ticking = false;
+    }
+    window.addEventListener("scroll", () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
   }
 
   /* ----------------------------------------------------------
@@ -29,6 +72,7 @@
       const willOpen = open ?? !menu.classList.contains("open");
       menu.classList.toggle("open", willOpen);
       burger.classList.toggle("open", willOpen);
+      document.body.classList.toggle("menu-open", willOpen);
       document.body.style.overflow = willOpen ? "hidden" : "";
     };
 
@@ -72,7 +116,7 @@
         if (e.metaKey || e.ctrlKey || e.shiftKey) return;
         e.preventDefault();
         document.body.classList.add("page-leaving");
-        setTimeout(() => { window.location.href = href; }, 300);
+        setTimeout(() => { window.location.href = href; }, 360);
       });
     });
   }
@@ -81,6 +125,7 @@
      SMOOTH ANCHOR SCROLL
      ---------------------------------------------------------- */
   function initSmoothAnchors() {
+    const nav = document.querySelector(".nav");
     document.querySelectorAll('a[href^="#"]').forEach((a) => {
       a.addEventListener("click", (e) => {
         const id = a.getAttribute("href");
@@ -88,26 +133,27 @@
         const target = document.querySelector(id);
         if (!target) return;
         e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Décalage de la hauteur de navbar pour ne pas masquer le titre de section
+        const offset = (nav ? nav.offsetHeight : 0) + 16;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
       });
     });
   }
 
   /* ----------------------------------------------------------
-     RIPPLE on buttons
+     FLIP CARDS — fallback tactile (pas de :hover au doigt)
      ---------------------------------------------------------- */
-  function initRipple() {
-    document.querySelectorAll(".btn").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        const circle = document.createElement("span");
-        const d = Math.max(btn.clientWidth, btn.clientHeight);
-        const rect = btn.getBoundingClientRect();
-        circle.className = "ripple";
-        circle.style.width = circle.style.height = d + "px";
-        circle.style.left = e.clientX - rect.left - d / 2 + "px";
-        circle.style.top = e.clientY - rect.top - d / 2 + "px";
-        btn.appendChild(circle);
-        setTimeout(() => circle.remove(), 600);
+  function initFlipTap() {
+    if (!window.matchMedia("(pointer: coarse)").matches) return;
+    document.querySelectorAll(".flip").forEach((flip) => {
+      flip.addEventListener("click", (e) => {
+        // un lien sur la face arrière reste cliquable une fois retournée
+        if (e.target.closest("a") && flip.classList.contains("is-flipped")) return;
+        if (e.target.closest("a") && !flip.classList.contains("is-flipped")) {
+          e.preventDefault();
+        }
+        flip.classList.toggle("is-flipped");
       });
     });
   }
@@ -145,22 +191,37 @@
 
     const box = document.createElement("div");
     box.className = "lightbox";
+    const multiple = items.length > 1;
     box.innerHTML = `
       <button class="lightbox__close" aria-label="Fermer">&times;</button>
-      <button class="lightbox__nav lightbox__nav--prev" aria-label="Précédent">&#8249;</button>
+      ${multiple ? '<div class="lightbox__count"></div>' : ""}
+      ${multiple ? '<button class="lightbox__nav lightbox__nav--prev" aria-label="Précédent">&#8249;</button>' : ""}
       <img alt="">
-      <button class="lightbox__nav lightbox__nav--next" aria-label="Suivant">&#8250;</button>
+      ${multiple ? '<button class="lightbox__nav lightbox__nav--next" aria-label="Suivant">&#8250;</button>' : ""}
       <div class="lightbox__cap"></div>`;
     document.body.appendChild(box);
 
     const imgEl = box.querySelector("img");
     const capEl = box.querySelector(".lightbox__cap");
+    const countEl = box.querySelector(".lightbox__count");
     let idx = 0;
+
+    const pad = (n) => String(n).padStart(2, "0");
+
+    // Précharge une image voisine pour une navigation fluide
+    function preload(i) {
+      const it = items[(i + items.length) % items.length];
+      if (it) { const im = new Image(); im.src = it.src; }
+    }
 
     function show(i) {
       idx = (i + items.length) % items.length;
       imgEl.src = items[idx].src;
+      imgEl.alt = items[idx].cap;
       capEl.textContent = items[idx].cap;
+      if (countEl) countEl.innerHTML = `<b>${pad(idx + 1)}</b> / ${pad(items.length)}`;
+      preload(idx + 1);
+      preload(idx - 1);
     }
     function open(i) { show(i); box.classList.add("open"); document.body.style.overflow = "hidden"; }
     function close() { box.classList.remove("open"); document.body.style.overflow = ""; }
@@ -169,8 +230,8 @@
       t.addEventListener("click", (e) => { e.preventDefault(); open(i); })
     );
     box.querySelector(".lightbox__close").addEventListener("click", close);
-    box.querySelector(".lightbox__nav--prev").addEventListener("click", () => show(idx - 1));
-    box.querySelector(".lightbox__nav--next").addEventListener("click", () => show(idx + 1));
+    box.querySelector(".lightbox__nav--prev")?.addEventListener("click", () => show(idx - 1));
+    box.querySelector(".lightbox__nav--next")?.addEventListener("click", () => show(idx + 1));
     box.addEventListener("click", (e) => { if (e.target === box) close(); });
 
     document.addEventListener("keydown", (e) => {
@@ -186,6 +247,73 @@
     box.addEventListener("touchend", (e) => {
       const dx = e.changedTouches[0].clientX - sx;
       if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
+    });
+  }
+
+  /* ----------------------------------------------------------
+     PRÉ-REMPLISSAGE DU LOT (deep-link ?lot=N)
+     Les boutons « Réserver ce lot » arrivent sur le formulaire
+     avec le bon lot et l'objet « réservation » déjà choisis.
+     ---------------------------------------------------------- */
+  function initLotPrefill() {
+    const lot = new URLSearchParams(location.search).get("lot");
+    if (!lot) return;
+    const select = document.querySelector("#lot");
+    if (select && [...select.options].some((o) => o.value === lot)) select.value = lot;
+    const objet = document.querySelector("#objet");
+    if (objet && [...objet.options].some((o) => o.value === "reservation")) objet.value = "reservation";
+    const msg = document.querySelector("#message");
+    if (msg && !msg.value) {
+      msg.value = `Bonjour, je souhaite réserver le lot ${lot} du Clos des Zinnias. Merci de me recontacter.`;
+    }
+  }
+
+  /* ----------------------------------------------------------
+     LOT COMPARISON TABLE — tri par surface / prix / prix·m²
+     ---------------------------------------------------------- */
+  function initLotSort() {
+    const table = document.querySelector("[data-sortable]");
+    if (!table) return;
+    const tbody = table.querySelector("tbody");
+    const btns = Array.from(document.querySelectorAll(".sort-btn[data-sort]"));
+    if (!tbody || !btns.length) return;
+
+    // Ordre d'origine, pour pouvoir revenir à l'état initial (3e clic)
+    const original = Array.from(tbody.querySelectorAll("tr"));
+
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.sort; // surface | price | ppm
+        const dir = btn.dataset.dir || "none";
+        // cycle : none → asc → desc → none
+        const next = dir === "none" ? "asc" : dir === "asc" ? "desc" : "none";
+
+        // reset des autres boutons
+        btns.forEach((b) => {
+          b.classList.remove("active");
+          b.dataset.dir = "none";
+          const d = b.querySelector(".dir");
+          if (d) d.textContent = "↕";
+        });
+
+        btn.dataset.dir = next;
+        const arrow = btn.querySelector(".dir");
+
+        let rows;
+        if (next === "none") {
+          rows = original;
+          if (arrow) arrow.textContent = "↕";
+        } else {
+          btn.classList.add("active");
+          if (arrow) arrow.textContent = next === "asc" ? "↑" : "↓";
+          rows = original.slice().sort((a, b) => {
+            const va = parseFloat(a.dataset[key]) || 0;
+            const vb = parseFloat(b.dataset[key]) || 0;
+            return next === "asc" ? va - vb : vb - va;
+          });
+        }
+        rows.forEach((r) => tbody.appendChild(r));
+      });
     });
   }
 
@@ -256,16 +384,43 @@
     });
   }
 
+  /* ----------------------------------------------------------
+     CONTACT INTENT CARDS — pré-remplit l'objet + défile au form
+     ---------------------------------------------------------- */
+  function initContactIntent() {
+    const cards = document.querySelectorAll("[data-intent]");
+    if (!cards.length) return;
+    const select = document.querySelector("#objet");
+    const form = document.querySelector("#contact-form");
+    const firstField = document.querySelector("#prenom");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const val = card.getAttribute("data-intent");
+        cards.forEach((c) => c.classList.toggle("is-active", c === card));
+        if (select && [...select.options].some((o) => o.value === val)) {
+          select.value = val;
+        }
+        (form || document.body).scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(() => firstField?.focus({ preventScroll: true }), 550);
+      });
+    });
+  }
+
   /* ---------- INIT ---------- */
   function init() {
     initNavbar();
+    initScrollProgress();
     initBurger();
     initActiveLink();
     initSmoothAnchors();
-    initRipple();
+    initFlipTap();
     initAccordion();
     initLightbox();
+    initLotSort();
+    initLotPrefill();
     initForm();
+    initContactIntent();
     initPageTransitions();
   }
 
