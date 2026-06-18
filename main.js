@@ -318,6 +318,50 @@
   }
 
   /* ----------------------------------------------------------
+     VALIDATION E-MAIL EN TEMPS RÉEL (feedback discret)
+     Pose .is-valid / .is-invalid sur le .field parent et affiche
+     un indice sous le champ. Ne « crie » qu'après le premier blur.
+     ---------------------------------------------------------- */
+  function initFieldValidation() {
+    const email = document.querySelector("#email");
+    if (!email) return;
+    const field = email.closest(".field");
+    if (!field) return;
+
+    let hint = field.querySelector(".field__hint");
+    if (!hint) {
+      hint = document.createElement("span");
+      hint.className = "field__hint";
+      hint.setAttribute("aria-live", "polite");
+      field.appendChild(hint);
+    }
+
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let touched = false;
+
+    function validate() {
+      const v = email.value.trim();
+      if (!v) {
+        field.classList.remove("is-valid", "is-invalid");
+        hint.textContent = "";
+        return;
+      }
+      if (re.test(v)) {
+        field.classList.add("is-valid");
+        field.classList.remove("is-invalid");
+        hint.textContent = "";
+      } else {
+        field.classList.add("is-invalid");
+        field.classList.remove("is-valid");
+        hint.textContent = "Format d'e-mail invalide — exemple : prenom@email.com";
+      }
+    }
+
+    email.addEventListener("blur", () => { touched = true; validate(); });
+    email.addEventListener("input", () => { if (touched) validate(); });
+  }
+
+  /* ----------------------------------------------------------
      CONTACT FORM
      ---------------------------------------------------------- */
   function initForm() {
@@ -356,15 +400,16 @@
 
       const action = form.getAttribute("action") || "";
 
-      // Mode démo : tant que l'ID Formspree n'est pas renseigné, on affiche
-      // simplement le message de succès (aucun envoi réel).
+      // Mode démo : tant que l'ID Formspree n'est pas renseigné, on simule
+      // un court envoi (état « Envoi en cours… ») puis on affiche le succès.
       if (!/formspree\.io\/f\/(?!xxxx)\w+/.test(action)) {
-        showSuccess();
+        if (btn) { btn.textContent = "Envoi en cours…"; btn.disabled = true; }
+        setTimeout(showSuccess, 750);
         return;
       }
 
       const original = btn ? btn.textContent : "";
-      if (btn) { btn.textContent = "Envoi…"; btn.disabled = true; }
+      if (btn) { btn.textContent = "Envoi en cours…"; btn.disabled = true; }
       try {
         const res = await fetch(action, {
           method: "POST",
@@ -419,6 +464,7 @@
     initLightbox();
     initLotSort();
     initLotPrefill();
+    initFieldValidation();
     initForm();
     initContactIntent();
     initPageTransitions();
