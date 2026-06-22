@@ -1,0 +1,19 @@
+{
+  "name": "Le Clos des Zinnias",
+  "short_name": "Clos des Zinnias",
+  "description": "Lotissement premium de 8 terrains à bâtir viabilisés à Gardanne (13), au cœur de la Provence.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0C0C0A",
+  "theme_color": "#0C0C0A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -8,3 +8,7 @@ desktop.ini
 
 # Logs / divers
 *.log
+
+# Photos drone originales (non-optimisées, ~105 Mo) — non utilisées par le site.
+# Seules les versions WebP de assets-optimized/ et images-optimized/ sont servies.
+assets/

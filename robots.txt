@@ -1,0 +1,10 @@
+# Le Clos des Zinnias — Gardanne (13)
+# https://clos-des-zinnias.fr
+
+User-agent: *
+Allow: /
+
+# Pas de pages privées à exclure
+Disallow:
+
+Sitemap: https://clos-des-zinnias.fr/sitemap.xml

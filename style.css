@@ -16,6 +16,7 @@
   --texte: #1A1A18;
   --texte-inv: #F7F2EA;
   --muted: #8A8A7A;
+  --muted-creme: #5b5b50;     /* texte atténué sur fonds clairs (crème/beige) */
 
   --font-titre: "Cormorant Garamond", Georgia, serif;
   --font-corps: "DM Sans", system-ui, sans-serif;
@@ -151,7 +152,7 @@ section {
 
 .bg-creme .label,
 .bg-creme .italic-or { color: var(--or); }
-.bg-creme .lead { color: #5b5b50; }
+.bg-creme .lead { color: var(--muted-creme); }
 
 .divider {
   height: 1px;
@@ -912,7 +913,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 }
 .info-item .t { font-family: var(--font-titre); font-size: 1.4rem; color: var(--or); }
 .info-item .d { font-size: 0.92rem; color: var(--muted); margin-top: 0.25rem; }
-.bg-creme .info-item .d { color: #5b5b50; }
+.bg-creme .info-item .d { color: var(--muted-creme); }
 
 /* ============================================================
    ACCORDION
@@ -957,10 +958,10 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 }
 .acc-body__inner {
   padding-bottom: 1.5rem;
-  color: #5b5b50;
+  color: var(--muted-creme);
   font-size: 0.98rem;
 }
-.bg-creme .acc-body__inner { color: #5b5b50; }
+.bg-creme .acc-body__inner { color: var(--muted-creme); }
 
 /* ============================================================
    GALLERY — IMAGE HOVER + LIGHTBOX
@@ -1492,6 +1493,19 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .lot-card--featured .lot-card__surface { font-size: clamp(3rem, 6vw, 4.4rem); }
 .lot-card--featured .lot-card__price .p-main { font-size: 1.85rem; }
 
+/* Carte vedette en desktop : composition plus aérée, CTA en ligne
+   (le bouton garde une largeur naturelle au lieu de s'étirer sur 2 colonnes) */
+@media (min-width: 1025px) {
+  .lot-card--featured { padding: clamp(2rem, 3.2vw, 2.85rem); }
+  .lot-card--featured .lot-card__actions {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .lot-card--featured .lot-card__actions .btn { width: auto; }
+  .lot-card--featured .lot-card__call { margin-left: auto; }
+}
+
 /* ---------- Tableau comparatif ---------- */
 .compare-toolbar {
   display: flex;
@@ -1504,7 +1518,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #5b5b50;
+  color: var(--muted-creme);
   margin-right: 0.25rem;
 }
 .sort-btn {
@@ -1715,7 +1729,7 @@ table.elegant tr.is-best td:first-child { color: var(--or-light); }
   gap: 0.85rem;
   padding: 1.1rem 1.25rem;
   border: 1px solid rgba(196, 154, 90, 0.28);
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--creme);
 }
 .trust-item__ic {
   flex: none;
@@ -1792,6 +1806,19 @@ table.elegant tr.is-best td:first-child { color: var(--or-light); }
   line-height: 1.5;
 }
 .form__note svg { flex: none; width: 15px; height: 15px; color: var(--sauge); margin-top: 2px; }
+
+/* — Sous-titre de colonne (équilibre avec l'en-tête du formulaire) — */
+.col-title {
+  font-family: var(--font-titre);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.4vw, 2.15rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--texte);
+}
+
+/* — Filet de séparation entre « façons de nous joindre » et coordonnées/formulaire — */
+.divider--contact { margin-block: clamp(3rem, 6vw, 4.5rem); }
 
 /* — Disponibilités (carte non cliquable) — */
 .contact-card--hours { cursor: default; }
@@ -2126,7 +2153,7 @@ section[data-chapter] .eyebrow::after {
   margin-top: 0.85rem; max-width: 52ch;
   color: var(--muted); font-size: clamp(0.96rem, 1.4vw, 1.08rem);
 }
-.bg-creme .chapter__intro { color: #5b5b50; }
+.bg-creme .chapter__intro { color: var(--muted-creme); }
 @media (max-width: 560px) {
   .chapter { grid-template-columns: 1fr; gap: 0.4rem; align-items: start; }
   .chapter__idx { font-size: clamp(2.75rem, 16vw, 4rem); }
@@ -2183,7 +2210,7 @@ section[data-chapter] .eyebrow::after {
   font-size: clamp(1.6rem, 3vw, 2.3rem); margin: 0.5rem 0 1rem; color: inherit;
 }
 .ed-feature__note p { color: var(--muted); max-width: 44ch; }
-.bg-creme .ed-feature__note p { color: #5b5b50; }
+.bg-creme .ed-feature__note p { color: var(--muted-creme); }
 .ed-feature__media { overflow: hidden; }
 .ed-feature__media img { aspect-ratio: 16 / 11; }
 @media (min-width: 861px) {
@@ -2191,6 +2218,8 @@ section[data-chapter] .eyebrow::after {
     grid-template-columns: 7fr 5fr;
     align-items: center; gap: clamp(2.5rem, 5vw, 5rem);
   }
+  /* Inversée : la piste large passe à droite pour que l'image reste généreuse */
+  .ed-feature--rev { grid-template-columns: 5fr 7fr; }
   .ed-feature--rev .ed-feature__media { order: 2; }
   .ed-feature--rev .ed-feature__note { order: 1; }
 }
@@ -2332,3 +2361,188 @@ section[data-chapter] .eyebrow::after {
   .lightbox img { transform: none; opacity: 1; transition: none; }
   .acc-head .plus, .info-item, .trust-item, .step, .btn-gold, .field input, .field__hint { transition: none; }
 }
+
+/* Mention discrète "illustration / projet" sur les visuels de synthèse
+   — honnêteté commerciale : on vend des terrains, pas du bâti */
+.media-credit {
+  position: absolute;
+  bottom: 0; left: 0;
+  z-index: 2;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--creme);
+  background: rgba(12, 12, 10, 0.42);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+.quote-band .media-credit { bottom: 1.1rem; left: 1.1rem; opacity: 0.78; }
+
+/* Sous-titre de chapitre (remplace les styles inline) */
+.subhead {
+  text-align: center;
+  max-width: 46rem;
+  margin: clamp(3rem, 5vw, 4.5rem) auto clamp(1.5rem, 3vw, 2.5rem);
+}
+.subhead h3 { font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--creme); }
+.subhead p { margin-top: 0.75rem; }
+
+/* ============================================================
+   GALERIE — passe finition premium (audit)
+   Badges d'authentification, ancrages éditoriaux, harmonisation.
+   ============================================================ */
+
+/* Badge « nature de l'image » : distingue photo réelle / projection.
+   Transparence commerciale + repère élégant. Posé en haut à gauche. */
+.ed-tag {
+  position: absolute; top: 1rem; left: 1rem; z-index: 2;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--creme);
+  background: rgba(12, 12, 10, 0.5);
+  border: 1px solid rgba(196, 154, 90, 0.32);
+  -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+  pointer-events: none;
+}
+.ed-tag::before {
+  content: ""; flex: none;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--or);
+}
+.ed-tag--real::before { background: var(--sauge); box-shadow: 0 0 0 3px rgba(107, 124, 90, 0.22); }
+.ed-tag--proj::before { background: var(--or);   box-shadow: 0 0 0 3px rgba(196, 154, 90, 0.20); }
+
+/* Feature : le numéro éditorial est ancré par un filet doré */
+.ed-feature__note .num { display: inline-block; line-height: 1; }
+.ed-feature__note .num::after {
+  content: ""; display: block;
+  width: 34px; height: 1px; margin-top: 0.85rem;
+  background: var(--or); opacity: 0.55;
+}
+
+/* Légende cinéma : filet signature devant le label (cohérent eyebrows) */
+.ed-cinema__cap .l { display: inline-flex; align-items: center; gap: 0.6rem; }
+.ed-cinema__cap .l::before {
+  content: ""; width: 1.6rem; height: 1px;
+  background: var(--or); opacity: 0.75;
+}
+
+/* Cinémascope « image fixe » : composite avant/après, sans recadrage ni voile */
+.ed-cinema--still .ed-cinema__frame { height: auto; cursor: zoom-in; }
+.ed-cinema--still .ed-cinema__frame::after { display: none; }
+.ed-cinema--still .ed-cinema__frame img { display: block; width: 100%; height: auto; }
+
+/* ============================================================
+   ACCUEIL — passe premium (audit page d'accueil)
+   Section chiffres éditoriale + tuiles de lots sobres
+   (remplacent les cartes flip). Classes propres à index.html.
+   ============================================================ */
+
+/* ---- Section chiffres : rangée de données, filets verticaux ---- */
+.chiffres .counter__num {
+  font-size: clamp(2.2rem, 4.2vw, 3.2rem);
+  white-space: nowrap;
+}
+.chiffres .counters { align-items: start; }
+@media (min-width: 761px) {
+  .chiffres .counters > div { position: relative; }
+  .chiffres .counters > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    right: calc(clamp(1.5rem, 4vw, 3rem) / -2);
+    width: 1px;
+    height: 3.2rem;
+    background: var(--or);
+    opacity: 0.16;
+  }
+}
+
+/* ---- Aperçu des lots : tuiles éditoriales sobres ---- */
+.lot-tile {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.5rem, 2.4vw, 2rem);
+  background: var(--noir);
+  border: 1px solid rgba(196, 154, 90, 0.22);
+  color: var(--creme);
+  transition: border-color 0.5s var(--ease), transform 0.6s var(--ease),
+              background 0.5s var(--ease), opacity 0.9s var(--ease);
+}
+.lot-tile__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.lot-tile__num {
+  font-family: var(--font-titre);
+  font-weight: 300;
+  font-size: clamp(2.1rem, 3vw, 2.7rem);
+  line-height: 1;
+  color: var(--or);
+}
+.lot-tile__metrics {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+.lot-tile__surface {
+  font-family: var(--font-titre);
+  font-weight: 300;
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  line-height: 1;
+  color: var(--creme);
+}
+.lot-tile__surface i {
+  font-style: normal;
+  font-family: var(--font-corps);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-left: 0.25rem;
+}
+.lot-tile__price {
+  font-size: 1.02rem;
+  color: var(--or-light);
+  letter-spacing: 0.01em;
+}
+.lot-tile__note {
+  margin-top: 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--sauge);
+}
+.lot-tile__cta {
+  margin-top: auto;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(196, 154, 90, 0.14);
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.4s var(--ease);
+}
+.lot-tile__cta em {
+  font-style: normal;
+  transition: transform 0.4s var(--ease);
+}
+.lot-tile:hover,
+.lot-tile:focus-visible {
+  border-color: rgba(196, 154, 90, 0.6);
+  transform: translateY(-4px);
+  background: #121110;
+}
+.lot-tile:hover .lot-tile__cta,
+.lot-tile:focus-visible .lot-tile__cta { color: var(--or-light); }
+.lot-tile:hover .lot-tile__cta em,
+.lot-tile:focus-visible .lot-tile__cta em { transform: translateX(4px); }
