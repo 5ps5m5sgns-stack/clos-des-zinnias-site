@@ -163,11 +163,14 @@
      ---------------------------------------------------------- */
   function initAccordion() {
     document.querySelectorAll(".acc-head").forEach((head) => {
+      // état initial annoncé aux lecteurs d'écran
+      if (!head.hasAttribute("aria-expanded")) head.setAttribute("aria-expanded", "false");
       head.addEventListener("click", () => {
         const item = head.closest(".acc-item");
         const body = item.querySelector(".acc-body");
         const open = item.classList.toggle("open");
         body.style.maxHeight = open ? body.scrollHeight + "px" : "0";
+        head.setAttribute("aria-expanded", open ? "true" : "false"); // synchronise l'état a11y
       });
     });
     window.addEventListener("resize", () => {
@@ -191,6 +194,10 @@
 
     const box = document.createElement("div");
     box.className = "lightbox";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Visionneuse d'images");
+    let lastFocused = null;
     const multiple = items.length > 1;
     box.innerHTML = `
       <button class="lightbox__close" aria-label="Fermer">&times;</button>
@@ -223,12 +230,28 @@
       preload(idx + 1);
       preload(idx - 1);
     }
-    function open(i) { show(i); box.classList.add("open"); document.body.style.overflow = "hidden"; }
-    function close() { box.classList.remove("open"); document.body.style.overflow = ""; }
+    function open(i) {
+      lastFocused = document.activeElement;
+      show(i);
+      box.classList.add("open");
+      document.body.style.overflow = "hidden";
+      // déplace le focus dans la visionneuse (accessibilité clavier)
+      box.querySelector(".lightbox__close").focus();
+    }
+    function close() {
+      box.classList.remove("open");
+      document.body.style.overflow = "";
+      // rend le focus à l'élément qui a ouvert la visionneuse
+      if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+    }
 
-    triggers.forEach((t, i) =>
-      t.addEventListener("click", (e) => { e.preventDefault(); open(i); })
-    );
+    triggers.forEach((t, i) => {
+      t.addEventListener("click", (e) => { e.preventDefault(); open(i); });
+      // déclencheurs non natifs (role="button") : activation clavier Entrée / Espace
+      t.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(i); }
+      });
+    });
     box.querySelector(".lightbox__close").addEventListener("click", close);
     box.querySelector(".lightbox__nav--prev")?.addEventListener("click", () => show(idx - 1));
     box.querySelector(".lightbox__nav--next")?.addEventListener("click", () => show(idx + 1));
@@ -281,6 +304,9 @@
     // Ordre d'origine, pour pouvoir revenir à l'état initial (3e clic)
     const original = Array.from(tbody.querySelectorAll("tr"));
 
+    // état initial : aucun tri actif
+    btns.forEach((b) => { if (!b.hasAttribute("aria-pressed")) b.setAttribute("aria-pressed", "false"); });
+
     btns.forEach((btn) => {
       btn.addEventListener("click", () => {
         const key = btn.dataset.sort; // surface | price | ppm
@@ -292,6 +318,7 @@
         btns.forEach((b) => {
           b.classList.remove("active");
           b.dataset.dir = "none";
+          b.setAttribute("aria-pressed", "false");
           const d = b.querySelector(".dir");
           if (d) d.textContent = "↕";
         });
@@ -305,6 +332,7 @@
           if (arrow) arrow.textContent = "↕";
         } else {
           btn.classList.add("active");
+          btn.setAttribute("aria-pressed", "true");
           if (arrow) arrow.textContent = next === "asc" ? "↑" : "↓";
           rows = original.slice().sort((a, b) => {
             const va = parseFloat(a.dataset[key]) || 0;
@@ -452,10 +480,40 @@
     });
   }
 
+  /* ----------------------------------------------------------
+     RETOUR EN HAUT — bouton discret qui apparaît au défilement
+     Injecté dynamiquement (pas de markup dans les pages).
+     ---------------------------------------------------------- */
+  function initBackToTop() {
+    const btn = document.createElement("button");
+    btn.className = "to-top";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Revenir en haut de la page");
+    btn.innerHTML =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    document.body.appendChild(btn);
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+
+    let ticking = false;
+    function update() {
+      btn.classList.toggle("visible", window.scrollY > 600);
+      ticking = false;
+    }
+    window.addEventListener("scroll", () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  }
+
   /* ---------- INIT ---------- */
   function init() {
     initNavbar();
     initScrollProgress();
+    initBackToTop();
     initBurger();
     initActiveLink();
     initSmoothAnchors();

@@ -75,51 +75,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Finition premium propre à la page Contact (chargée après la feuille
-       globale, donc prioritaire ; n'affecte aucune autre page). -->
-  <style>
-    /* Formulaire : pièce maîtresse de conversion — élévation + filet doré */
-    .form { position: relative; box-shadow: 0 34px 80px rgba(0, 0, 0, 0.4); }
-    .form::before {
-      content: "";
-      position: absolute; left: 0; right: 0; top: 0; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--or) 28%, var(--or-light) 50%, var(--or) 72%, transparent);
-    }
-
-    /* Champ actif : le label s'éclaire discrètement */
-    .field:focus-within label { color: var(--or-light); }
-
-    /* Selects : chevron doré sur-mesure (l'apparence native casse l'élégance) */
-    .field select {
-      appearance: none; -webkit-appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C49A5A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 1rem center;
-      background-size: 18px;
-      padding-right: 2.75rem;
-    }
-
-    /* Indication douce sous un champ (réassurance, non bloquante) */
-    .field__help { font-size: 0.72rem; letter-spacing: 0.01em; color: var(--muted); margin-top: -0.05rem; }
-
-    /* Bandeau de réassurance : fond net et chaud plutôt que blanc laiteux */
-    .trust-item { background: #fffdf8; border-color: rgba(196, 154, 90, 0.22); }
-
-    /* Étapes : fil conducteur reliant 01 → 02 → 03 (parcours guidé, desktop) */
-    @media (min-width: 761px) {
-      .steps { position: relative; }
-      .steps::before {
-        content: ""; position: absolute; top: 1.62rem; left: 0; right: 0;
-        height: 1px; background: rgba(196, 154, 90, 0.32); z-index: 0;
-      }
-      .step { position: relative; z-index: 1; }
-      .step__num {
-        display: inline-block; position: relative; z-index: 1;
-        background: var(--gris);        /* interrompt le fil derrière chaque numéro */
-        padding-right: 1.1rem;
-      }
-    }
-  </style>
+  <!-- La finition premium propre à la page Contact vit désormais dans
+       style.css, bloc « PAGE: contact » (fin de fichier). -->
   <script src="animations.js" defer></script>
   <script src="main.js" defer></script>
 </head>
@@ -155,16 +112,15 @@
     <!-- HERO -->
     <section class="hero hero--50">
       <div class="hero__media" data-parallax data-speed="0.4" style="filter:blur(3px);">
-        <picture><source srcset="images-optimized/zinnia-fleurs-macro-orange.webp" type="image/webp"><img src="images-optimized/zinnia-fleurs-macro-orange.webp" alt="Zinnias orange en fleurs"></picture>
+        <picture><source srcset="images-optimized/zinnia-fleurs-macro-orange.webp" type="image/webp"><img src="images-optimized/zinnia-fleurs-macro-orange.webp" alt="Zinnias orange en fleurs" width="2048" height="2048" decoding="async" fetchpriority="high"></picture>
       </div>
       <div class="hero__overlay hero__overlay--heavy"></div>
       <div class="hero__inner">
-        <span class="badge">Commercialisation en cours · 8 lots</span>
-        <h1 class="hero-sub-title">Parlons de votre projet</h1>
-        <p class="hero-sub-subtitle lead-reassure">Un interlocuteur dédié vous répond sous 48&nbsp;heures, en toute simplicité et sans engagement.</p>
+        <h1 class="hero-sub-title">Contact</h1>
+        <p class="hero-sub-subtitle">Réponse sous 48 h · 06 09 20 45 90</p>
         <div class="hero__btns mt-3">
-          <a class="btn btn-gold" href="tel:+33609204590">Appeler le 06 09 20 45 90</a>
-          <a class="btn btn-outline" href="#contact-form">Écrire un message</a>
+          <a class="btn btn-gold" href="#contact-form">Remplir le formulaire</a>
+          <a class="btn btn-outline" href="tel:+33609204590">Appeler</a>
         </div>
       </div>
     </section>
@@ -174,53 +130,8 @@
       <div class="wrap">
         <div class="section-head reveal">
           <span class="label eyebrow">Contact</span>
-          <h2 class="section-title">Entrons en relation, à votre rythme</h2>
-          <p class="lead">Choisissez la façon qui vous convient le mieux pour nous joindre. Nous nous occupons du reste.</p>
+          <h2 class="section-title">Nous contacter</h2>
         </div>
-
-        <!-- RÉASSURANCE -->
-        <div class="trust-strip reveal">
-          <div class="trust-item">
-            <span class="trust-item__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-            <span><span class="t">Réponse sous 48&nbsp;h</span><span class="d">Jours ouvrés</span></span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-item__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></span>
-            <span><span class="t">Interlocuteur dédié</span><span class="d">Un seul contact, du début à la fin</span></span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-item__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-            <span><span class="t">Visite sur rendez-vous</span><span class="d">Sur le terrain, à Gardanne</span></span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-item__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <span><span class="t">Sans engagement</span><span class="d">Données strictement confidentielles</span></span>
-          </div>
-        </div>
-
-        <!-- INTENTIONS -->
-        <div class="intent-grid" data-stagger>
-          <button type="button" class="intent-card reveal" data-intent="rappel">
-            <span class="intent-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/><path d="M16 3h5M21 3v5"/></svg></span>
-            <h3>Être rappelé</h3>
-            <p>Laissez votre numéro : nous vous appelons au moment qui vous convient.</p>
-            <span class="go">Demander un rappel <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </button>
-          <button type="button" class="intent-card reveal" data-intent="brochure">
-            <span class="intent-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7a2 2 0 0 1 2 2v14a2.5 2.5 0 0 0-2.5-2H4z"/><path d="M20 4h-7a2 2 0 0 0-2 2v14a2.5 2.5 0 0 1 2.5-2H20z"/></svg></span>
-            <h3>Recevoir la brochure</h3>
-            <p>Plans, surfaces, prix et calendrier : recevez le dossier complet par email.</p>
-            <span class="go">Demander le dossier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </button>
-          <button type="button" class="intent-card reveal" data-intent="visite">
-            <span class="intent-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span>
-            <h3>Prendre rendez-vous</h3>
-            <p>Découvrez le site et son environnement, accompagné par notre commercialisatrice.</p>
-            <span class="go">Convenir d'une visite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </button>
-        </div>
-
-        <hr class="divider divider--contact">
 
         <!-- COORDONNÉES + FORMULAIRE -->
         <div class="contact-grid">
@@ -234,7 +145,7 @@
             <div class="contact-list mt-3">
               <a class="contact-card" href="tel:+33609204590">
                 <span class="contact-card__ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg>
                 </span>
                 <span class="contact-card__txt">
                   <span class="lbl">Téléphone · commercialisation</span>
@@ -243,7 +154,7 @@
               </a>
               <a class="contact-card" href="mailto:zinias@ponthieu.fr">
                 <span class="contact-card__ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
                 </span>
                 <span class="contact-card__txt">
                   <span class="lbl">Email · demande de lot</span>
@@ -252,7 +163,7 @@
               </a>
               <div class="contact-card contact-card--hours">
                 <span class="contact-card__ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
                 </span>
                 <span class="contact-card__txt">
                   <span class="lbl">Disponibilités</span>
@@ -261,7 +172,7 @@
               </div>
               <div class="contact-card contact-card--hours">
                 <span class="contact-card__ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
                 </span>
                 <span class="contact-card__txt">
                   <span class="lbl">Adresse du projet</span>
@@ -270,22 +181,6 @@
               </div>
             </div>
 
-            <div class="promo-block">
-              <span class="promo-eyebrow">Maître d'ouvrage</span>
-              <h4>Ponthieu Développement Holding</h4>
-              <p>
-                Un opérateur privé qui maîtrise son projet de bout en bout.<br><br>
-                Gérant : M. Stéphane Ponthieu<br>
-                LA CARA — 418 ancienne route des Alpes<br>
-                13100 Aix-en-Provence<br>
-                Tél : 06 20 53 43 92
-              </p>
-            </div>
-
-            <figure class="figure mt-3 img-hover reveal" style="overflow:hidden;">
-              <picture><source srcset="images-optimized/aerial-lotissement-collines-gardanne.webp" type="image/webp"><img src="images-optimized/aerial-lotissement-collines-gardanne.webp" alt="Vue aérienne du lotissement dans les collines" loading="lazy"></picture>
-              <figcaption>Le Clos des Zinnias — Gardanne, Provence</figcaption>
-            </figure>
           </div>
 
           <!-- COLONNE DROITE — FORMULAIRE -->
@@ -354,81 +249,16 @@
               </div>
               <button type="submit" class="btn btn-gold">Envoyer ma demande</button>
               <p class="form__note">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
                 Vos informations restent strictement confidentielles et ne sont jamais transmises à des tiers.
               </p>
               <div class="form-success">
-                <span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg></span>
+                <span class="ck"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg></span>
                 <span>Merci, votre demande a bien été transmise. Un interlocuteur dédié vous répond sous 48&nbsp;heures.</span>
               </div>
             </form>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- CE QUI SE PASSE ENSUITE -->
-    <section class="bg-gris rule-top">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="label eyebrow">En toute confiance</span>
-          <h2 class="section-title">Ce qui se passe ensuite</h2>
-          <p class="lead">Une démarche claire, sans pression, à chaque étape.</p>
-        </div>
-        <div class="steps" data-stagger>
-          <div class="step reveal">
-            <span class="step__num">01</span>
-            <h3>Nous vous recontactons</h3>
-            <p>Sous 48&nbsp;heures ouvrées, par téléphone ou email, selon votre préférence.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step__num">02</span>
-            <h3>Nous étudions votre projet</h3>
-            <p>Choix du terrain, budget et projet de construction&nbsp;: nous répondons précisément à vos questions.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step__num">03</span>
-            <h3>Visite &amp; réservation</h3>
-            <p>Visite du terrain sur rendez-vous, puis réservation de votre lot viabilisé en toute sérénité.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="bg-creme rule-top">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="label eyebrow">Questions fréquentes</span>
-          <h2 class="section-title">Vos questions, nos réponses</h2>
-          <p class="lead">L'essentiel pour décider sereinement. Une autre question&nbsp;? Appelez-nous au 06&nbsp;09&nbsp;20&nbsp;45&nbsp;90.</p>
-        </div>
-        <div class="accordion" data-stagger>
-          <div class="acc-item reveal">
-            <button class="acc-head">Les terrains du Clos des Zinnias sont-ils viabilisés&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">Oui. Les 8 lots sont livrés viabilisés et bornés&nbsp;: voirie, eau potable, eaux usées, eaux pluviales, électricité, téléphone et fibre sont réalisés avant l'acte authentique. Vous n'achetez pas un chantier.</div></div>
-          </div>
-          <div class="acc-item reveal">
-            <button class="acc-head">Quand les lots seront-ils livrés&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">La livraison des terrains prêts à construire est prévue pour mars 2027. Le permis d'aménager est délivré et son modificatif a été approuvé en avril 2026.</div></div>
-          </div>
-          <div class="acc-item reveal">
-            <button class="acc-head">Quel est le prix des terrains à bâtir à Gardanne&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">Les 8 lots vont de 262&nbsp;500&nbsp;€ à 336&nbsp;000&nbsp;€, soit dès 232&nbsp;€/m² pour le plus grand lot de 1&nbsp;133&nbsp;m².</div></div>
-          </div>
-          <div class="acc-item reveal">
-            <button class="acc-head">Puis-je choisir librement mon architecte et mon constructeur&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">Oui. Chaque acquéreur conçoit et fait construire sa maison librement, avec l'architecte et le constructeur de son choix, dans le respect du règlement de lotissement qui garantit l'harmonie de l'ensemble.</div></div>
-          </div>
-          <div class="acc-item reveal">
-            <button class="acc-head">Où se situe exactement le Clos des Zinnias&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">Avenue du Pilon du Roy, 13120 Gardanne (Bouches-du-Rhône), à 10&nbsp;minutes du centre de Gardanne et à 20&nbsp;minutes d'Aix-en-Provence, avec accès direct à l'autoroute A51.</div></div>
-          </div>
-          <div class="acc-item reveal">
-            <button class="acc-head">Comment réserver un lot&nbsp;?<span class="plus"></span></button>
-            <div class="acc-body"><div class="acc-body__inner">Contactez-nous au 06&nbsp;09&nbsp;20&nbsp;45&nbsp;90 ou via le formulaire en ligne. Un interlocuteur dédié vous recontacte sous 48&nbsp;heures ouvrées pour organiser une visite du terrain et la réservation de votre lot.</div></div>
-          </div>
         </div>
       </div>
     </section>
@@ -464,7 +294,7 @@
         <div class="footer__brand footer__col">
           <div class="name">Le Clos des Zinnias</div>
           <div class="sub">Gardanne · Bouches-du-Rhône</div>
-          <p>Lotissement premium de 8 terrains à bâtir viabilisés, au cœur de la Provence, à 20 minutes d'Aix-en-Provence.</p>
+          <p>8 terrains à bâtir viabilisés à Gardanne, à 20 minutes d'Aix-en-Provence.</p>
         </div>
         <div class="footer__col">
           <h5>Navigation</h5>

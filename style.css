@@ -1863,13 +1863,6 @@ table.elegant tr.is-best td:first-child { color: var(--or-light); }
   align-items: center;
   gap: 0.75rem;
 }
-.eyebrow::before {
-  content: "";
-  width: 1.75rem;
-  height: 1px;
-  background: var(--or);
-  opacity: 0.65;
-}
 .section-head .eyebrow { justify-content: center; }
 
 /* Index de chapitre automatique (01 · 02 · 03 …).
@@ -2198,6 +2191,8 @@ section[data-chapter] .eyebrow::after {
 }
 .ed-figure:hover .loupe { opacity: 1; transform: scale(1); }
 .ed-figure .loupe:hover { background: var(--or); color: var(--noir); border-color: var(--or); }
+.ed-figure[data-lightbox] { cursor: pointer; }
+.ed-figure[data-lightbox] .ed-figure__ov { pointer-events: none; }
 
 /* ---------- Feature : image + note décalée (alternance) ---------- */
 .ed-feature { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
@@ -2389,6 +2384,24 @@ section[data-chapter] .eyebrow::after {
 .subhead h3 { font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--creme); }
 .subhead p { margin-top: 0.75rem; }
 
+/* Labels overlay AVANT. / APRÈS. sur la figure de comparaison */
+.compare-still { position: relative; }
+.compare-label {
+  position: absolute;
+  top: 1rem;
+  z-index: 3;
+  font-size: 0.62rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0,0,0,0.52);
+  padding: 0.28rem 0.7rem;
+}
+.compare-label--avant { left: 1rem; }
+.compare-label--apres { right: 1rem; }
+
 /* ============================================================
    GALERIE — passe finition premium (audit)
    Badges d'authentification, ancrages éditoriaux, harmonisation.
@@ -2414,6 +2427,113 @@ section[data-chapter] .eyebrow::after {
 }
 .ed-tag--real::before { background: var(--sauge); box-shadow: 0 0 0 3px rgba(107, 124, 90, 0.22); }
 .ed-tag--proj::before { background: var(--or);   box-shadow: 0 0 0 3px rgba(196, 154, 90, 0.20); }
+
+/* ===== PAGE: projet ===== */
+/* Bloc spécifique à projet.html (anciennement inline dans le <head>).
+   Réutilise les tokens existants ; ne redéfinit aucune règle globale. */
+
+/* 02 · L'adresse — grille d'informations pratiques */
+.info-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem 2rem;
+}
+.info-col { display: flex; flex-direction: column; gap: 0.4rem; }
+.info-col-head {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-corps); /* corrige l'ancien --font-body inexistant */
+  font-weight: 500;
+}
+.info-item-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.3rem;
+}
+.info-item-sm span:last-child {
+  color: var(--or-light);
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+/* 07 · Le calendrier — timeline verticale */
+.cal-steps { display: flex; flex-direction: column; gap: 0; max-width: 42rem; }
+.cal-step { display: flex; gap: 1.5rem; padding-bottom: 2.5rem; position: relative; }
+.cal-step::after {
+  content: "";
+  position: absolute;
+  left: 1.1rem;
+  top: 2.8rem;
+  bottom: 0;
+  width: 1px;
+  background: rgba(196, 154, 90, 0.25);
+}
+.cal-step:last-child::after { display: none; }
+.cal-step:last-child { padding-bottom: 0; }
+.cal-step__dot {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 1.5px solid rgba(196, 154, 90, 0.35);
+  background: var(--noir);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.cal-step__dot svg { width: 14px; height: 14px; color: var(--sauge); opacity: 0; }
+.cal-step.done .cal-step__dot { background: rgba(107, 124, 90, 0.15); border-color: var(--sauge); }
+.cal-step.done .cal-step__dot svg { opacity: 1; color: var(--sauge); }
+.cal-step.active .cal-step__dot { border-color: var(--or); background: rgba(196, 154, 90, 0.1); }
+.cal-dot-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--or);
+  animation: cal-pulse 1.8s ease-in-out infinite;
+}
+/* keyframe renommée pour éviter toute collision globale */
+@keyframes cal-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.cal-step.key .cal-step__dot--key {
+  background: var(--or);
+  border-color: var(--or);
+  color: var(--noir);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: var(--font-corps); /* corrige l'ancien --font-body inexistant */
+}
+.cal-step__body { padding-top: 0.25rem; }
+.cal-step__date {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 0.35rem;
+  font-family: var(--font-corps); /* corrige l'ancien --font-body inexistant */
+}
+.cal-step__title {
+  font-family: var(--font-titre);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--creme);
+  margin-bottom: 0.3rem;
+}
+.cal-step__desc { font-size: 0.85rem; color: var(--muted); line-height: 1.55; }
+
+/* Respect de prefers-reduced-motion : on fige le point clignotant */
+@media (prefers-reduced-motion: reduce) {
+  .cal-dot-inner { animation: none; }
+}
+/* ===== /PAGE: projet ===== */
 
 /* Feature : le numéro éditorial est ancré par un filet doré */
 .ed-feature__note .num { display: inline-block; line-height: 1; }
@@ -2546,3 +2666,108 @@ section[data-chapter] .eyebrow::after {
 .lot-tile:focus-visible .lot-tile__cta { color: var(--or-light); }
 .lot-tile:hover .lot-tile__cta em,
 .lot-tile:focus-visible .lot-tile__cta em { transform: translateX(4px); }
+
+/* ============================================================
+   RETOUR EN HAUT — bouton discret, apparaît au défilement
+   Injecté par main.js (initBackToTop) : aucun markup à dupliquer
+   dans chaque page. Cohérent avec la navbar (verre dépoli + or).
+   ============================================================ */
+.to-top {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 1200;
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(20, 20, 18, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(196, 154, 90, 0.35);
+  border-radius: 50%;
+  color: var(--or);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease), visibility 0.4s,
+              background 0.3s var(--ease), border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.to-top:hover { background: var(--or); color: var(--noir); border-color: var(--or); }
+.to-top svg { width: 18px; height: 18px; }
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: opacity 0.2s linear, visibility 0.2s; transform: none; }
+  .to-top.visible { transform: none; }
+}
+
+/* ===== PAGE: lots ===== */
+/* Bloc spécifique à lots.html. Réutilise les tokens et composants
+   existants ; ne redéfinit aucune règle globale ni aucun token :root.
+   Gains ciblés : accessibilité (caption masquée), micro-affinages sobres. */
+
+/* Caption de tableau réservée aux lecteurs d'écran : donne un nom
+   accessible au comparatif sans impact visuel (cohérent table.elegant). */
+.lots-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Affordance de tri : le focus clavier sur un bouton de tri reprend le
+   même habillage que l'état actif, pour une cible nette au clavier.
+   (:focus-visible global gère déjà l'anneau ; ici on renforce la lisibilité.) */
+.compare-toolbar .sort-btn:focus-visible {
+  border-color: var(--or);
+}
+
+/* Carte de lot : la cible « Appeler » mérite un focus clavier visible
+   distinct du simple survol (le lien n'a pas de fond). */
+.lot-card__call:focus-visible {
+  color: var(--or-light);
+  outline-offset: 3px;
+}
+/* ===== /PAGE: lots ===== */
+
+/* ===== PAGE: contact ===== */
+/* Finition premium propre à la page Contact — migrée depuis le <style>
+   inline du <head> de contact.html (placée en fin de feuille globale, donc
+   prioritaire sur les règles génériques ; n'affecte aucune autre page). */
+
+/* Formulaire : pièce maîtresse de conversion — élévation + filet doré */
+.form { position: relative; box-shadow: 0 34px 80px rgba(0, 0, 0, 0.4); }
+.form::before {
+  content: "";
+  position: absolute; left: 0; right: 0; top: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--or) 28%, var(--or-light) 50%, var(--or) 72%, transparent);
+}
+
+/* Champ actif : le label s'éclaire discrètement */
+.field:focus-within label { color: var(--or-light); }
+
+/* Selects : chevron doré sur-mesure (l'apparence native casse l'élégance) */
+.field select {
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C49A5A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 18px;
+  padding-right: 2.75rem;
+}
+
+/* Indication douce sous un champ (réassurance, non bloquante) */
+.field__help { font-size: 0.72rem; letter-spacing: 0.01em; color: var(--muted); margin-top: -0.05rem; }
+/* ===== /PAGE: contact ===== */
+
+/* ============================================================
+   AJUSTEMENTS GLOBAUX — passe d'audit (orchestrateur)
+   ============================================================ */
+/* Indice de défilement « Défiler » : superflu et à l'étroit sur très petit
+   écran (la barre de statistiques du hero occupe déjà le bas). Masqué ≤ 600px. */
+@media (max-width: 600px) {
+  .scroll-hint { display: none; }
+}
