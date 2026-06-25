@@ -2801,3 +2801,12 @@ section[data-chapter] .eyebrow::after {
 /* Contraste : sur les sections claires, tout texte atténué hérite de la variante foncée lisible
    (--muted-creme ≈ 6:1 sur le beige) au lieu du --muted clair pensé pour les fonds sombres. */
 .bg-creme { --muted: var(--muted-creme); }
+
+/* Plans officiels (PA) — cartes blanches, 2 colonnes, agrandissables */
+.plans-officiels { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 3vw, 2rem); align-items: start; max-width: 56rem; margin-inline: auto; }
+.plan-fig { margin: 0; cursor: zoom-in; background: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: var(--shadow); transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out); }
+.plan-fig:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+.plan-fig img { width: 100%; height: auto; display: block; }
+.plan-fig figcaption { font-size: 0.8rem; color: var(--muted-creme); padding: 0.7rem 1rem; text-align: center; font-family: var(--font-body); letter-spacing: 0.02em; }
+.plan-fig:focus-visible { outline: 2px solid var(--or); outline-offset: 3px; }
+@media (max-width: 720px) { .plans-officiels { grid-template-columns: 1fr; } }
