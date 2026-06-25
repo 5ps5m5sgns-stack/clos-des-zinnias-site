@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Clos des Zinnias — Lotissement à Gardanne (13) · 8 terrains à bâtir</title>
+  <title>Le Clos des Zinnias — 8 terrains à bâtir à Gardanne (13)</title>
   <meta name="description" content="Le Clos des Zinnias : lotissement à Gardanne (13). 8 terrains à bâtir viabilisés de 500 à 1133 m². Livraison Mars 2027. À 20 min d'Aix-en-Provence.">
   <meta name="keywords" content="terrain à bâtir Gardanne, lotissement Gardanne, terrain viabilisé Provence, terrain constructible Bouches-du-Rhône, acheter terrain Aix-en-Provence">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -22,14 +22,17 @@
   <meta property="og:description" content="8 terrains à bâtir viabilisés de 500 à 1133 m², au cœur de la Provence. Livraison Mars 2027, à 20 min d'Aix-en-Provence.">
   <meta property="og:url" content="https://clos-des-zinnias.fr/">
   <meta property="og:image" content="https://clos-des-zinnias.fr/images-optimized/hero-aerial-villas-golden-hour.webp">
-  <meta property="og:image:alt" content="Vue aérienne du lotissement Le Clos des Zinnias à Gardanne en Provence">
+  <meta property="og:image:alt" content="Vue aérienne du lotissement Le Clos des Zinnias à Gardanne en Provence — projection illustrative">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1446">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Le Clos des Zinnias — Lotissement à Gardanne (13)">
   <meta name="twitter:description" content="8 terrains à bâtir viabilisés de 500 à 1133 m² au cœur de la Provence. Livraison Mars 2027.">
   <meta name="twitter:image" content="https://clos-des-zinnias.fr/images-optimized/hero-aerial-villas-golden-hour.webp">
+  <meta name="twitter:image:alt" content="Vue aérienne du lotissement Le Clos des Zinnias à Gardanne en Provence — projection illustrative">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preload" as="image" href="images-optimized/hero-aerial-villas-golden-hour.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images-optimized/hero-aerial-villas-golden-hour.avif" type="image/avif" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,12 +42,12 @@
         "@id": "https://clos-des-zinnias.fr/#organization",
         "name": "Le Clos des Zinnias",
         "legalName": "Ponthieu Développement Holding",
-        "description": "Lotissement premium de 8 terrains à bâtir viabilisés à Gardanne (13), au cœur de la Provence, à 20 minutes d'Aix-en-Provence.",
+        "description": "Lotissement de 8 terrains à bâtir viabilisés à Gardanne (13), au cœur de la Provence, à 20 minutes d'Aix-en-Provence.",
         "url": "https://clos-des-zinnias.fr/",
         "logo": "https://clos-des-zinnias.fr/favicon.svg",
         "image": "https://clos-des-zinnias.fr/images-optimized/hero-aerial-villas-golden-hour.webp",
         "telephone": "+33609204590",
-        "email": "zinias@ponthieu.fr",
+        "email": "zinnias@ponthieu.fr",
         "priceRange": "262 500 € – 336 000 €",
         "currenciesAccepted": "EUR",
         "areaServed": [
@@ -95,9 +98,7 @@
   }
   </script>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
   <script src="animations.js" defer></script>
   <script src="main.js" defer></script>
@@ -110,8 +111,8 @@
       <span class="name">Le Clos des Zinnias</span>
       <span class="sub">Gardanne · 13</span>
     </a>
-    <nav class="nav__links">
-      <a href="index.html">Accueil</a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
       <a href="projet.html">Le Projet</a>
       <a href="lots.html">Les Lots</a>
       <a href="galerie.html">Galerie</a>
@@ -120,38 +121,40 @@
     <div class="nav__cta">
       <a class="btn btn-gold" href="contact.html">Nous contacter</a>
     </div>
-    <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav__burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
   </header>
 
   <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-    <a href="index.html">Accueil</a>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html" aria-current="page">Accueil</a>
     <a href="projet.html">Le Projet</a>
     <a href="lots.html">Les Lots</a>
     <a href="galerie.html">Galerie</a>
     <a href="contact.html">Contact</a>
     <a class="btn btn-gold mm-cta" href="contact.html">Nous contacter</a>
-  </div>
+  </nav>
 
-  <main>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <main id="contenu" tabindex="-1">
 
     <!-- HERO -->
     <section class="hero">
       <div class="hero__media" data-parallax data-speed="0.5">
-        <picture><source srcset="images-optimized/hero-aerial-villas-golden-hour.webp" type="image/webp"><img src="images-optimized/hero-aerial-villas-golden-hour.webp" alt="Vue aérienne du lotissement Le Clos des Zinnias à Gardanne — projection illustrative" width="1232" height="928" fetchpriority="high"></picture>
+        <picture><source srcset="images-optimized/hero-aerial-villas-golden-hour.avif" type="image/avif"><source srcset="images-optimized/hero-aerial-villas-golden-hour.webp" type="image/webp"><img src="images-optimized/hero-aerial-villas-golden-hour.webp" alt="Vue aérienne du lotissement Le Clos des Zinnias à Gardanne — projection illustrative" width="1920" height="1446" fetchpriority="high"></picture>
       </div>
       <div class="hero__overlay"></div>
       <div class="hero__inner">
         <span class="badge">Lancement · Gardanne · 2027</span>
-        <h1>Le Clos<span class="line2 italic-or">des Zinnias</span></h1>
+        <h1>Le Clos <span class="line2 italic-or">des Zinnias</span></h1>
         <p class="hero__tagline">Bâtir en Provence, face à la Sainte-Victoire.<br>Huit terrains viabilisés, livrés prêts à construire · Mars 2027</p>
         <div class="hero__btns">
           <a class="btn btn-gold" href="lots.html">Découvrir les huit lots</a>
           <a class="btn btn-outline" href="galerie.html">Le site vu du ciel</a>
         </div>
-        <a class="hero__phone" href="tel:+33609204590">
+        <a class="hero__phone" href="tel:+33609204590" aria-label="Parler à un conseiller au 06 09 20 45 90">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3h3l1.5 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg>
-          Parler à un conseiller · 06 09 20 45 90
+          Parler à un conseiller · 06&nbsp;09&nbsp;20&nbsp;45&nbsp;90
         </a>
       </div>
       <div class="scroll-hint">Défiler</div>
@@ -176,7 +179,7 @@
         <figure class="compare-still reveal img-hover">
           <span class="compare-label compare-label--avant">Avant.</span>
           <span class="compare-label compare-label--apres">Après.</span>
-          <picture><source srcset="images-optimized/avant-apres-terrain-projet.webp" type="image/webp"><img src="images-optimized/avant-apres-terrain-projet.webp" alt="Comparaison du terrain actuel et du lotissement simulé à la livraison — Mars 2027 · Visualisation illustrative" width="2048" height="1536" loading="lazy" decoding="async"></picture>
+          <picture><source srcset="images-optimized/avant-apres-terrain-projet.avif" type="image/avif"><source srcset="images-optimized/avant-apres-terrain-projet.webp" type="image/webp"><img src="images-optimized/avant-apres-terrain-projet.webp" alt="Comparaison du terrain actuel et du lotissement simulé à la livraison — Mars 2027 · Visualisation illustrative" width="2048" height="1536" loading="lazy" decoding="async"></picture>
           <figcaption class="compare-tag">Terrain tel qu'il est aujourd'hui, à gauche — simulation du lotissement aménagé à droite · Non contractuelle</figcaption>
         </figure>
       </div>
@@ -215,7 +218,7 @@
       <div class="wrap">
         <div class="split">
           <div class="split__media tall img-hover reveal-left">
-            <picture><source srcset="images-optimized/lifestyle-famille-terrasse-piscine.webp" type="image/webp"><img src="images-optimized/lifestyle-famille-terrasse-piscine.webp" alt="Famille profitant d'une terrasse avec piscine en Provence" width="2048" height="1365" loading="lazy" decoding="async"></picture>
+            <picture><source srcset="images-optimized/lifestyle-famille-terrasse-piscine.avif" type="image/avif"><source srcset="images-optimized/lifestyle-famille-terrasse-piscine.webp" type="image/webp"><img src="images-optimized/lifestyle-famille-terrasse-piscine.webp" alt="Terrasse avec piscine dans un cadre provençal — projection illustrative" width="2048" height="1365" loading="lazy" decoding="async"></picture>
           </div>
           <div class="reveal-right">
             <span class="label eyebrow">Environnement</span>
@@ -237,7 +240,7 @@
     <!-- PARALLAX CITATION -->
     <section class="quote-band">
       <div class="quote-band__media" data-parallax data-speed="0.4">
-        <picture><source srcset="images-optimized/coucher-soleil-piscine-cypres.webp" type="image/webp"><img src="images-optimized/coucher-soleil-piscine-cypres.webp" alt="Coucher de soleil sur une piscine bordée de cyprès" width="2048" height="1363" loading="lazy" decoding="async"></picture>
+        <picture><source srcset="images-optimized/coucher-soleil-piscine-cypres.avif" type="image/avif"><source srcset="images-optimized/coucher-soleil-piscine-cypres.webp" type="image/webp"><img src="images-optimized/coucher-soleil-piscine-cypres.webp" alt="Coucher de soleil sur une piscine bordée de cyprès — projection illustrative" width="2048" height="1363" loading="lazy" decoding="async"></picture>
       </div>
       <div class="quote-band__overlay"></div>
       <div class="quote-band__inner reveal">
@@ -252,49 +255,49 @@
         <div class="section-head reveal">
           <span class="label eyebrow">Disponibilités</span>
           <h2 class="section-title">Huit lots, huit orientations</h2>
-          <p class="lead">De 500 à 1 133 m², tous viabilisés et disponibles à la réservation.</p>
+          <p class="lead">De 500 à 1&nbsp;133&nbsp;m², tous viabilisés et disponibles à la réservation.</p>
         </div>
         <div class="lots-grid" data-stagger>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 1 — 1133 m², 262 500 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">01</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">1133<i>m²</i></span><span class="lot-tile__price">262 500 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">1133<i>m²</i></span><span class="lot-tile__price">262&nbsp;500&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 2 — 861 m², 262 500 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">02</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">861<i>m²</i></span><span class="lot-tile__price">262 500 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">861<i>m²</i></span><span class="lot-tile__price">262&nbsp;500&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 3 — 703 m², 294 000 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">03</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">703<i>m²</i></span><span class="lot-tile__price">294 000 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">703<i>m²</i></span><span class="lot-tile__price">294&nbsp;000&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 4 — 500 m² avec jardin privatif en zone N, 335 000 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">04</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">500<i>m²</i></span><span class="lot-tile__price">335 000 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">500<i>m²</i></span><span class="lot-tile__price">335&nbsp;000&nbsp;€</span></div>
             <span class="lot-tile__note">+ jardin privatif · zone N</span>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 5 — 637 m² avec jardin privatif en zone N, 336 000 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">05</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">637<i>m²</i></span><span class="lot-tile__price">336 000 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">637<i>m²</i></span><span class="lot-tile__price">336&nbsp;000&nbsp;€</span></div>
             <span class="lot-tile__note">+ jardin privatif · zone N</span>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 6 — 704 m², 294 000 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">06</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">704<i>m²</i></span><span class="lot-tile__price">294 000 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">704<i>m²</i></span><span class="lot-tile__price">294&nbsp;000&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 7 — 782 m², 304 500 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">07</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">782<i>m²</i></span><span class="lot-tile__price">304 500 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">782<i>m²</i></span><span class="lot-tile__price">304&nbsp;500&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
           <a class="lot-tile reveal" href="lots.html" aria-label="Lot 8 — 600 m², 283 500 €, disponible">
             <div class="lot-tile__head"><span class="lot-tile__num">08</span><span class="badge-dispo">Disponible</span></div>
-            <div class="lot-tile__metrics"><span class="lot-tile__surface">600<i>m²</i></span><span class="lot-tile__price">283 500 €</span></div>
+            <div class="lot-tile__metrics"><span class="lot-tile__surface">600<i>m²</i></span><span class="lot-tile__price">283&nbsp;500&nbsp;€</span></div>
             <span class="lot-tile__cta">Voir le lot <em>→</em></span>
           </a>
         </div>
@@ -307,7 +310,7 @@
     <!-- VILLA -->
     <section class="bg-creme rule-top" style="padding-block:0;">
       <div class="fullimg reveal reveal-img">
-        <picture><source srcset="images-optimized/villa-piscine-jardin-provencal.webp" type="image/webp"><img src="images-optimized/villa-piscine-jardin-provencal.webp" alt="Exemple de villa provençale avec piscine et jardin — visualisation non contractuelle" width="2048" height="1365" loading="lazy" decoding="async"></picture>
+        <picture><source srcset="images-optimized/villa-piscine-jardin-provencal.avif" type="image/avif"><source srcset="images-optimized/villa-piscine-jardin-provencal.webp" type="image/webp"><img src="images-optimized/villa-piscine-jardin-provencal.webp" alt="Exemple de villa provençale avec piscine et jardin — visualisation non contractuelle" width="2048" height="1365" loading="lazy" decoding="async"></picture>
         <span class="fullimg__cap">Visualisation non contractuelle · Exemple de maison pouvant être construite sur l'un des lots du Clos des Zinnias</span>
       </div>
     </section>
@@ -323,7 +326,7 @@
           <div class="assurance__item reveal">
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
             <h3>Permis purgé</h3>
-            <p>Permis d'Aménager délivré et modificatif approuvé — un cadre juridique sécurisé.</p>
+            <p>Permis d'Aménager délivré et modificatif approuvé : un cadre juridique sécurisé.</p>
           </div>
           <div class="assurance__item reveal">
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg>
@@ -344,13 +347,13 @@
       <div class="wrap">
         <div class="cta-band__inner reveal">
           <span class="label eyebrow">Réservations ouvertes</span>
-          <h2 class="cta-band__title">Huit lots. Le vôtre, <span class="accent">choisi avant les autres</span></h2>
-          <p class="cta-band__sub">Les terrains sont commercialisés en direct, sans intermédiaire. Réservez le vôtre, ou convenons d'une visite du site à Gardanne.</p>
+          <h2 class="cta-band__title">Huit lots à bâtir, <span class="accent">à choisir selon vos envies</span></h2>
+          <p class="cta-band__sub">Les terrains sont commercialisés en direct, sans intermédiaire. Choisissez le vôtre, ou convenons d'une visite du site à Gardanne.</p>
           <div class="cta-band__btns">
             <a class="btn btn-gold" href="lots.html">Choisir mon lot</a>
-            <a class="btn btn-outline" href="tel:+33609204590">Appeler le 06 09 20 45 90</a>
+            <a class="btn btn-outline" href="tel:+33609204590" aria-label="Appeler le 06 09 20 45 90">Appeler le 06&nbsp;09&nbsp;20&nbsp;45&nbsp;90</a>
           </div>
-          <div><span class="cta-band__scarcity">8 lots seulement · disponibles à ce jour</span></div>
+          <div><span class="cta-band__scarcity">Huit lots disponibles à la réservation</span></div>
         </div>
       </div>
     </section>
@@ -380,21 +383,21 @@
         <div class="footer__col">
           <h5>Informations légales</h5>
           <ul>
-            <li><a href="projet.html">PA n° 013 041 22 K0001</a></li>
-            <li><a href="projet.html">Zone UD1 · PLU Gardanne</a></li>
-            <li><a href="projet.html">PA Modificatif 04/2026</a></li>
-            <li><a href="lots.html">Règlement de lotissement</a></li>
+            <li><a href="projet.html#adresse">PA n° 013 041 22 K0001</a></li>
+            <li><a href="projet.html#adresse">Zone UD1 · PLU Gardanne</a></li>
+            <li><a href="projet.html#adresse">PA Modificatif 04/2026</a></li>
+            <li><a href="lots.html#regles">Règlement de lotissement</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h5>Contact</h5>
           <p>Avenue du Pilon du Roy<br>13120 Gardanne</p>
-          <p><a href="tel:+33609204590">06 09 20 45 90</a></p>
-          <p><a href="mailto:zinias@ponthieu.fr">zinias@ponthieu.fr</a></p>
+          <p><a href="tel:+33609204590" aria-label="Téléphone : 06 09 20 45 90">06&nbsp;09&nbsp;20&nbsp;45&nbsp;90</a></p>
+          <p><a href="mailto:zinnias@ponthieu.fr">zinnias@ponthieu.fr</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        © 2026 PONTHIEU DÉVELOPPEMENT HOLDING · Réf. PA 013 041 22 K0001
+        © 2026 PONTHIEU DH · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · Réf. PA 013 041 22 K0001
       </div>
     </div>
   </footer>

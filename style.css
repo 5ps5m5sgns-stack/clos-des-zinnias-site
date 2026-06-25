@@ -2413,11 +2413,12 @@ section[data-chapter] .eyebrow::after {
   position: absolute; top: 1rem; left: 1rem; z-index: 2;
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.4rem 0.8rem;
-  font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase;
+  font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--creme);
-  background: rgba(12, 12, 10, 0.5);
+  background: rgba(12, 12, 10, 0.66);
   border: 1px solid rgba(196, 154, 90, 0.32);
   -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
   pointer-events: none;
 }
 .ed-tag::before {
@@ -2761,6 +2762,17 @@ section[data-chapter] .eyebrow::after {
 
 /* Indication douce sous un champ (réassurance, non bloquante) */
 .field__help { font-size: 0.72rem; letter-spacing: 0.01em; color: var(--muted); margin-top: -0.05rem; }
+
+/* Regroupements sémantiques du formulaire (fieldset/legend) + champs requis */
+.form-fieldset { border: 0; padding: 0; margin: 0 0 1.75rem; }
+.form-fieldset > legend {
+  padding: 0; margin-bottom: 0.9rem;
+  font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--or); font-family: var(--font-body); font-weight: 500;
+}
+.form__required-note { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.25rem; }
+.req { color: var(--or); margin-left: 0.15em; }
+.field__opt { color: var(--muted); font-size: 0.85em; letter-spacing: 0; }
 /* ===== /PAGE: contact ===== */
 
 /* ============================================================
@@ -2771,3 +2783,122 @@ section[data-chapter] .eyebrow::after {
 @media (max-width: 600px) {
   .scroll-hint { display: none; }
 }
+
+/* Lien d'évitement — hors écran, révélé en haut de page au focus clavier */
+.skip-link {
+  position: fixed; top: 0; left: 0; z-index: 2100;
+  transform: translateY(-120%);
+  padding: 0.7rem 1.2rem;
+  background: var(--or); color: var(--noir);
+  font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.06em;
+  transition: transform 0.25s var(--ease);
+}
+.skip-link:focus { transform: translateY(0); outline: 2px solid var(--noir); outline-offset: 2px; }
+
+/* Titres de jalons du calendrier (projet) : neutralise la marge haute par défaut de <h3> */
+.cal-step__title { margin-top: 0; }
+
+/* ===== PAGE: projet — section 02 « L'adresse » revisitée ===== */
+/* Proximités en cartes claires + fiche technique en tableau, sur fond clair
+   (remplace l'ancien bloc info-grid/dossier sur fond noir). Bloc isolé. */
+.adresse-data { margin-top: 3.5rem; }
+.adresse-data__title {
+  font-family: var(--font-titre);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--texte);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.adresse-data__title.mt-3 { margin-top: 3.5rem; }
+
+/* Cartes « à proximité » */
+.prox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+.prox-card {
+  background: #fff;
+  border: 1px solid rgba(12, 12, 10, 0.08);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+.prox-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.09);
+  border-color: rgba(196, 154, 90, 0.4);
+}
+.prox-card__head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.28);
+}
+.prox-card__head svg { width: 20px; height: 20px; color: var(--or); flex: none; }
+.prox-card__head span {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--texte);
+}
+.prox-list { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.prox-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.92rem;
+  color: var(--texte);
+}
+.prox-time {
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--or);
+}
+
+/* Fiche technique — tableau propre à lignes alternées */
+.fiche {
+  width: 100%;
+  max-width: 60rem;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid rgba(12, 12, 10, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+.fiche tr { border-bottom: 1px solid rgba(12, 12, 10, 0.07); }
+.fiche tr:last-child { border-bottom: 0; }
+.fiche tbody tr:nth-child(even) { background: rgba(196, 154, 90, 0.05); }
+.fiche th, .fiche td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1rem 1.4rem;
+}
+.fiche th {
+  width: 34%;
+  font-family: var(--font-corps);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--or);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.fiche td { color: var(--texte); font-size: 0.95rem; font-weight: 400; }
+@media (max-width: 560px) {
+  .fiche th, .fiche td { display: block; width: 100%; }
+  .fiche th { padding-bottom: 0.25rem; white-space: normal; }
+  .fiche td { padding-top: 0; padding-bottom: 1rem; }
+}
+/* ===== /PAGE: projet ===== */
+
+/* Contraste : sur les sections claires, tout texte atténué hérite de la variante foncée lisible
+   (--muted-creme ≈ 6:1 sur le beige) au lieu du --muted clair pensé pour les fonds sombres. */
+.bg-creme { --muted: var(--muted-creme); }

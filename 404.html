@@ -8,9 +8,7 @@
   <meta name="robots" content="noindex, follow">
   <meta name="theme-color" content="#0C0C0A">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
   <script src="animations.js" defer></script>
   <script src="main.js" defer></script>
@@ -23,7 +21,7 @@
       <span class="name">Le Clos des Zinnias</span>
       <span class="sub">Gardanne · 13</span>
     </a>
-    <nav class="nav__links">
+    <nav class="nav__links" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="projet.html">Le Projet</a>
       <a href="lots.html">Les Lots</a>
@@ -31,34 +29,36 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav__cta"><a class="btn btn-gold" href="contact.html">Nous contacter</a></div>
-    <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav__burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
   </header>
-  <div class="mobile-menu">
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
     <a href="index.html">Accueil</a>
     <a href="projet.html">Le Projet</a>
     <a href="lots.html">Les Lots</a>
     <a href="galerie.html">Galerie</a>
     <a href="contact.html">Contact</a>
     <a class="btn btn-gold mm-cta" href="contact.html">Nous contacter</a>
-  </div>
+  </nav>
 
-  <main>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <main id="contenu" tabindex="-1">
     <section class="hero hero--50">
       <div class="hero__media" data-parallax data-speed="0.4">
-        <picture><source srcset="images-optimized/paysage-collines-gardanne-provence.webp" type="image/webp"><img src="images-optimized/paysage-collines-gardanne-provence.webp" alt="Les collines de Gardanne en Provence" width="2048" height="1153" decoding="async" fetchpriority="high"></picture>
+        <picture><source srcset="images-optimized/paysage-collines-gardanne-provence.avif" type="image/avif"><source srcset="images-optimized/paysage-collines-gardanne-provence.webp" type="image/webp"><img src="images-optimized/paysage-collines-gardanne-provence.webp" alt="Les collines de Gardanne en Provence" width="2048" height="1153" decoding="async" fetchpriority="high"></picture>
       </div>
       <div class="hero__overlay hero__overlay--heavy"></div>
       <div class="hero__inner">
         <span class="badge">Erreur 404</span>
-        <h1 class="hero-sub-title">Cette page s'est égarée<span class="line2 italic-or">dans les collines</span></h1>
+        <h1 class="hero-sub-title">Cette page s'est égarée <span class="line2 italic-or">dans les collines</span></h1>
         <p class="hero-sub-subtitle">La page que vous cherchez n'existe pas ou a été déplacée. Reprenons le chemin du Clos des Zinnias.</p>
         <div class="hero__btns mt-3">
           <a class="btn btn-gold" href="index.html">Retour à l'accueil</a>
           <a class="btn btn-outline" href="lots.html">Découvrir les 8 lots</a>
         </div>
-        <a class="hero__phone" href="tel:+33609204590">
+        <a class="hero__phone" href="tel:+33609204590" aria-label="Parler à un conseiller au 06 09 20 45 90">
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg>
-          Parler à un conseiller · 06 09 20 45 90
+          Parler à un conseiller · 06&nbsp;09&nbsp;20&nbsp;45&nbsp;90
         </a>
       </div>
     </section>
@@ -72,7 +72,7 @@
         <div class="footer__brand footer__col">
           <div class="name">Le Clos des Zinnias</div>
           <div class="sub">Gardanne · Bouches-du-Rhône</div>
-          <p>Lotissement premium de 8 terrains à bâtir viabilisés, au cœur de la Provence, à 20 minutes d'Aix-en-Provence.</p>
+          <p>8 terrains à bâtir viabilisés à Gardanne, à 20 minutes d'Aix-en-Provence.</p>
         </div>
         <div class="footer__col">
           <h5>Navigation</h5>
@@ -87,21 +87,21 @@
         <div class="footer__col">
           <h5>Informations légales</h5>
           <ul>
-            <li><a href="projet.html">PA n° 013 041 22 K0001</a></li>
-            <li><a href="projet.html">Zone UD1 · PLU Gardanne</a></li>
-            <li><a href="projet.html">PA Modificatif 04/2026</a></li>
-            <li><a href="lots.html">Règlement de lotissement</a></li>
+            <li><a href="projet.html#adresse">PA n° 013 041 22 K0001</a></li>
+            <li><a href="projet.html#adresse">Zone UD1 · PLU Gardanne</a></li>
+            <li><a href="projet.html#adresse">PA Modificatif 04/2026</a></li>
+            <li><a href="lots.html#regles">Règlement de lotissement</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h5>Contact</h5>
           <p>Avenue du Pilon du Roy<br>13120 Gardanne</p>
           <p><a href="tel:+33609204590">06 09 20 45 90</a></p>
-          <p><a href="mailto:zinias@ponthieu.fr">zinias@ponthieu.fr</a></p>
+          <p><a href="mailto:zinnias@ponthieu.fr">zinnias@ponthieu.fr</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        © 2026 PONTHIEU DÉVELOPPEMENT HOLDING · Réf. PA 013 041 22 K0001
+        © 2026 PONTHIEU DH · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · Réf. PA 013 041 22 K0001
       </div>
     </div>
   </footer>

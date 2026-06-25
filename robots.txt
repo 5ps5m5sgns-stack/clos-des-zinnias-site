@@ -3,8 +3,9 @@
 
 User-agent: *
 Allow: /
-
-# Pas de pages privées à exclure
 Disallow:
+
+# Pas de pages privées à exclure.
+# La page 404 n'est pas listée au sitemap (noindex) mais reste crawlable.
 
 Sitemap: https://clos-des-zinnias.fr/sitemap.xml

@@ -72,6 +72,7 @@
       const willOpen = open ?? !menu.classList.contains("open");
       menu.classList.toggle("open", willOpen);
       burger.classList.toggle("open", willOpen);
+      burger.setAttribute("aria-expanded", willOpen ? "true" : "false"); // synchronise l'état a11y
       document.body.classList.toggle("menu-open", willOpen);
       document.body.style.overflow = willOpen ? "hidden" : "";
     };
@@ -101,6 +102,8 @@
      PAGE TRANSITIONS (fade out → navigate)
      ---------------------------------------------------------- */
   function initPageTransitions() {
+    // Pas de fondu de transition (ni de délai) si l'utilisateur préfère moins d'animation
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     document.querySelectorAll('a[href]').forEach((a) => {
       const href = a.getAttribute("href");
       if (!href) return;
@@ -262,6 +265,14 @@
       if (e.key === "Escape") close();
       if (e.key === "ArrowLeft") show(idx - 1);
       if (e.key === "ArrowRight") show(idx + 1);
+      // piège à focus : Tab/Shift+Tab bouclent à l'intérieur de la visionneuse
+      if (e.key === "Tab") {
+        const f = [...box.querySelectorAll("button")].filter((b) => b.offsetParent !== null);
+        if (!f.length) return;
+        const first = f[0], lastEl = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); first.focus(); }
+      }
     });
 
     // swipe
@@ -304,6 +315,17 @@
     // Ordre d'origine, pour pouvoir revenir à l'état initial (3e clic)
     const original = Array.from(tbody.querySelectorAll("tr"));
 
+    // Région live : annonce le changement de tri aux lecteurs d'écran
+    let live = document.getElementById("sort-live");
+    if (!live) {
+      live = document.createElement("div");
+      live.id = "sort-live";
+      live.className = "lots-sr-only";
+      live.setAttribute("aria-live", "polite");
+      table.parentNode.insertBefore(live, table);
+    }
+    const sortLabels = { surface: "surface", price: "prix", ppm: "prix au mètre carré" };
+
     // état initial : aucun tri actif
     btns.forEach((b) => { if (!b.hasAttribute("aria-pressed")) b.setAttribute("aria-pressed", "false"); });
 
@@ -341,6 +363,11 @@
           });
         }
         rows.forEach((r) => tbody.appendChild(r));
+
+        // annonce a11y du nouvel ordre
+        live.textContent = next === "none"
+          ? "Tableau remis dans l'ordre d'origine."
+          : `Tableau trié par ${sortLabels[key] || key} ${next === "asc" ? "croissant" : "décroissant"}.`;
       });
     });
   }
@@ -412,6 +439,7 @@
       if (!errEl) {
         errEl = document.createElement("div");
         errEl.className = "form-error";
+        errEl.setAttribute("role", "alert"); // annonce immédiate aux lecteurs d'écran
         (success || form).after(errEl);
       }
       errEl.textContent = msg;
