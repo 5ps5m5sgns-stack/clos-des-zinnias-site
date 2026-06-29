@@ -1,4 +1,4 @@
-# Le Clos des Zinnias — Gardanne (13)
+# Le Clos des Zinnias — Biver (13)
 # https://clos-des-zinnias.fr
 
 User-agent: *
