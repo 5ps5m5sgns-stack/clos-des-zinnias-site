@@ -208,6 +208,7 @@
       ${multiple ? '<button class="lightbox__nav lightbox__nav--prev" aria-label="Précédent">&#8249;</button>' : ""}
       <img alt="">
       ${multiple ? '<button class="lightbox__nav lightbox__nav--next" aria-label="Suivant">&#8250;</button>' : ""}
+      <div class="lightbox__hint">Cliquez pour zoomer · glissez pour déplacer</div>
       <div class="lightbox__cap"></div>`;
     document.body.appendChild(box);
 
@@ -215,6 +216,90 @@
     const capEl = box.querySelector(".lightbox__cap");
     const countEl = box.querySelector(".lightbox__count");
     let idx = 0;
+
+    /* ----- ZOOM / PAN / PINCH (molette, clic, double-tap, pincée) ----- */
+    let s = 1, tx = 0, ty = 0;
+    const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+    const cx = () => window.innerWidth / 2;
+    const cy = () => window.innerHeight / 2;
+    function applyZoom() {
+      imgEl.style.transform = `translate(${tx}px, ${ty}px) scale(${s})`;
+      imgEl.classList.toggle("is-zoomed", s > 1);
+      box.classList.toggle("zoomed", s > 1);
+    }
+    function resetZoom() {
+      s = 1; tx = 0; ty = 0;
+      imgEl.classList.remove("panning");
+      applyZoom();
+    }
+    function zoomAt(clientX, clientY, ns) {
+      ns = clamp(ns, 1, 5);
+      const ux = clientX - cx(), uy = clientY - cy();
+      tx = ux - (ns / s) * (ux - tx);
+      ty = uy - (ns / s) * (uy - ty);
+      s = ns;
+      if (s === 1) { tx = 0; ty = 0; }
+      applyZoom();
+    }
+
+    imgEl.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      zoomAt(e.clientX, e.clientY, s * (e.deltaY < 0 ? 1.22 : 1 / 1.22));
+    }, { passive: false });
+    imgEl.addEventListener("click", (e) => e.stopPropagation());
+
+    const pointers = new Map();
+    let panStart = null, startTx = 0, startTy = 0, moved = 0, pinchDist = 0, pinchS = 1;
+    const dist = (a, b) => Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+
+    imgEl.addEventListener("pointerdown", (e) => {
+      imgEl.setPointerCapture(e.pointerId);
+      pointers.set(e.pointerId, e);
+      moved = 0;
+      if (pointers.size === 1) {
+        panStart = { x: e.clientX, y: e.clientY, dx: 0 };
+        startTx = tx; startTy = ty;
+        if (s > 1) imgEl.classList.add("panning");
+      } else if (pointers.size === 2) {
+        const p = [...pointers.values()];
+        pinchDist = dist(p[0], p[1]); pinchS = s;
+        imgEl.classList.add("panning");
+      }
+    });
+    imgEl.addEventListener("pointermove", (e) => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, e);
+      if (pointers.size === 2) {
+        const p = [...pointers.values()];
+        const mid = { x: (p[0].clientX + p[1].clientX) / 2, y: (p[0].clientY + p[1].clientY) / 2 };
+        const d = dist(p[0], p[1]);
+        if (pinchDist) zoomAt(mid.x, mid.y, pinchS * (d / pinchDist));
+        moved = 999;
+      } else if (pointers.size === 1 && panStart) {
+        const dx = e.clientX - panStart.x, dy = e.clientY - panStart.y;
+        moved = Math.hypot(dx, dy);
+        panStart.dx = dx;
+        if (s > 1) { tx = startTx + dx; ty = startTy + dy; applyZoom(); }
+      }
+    });
+    function endPointer(e) {
+      const wasSingle = pointers.size === 1;
+      const dx = panStart ? panStart.dx : 0;
+      pointers.delete(e.pointerId);
+      if (pointers.size < 2) pinchDist = 0;
+      if (pointers.size === 0) imgEl.classList.remove("panning");
+      if (wasSingle && panStart) {
+        if (s === 1) {
+          if (multiple && Math.abs(dx) > 50) { show(idx + (dx < 0 ? 1 : -1)); }
+          else if (moved < 10) { zoomAt(e.clientX, e.clientY, 2.5); }
+        } else if (moved < 10) {
+          resetZoom();
+        }
+      }
+      panStart = null;
+    }
+    imgEl.addEventListener("pointerup", endPointer);
+    imgEl.addEventListener("pointercancel", endPointer);
 
     const pad = (n) => String(n).padStart(2, "0");
 
@@ -230,6 +315,7 @@
       imgEl.alt = items[idx].cap;
       capEl.textContent = items[idx].cap;
       if (countEl) countEl.innerHTML = `<b>${pad(idx + 1)}</b> / ${pad(items.length)}`;
+      resetZoom();
       preload(idx + 1);
       preload(idx - 1);
     }
@@ -275,13 +361,6 @@
       }
     });
 
-    // swipe
-    let sx = 0;
-    box.addEventListener("touchstart", (e) => { sx = e.touches[0].clientX; }, { passive: true });
-    box.addEventListener("touchend", (e) => {
-      const dx = e.changedTouches[0].clientX - sx;
-      if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
-    });
   }
 
   /* ----------------------------------------------------------
