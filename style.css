@@ -1247,6 +1247,55 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 
 
 /* ============================================================
+   FORMULAIRE & CARTES CONTACT — variante claire sur fonds crème
+   (le noir intégral est réservé aux sections immersives)
+   ============================================================ */
+.bg-creme .form {
+  background: #FFFDF7;
+  border-color: rgba(124, 94, 38, 0.25);
+  box-shadow: var(--shadow);
+}
+.bg-creme .form__head h3 { color: var(--texte); }
+.bg-creme .form__head p,
+.bg-creme .form__required-note,
+.bg-creme .form__note,
+.bg-creme .checkbox label,
+.bg-creme .field__opt,
+.bg-creme .field__help { color: var(--muted-creme); }
+.bg-creme .field label { color: var(--or-deep); }
+.bg-creme .field input,
+.bg-creme .field select,
+.bg-creme .field textarea {
+  background: #fff;
+  border-color: rgba(124, 94, 38, 0.28);
+  color: var(--texte);
+}
+.bg-creme .field input::placeholder,
+.bg-creme .field textarea::placeholder { color: #9a9482; }
+.bg-creme .field select option { background: #fff; color: var(--texte); }
+.bg-creme .form-success { color: var(--texte); background: rgba(107, 124, 90, 0.14); }
+.bg-creme .contact-card { background: #FFFDF7; border-color: rgba(124, 94, 38, 0.22); }
+.bg-creme .contact-card .lbl { color: var(--muted-creme); }
+.bg-creme .contact-card .val { color: var(--texte); }
+.bg-creme .contact-card__ic { color: var(--or-deep); border-color: rgba(124, 94, 38, 0.35); }
+.bg-creme .contact-card:hover .contact-card__ic { background: var(--or); color: var(--noir); border-color: var(--or); }
+
+/* ============================================================
+   KEN BURNS — lente respiration des grandes photos (.fullimg.kenburns)
+   Démarre après la révélation ; désactivé si prefers-reduced-motion.
+   ============================================================ */
+.fullimg.kenburns.in img {
+  animation: kenburns 26s ease-in-out 1.3s infinite alternate;
+}
+@keyframes kenburns {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.07) translate(-1.2%, -1%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fullimg.kenburns.in img { animation: none; }
+}
+
+/* ============================================================
    BANDEAU CONSENTEMENT (CNIL) — accepter/refuser à égalité
    ============================================================ */
 .consent-banner {
@@ -1370,7 +1419,17 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 /* Grille des lots — 3 colonnes, carte vedette sur 2 */
 .lots-detail { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 @media (max-width: 1024px) { .lots-detail { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px)  { .lots-detail { grid-template-columns: 1fr; } }
+@media (max-width: 640px)  {
+  .lots-detail { grid-template-columns: 1fr; gap: 0.9rem; }
+  .lot-card { padding: 1.15rem 1.25rem; }
+  .lot-card__top { margin-bottom: 0.6rem; }
+  .lot-card__num { font-size: 1.7rem; }
+  .lot-card__surface { font-size: 2rem; }
+  /* les stats détaillées (emprise, SDP, espaces libres) restent lisibles dans le comparateur */
+  .lot-card__stats { display: none; }
+  .lot-card__badges { margin-top: 0.6rem; }
+  .lot-card__actions { margin-top: 0.9rem; }
+}
 
 .lot-card {
   position: relative;
@@ -2028,9 +2087,18 @@ section[data-chapter] .eyebrow::after {
 }
 
 /* ---- Bande de réassurance (accompagnement) ---- */
-.assurance { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 4vw, 3rem); }
-@media (max-width: 760px) { .assurance { grid-template-columns: 1fr; gap: 2.25rem; } }
-.assurance__item { text-align: center; }
+.assurance { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); }
+@media (max-width: 760px) { .assurance { grid-template-columns: 1fr; } }
+.assurance__item {
+  text-align: center;
+  padding: clamp(1.75rem, 4vw, 2.75rem) 1.5rem;
+  border: 1px solid rgba(196, 154, 90, 0.28);
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(196, 154, 90, 0.05), transparent 60%);
+  transition: border-color 0.4s, transform 0.4s var(--ease);
+}
+.assurance__item:hover { border-color: var(--or); transform: translateY(-4px); }
+.bg-creme .assurance__item { border-color: rgba(124, 94, 38, 0.28); background: linear-gradient(180deg, rgba(196, 154, 90, 0.08), transparent 60%); }
 .assurance__item .ico { width: 30px; height: 30px; color: var(--or); margin: 0 auto 1rem; }
 .assurance__item h3 { font-size: 1.4rem; color: var(--creme); margin-bottom: 0.5rem; }
 .bg-creme .assurance__item h3 { color: var(--texte); }
@@ -2299,19 +2367,21 @@ section[data-chapter] .eyebrow::after {
 .ed-cinema__media img { width: 100%; height: 100%; object-fit: cover; }
 .ed-cinema__frame::after {
   content: ""; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(transparent 55%, rgba(12,12,10,0.55));
+  background: linear-gradient(transparent 45%, rgba(12,12,10,0.72));
   transition: background 0.5s var(--ease);
 }
 .ed-cinema__frame:hover::after { background: linear-gradient(rgba(196,154,90,0.10), rgba(12,12,10,0.6)); }
 .ed-cinema__cap {
   position: absolute; z-index: 2;
   left: clamp(1.1rem, 4vw, 3rem); bottom: clamp(1.1rem, 4vw, 3rem);
+  right: clamp(1.1rem, 4vw, 3rem);
 }
 .ed-cinema__cap .l {
   display: block; font-size: 0.62rem; letter-spacing: 0.2em;
   text-transform: uppercase; color: var(--or-light); margin-bottom: 0.4rem;
 }
 .ed-cinema__cap .t {
+  display: block; margin-top: 0.35rem;
   font-family: var(--font-titre); font-weight: 300;
   font-size: clamp(1.4rem, 3.5vw, 2.6rem); color: var(--creme);
   line-height: 1.1; max-width: 18ch;
