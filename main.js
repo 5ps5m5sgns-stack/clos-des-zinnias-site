@@ -119,7 +119,7 @@
         if (e.metaKey || e.ctrlKey || e.shiftKey) return;
         e.preventDefault();
         document.body.classList.add("page-leaving");
-        setTimeout(() => { window.location.href = href; }, 360);
+        setTimeout(() => { window.location.href = href; }, 150);
       });
     });
   }
@@ -496,6 +496,24 @@
   }
 
   /* ----------------------------------------------------------
+     FAÇADE GOOGLE MAPS — l'iframe (cookies tiers) n'est chargée
+     qu'au clic de l'utilisateur (conformité CNIL).
+     ---------------------------------------------------------- */
+  function initMapFacade() {
+    document.querySelectorAll(".map-facade").forEach((facade) => {
+      const btn = facade.querySelector("[data-map-load]");
+      if (!btn) return;
+      btn.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.src = facade.dataset.mapSrc;
+        iframe.title = facade.dataset.mapTitle || "Carte";
+        iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+        facade.replaceWith(iframe);
+      });
+    });
+  }
+
+  /* ----------------------------------------------------------
      CONTACT FORM
      ---------------------------------------------------------- */
   function initForm() {
@@ -552,7 +570,11 @@
           headers: { Accept: "application/json" },
         });
         if (res.ok) {
-          showSuccess();
+          // Redirige vers la page de remerciement : URL de conversion mesurable
+          // (Pixel Lead, objectifs GA/Meta) et confirmation claire pour l'utilisateur.
+          const lot = form.querySelector('[name="lot"]');
+          const q = lot && lot.value && lot.value !== "tous" ? "?lot=" + encodeURIComponent(lot.value) : "";
+          window.location.href = "merci.html" + q;
         } else {
           if (btn) { btn.textContent = original; btn.disabled = false; }
           showError("Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous appeler au 06 09 20 45 90.");
@@ -630,6 +652,7 @@
     initLotSort();
     initLotPrefill();
     initFieldValidation();
+    initMapFacade();
     initForm();
     initContactIntent();
     initPageTransitions();

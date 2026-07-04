@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="animations.js" defer></script>
   <script src="main.js" defer></script>
+  <script src="consent.js" defer></script>
 </head>
 <body>
 
@@ -45,7 +46,7 @@
   <main id="contenu" tabindex="-1">
     <section class="hero hero--50">
       <div class="hero__media" data-parallax data-speed="0.4">
-        <picture><source srcset="images-optimized/paysage-collines-gardanne-provence.avif" type="image/avif"><source srcset="images-optimized/paysage-collines-gardanne-provence.webp" type="image/webp"><img src="images-optimized/paysage-collines-gardanne-provence.webp" alt="Les collines de Biver en Provence" width="2048" height="1153" decoding="async" fetchpriority="high"></picture>
+        <picture><source srcset="images-optimized/paysage-collines-gardanne-provence-640.avif 640w, images-optimized/paysage-collines-gardanne-provence-1024.avif 1024w, images-optimized/paysage-collines-gardanne-provence-1536.avif 1536w, images-optimized/paysage-collines-gardanne-provence.avif 2048w" sizes="100vw" type="image/avif"><source srcset="images-optimized/paysage-collines-gardanne-provence-640.webp 640w, images-optimized/paysage-collines-gardanne-provence-1024.webp 1024w, images-optimized/paysage-collines-gardanne-provence-1536.webp 1536w, images-optimized/paysage-collines-gardanne-provence.webp 2048w" sizes="100vw" type="image/webp"><img src="images-optimized/paysage-collines-gardanne-provence.webp" srcset="images-optimized/paysage-collines-gardanne-provence-640.webp 640w, images-optimized/paysage-collines-gardanne-provence-1024.webp 1024w, images-optimized/paysage-collines-gardanne-provence-1536.webp 1536w, images-optimized/paysage-collines-gardanne-provence.webp 2048w" sizes="100vw" alt="Les collines de Biver en Provence" width="2048" height="1153" decoding="async" fetchpriority="high"></picture>
       </div>
       <div class="hero__overlay hero__overlay--heavy"></div>
       <div class="hero__inner">
@@ -101,7 +102,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        © 2026 PONTHIEU DH · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · Réf. PA 013 041 22 K0001
+        © 2026 PONTHIEU DH · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="#" data-consent-open>Cookies</a> · Réf. PA 013 041 22 K0001
       </div>
     </div>
   </footer>

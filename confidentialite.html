@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="animations.js" defer></script>
   <script src="main.js" defer></script>
+  <script src="consent.js" defer></script>
 </head>
 <body>
 
@@ -56,7 +57,7 @@
     <!-- HERO -->
     <section class="hero hero--50">
       <div class="hero__media" data-parallax data-speed="0.4">
-        <picture><source srcset="images-optimized/detail-lavande-olivier-pierre.avif" type="image/avif"><source srcset="images-optimized/detail-lavande-olivier-pierre.webp" type="image/webp"><img src="images-optimized/detail-lavande-olivier-pierre.webp" alt="Détail de lavande et d'olivier en Provence" width="2048" height="1365" decoding="async" fetchpriority="high"></picture>
+        <picture><source srcset="images-optimized/detail-lavande-olivier-pierre-640.avif 640w, images-optimized/detail-lavande-olivier-pierre-1024.avif 1024w, images-optimized/detail-lavande-olivier-pierre-1536.avif 1536w, images-optimized/detail-lavande-olivier-pierre.avif 2048w" sizes="100vw" type="image/avif"><source srcset="images-optimized/detail-lavande-olivier-pierre-640.webp 640w, images-optimized/detail-lavande-olivier-pierre-1024.webp 1024w, images-optimized/detail-lavande-olivier-pierre-1536.webp 1536w, images-optimized/detail-lavande-olivier-pierre.webp 2048w" sizes="100vw" type="image/webp"><img src="images-optimized/detail-lavande-olivier-pierre.webp" srcset="images-optimized/detail-lavande-olivier-pierre-640.webp 640w, images-optimized/detail-lavande-olivier-pierre-1024.webp 1024w, images-optimized/detail-lavande-olivier-pierre-1536.webp 1536w, images-optimized/detail-lavande-olivier-pierre.webp 2048w" sizes="100vw" alt="Détail de lavande et d'olivier en Provence" width="2048" height="1365" decoding="async" fetchpriority="high"></picture>
       </div>
       <div class="hero__overlay hero__overlay--heavy"></div>
       <div class="hero__inner">
@@ -96,12 +97,17 @@
         <p class="lead mt-1">Vos données sont conservées le temps nécessaire au traitement de votre demande, puis archivées et supprimées au plus tard <strong>3 ans</strong> après notre dernier contact, sauf obligation légale de conservation plus longue.</p>
 
         <h2 class="section-title mt-3">Cookies &amp; traceurs</h2>
-        <p class="lead mt-1">Ce site n'utilise <strong>aucun cookie de mesure d'audience ni de publicité</strong>. Les polices d'écriture sont hébergées sur notre propre serveur (aucun appel à Google Fonts). La page Contact intègre une carte <strong>Google Maps</strong> qui, une fois affichée, est susceptible de déposer des cookies tiers relevant de la politique de confidentialité de Google.</p>
+        <p class="lead mt-1">Ce site ne dépose <strong>aucun traceur sans votre accord</strong>. Les polices d'écriture sont hébergées sur notre propre serveur (aucun appel à Google Fonts).</p>
+        <ul class="feature-list mt-1">
+          <li><strong>Pixel Meta</strong> (Meta Platforms Ireland Ltd.) — mesure de l'efficacité de nos annonces publicitaires. Déposé <strong>uniquement si vous l'acceptez</strong> via le bandeau de consentement. Vous pouvez retirer votre accord à tout moment via le lien «&nbsp;Cookies&nbsp;» en pied de page ; votre choix est conservé 6&nbsp;mois.</li>
+          <li><strong>Google Maps</strong> — la carte interactive de la page Contact n'est chargée <strong>qu'à votre demande</strong> (clic sur «&nbsp;Afficher la carte&nbsp;»). Une fois affichée, elle est susceptible de déposer des cookies tiers relevant de la politique de confidentialité de Google.</li>
+        </ul>
+        <p class="lead mt-1">Refuser ces traceurs ne limite en rien votre navigation sur le site.</p>
 
         <h2 class="section-title mt-3">Vos droits</h2>
         <p class="lead mt-1">Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez les exercer à tout moment en écrivant à <a href="mailto:zinnias@ponthieu.fr">zinnias@ponthieu.fr</a>. Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a> (www.cnil.fr).</p>
 
-        <p class="table-note mt-3">Dernière mise à jour&nbsp;: juin 2026.</p>
+        <p class="table-note mt-3">Dernière mise à jour&nbsp;: juillet 2026.</p>
       </div>
     </section>
 
@@ -133,7 +139,7 @@
             <li><a href="projet.html#adresse">PA n° 013 041 22 K0001</a></li>
             <li><a href="projet.html#adresse">Zone UD1 · PLU Gardanne</a></li>
             <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a> · <a href="#" data-consent-open>Cookies</a></li>
           </ul>
         </div>
         <div class="footer__col">
