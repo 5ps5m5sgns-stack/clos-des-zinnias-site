@@ -1374,6 +1374,36 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
    ============================================================ */
 
 /* Bandeau "inclus dans chaque lot" — déduplique le bruit des cartes */
+/* Navigation rapide entre les 8 lots — évite de tout dérouler pour comparer */
+.lots-quicknav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.6rem;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  max-width: 64rem;
+  padding-bottom: 0.3rem;
+  scrollbar-width: thin;
+}
+.lots-quicknav a {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  min-width: 4.75rem;
+  padding: 0.6rem 0.5rem;
+  border: 1px solid rgba(196, 154, 90, 0.3);
+  border-radius: 6px;
+  text-align: center;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s var(--ease);
+}
+.lots-quicknav a:hover,
+.lots-quicknav a:focus-visible { border-color: var(--or); background: rgba(196, 154, 90, 0.1); transform: translateY(-2px); }
+.lots-quicknav .n { font-family: var(--font-titre); font-size: 1.3rem; color: var(--or); line-height: 1; }
+.lots-quicknav .s { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.02em; }
+@media (max-width: 640px) { .lots-quicknav { justify-content: flex-start; } }
+
 .lot-commons {
   display: flex;
   flex-wrap: wrap;

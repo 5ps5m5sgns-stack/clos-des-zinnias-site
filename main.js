@@ -365,8 +365,8 @@
 
   /* ----------------------------------------------------------
      PRÉ-REMPLISSAGE DU LOT (deep-link ?lot=N)
-     Les boutons « Réserver ce lot » arrivent sur le formulaire
-     avec le bon lot et l'objet « réservation » déjà choisis.
+     Les liens « Être recontacté(e) — lot N » arrivent sur le
+     formulaire avec le bon lot déjà présélectionné.
      ---------------------------------------------------------- */
   function initLotPrefill() {
     const lot = new URLSearchParams(location.search).get("lot");
@@ -377,7 +377,7 @@
     if (objet && [...objet.options].some((o) => o.value === "reservation")) objet.value = "reservation";
     const msg = document.querySelector("#message");
     if (msg && !msg.value) {
-      msg.value = `Bonjour, je souhaite réserver le lot ${lot} du Clos des Zinnias. Merci de me recontacter.`;
+      msg.value = `Bonjour, je souhaite en savoir plus sur le lot ${lot} du Clos des Zinnias. Merci de me recontacter.`;
     }
   }
 
