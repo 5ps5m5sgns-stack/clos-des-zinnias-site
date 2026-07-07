@@ -1296,6 +1296,29 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 }
 
 /* ============================================================
+   BARRE CTA MOBILE (sticky) — appel + WhatsApp toujours visibles
+   ============================================================ */
+.mobile-cta-bar { display: none; }
+@media (max-width: 780px) {
+  .mobile-cta-bar {
+    display: flex; gap: 0.6rem;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 250;
+    background: var(--noir);
+    border-top: 1px solid rgba(196, 154, 90, 0.35);
+    padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -8px 24px rgba(0,0,0,0.28);
+  }
+  .mobile-cta-bar .btn {
+    flex: 1; min-width: 0; justify-content: center; gap: 0.4rem;
+    padding: 0.85rem 0.4rem; font-size: 0.78rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .mobile-cta-bar .btn svg { width: 17px; height: 17px; flex: none; }
+  body:has(.mobile-cta-bar) .footer { padding-bottom: 4.5rem; }
+  body:has(.mobile-cta-bar) .consent-banner { bottom: calc(4.5rem + 0.5rem); }
+}
+
+/* ============================================================
    BANDEAU CONSENTEMENT (CNIL) — accepter/refuser à égalité
    ============================================================ */
 .consent-banner {
