@@ -16,3 +16,10 @@ assets/
 # Sauvegardes locales d'audit / backups d'assets - ne pas versionner
 _backup_pre_audit_*/
 *.luxe-backup
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
