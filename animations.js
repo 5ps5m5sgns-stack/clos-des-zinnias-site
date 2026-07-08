@@ -35,9 +35,25 @@
           io.unobserve(el);
         }
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+    }, { threshold: 0, rootMargin: "400px 0px 400px 0px" });
 
     els.forEach((el) => io.observe(el));
+
+    // Filet de sécurité : un scroll très rapide (molette/trackpad flingué,
+    // clic sur la piste de la scrollbar) peut faire passer un élément par la
+    // zone d'observation entre deux frames sans déclencher l'IntersectionObserver.
+    // On force la révélation de tout ce qui reste au repos après le scroll.
+    let idleTimer;
+    window.addEventListener("scroll", () => {
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        document.querySelectorAll(SEL + ":not(.in)").forEach((el) => {
+          // révèle tout ce qui a été atteint ou dépassé par le scroll,
+          // pas seulement ce qui est actuellement dans le viewport
+          if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("in");
+        });
+      }, 250);
+    }, { passive: true });
   }
 
   /* ----------------------------------------------------------
