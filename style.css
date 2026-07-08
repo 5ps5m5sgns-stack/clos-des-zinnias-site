@@ -217,6 +217,13 @@ section {
 .bg-creme .btn-outline-gold { color: var(--or); }
 .btn-outline-gold:hover { background: var(--or); color: var(--noir); }
 
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border-color: #25D366;
+}
+.btn-whatsapp:hover { background: #1EBE57; border-color: #1EBE57; }
+
 /* balayage lumineux discret au survol (sheen) — remplace le ripple */
 .btn::before {
   content: "";
