@@ -2881,9 +2881,9 @@ section[data-chapter] .eyebrow::after {
    ============================================================ */
 .to-top {
   position: fixed;
-  right: clamp(1rem, 3vw, 2rem);
-  bottom: clamp(1rem, 3vw, 2rem);
-  z-index: 1200;
+  right: 1.5rem;
+  bottom: 10.5rem;
+  z-index: 255;
   width: 48px; height: 48px;
   display: flex; align-items: center; justify-content: center;
   background: rgba(20, 20, 18, 0.72);
@@ -2901,6 +2901,9 @@ section[data-chapter] .eyebrow::after {
 .to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .to-top:hover { background: var(--or); color: var(--noir); border-color: var(--or); }
 .to-top svg { width: 18px; height: 18px; }
+@media (max-width: 480px) {
+  .to-top { right: 1.25rem; bottom: 9.25rem; width: 44px; height: 44px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .to-top { transition: opacity 0.2s linear, visibility 0.2s; transform: none; }
   .to-top.visible { transform: none; }
