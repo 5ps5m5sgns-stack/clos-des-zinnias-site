@@ -193,11 +193,92 @@
       </div>
     </section>
 
+    <!-- COMPARATEUR — vue d'ensemble compacte, avant le detail lot par lot -->
+    <section class="bg-creme rule-top">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker"><span class="num">02</span> Comparateur</span>
+          <h2 class="section-title">Comparer, puis choisir</h2>
+          <p class="lead">Les 8 lots, toutes leurs caractéristiques côte à côte, sans avoir à défiler. Cliquez un lot pour sa fiche complète.</p>
+        </div>
+
+        <div class="compare-toolbar reveal">
+          <span class="lbl" id="sort-label">Trier&nbsp;:</span>
+          <button type="button" class="sort-btn" data-sort="surface" aria-label="Trier le tableau par surface" aria-describedby="sort-label">Surface <span class="dir" aria-hidden="true">↕</span></button>
+          <button type="button" class="sort-btn" data-sort="price" aria-label="Trier le tableau par prix" aria-describedby="sort-label">Prix <span class="dir" aria-hidden="true">↕</span></button>
+          <button type="button" class="sort-btn" data-sort="ppm" aria-label="Trier le tableau par prix au mètre carré" aria-describedby="sort-label">Prix au m² <span class="dir" aria-hidden="true">↕</span></button>
+        </div>
+
+        <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Comparatif des 8 lots, défilement horizontal possible">
+          <table class="elegant" data-sortable>
+            <caption class="lots-sr-only">Comparatif des 8 lots du Clos des Zinnias : surface, emprise au sol, surface de plancher maximale, espaces libres, prix et prix au mètre carré. Tableau triable par surface, prix ou prix au mètre carré.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Lot</th>
+                <th scope="col">Surface</th>
+                <th scope="col">Emprise sol</th>
+                <th scope="col">SDP maxi</th>
+                <th scope="col">Espaces libres</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Prix / m²</th>
+                <th scope="col">Atout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="is-best" data-surface="1133" data-price="262500" data-ppm="232">
+                <td><a href="#lot-1">Lot 1</a> <span class="best-tag">Le plus grand</span></td>
+                <td>1133&nbsp;m²</td><td>340&nbsp;m²</td><td>200&nbsp;m²</td><td>469&nbsp;m²</td>
+                <td>262&nbsp;500&nbsp;€</td><td>232&nbsp;€/m²</td><td>Le plus grand des 8 lots</td>
+              </tr>
+              <tr data-surface="861" data-price="262500" data-ppm="305">
+                <td><a href="#lot-2">Lot 2</a></td>
+                <td>861&nbsp;m²</td><td>258&nbsp;m²</td><td>200&nbsp;m²</td><td>357&nbsp;m²</td>
+                <td>262&nbsp;500&nbsp;€</td><td>305&nbsp;€/m²</td><td>Côté Canal de Provence</td>
+              </tr>
+              <tr data-surface="703" data-price="294000" data-ppm="418">
+                <td><a href="#lot-3">Lot 3</a></td>
+                <td>703&nbsp;m²</td><td>211&nbsp;m²</td><td>200&nbsp;m²</td><td>290&nbsp;m²</td>
+                <td>294&nbsp;000&nbsp;€</td><td>418&nbsp;€/m²</td><td>Cœur du Clos</td>
+              </tr>
+              <tr data-surface="500" data-price="335000" data-ppm="670">
+                <td><a href="#lot-4">Lot 4</a></td>
+                <td>500&nbsp;m²<span class="cell-plus">+ jardin N</span></td><td>150&nbsp;m²</td><td>200&nbsp;m²</td><td>207&nbsp;m²</td>
+                <td>335&nbsp;000&nbsp;€</td><td>670&nbsp;€/m²<span class="ast">*</span></td><td>Jardin zone N inclus</td>
+              </tr>
+              <tr data-surface="637" data-price="336000" data-ppm="528">
+                <td><a href="#lot-5">Lot 5</a></td>
+                <td>637&nbsp;m²<span class="cell-plus">+ jardin N</span></td><td>191&nbsp;m²</td><td>200&nbsp;m²</td><td>263&nbsp;m²</td>
+                <td>336&nbsp;000&nbsp;€</td><td>528&nbsp;€/m²<span class="ast">*</span></td><td>Jardin zone N inclus</td>
+              </tr>
+              <tr data-surface="704" data-price="294000" data-ppm="418">
+                <td><a href="#lot-6">Lot 6</a></td>
+                <td>704&nbsp;m²</td><td>211&nbsp;m²</td><td>200&nbsp;m²</td><td>291&nbsp;m²</td>
+                <td>294&nbsp;000&nbsp;€</td><td>418&nbsp;€/m²</td><td>Zone UD1</td>
+              </tr>
+              <tr data-surface="782" data-price="304500" data-ppm="389">
+                <td><a href="#lot-7">Lot 7</a></td>
+                <td>782&nbsp;m²</td><td>235&nbsp;m²</td><td>200&nbsp;m²</td><td>324&nbsp;m²</td>
+                <td>304&nbsp;500&nbsp;€</td><td>389&nbsp;€/m²</td><td>Grand format, bon prix</td>
+              </tr>
+              <tr data-surface="600" data-price="283500" data-ppm="473">
+                <td><a href="#lot-8">Lot 8</a></td>
+                <td>600&nbsp;m²</td><td>180&nbsp;m²</td><td>200&nbsp;m²</td><td>248&nbsp;m²</td>
+                <td>283&nbsp;500&nbsp;€</td><td>473&nbsp;€/m²</td><td>Format maîtrisé</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note reveal">
+          <span class="ast">*</span> Lots 4 et 5 : le prix au m² intègre un jardin en zone naturelle N livré <em>en plus</em> de la surface constructible.
+        </p>
+      </div>
+    </section>
+
     <!-- LOTS DÉTAIL -->
     <section class="bg-noir rule-top">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="kicker"><span class="num">02</span> Détail des lots</span>
+          <span class="kicker"><span class="num">03</span> Détail des lots</span>
           <h2 class="section-title">Le détail des lots</h2>
           <p class="lead">Surface, orientation et prix de chaque lot. Tous viabilisés et bornés.</p>
         </div>
@@ -496,87 +577,6 @@
           <strong style="color:var(--or)">À noter —</strong> Lots 4 et 5 : jardin en zone naturelle N inclus dans le prix, en plus de la surface constructible.
           Stationnement privatif non clos de 5×5 m obligatoire par lot.
           Clôtures sur voie réalisées par l'Aménageur ; clôtures mitoyennes à la charge de l'acquéreur.
-        </p>
-      </div>
-    </section>
-
-    <!-- COMPARATEUR -->
-    <section class="bg-creme rule-top">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="kicker"><span class="num">03</span> Comparateur</span>
-          <h2 class="section-title">Comparer, puis choisir</h2>
-          <p class="lead">Surfaces, prix et prix au m² côte à côte.</p>
-        </div>
-
-        <div class="compare-toolbar reveal">
-          <span class="lbl" id="sort-label">Trier&nbsp;:</span>
-          <button type="button" class="sort-btn" data-sort="surface" aria-label="Trier le tableau par surface" aria-describedby="sort-label">Surface <span class="dir" aria-hidden="true">↕</span></button>
-          <button type="button" class="sort-btn" data-sort="price" aria-label="Trier le tableau par prix" aria-describedby="sort-label">Prix <span class="dir" aria-hidden="true">↕</span></button>
-          <button type="button" class="sort-btn" data-sort="ppm" aria-label="Trier le tableau par prix au mètre carré" aria-describedby="sort-label">Prix au m² <span class="dir" aria-hidden="true">↕</span></button>
-        </div>
-
-        <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Comparatif des 8 lots, défilement horizontal possible">
-          <table class="elegant" data-sortable>
-            <caption class="lots-sr-only">Comparatif des 8 lots du Clos des Zinnias : surface, emprise au sol, surface de plancher maximale, espaces libres, prix et prix au mètre carré. Tableau triable par surface, prix ou prix au mètre carré.</caption>
-            <thead>
-              <tr>
-                <th scope="col">Lot</th>
-                <th scope="col">Surface</th>
-                <th scope="col">Emprise sol</th>
-                <th scope="col">SDP maxi</th>
-                <th scope="col">Espaces libres</th>
-                <th scope="col">Prix</th>
-                <th scope="col">Prix / m²</th>
-                <th scope="col">Atout</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="is-best" data-surface="1133" data-price="262500" data-ppm="232">
-                <td>Lot 1 <span class="best-tag">Le plus grand</span></td>
-                <td>1133&nbsp;m²</td><td>340&nbsp;m²</td><td>200&nbsp;m²</td><td>469&nbsp;m²</td>
-                <td>262&nbsp;500&nbsp;€</td><td>232&nbsp;€/m²</td><td>Le plus grand des 8 lots</td>
-              </tr>
-              <tr data-surface="861" data-price="262500" data-ppm="305">
-                <td>Lot 2</td>
-                <td>861&nbsp;m²</td><td>258&nbsp;m²</td><td>200&nbsp;m²</td><td>357&nbsp;m²</td>
-                <td>262&nbsp;500&nbsp;€</td><td>305&nbsp;€/m²</td><td>Côté Canal de Provence</td>
-              </tr>
-              <tr data-surface="703" data-price="294000" data-ppm="418">
-                <td>Lot 3</td>
-                <td>703&nbsp;m²</td><td>211&nbsp;m²</td><td>200&nbsp;m²</td><td>290&nbsp;m²</td>
-                <td>294&nbsp;000&nbsp;€</td><td>418&nbsp;€/m²</td><td>Cœur du Clos</td>
-              </tr>
-              <tr data-surface="500" data-price="335000" data-ppm="670">
-                <td>Lot 4</td>
-                <td>500&nbsp;m²<span class="cell-plus">+ jardin N</span></td><td>150&nbsp;m²</td><td>200&nbsp;m²</td><td>207&nbsp;m²</td>
-                <td>335&nbsp;000&nbsp;€</td><td>670&nbsp;€/m²<span class="ast">*</span></td><td>Jardin zone N inclus</td>
-              </tr>
-              <tr data-surface="637" data-price="336000" data-ppm="528">
-                <td>Lot 5</td>
-                <td>637&nbsp;m²<span class="cell-plus">+ jardin N</span></td><td>191&nbsp;m²</td><td>200&nbsp;m²</td><td>263&nbsp;m²</td>
-                <td>336&nbsp;000&nbsp;€</td><td>528&nbsp;€/m²<span class="ast">*</span></td><td>Jardin zone N inclus</td>
-              </tr>
-              <tr data-surface="704" data-price="294000" data-ppm="418">
-                <td>Lot 6</td>
-                <td>704&nbsp;m²</td><td>211&nbsp;m²</td><td>200&nbsp;m²</td><td>291&nbsp;m²</td>
-                <td>294&nbsp;000&nbsp;€</td><td>418&nbsp;€/m²</td><td>Zone UD1</td>
-              </tr>
-              <tr data-surface="782" data-price="304500" data-ppm="389">
-                <td>Lot 7</td>
-                <td>782&nbsp;m²</td><td>235&nbsp;m²</td><td>200&nbsp;m²</td><td>324&nbsp;m²</td>
-                <td>304&nbsp;500&nbsp;€</td><td>389&nbsp;€/m²</td><td>Grand format, bon prix</td>
-              </tr>
-              <tr data-surface="600" data-price="283500" data-ppm="473">
-                <td>Lot 8</td>
-                <td>600&nbsp;m²</td><td>180&nbsp;m²</td><td>200&nbsp;m²</td><td>248&nbsp;m²</td>
-                <td>283&nbsp;500&nbsp;€</td><td>473&nbsp;€/m²</td><td>Format maîtrisé</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note reveal">
-          <span class="ast">*</span> Lots 4 et 5 : le prix au m² intègre un jardin en zone naturelle N livré <em>en plus</em> de la surface constructible.
         </p>
       </div>
     </section>
