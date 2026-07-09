@@ -1079,6 +1079,8 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .fullimg--50 img { height: 50vh; }
 /* Image affichée en entier, sans recadrage (plans, schémas) */
 .fullimg--full img { height: auto; object-fit: contain; }
+/* Recadrage biaisé vers le haut pour garder le toit de la maison visible */
+.fullimg--villa-hero img { object-position: center 20%; }
 .fullimg__cap {
   position: absolute;
   bottom: 1.25rem; left: 1.25rem;
@@ -2397,6 +2399,29 @@ section[data-chapter] .eyebrow::after {
 .ed-figure .loupe:hover { background: var(--or); color: var(--noir); border-color: var(--or); }
 .ed-figure[data-lightbox] { cursor: pointer; }
 .ed-figure[data-lightbox] .ed-figure__ov { pointer-events: none; }
+
+/* ---------- Carte "cutout" — image détourée présentée en carte ---------- */
+.ed-cutout-card {
+  position: relative;
+  background: linear-gradient(155deg, var(--creme), #EFE7D8);
+  border-radius: 20px;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.28);
+  padding: clamp(1rem, 3vw, 2rem);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.ed-cutout-card:hover { transform: translateY(-4px); box-shadow: 0 24px 56px rgba(0,0,0,0.34); }
+.ed-cutout-card img { width: 100%; height: auto; object-fit: contain; display: block; }
+.ed-cutout-card .loupe {
+  position: absolute; top: 1rem; right: 1rem; z-index: 1;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(12,12,10,0.25); color: var(--noir);
+  opacity: 0; transform: scale(0.85);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.ed-cutout-card:hover .loupe { opacity: 1; transform: scale(1); }
 
 /* ---------- Feature : image + note décalée (alternance) ---------- */
 .ed-feature { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
