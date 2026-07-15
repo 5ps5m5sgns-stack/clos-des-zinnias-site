@@ -1335,10 +1335,11 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .fab-contact__btn--phone { background: var(--or); color: var(--noir); }
 .fab-contact__btn--phone:hover { background: var(--or-light); }
 @media (max-width: 480px) {
-  .fab-contact { right: 1rem; bottom: 1rem; gap: 0.65rem; }
+  .fab-contact { right: 1rem; bottom: 1rem; gap: 0.65rem; transition: transform 0.3s var(--ease); }
   .fab-contact__btn { width: 52px; height: 52px; }
   .fab-contact__btn svg { width: 24px; height: 24px; }
-  body:has(.consent-banner.show) .fab-contact { bottom: 9rem; transition: bottom 0.3s var(--ease); }
+  /* translateY plutôt que bottom : composé GPU et non compté au CLS */
+  body:has(.consent-banner.show) .fab-contact { transform: translateY(-8rem); }
 }
 
 /* ============================================================
