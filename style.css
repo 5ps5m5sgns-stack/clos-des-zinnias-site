@@ -1,8 +1,14 @@
 /* ============================================================
    LE CLOS DES ZINNIAS — Provence Noir Or
    style.css — Feuille de style globale partagée
+
+   Les blocs entre marqueurs @critical:start / @critical:end sont
+   extraits par scripts/build-critical.mjs et inlinés dans le <head>
+   des pages (CSS critique above-the-fold). Après toute modification
+   de ces blocs : npm run build:min
    ============================================================ */
 
+/* @critical:start */
 /* ---------- CUSTOM PROPERTIES ---------- */
 :root {
   --noir: #0C0C0A;
@@ -555,8 +561,8 @@ section {
    HERO — entrée séquencée (titre → tagline → CTA → stats)
    ============================================================ */
 @keyframes heroRise {
-  from { opacity: 0; transform: translateY(30px); filter: blur(5px); }
-  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes heroFade { from { opacity: 0; } to { opacity: 1; } }
 
@@ -587,7 +593,7 @@ section {
    ============================================================ */
 .reveal, .reveal-left, .reveal-right {
   opacity: 0;
-  transition: opacity 1s var(--ease-out), transform 1s var(--ease-out), filter 1s var(--ease-out);
+  transition: opacity 1s var(--ease-out), transform 1s var(--ease-out);
   will-change: opacity, transform;
 }
 .reveal { transform: translateY(34px); }
@@ -609,6 +615,7 @@ section {
 .reveal-img.in img { clip-path: inset(0 0 0 0); transform: scale(1); }
 /* si l'image porte aussi un zoom au survol, on neutralise le transform de révélation */
 .reveal-img.img-hover img { transform: none; transition: clip-path 1.2s var(--ease), transform 0.7s var(--ease); }
+/* @critical:end */
 
 /* ============================================================
    COUNTERS
@@ -1307,6 +1314,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 /* ============================================================
    BULLES FLOTTANTES CONTACT — WhatsApp + téléphone, toujours visibles
    ============================================================ */
+/* @critical:start */
 .fab-contact {
   position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 260;
   display: flex; flex-direction: column; align-items: center; gap: 0.85rem;
@@ -1357,6 +1365,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
   .consent-banner__btns { width: 100%; }
   .consent-banner__btns .btn { flex: 1; }
 }
+/* @critical:end */
 
 /* ============================================================
    FOOTER
@@ -1377,9 +1386,11 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .footer__brand .name { font-family: var(--font-titre); font-size: 1.6rem; color: var(--creme); }
 .footer__brand .sub { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--or); margin-top: 0.3rem; }
 .footer__brand p { margin-top: 1rem; font-size: 0.88rem; color: var(--muted); max-width: 30ch; }
-.footer h5 {
+.footer h5,
+.footer .footer__title {
   font-family: var(--font-corps);
   font-size: 0.68rem;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--or);
@@ -3012,6 +3023,7 @@ section[data-chapter] .eyebrow::after {
 /* ============================================================
    AJUSTEMENTS GLOBAUX — passe d'audit (orchestrateur)
    ============================================================ */
+/* @critical:start */
 /* Indice de défilement « Défiler » : superflu et à l'étroit sur très petit
    écran (la barre de statistiques du hero occupe déjà le bas). Masqué ≤ 600px. */
 @media (max-width: 600px) {
@@ -3028,13 +3040,16 @@ section[data-chapter] .eyebrow::after {
   transition: transform 0.25s var(--ease);
 }
 .skip-link:focus { transform: translateY(0); outline: 2px solid var(--noir); outline-offset: 2px; }
+/* @critical:end */
 
 /* Titres de jalons du calendrier (projet) : neutralise la marge haute par défaut de <h3> */
 .cal-step__title { margin-top: 0; }
 
 /* Contraste : sur les sections claires, tout texte atténué hérite de la variante foncée lisible
    (--muted-creme ≈ 6:1 sur le beige) au lieu du --muted clair pensé pour les fonds sombres. */
+/* @critical:start */
 .bg-creme { --muted: var(--muted-creme); }
+/* @critical:end */
 
 /* Plans officiels (PA) — cartes blanches, 2 colonnes, agrandissables */
 .plans-officiels { display: grid; grid-template-columns: 1fr; gap: clamp(1.25rem, 3vw, 2rem); align-items: start; max-width: 64rem; margin-inline: auto; }

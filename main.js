@@ -104,23 +104,22 @@
   function initPageTransitions() {
     // Pas de fondu de transition (ni de délai) si l'utilisateur préfère moins d'animation
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    document.querySelectorAll('a[href]').forEach((a) => {
+    // Un seul listener délégué pour toute la page (au lieu d'un par lien)
+    document.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      const a = e.target.closest("a[href]");
+      if (!a || e.defaultPrevented) return;
       const href = a.getAttribute("href");
-      if (!href) return;
       const isInternal =
+        href &&
         /\.html$/.test(href) &&
         !a.target &&
         !href.startsWith("http") &&
         !a.hasAttribute("data-no-transition");
       if (!isInternal) return;
-
-      a.addEventListener("click", (e) => {
-        // allow same-page anchors and modifier clicks
-        if (e.metaKey || e.ctrlKey || e.shiftKey) return;
-        e.preventDefault();
-        document.body.classList.add("page-leaving");
-        setTimeout(() => { window.location.href = href; }, 150);
-      });
+      e.preventDefault();
+      document.body.classList.add("page-leaving");
+      setTimeout(() => { window.location.href = href; }, 150);
     });
   }
 
@@ -128,19 +127,21 @@
      SMOOTH ANCHOR SCROLL
      ---------------------------------------------------------- */
   function initSmoothAnchors() {
-    const nav = document.querySelector(".nav");
-    document.querySelectorAll('a[href^="#"]').forEach((a) => {
-      a.addEventListener("click", (e) => {
-        const id = a.getAttribute("href");
-        if (id === "#" || id.length < 2) return;
-        const target = document.querySelector(id);
-        if (!target) return;
-        e.preventDefault();
-        // Décalage de la hauteur de navbar pour ne pas masquer le titre de section
-        const offset = (nav ? nav.offsetHeight : 0) + 16;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: "smooth" });
-      });
+    // Un seul listener délégué pour tous les liens d'ancre
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const id = a.getAttribute("href");
+      if (id === "#" || id.length < 2) return;
+      let target = null;
+      try { target = document.querySelector(id); } catch (_) { return; }
+      if (!target) return;
+      e.preventDefault();
+      // Décalage de la hauteur de navbar pour ne pas masquer le titre de section
+      const nav = document.querySelector(".nav");
+      const offset = (nav ? nav.offsetHeight : 0) + 16;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
     });
   }
 
@@ -177,9 +178,10 @@
       });
     });
     window.addEventListener("resize", () => {
-      document.querySelectorAll(".acc-item.open .acc-body").forEach((body) => {
-        body.style.maxHeight = body.scrollHeight + "px";
-      });
+      // Batch : toutes les lectures de layout d'abord, puis toutes les écritures
+      const bodies = [...document.querySelectorAll(".acc-item.open .acc-body")];
+      const heights = bodies.map((body) => body.scrollHeight);
+      bodies.forEach((body, i) => { body.style.maxHeight = heights[i] + "px"; });
     });
   }
 
@@ -638,24 +640,35 @@
     update();
   }
 
-  /* ---------- INIT ---------- */
+  /* ---------- INIT ----------
+     Deux phases pour réduire le Total Blocking Time :
+     - immédiat : ce qui est visible/interactif dès le premier écran
+     - différé (requestIdleCallback) : le reste, quand le thread est libre */
   function init() {
     initNavbar();
-    initScrollProgress();
-    initBackToTop();
     initBurger();
     initActiveLink();
     initSmoothAnchors();
-    initFlipTap();
-    initAccordion();
-    initLightbox();
-    initLotSort();
-    initLotPrefill();
-    initFieldValidation();
-    initMapFacade();
-    initForm();
-    initContactIntent();
     initPageTransitions();
+
+    const later = () => {
+      initScrollProgress();
+      initBackToTop();
+      initFlipTap();
+      initAccordion();
+      initLightbox();
+      initLotSort();
+      initLotPrefill();
+      initFieldValidation();
+      initMapFacade();
+      initForm();
+      initContactIntent();
+    };
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(later, { timeout: 1500 });
+    } else {
+      setTimeout(later, 200);
+    }
   }
 
   if (document.readyState === "loading") {

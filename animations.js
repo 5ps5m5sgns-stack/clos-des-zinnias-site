@@ -47,11 +47,13 @@
     window.addEventListener("scroll", () => {
       clearTimeout(idleTimer);
       idleTimer = setTimeout(() => {
-        document.querySelectorAll(SEL + ":not(.in)").forEach((el) => {
-          // révèle tout ce qui a été atteint ou dépassé par le scroll,
-          // pas seulement ce qui est actuellement dans le viewport
-          if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("in");
-        });
+        // révèle tout ce qui a été atteint ou dépassé par le scroll,
+        // pas seulement ce qui est actuellement dans le viewport.
+        // Batch : toutes les lectures de layout d'abord, puis les écritures.
+        const vh = window.innerHeight;
+        const pending = [...document.querySelectorAll(SEL + ":not(.in)")]
+          .filter((el) => el.getBoundingClientRect().top < vh);
+        pending.forEach((el) => el.classList.add("in"));
       }, 250);
     }, { passive: true });
   }
@@ -61,26 +63,47 @@
      ---------------------------------------------------------- */
   function initParallax() {
     if (reduceMotion || isTouch) return;
-    const items = Array.from(document.querySelectorAll("[data-parallax]"));
-    if (!items.length) return;
+    const els = Array.from(document.querySelectorAll("[data-parallax]"));
+    if (!els.length) return;
+
+    // Positions de layout mises en cache (recalculées au resize) : évite de
+    // lire getBoundingClientRect à chaque frame de scroll (reflow forcé).
+    let items = [];
+    function measure() {
+      const y = window.scrollY;
+      items = els.map((el) => {
+        const rect = el.getBoundingClientRect();
+        // soustrait le translateY déjà appliqué pour retrouver la position d'origine
+        const applied = el._plxY || 0;
+        return {
+          el,
+          top: rect.top + y - applied,
+          height: rect.height,
+          speed: parseFloat(el.dataset.speed || "0.5"),
+        };
+      });
+    }
 
     let ticking = false;
     function update() {
       const vh = window.innerHeight;
-      items.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.bottom < -200 || rect.top > vh + 200) return;
-        const speed = parseFloat(el.dataset.speed || "0.5");
+      const y = window.scrollY;
+      items.forEach((it) => {
+        const top = it.top - y; // position viewport, sans lecture du DOM
+        if (top + it.height < -200 || top > vh + 200) return;
         // distance of element center from viewport center
-        const offset = (rect.top + rect.height / 2 - vh / 2);
-        el.style.transform = `translateY(${offset * speed * -0.18}px)`;
+        const offset = top + it.height / 2 - vh / 2;
+        const ty = offset * it.speed * -0.18;
+        it.el._plxY = ty;
+        it.el.style.transform = `translateY(${ty}px)`;
       });
       ticking = false;
     }
     window.addEventListener("scroll", () => {
       if (!ticking) { requestAnimationFrame(update); ticking = true; }
     }, { passive: true });
-    window.addEventListener("resize", update);
+    window.addEventListener("resize", () => { measure(); update(); });
+    measure();
     update();
   }
 

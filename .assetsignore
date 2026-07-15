@@ -13,3 +13,12 @@ node_modules
 
 # Photos drone originales non-optimisées (~105 Mo) — le site sert les WebP
 assets
+
+# Sources non minifiées — la prod sert les .min générés par npm run build:min
+# (fonts.css est inliné dans le <head> des pages par build-critical.mjs)
+style.css
+fonts.css
+main.js
+animations.js
+consent.js
+

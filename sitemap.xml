@@ -3,57 +3,57 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clos-des-zinnias.fr/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://clos-des-zinnias.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
-      <image:title>Le Clos des Zinnias — lotissement de 8 terrains à bâtir à Biver (13)</image:title>
+      <image:title>Le Clos des Zinnias â€” lotissement de 8 terrains Ã  bÃ¢tir Ã  Biver (13)</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/lots.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://clos-des-zinnias.fr/images-optimized/plan-masse-aerial-villas-v2.webp</image:loc>
-      <image:title>Plan-masse des 8 lots à bâtir du Clos des Zinnias à Biver</image:title>
+      <image:title>Plan-masse des 8 lots Ã  bÃ¢tir du Clos des Zinnias Ã  Biver</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/terrain-a-batir-gardanne.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/projet.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/contact.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/galerie.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/mentions-legales.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://clos-des-zinnias.fr/confidentialite.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
