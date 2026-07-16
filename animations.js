@@ -69,19 +69,35 @@
     // Positions de layout mises en cache (recalculées au resize) : évite de
     // lire getBoundingClientRect à chaque frame de scroll (reflow forcé).
     let items = [];
+    let firstMeasure = true;
     function measure() {
       const y = window.scrollY;
+      const vh = window.innerHeight;
       items = els.map((el) => {
         const rect = el.getBoundingClientRect();
         // soustrait le translateY déjà appliqué pour retrouver la position d'origine
         const applied = el._plxY || 0;
-        return {
+        const top = rect.top + y - applied;
+        const it = {
           el,
-          top: rect.top + y - applied,
+          top,
           height: rect.height,
           speed: parseFloat(el.dataset.speed || "0.5"),
+          zero: el._plxZero || 0,
         };
+        // Élément visible au chargement (typiquement le hero) : le parallax
+        // démarre à zéro — aucun transform appliqué au premier rendu, donc
+        // aucun décalage compté au CLS. Le mouvement reste identique au scroll.
+        if (firstMeasure) {
+          const vTop = top - y;
+          if (vTop < vh && vTop + rect.height > 0) {
+            it.zero = vTop + rect.height / 2 - vh / 2;
+          }
+          el._plxZero = it.zero;
+        }
+        return it;
       });
+      firstMeasure = false;
     }
 
     let ticking = false;
@@ -93,7 +109,7 @@
         if (top + it.height < -200 || top > vh + 200) return;
         // distance of element center from viewport center
         const offset = top + it.height / 2 - vh / 2;
-        const ty = offset * it.speed * -0.18;
+        const ty = (offset - it.zero) * it.speed * -0.18;
         it.el._plxY = ty;
         it.el.style.transform = `translateY(${ty}px)`;
       });
