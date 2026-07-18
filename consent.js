@@ -59,7 +59,7 @@
     }
 
     // Intention forte : clic sur un lien téléphone.
-    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+    document.querySelectorAll('a[href^="tel:"], a[href*="wa.me/"]').forEach(function (a) {
       a.addEventListener("click", function () { window.fbq("track", "Contact"); });
     });
   }
