@@ -1,5 +1,5 @@
 /* ============================================================
-   LE CLOS DES ZINNIAS — consent.js
+   LE CLOS DES CYPRÈS — consent.js
    Bandeau de consentement (CNIL) + Meta Pixel conditionnel.
    Le Pixel ne se charge JAMAIS avant un consentement explicite.
    ============================================================ */

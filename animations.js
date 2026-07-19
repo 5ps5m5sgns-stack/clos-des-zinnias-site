@@ -1,5 +1,5 @@
 /* ============================================================
-   LE CLOS DES ZINNIAS — animations.js
+   LE CLOS DES CYPRÈS — animations.js
    Reveal on scroll · Parallax · Compteurs animés
    Chargé en defer, autonome.
    ============================================================ */

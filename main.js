@@ -1,5 +1,5 @@
 /* ============================================================
-   LE CLOS DES ZINNIAS — main.js
+   LE CLOS DES CYPRÈS — main.js
    Navigation · Navbar auto-hide · Scroll progress · Page transitions
    Lightbox · Accordion · Flip tap · Form · Active link
    ============================================================ */
@@ -379,7 +379,7 @@
     if (objet && [...objet.options].some((o) => o.value === "reservation")) objet.value = "reservation";
     const msg = document.querySelector("#message");
     if (msg && !msg.value) {
-      msg.value = `Bonjour, je souhaite en savoir plus sur le lot ${lot} du Clos des Zinnias. Merci de me recontacter.`;
+      msg.value = `Bonjour, je souhaite en savoir plus sur le lot ${lot} du Clos des Cyprès. Merci de me recontacter.`;
     }
   }
 
