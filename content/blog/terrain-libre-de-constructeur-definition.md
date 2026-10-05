@@ -9,13 +9,13 @@ keyword: terrain libre de constructeur
 image: /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec, sur la prairie, une maison existante et des toits de tuiles autour
+image_alt: Vue de drone prise à la verticale d'une prairie close, bordée d'une route et de haies de conifères, avec les jardins et les piscines d'un quartier résidentiel de l'autre côté de la route
 og_image: /images-optimized/blog/terrain-libre-de-constructeur-definition/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne, verifier-avant-dacheter-terrain-biver-gardanne
 draft: false
 ---
 
-Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. Les [huit terrains du Clos des Cyprès](/lots), à Biver (13120 Gardanne), sont proposés par l'aménageur comme libres de constructeur. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction.
+Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. À Biver (13120 Gardanne), [les huit terrains du Clos des Cyprès](/lots) sont proposés libres de constructeur par l'aménageur PONTHIEU DH. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction, que vous cherchiez un terrain pour construire votre maison en Provence, près d'Aix-en-Provence ou près de Marseille.
 
 ## Que signifie « terrain libre de constructeur » ?
 
@@ -33,7 +33,7 @@ Choisir son constructeur ne dispense pas de respecter des règles. Trois niveaux
 
 Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
 
-**Clos des Cyprès.** Le site présente les huit terrains (de 500 à 1 133 m²) comme libres de constructeur. C'est l'information de l'aménageur, PONTHIEU DH, et non une promesse juridique : ce qui engage les parties, c'est la promesse de vente, avec, le cas échéant, le règlement et le cahier des charges. Disponibilité et plan des lots sur demande via la [page contact](/contact).
+**Au Clos des Cyprès**, les huit terrains sont proposés libres de constructeur par l'aménageur PONTHIEU DH. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 
 ## Terrain libre ou terrain lié à un constructeur : quelles différences ?
 
@@ -55,7 +55,7 @@ L'offre packagée n'est pas un défaut en soi. Vérifiez ce que le prix comprend
 **Avantages**
 
 - Comparer plusieurs projets et plusieurs devis pour une même maison.
-- Adapter la maison à la parcelle : le terrain du Clos des Cyprès est en pente douce vers le nord-est, et chaque lot permet d'adapter la maison à la pente, dans les aires d'implantation du plan de composition.
+- Adapter la maison à la parcelle : orientation, pente, vues et accès se prennent en compte dès la conception, dans le respect des règles d'implantation du lotissement (voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/)).
 - Choisir ce que vous déléguez : conception, coordination, sécurité contractuelle.
 
 **Limites**
@@ -80,7 +80,7 @@ Tableau : Quatre façons de construire sur un terrain libre
 
 **Dans tous les cas**, vous souscrivez l'assurance dommages-ouvrage avant l'ouverture du chantier (Code des assurances, art. L. 242-1). Après la réception : un an de garantie de parfait achèvement, deux ans de bon fonctionnement des équipements, dix ans de responsabilité décennale (Code civil, art. 1792 et suivants). Les honoraires d'un architecte dépendent de la mission (conception, permis, suivi de chantier) : demandez-les par écrit, mission par mission.
 
-**À Gardanne**, la conception doit tenir compte du sol. La commune est concernée par le retrait-gonflement des argiles : en zone d'exposition moyenne ou forte, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, transmise ensuite aux constructeurs (CCH, art. L. 132-5 et L. 132-6). Un plan de prévention des risques miniers y a été approuvé le 9 mars 2023, et le terrain du Clos des Cyprès est situé dans une zone soumise aux obligations légales de débroussaillement (Code forestier, art. L. 134-6). Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : [www.georisques.gouv.fr](https://www.georisques.gouv.fr/). Sur un terrain en pente, voyez aussi [construire en restanques](/blog/construire-sur-terrain-en-pente-restanques-provence/).
+**À Gardanne**, la conception doit tenir compte du sol. La commune est concernée par le retrait-gonflement des argiles : en zone d'exposition moyenne ou forte, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, transmise ensuite aux constructeurs (CCH, art. L. 132-5 et L. 132-6). Dans les territoires exposés aux incendies, le Code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6). [Géorisques](https://www.georisques.gouv.fr/) permet de vérifier ces points pour une adresse. Sur un terrain en pente, voyez aussi [construire en restanques](/blog/construire-sur-terrain-en-pente-restanques-provence/).
 
 ## Que vérifier et que demander avant de signer ?
 
@@ -113,13 +113,13 @@ Ordre indicatif ; seuls figurent les délais fixés par les textes, aucune duré
 8. **Acte authentique, ouverture du chantier** : le permis est périmé si les travaux ne sont pas entrepris dans les trois ans de la notification (art. R. 424-17).
 9. **Construire, réceptionner, recevoir les clés.**
 
-Pour le Clos des Cyprès, l'aménageur annonce une livraison prévue en mars 2027 ; la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux (art. R. 442-18), à préciser avec le vendeur et le notaire. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
+En lotissement, la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux d'aménagement (art. R. 442-18) : à préciser avec l'aménageur et le notaire. Que le terrain soit [près de Marseille](/terrain-a-batir-marseille), près d'Aix-en-Provence ou ailleurs en Provence, cet ordre est le même. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
 
 :::callout À retenir
 - « Libre de constructeur » signifie que vous choisissez qui construit ; ce n'est pas un terme défini par la loi.
 - Il ne dispense ni du PLUi, ni du règlement et du cahier des charges, ni de l'étude géotechnique.
 - CCMI : garanties légales étendues. Architecte : obligatoire au-delà de 150 m² de surface de plancher. Maître d'œuvre ou artisans : plus de contrôle, plus de coordination.
-- Au Clos des Cyprès, c'est l'information de l'aménageur : sa portée se lit dans les documents de vente.
+- La portée de la mention se lit dans les documents de vente : promesse, règlement, cahier des charges.
 :::
 
 ## Questions fréquentes
@@ -139,8 +139,9 @@ En CCMI, le contrat peut être conclu sous conditions suspensives : acquisition 
 :::
 
 :::cta Un projet de terrain à Biver ?
-Pour connaître la disponibilité des lots et obtenir le plan, écrivez-nous ou appelez-nous.
+Appelez-nous : le prix et les informations de chaque lot vous sont présentés lors de notre échange téléphonique.
 
+- [Appelez le 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
 - [Nous contacter](/contact)
 :::

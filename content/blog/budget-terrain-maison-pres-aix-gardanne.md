@@ -9,13 +9,13 @@ keyword: budget pour construire une maison près d'Aix-en-Provence
 image: /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue aérienne par drone d'un terrain herbeux et des maisons de Biver, avec la montagne Sainte-Victoire à l'horizon
+image_alt: Vue aérienne par drone d'une prairie et du hameau de Biver, entouré de collines boisées, avec la montagne Sainte-Victoire à l'horizon
 og_image: /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, terrain-libre-de-constructeur-definition, construire-sur-terrain-en-pente-restanques-provence
 draft: false
 ---
 
-Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout terrain à bâtir à Gardanne, comme [les terrains du Clos des Cyprès](/terrain-a-batir-gardanne), ou ailleurs dans le Pays d'Aix.
+Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), à Gardanne comme [au Clos des Cyprès](/terrain-a-batir-gardanne), ou ailleurs en Provence.
 
 ## Que comprend le budget pour construire une maison près d'Aix-en-Provence ?
 
@@ -34,7 +34,7 @@ Tableau : Les postes d'un budget terrain et maison, sans montants
 | Assurances et garanties | Dommages-ouvrage, garanties du CCMI | Assureur, courtier, constructeur |
 | Aménagements extérieurs | Terrassement, clôtures, accès, plantations, piscine, débroussaillement | Devis par corps de métier, mairie |
 | Imprévus | Sol, aléas de chantier, options, évolution des prix | Réserve à fixer avec banque et constructeur |
-| Financement et période de travaux | Durée, garanties, assurance emprunteur, intérêts intercalaires, taxe foncière du terrain nu, loyer actuel | Banque, courtier, Service-Public.fr |
+| Financement et période de travaux | Durée, garanties, assurance emprunteur, intérêts intercalaires, taxe foncière du terrain avant construction, loyer actuel | Banque, courtier, Service-Public.fr |
 
 ## Quel est le prix de construction d'une maison en PACA, et que valent ces chiffres ?
 
@@ -58,7 +58,7 @@ Dans un lotissement, l'aménageur réalise les réseaux (art. L. 332-15 du code 
 
 Calcul : surface taxable × valeur forfaitaire (892 € par m² en 2026) × (taux communal + taux départemental). À Gardanne, les taux en vigueur au 05/10/2026 sont de **5 %** (part communale, Métropole) et de **1,55 %** (part départementale), révisables chaque année. Un abattement de 50 % s'applique aux 100 premiers m² d'une résidence principale ; la piscine est taxée 251 € par m², chaque place de stationnement extérieure 5 000 € à Gardanne. La taxe est due après les travaux, pas à l'acte : on la déclare sur impots.gouv.fr dans les 90 jours suivant l'achèvement (autorisation délivrée depuis le 21/02/2026).
 
-*Exemple fictif.* Hypothèses : 120 m² de surface taxable, résidence principale, sans piscine, stationnement extérieur ni exonération, hors redevance d'archéologie préventive. 100 m² × 446 € + 20 m² × 892 € = 62 440 € ; × 6,55 % ≈ 4 090 €. Gardanne a par ailleurs voté, d'après le même jeu de données, une exonération partielle (taux de 40 %) pour les surfaces de résidence principale financées par un prêt à taux zéro, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) : cet exemple n'en tient pas compte. À confirmer en mairie.
+*Exemple fictif.* Hypothèses : 120 m² de surface taxable, résidence principale, sans piscine, stationnement extérieur ni exonération, hors redevance d'archéologie préventive. 100 m² × 446 € + 20 m² × 892 € = 62 440 € ; × 6,55 % ≈ 4 090 €. Gardanne a par ailleurs voté, d'après le même jeu de données, une exonération partielle (taux de 40 %) pour les surfaces de résidence principale financées par un prêt à taux zéro, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) : cet exemple n'en tient pas compte. À vérifier en mairie.
 
 ## Quelles assurances et garanties faut-il budgéter ?
 
@@ -67,8 +67,9 @@ L'assurance dommages-ouvrage est obligatoire : le propriétaire qui fait constru
 Avec un contrat de construction de maison individuelle (CCMI), le prix est forfaitaire, définitif et TTC, et comprend la garantie de livraison à prix et délais convenus. Lisez la notice descriptive : elle distingue ce qui est compris ou non dans le prix et chiffre les travaux à votre charge.
 
 :::cta Comparer ce budget à un terrain précis ?
-Le Clos des Cyprès est un lotissement de huit terrains à bâtir libres de constructeur, à Biver (13120 Gardanne), proposés par l'aménageur PONTHIEU DH. Permis d'aménager n° PA 013 041 22 K0001 délivré ; dossier consultable à la mairie de Gardanne (service urbanisme). Plan et disponibilité sur demande.
+Le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, à Biver (13120 Gardanne), proposés par l'aménageur PONTHIEU DH. Le prix et les informations de chaque lot vous sont communiqués lors de notre échange téléphonique.
 
+- [Appelez le 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
 - [Nous contacter](/contact)
 :::
@@ -87,10 +88,12 @@ Selon la réglementation en vigueur au 05/10/2026, le prêt à taux zéro financ
 
 ## Comment garder la main sur le budget ?
 
+Quelques leviers, utiles pour construire sa maison près d'Aix-en-Provence comme ailleurs en Provence :
+
 - **La surface.** Chaque m² compte à la construction, dans la taxe d'aménagement et dans les consommations. Au-delà de 150 m² de surface de plancher, un architecte est obligatoire.
 - **Un plan simple.** Un volume compact, une toiture simple et peu de décrochés limitent en général la structure et les finitions.
 - **Le mode de construction.** Le CCMI apporte prix forfaitaire et garanties ; un architecte ou un maître d'œuvre qui coordonne des entreprises laisse plus de liberté, mais vous gérez des contrats séparés, sans la garantie de livraison du CCMI. Comparez des devis établis sur la même base ; un terrain [libre de constructeur](/blog/terrain-libre-de-constructeur-definition/) permet de mettre plusieurs professionnels en concurrence.
-- **La pente du terrain.** Terrassements, soutènements et fondations se chiffrent à partir de l'étude de sol : voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/). Au Clos des Cyprès, le terrain est en pente douce vers le nord-est ; chaque lot reste à examiner.
+- **La pente du terrain.** Terrassements, soutènements et fondations se chiffrent à partir de l'étude de sol : voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/).
 - **Les extérieurs.** Clôtures, accès, terrassements, plantations, piscine : vérifiez ce que la notice descriptive inclut. Là où il s'applique, le débroussaillement obligatoire est à la charge du propriétaire (code forestier, art. L. 134-8).
 - **Un chiffrage avant de signer.** Faites chiffrer chaque poste du tableau et gardez une réserve pour les imprévus. Voir aussi notre [guide pour acheter un terrain en lotissement à Gardanne et Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
 

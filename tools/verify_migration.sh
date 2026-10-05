@@ -25,8 +25,10 @@
 #   DNSCHECK   1 (défaut) : contrôle DNS (NS, MX, SPF, www) ; 0 : ignoré
 #   MX_EXPECT  texte qui doit figurer dans les MX de NEW         (défaut ovh.net : courrier OVH)
 #   SPF_EXPECT texte qui doit figurer dans le SPF de NEW         (défaut include:mx.ovh.com)
-#   EMAIL_OK   adresse qui doit être affichée                    (défaut jessica@ownimmobilier.fr)
+#   EMAIL_OK   adresse qui doit être affichée                    (défaut cypres@ponthieu.fr : l'adresse UNIQUE du site, D48 bis)
 #   EMAIL_OLD  adresse qui ne doit plus apparaître               (défaut zinnias@ponthieu.fr)
+#   WA_EXPECT  numéro du lien WhatsApp (wa.me/NUMERO)            (défaut 33609204590 : le numéro affiché, D48)
+#   EXPECT_URLS nombre d'URLs attendu dans sitemap.xml           (défaut 18 : 9 pages + 3 pages d'atterrissage + /blog/ + 5 articles)
 #   OLDWORD    ancien nom de marque cherché dans les pages       (défaut zinnias)
 #   PDF_PATH   chemin d'une plaquette PDF encore déployée        (défaut : vide ; la plaquette n'est plus déployée,
 #              dossier docs/ dans .assetsignore : le script contrôle alors qu'elle répond 404)
@@ -48,16 +50,20 @@
 #   A. Ancien domaine : https://OLD/ et https://OLD/lots?x=1 -> 301 vers NEW avec chemin et paramètres
 #      conservés ; chemin profond (et PDF si PDF_PATH est renseigné) ; http://OLD aboutit sur https://NEW (nombre de sauts) ; www.OLD.
 #   B. Nouveau domaine : http -> https ; www -> apex (chemin et paramètres conservés) ;
-#      200 sur /, /lots, /contact, /terrain-a-batir-gardanne, /projet, /environnement, /galerie,
+#      200 sur /, /lots, /contact, /terrain-a-batir-gardanne, /terrain-a-batir-aix-en-provence,
+#      /terrain-a-batir-marseille, /terrain-a-batir-provence, /projet, /environnement, /galerie,
 #      /mentions-legales, /confidentialite, /blog/ (si publié) ; /lots.html -> /lots ; /index.html -> / ;
 #      URL inconnue -> 404 avec un corps HTML non vide (page 404 stylée, chemins absolus).
 #   C. Balises : canonical = URL propre sur NEW (sans .html, barre finale seulement pour /blog/...) ;
 #      og:url identique ; aucune trace de OLD dans canonical, og:*, twitter:*, JSON-LD ;
-#      aucun noindex sur les pages indexables ; e-mail affiché ; ancien e-mail absent ;
+#      aucun noindex sur les pages indexables ; e-mail affiché (cypres@ponthieu.fr) ; ancien e-mail absent ;
+#      aucune trace de « ownimmobilier », « jessica@ » ni de l'ancien numéro WhatsApp 33630073601 ;
+#      liens WhatsApp = wa.me/33609204590 sur chaque page ; lien tel:+33609204590 sur chaque page ;
 #      mention résiduelle de l'ancien nom.
 #   D. robots.txt (ligne Sitemap: de NEW, pas de Disallow: /) et sitemap.xml (XML valide avec xmllint,
-#      URLs toutes sur NEW, toutes en 200 sans redirection, images comprises) ; ni « 20 min » ni « 23 min »
-#      (trajets périmés, décision D14) dans site.webmanifest, feed.xml et sitemap.xml : FAIL s'ils réapparaissent.
+#      URLs toutes sur NEW, toutes en 200 sans redirection, images comprises ; EXPECT_URLS URLs (18) dont les 3 pages
+#      d'atterrissage ; ni /merci ni /404) ; ni « 20 min » ni « 23 min » (trajets périmés, décision D14) ni « ownimmobilier »,
+#      « jessica@ », « 33630073601 » dans site.webmanifest, feed.xml et sitemap.xml : FAIL s'ils réapparaissent.
 #   E. En-têtes : HSTS, X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy
 #      (browsing-topics), cache CSS/JS (revalidation), cache immuable des polices et images ;
 #      la plaquette PDF n'est plus servie (404), ou, si PDF_PATH est renseigné, X-Robots-Tag: noindex.
@@ -94,8 +100,10 @@ TIMEOUT=${TIMEOUT:-20}
 DNSCHECK=${DNSCHECK:-1}
 MX_EXPECT=${MX_EXPECT:-ovh.net}
 SPF_EXPECT=${SPF_EXPECT:-include:mx.ovh.com}
-EMAIL_OK=${EMAIL_OK:-jessica@ownimmobilier.fr}
+EMAIL_OK=${EMAIL_OK:-cypres@ponthieu.fr}
 EMAIL_OLD=${EMAIL_OLD:-zinnias@ponthieu.fr}
+WA_EXPECT=${WA_EXPECT:-33609204590}
+EXPECT_URLS=${EXPECT_URLS:-18}
 OLDWORD=${OLDWORD:-zinnias}
 PDF_PATH=${PDF_PATH-}
 WHOIS=${WHOIS:-0}
@@ -235,6 +243,10 @@ jsonld_of() { # tous les blocs <script type="application/ld+json"> du fichier
   ' "$1"
 }
 noindex_in() { flat "$1" | grep -o -i -E '<meta[^>]*name="robots"[^>]*>' | grep -i -c noindex; }
+# D48 / D48 bis : motifs qui ne doivent plus apparaître NULLE PART (texte, mailto, JSON-LD, liens, commentaires)
+FORBID_PAT='ownimmobilier|jessica@|33630073601'
+scan_forbid() { grep -o -i -E "$FORBID_PAT" "$1" 2>/dev/null | sort -u | tr '\n' ' '; }
+scan_wa() { grep -o -E 'wa\.me/[0-9]+' "$1" 2>/dev/null | sort -u | tr '\n' ' '; }
 
 # ================================================================ EN-TÊTE
 printf '%sContrôle de migration%s  NEW=%s  OLD=%s  (%s)\n' "$C_B" "$C_0" "$NEW" "${OLD:-(aucun)}" "$(date '+%Y-%m-%d %H:%M')"
@@ -296,7 +308,7 @@ case "$BLOG" in
 esac
 
 # Pages : 200 sans redirection
-PAGES="/ /lots /contact /terrain-a-batir-gardanne /projet /environnement /galerie /mentions-legales /confidentialite"
+PAGES="/ /lots /contact /terrain-a-batir-gardanne /terrain-a-batir-aix-en-provence /terrain-a-batir-marseille /terrain-a-batir-provence /projet /environnement /galerie /mentions-legales /confidentialite"
 : >"$T/pages.lst"
 _i=0
 for _p in $PAGES; do
@@ -356,7 +368,7 @@ fi
 section "C. Balises (canonical, og, JSON-LD), e-mail, ancien nom"
 
 PYOK=0; command -v python3 >/dev/null 2>&1 && PYOK=1
-NOIDX_BAD=; OLDMAIL_BAD=; OLDWORD_BAD=; HOME_MAIL=0; CONTACT_MAIL=0; JSON_BAD=
+NOIDX_BAD=; OLDMAIL_BAD=; OLDWORD_BAD=; HOME_MAIL=0; CONTACT_MAIL=0; JSON_BAD=; FORBID_BAD=; WA_BAD=; TEL_BAD=
 
 check_meta() { # check_meta ETIQUETTE URL_ATTENDUE FICHIER
   _mc=$(canon_of "$3"); _mo=$(meta_of "$3" og:url)
@@ -396,6 +408,14 @@ while read -r _idx _p; do
   [ "$(noindex_in "$_f")" -ge 1 ] && NOIDX_BAD="$NOIDX_BAD $_p"
   case "$(hget "$T/pg$_idx.h" x-robots-tag | lc)" in *noindex*) NOIDX_BAD="$NOIDX_BAD $_p(en-tête)" ;; esac
   grep -q -i -F "$EMAIL_OLD" "$_f" && OLDMAIL_BAD="$OLDMAIL_BAD $_p"
+  _fb=$(scan_forbid "$_f"); [ -n "$_fb" ] && FORBID_BAD="$FORBID_BAD $_p($_fb)"
+  _wa=$(scan_wa "$_f")
+  case "$_wa" in
+    "wa.me/$WA_EXPECT ") ;;
+    "") WA_BAD="$WA_BAD $_p(aucun lien)" ;;
+    *)  WA_BAD="$WA_BAD $_p($_wa)" ;;
+  esac
+  grep -q -F 'href="tel:+33609204590"' "$_f" || TEL_BAD="$TEL_BAD $_p"
   _cnt=$(lc <"$_f" | sed 's/plaquette-clos-des-[a-z]*\.pdf//g' | grep -o -i "$OLDWORD" | wc -l | tr -d ' ')
   [ "$_cnt" -gt 0 ] && OLDWORD_BAD="$OLDWORD_BAD $_p($_cnt)"
   if grep -q -i -F "$EMAIL_OK" "$_f"; then
@@ -414,6 +434,13 @@ if [ "$HOME_MAIL" = 1 ] && [ "$CONTACT_MAIL" = 1 ]; then row PASS "e-mail affich
 else row FAIL "e-mail affiché = $EMAIL_OK" "absent de :$([ "$HOME_MAIL" = 1 ] || printf ' /')$([ "$CONTACT_MAIL" = 1 ] || printf ' /contact')"; fi
 if [ -n "$OLDMAIL_BAD" ]; then row FAIL "absence de $EMAIL_OLD" "encore présent sur :$OLDMAIL_BAD"
 else row PASS "absence de $EMAIL_OLD" "absent des $(wc -l <"$T/pages.lst" | tr -d ' ') pages contrôlées"; fi
+_np=$(wc -l <"$T/pages.lst" | tr -d ' ')
+if [ -n "$FORBID_BAD" ]; then row FAIL "aucune trace de ownimmobilier / jessica@ / 33630073601" "présent sur :$FORBID_BAD"
+else row PASS "aucune trace de ownimmobilier / jessica@ / 33630073601" "absents des $_np pages contrôlées"; fi
+if [ -n "$WA_BAD" ]; then row FAIL "WhatsApp : wa.me/$WA_EXPECT sur chaque page" "écart sur :$WA_BAD"
+else row PASS "WhatsApp : wa.me/$WA_EXPECT sur chaque page" "bulle WhatsApp présente et unique numéro sur les $_np pages"; fi
+if [ -n "$TEL_BAD" ]; then row FAIL "lien tel:+33609204590 sur chaque page" "absent de :$TEL_BAD"
+else row PASS "lien tel:+33609204590 sur chaque page" "présent sur les $_np pages"; fi
 if [ -n "$OLDWORD_BAD" ]; then row WARN "ancien nom « $OLDWORD » (hors nom du PDF)" "occurrences :$OLDWORD_BAD"
 else row PASS "ancien nom « $OLDWORD » (hors nom du PDF)" "aucune mention résiduelle"; fi
 
@@ -470,6 +497,16 @@ else
     if [ "$BLOG_PUB" = 1 ] && ! grep -q -x "$TARGET/blog/" "$T/locs.lst"; then
       row WARN "sitemap.xml : contient /blog/" "le blog est publié mais /blog/ n'est pas dans le sitemap"
     fi
+    _miss=
+    for _lp in terrain-a-batir-aix-en-provence terrain-a-batir-marseille terrain-a-batir-provence; do
+      grep -q -x "$TARGET/$_lp" "$T/locs.lst" || _miss="$_miss /$_lp"
+    done
+    if [ -z "$_miss" ]; then row PASS "sitemap.xml : les 3 pages d'atterrissage" "/terrain-a-batir-aix-en-provence, -marseille, -provence présentes"
+    else row FAIL "sitemap.xml : les 3 pages d'atterrissage" "absentes du sitemap :$_miss"; fi
+    if [ "$_nl" -eq "$EXPECT_URLS" ]; then row PASS "sitemap.xml : $EXPECT_URLS URLs attendues" "$_nl URLs (9 pages + 3 atterrissage + /blog/ + 5 articles)"
+    else row FAIL "sitemap.xml : $EXPECT_URLS URLs attendues" "obtenu $_nl URL(s)"; fi
+    if grep -q -E "/(merci|404)([/?]|$)" "$T/locs.lst"; then row FAIL "sitemap.xml : ni /merci ni /404" "page non indexable listée dans le sitemap"
+    else row PASS "sitemap.xml : ni /merci ni /404" "pages non indexables absentes"; fi
     _ni=$(wc -l <"$T/imgs.lst" | tr -d ' ')
     if [ "$_ni" -gt 0 ]; then
       _ibad=
@@ -488,17 +525,21 @@ else
   fi
 fi
 
-# --- Trajets périmés (« 20 min d'Aix », « 23 min de Marseille » : décision D14) dans les fichiers publics hors pages
+# --- Trajets périmés (« 20 min d'Aix », « 23 min de Marseille » : décision D14) et anciennes coordonnées dans les fichiers publics hors pages
 _nb=$(printf '\302\240')   # espace insécable (UTF-8)
 for _f in site.webmanifest feed.xml sitemap.xml; do
   fetch "$BASE/$_f" trj
-  if [ "$F_CODE" != 200 ]; then
+  _fb=
+  [ "$F_CODE" = 200 ] && _fb=$(scan_forbid "$T/trj.b")
+  if [ -n "$_fb" ]; then
+    row FAIL "$_f : sans ownimmobilier / jessica@ / 33630073601" "trouvé : $_fb"
+  elif [ "$F_CODE" != 200 ]; then
     row WARN "$_f : sans « 20 min » ni « 23 min »" "HTTP $F_CODE : fichier non contrôlé"
   elif LC_ALL=C grep -q -E "(^|[^0-9])(20|23)( |$_nb)*min" "$T/trj.b"; then
     _hit=$(LC_ALL=C grep -o -E "(^|[^0-9])(20|23)( |$_nb)*min[a-z]*" "$T/trj.b" | head -1 | sed -E 's/^[^0-9]+//' | tr -d '\n')
-    row FAIL "$_f : sans « 20 min » ni « 23 min »" "formulation périmée trouvée (« ${_hit} ») : écrire « environ 25 minutes d'Aix » / « environ 30 minutes de Marseille »"
+    row FAIL "$_f : sans « 20 min » ni « 23 min »" "formulation périmée trouvée (« ${_hit} ») : écrire « à 25 minutes d'Aix-en-Provence » / « à 30 minutes de Marseille » (hors heures de pointe)"
   else
-    row PASS "$_f : sans « 20 min » ni « 23 min »" "aucune formulation périmée"
+    row PASS "$_f : sans « 20 min » ni « 23 min »" "aucune formulation périmée ; ni ownimmobilier, ni jessica@, ni 33630073601"
   fi
 done
 

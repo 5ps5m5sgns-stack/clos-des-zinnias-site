@@ -14,12 +14,36 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/plan-officiel-composition.webp</image:loc>
-      <image:title>Plan de composition du lotissement Le Clos des Cyprès (Cabinet Boulay, 3 avril 2026) : 8 lots, indicatif non contractuel</image:title>
+      <image:title>Plan de composition du lotissement Le Clos des Cyprès : huit lots numérotés de 1 à 8, avec la surface de chacun</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-gardanne</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/terrain-a-batir-aix-en-provence</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/terrain-provence-collines-doree.webp</image:loc>
+      <image:title>Simulation d'ambiance, non contractuelle : maisons provençales à toits de tuiles le long d'une rue, parmi les pins et les cyprès, avec une montagne à l'horizon</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/terrain-a-batir-marseille</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
+      <image:title>Visualisation aérienne illustrative, non contractuelle : maisons à toits de tuiles et piscines en lisière de bois</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/terrain-a-batir-provence</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/villa-piscine-jardin-provencal.webp</image:loc>
+      <image:title>Visualisation non contractuelle : villa provençale à toit de tuiles, terrasse, jardin planté de lavandes et piscine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/projet</loc>
@@ -54,7 +78,7 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif</image:loc>
-      <image:title>Vue aérienne par drone d'un terrain herbeux et des maisons de Biver, avec la montagne Sainte-Victoire à l'horizon</image:title>
+      <image:title>Vue aérienne par drone d'une prairie et du hameau de Biver, entouré de collines boisées, avec la montagne Sainte-Victoire à l'horizon</image:title>
     </image:image>
   </url>
   <url>
@@ -62,7 +86,7 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif</image:loc>
-      <image:title>Vue de drone d'un terrain herbeux en pente douce, bordé d'une voie étroite et d'une haie de conifères, avec les maisons de Biver au loin</image:title>
+      <image:title>Vue de drone d'une prairie en pente, bordée d'une voie étroite et d'une haie de conifères, avec les toits du hameau de Biver au loin sur la colline</image:title>
     </image:image>
   </url>
   <url>
@@ -70,7 +94,7 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif</image:loc>
-      <image:title>Vue aérienne par drone d'un terrain herbeux en bordure d'un quartier de maisons à piscines, au pied d'un bois de pins, avec des collines à l'horizon, à Biver</image:title>
+      <image:title>Vue aérienne par drone d'une prairie en bordure d'un quartier résidentiel de jardins et de piscines, au pied d'un bois de pins, avec des collines boisées à l'horizon, à Biver</image:title>
     </image:image>
   </url>
   <url>
@@ -78,7 +102,7 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif</image:loc>
-      <image:title>Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec, sur la prairie, une maison existante et des toits de tuiles autour</image:title>
+      <image:title>Vue de drone prise à la verticale d'une prairie close, bordée d'une route et de haies de conifères, avec les jardins et les piscines d'un quartier résidentiel de l'autre côté de la route</image:title>
     </image:image>
   </url>
   <url>
@@ -86,7 +110,7 @@
     <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif</image:loc>
-      <image:title>Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec, sur la prairie, une maison existante au second plan, une voie étroite à gauche et un bois de pins au fond</image:title>
+      <image:title>Vue de drone rapprochée d'une prairie close par un grillage et un muret, avec une voie étroite à gauche, des pins et des conifères, et un bois de pins au fond</image:title>
     </image:image>
   </url>
 </urlset>

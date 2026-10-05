@@ -84,18 +84,19 @@ CATEGORIES = {
 # Page d'index du blog (texte éditorial STABLE : aucune date, aucun prix, aucun chiffre qui change)
 INDEX_TITLE = "Blog terrain à bâtir Gardanne et Biver"          # + « | Le Clos des Cyprès »
 INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
-INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir en lotissement à Gardanne et Biver : "
-                     "démarches, règles à connaître, risques et financement.")
-INDEX_INTRO = ("Le Clos des Cyprès est un lotissement de huit terrains à bâtir à Biver, hameau de Gardanne, "
-               "libres de constructeur et proposés par l'aménageur PONTHIEU DH. Ce blog rassemble des guides pratiques sur l'achat d'un terrain en "
-               "lotissement, les règles à connaître avant de construire et la vie à Gardanne et à Biver. "
-               "Chaque article cite ses sources et indique la date de sa dernière mise à jour.")
+INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir et construire sa maison en Provence, "
+                     "à Gardanne et à Biver : démarches, règles, budget et financement.")
+INDEX_INTRO = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur et vendus "
+               "directement par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous un message. "
+               "Ce blog rassemble des guides pratiques pour acheter un terrain en lotissement, construire sa maison en "
+               "Provence et connaître les règles à respecter. Chaque article cite ses sources et indique la date de sa "
+               "dernière mise à jour.")
 
 # Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
-CTA_FINAL_TITLE = "Un projet de terrain à Biver ou à Gardanne ?"
+CTA_FINAL_TITLE = "Un projet de terrain à Biver, pour construire votre maison ?"
 CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
-                  "et proposés par l'aménageur PONTHIEU DH. Consultez les lots, la page consacrée au terrain à bâtir à Gardanne, "
-                  "ou parlez de votre projet avec nous.")
+                  "et vendus directement par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous "
+                  "un message : le prix et les informations de chaque lot vous sont présentés lors de notre échange.")
 # Libellé du bouton vers la page « /terrain-a-batir-gardanne » : varié d'un article à l'autre (pas cinq liens
 # identiques vers la même page). Clé = slug ; un nouvel article reçoit le libellé par défaut.
 CTA_PILLAR_DEFAULT = "Présentation du programme"
@@ -106,7 +107,8 @@ CTA_PILLAR_LABELS = {
     "terrain-libre-de-constructeur-definition": "Présentation des terrains",
     "verifier-avant-dacheter-terrain-biver-gardanne": "La page du terrain à Biver",
 }
-CTA_FINAL_BUTTONS = (("Voir les huit lots", "/lots"),
+CTA_FINAL_BUTTONS = (("Appelez le " + PHONE_DISPLAY, "tel:" + PHONE_TEL),
+                     ("Voir les huit lots", "/lots"),
                      (CTA_PILLAR_DEFAULT, "/terrain-a-batir-gardanne"),
                      ("Nous contacter", "/contact"))
 CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Nous contacter", "/contact"))
@@ -1544,10 +1546,8 @@ class Builder:
         btns = " ".join('<a class="btn %s" href="%s">%s</a>' % ("btn-gold" if k == 0 else "btn-outline", h, esc(typo(label(l, h)), False))
                         for k, (l, h) in enumerate(CTA_FINAL_BUTTONS))
         return ('<div class="cta-block cta-block--final">\n<p class="cta-block__title">%s</p>\n<p>%s</p>\n'
-                '<p class="cta-block__btns">%s</p>\n<p class="cta-block__tel">Ou appelez-nous&nbsp;: '
-                '<a href="tel:%s">%s</a></p>\n</div>') % (
-            nbsp_entities(esc(typo(CTA_FINAL_TITLE), False)), nbsp_entities(esc(typo(CTA_FINAL_TEXT), False)), nbsp_entities(btns),
-            PHONE_TEL, PHONE_DISPLAY.replace(" ", "&nbsp;"))
+                '<p class="cta-block__btns">%s</p>\n</div>') % (
+            nbsp_entities(esc(typo(CTA_FINAL_TITLE), False)), nbsp_entities(esc(typo(CTA_FINAL_TEXT), False)), nbsp_entities(btns))
 
     def toc_html(self, a):
         if len(a.toc) < TOC_MIN_H2:

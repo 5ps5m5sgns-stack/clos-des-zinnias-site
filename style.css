@@ -432,6 +432,10 @@ section {
   max-width: 60rem;
   padding: 7rem var(--gutter) 4rem;
 }
+/* Héros avec barre de repères (.hero__stats) en bas : le contenu garde la place de la barre (1, 2 ou 3-4 lignes selon la largeur) */
+.hero--stats .hero__inner { padding-bottom: 6rem; }
+@media (max-width: 1100px) { .hero--stats .hero__inner { padding-bottom: 9.5rem; } }
+@media (max-width: 640px) { .hero--stats .hero__inner { padding-bottom: 11.5rem; } }
 
 .badge {
   display: inline-block;
@@ -1413,7 +1417,12 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
   grid-template-columns: 2fr 1fr 1.2fr 1.4fr;
   gap: 2.5rem;
 }
-@media (max-width: 820px) { .footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+@media (max-width: 820px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  /* marge de bas de page : les bulles flottantes (WhatsApp, appel) et le bouton « retour en haut »
+     ne recouvrent plus les liens légaux quand on arrive tout en bas (fond identique : invisible) */
+  .footer { padding-bottom: 12.5rem; }
+}
 @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
 .footer__brand .name { font-family: var(--font-titre); font-size: 1.6rem; color: var(--creme); }
 .footer__brand .sub { font-size: 0.71rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--or); margin-top: 0.3rem; }

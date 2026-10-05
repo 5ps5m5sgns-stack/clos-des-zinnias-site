@@ -9,13 +9,13 @@ keyword: acheter un terrain en lotissement
 image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue aérienne par drone d'un terrain herbeux en bordure d'un quartier de maisons à piscines, au pied d'un bois de pins, avec des collines à l'horizon, à Biver
+image_alt: Vue aérienne par drone d'une prairie en bordure d'un quartier résidentiel de jardins et de piscines, au pied d'un bois de pins, avec des collines boisées à l'horizon, à Biver
 og_image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/partage.jpg
 related: verifier-avant-dacheter-terrain-biver-gardanne, terrain-libre-de-constructeur-definition, budget-terrain-maison-pres-aix-gardanne
 draft: false
 ---
 
-Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Voici les étapes dans l'ordre, et la réponse nuancée à « peut-on construire librement ? ». Exemple local : [les huit terrains du Clos des Cyprès](/terrain-a-batir-gardanne).
+Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, commune de Gardanne, [les huit terrains du Clos des Cyprès](/terrain-a-batir-gardanne) sont proposés par l'aménageur PONTHIEU DH.
 
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 
@@ -51,7 +51,7 @@ Tableau : Ce que chaque document régit
 | Règlement de lotissement | Compléments au PLU : implantation, matériaux, couleurs | Règles d'urbanisme caduques dix ans après la décision si un PLU couvre le lotissement (art. L. 442-9) |
 | Cahier des charges | Droits et obligations des colotis entre eux : charges, servitudes privées, entretien, plantations | Clauses contractuelles non touchées par cette caducité |
 
-Si le lotisseur répartit la surface de plancher, il remet aussi un certificat de surface constructible pour votre lot (art. R. 442-11). À Biver, on lit le PLUi du Pays d'Aix (zone UDb au Géoportail de l'urbanisme), complété, le cas échéant, par le règlement et le cahier des charges.
+Si le lotisseur répartit la surface de plancher, il remet aussi un certificat de surface constructible pour votre lot (art. R. 442-11). En Pays d'Aix, on lit le PLUi (consultable sur le Géoportail de l'urbanisme), complété, le cas échéant, par le règlement et le cahier des charges.
 
 ## Peut-on construire librement dans un lotissement ?
 
@@ -59,7 +59,7 @@ Si le lotisseur répartit la surface de plancher, il remet aussi un certificat d
 
 Le lotissement protège aussi l'acquéreur : pendant cinq ans après l'achèvement des travaux d'aménagement, le permis ne peut être refusé au motif de règles d'urbanisme postérieures au permis d'aménager (art. L. 442-14).
 
-Exemple de « cadre » au Clos des Cyprès, d'après son plan de composition : deux des huit lots ont en plus un jardin en zone naturelle (N), le terrain est bordé d'un espace boisé classé au PLUi, inconstructible, et deux lots longent le Canal de Provence, avec une zone de protection renforcée jusqu'à 8 m de l'ouvrage et simplifiée de 8 à 16 m.
+Le plan de composition indique ce « cadre » lot par lot : zone d'implantation, accès, surface de plancher.
 
 ## Promesse de vente d'un lot : réservation et rétractation
 
@@ -69,7 +69,7 @@ Aucune promesse de vente ni aucun acompte avant la délivrance du permis d'amén
 
 La promesse « ne devient définitive qu'au terme d'un délai de dix jours pendant lequel l'acquéreur a la faculté de se rétracter » (art. L. 442-8). Il court à partir du lendemain de la première présentation de la lettre recommandée qui notifie la promesse ou de sa remise en main propre ; la rétractation se notifie par lettre recommandée avec accusé de réception, et les fonds sont restitués sous vingt et un jours.
 
-L'article L. 271-1 du code de la construction et de l'habitation (CCH) ouvre dix jours de rétractation pour « la construction ou l'acquisition d'un immeuble à usage d'habitation ». Il ne cite pas expressément le terrain nu : pour un lot sous permis d'aménager, c'est L. 442-8 qui fixe le délai et renvoie à L. 271-1 pour ses modalités. Hors lotissement, demandez au notaire.
+L'article L. 271-1 du code de la construction et de l'habitation (CCH) ouvre dix jours de rétractation pour « la construction ou l'acquisition d'un immeuble à usage d'habitation ». Il ne cite pas expressément le terrain à bâtir : pour un lot sous permis d'aménager, c'est L. 442-8 qui fixe le délai et renvoie à L. 271-1 pour ses modalités. Hors lotissement, demandez au notaire.
 
 ## Étude de sol, risques, financement : que vérifier avant de signer ?
 
@@ -77,7 +77,7 @@ L'article L. 271-1 du code de la construction et de l'habitation (CCH) ouvre dix
 
 Dans les zones d'exposition moyenne ou forte au retrait-gonflement des argiles, la vente d'un terrain non bâti constructible suppose une **étude géotechnique préalable**, fournie par le vendeur et annexée à la promesse ou, à défaut, à l'acte (art. L. 132-5 du CCH), valable trente ans si le sol n'est pas remanié (art. R. 132-6). Elle est transmise à vos constructeurs (art. L. 132-6).
 
-L'état des risques et pollutions est annexé à la promesse. Gardanne est couverte par un plan de prévention des risques « retrait-gonflement » approuvé le 27/02/2017 et un plan de prévention des risques miniers approuvé le 09/03/2023. Le terrain du Clos des Cyprès est situé dans une zone soumise aux obligations légales de débroussaillement (code forestier, art. L. 134-6). Les informations sur les risques auxquels un bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr.
+L'état des risques et pollutions est annexé à la promesse ; le site [Géorisques](https://www.georisques.gouv.fr/) permet de consulter les risques connus d'une commune ou d'une parcelle. Gardanne est couverte par un plan de prévention du retrait-gonflement des argiles approuvé le 27/02/2017. Dans les territoires exposés aux incendies, le code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6) : voir [ce qu'il faut vérifier avant d'acheter un terrain constructible](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 ### Financement
 
@@ -107,7 +107,7 @@ La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxa
 
 ### Ce qui change quand l'aménageur vend lui-même le lot
 
-Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. Le Clos des Cyprès, avenue du Pilon du Roy à Biver (Gardanne), compte huit terrains à bâtir de 500 à 1 133 m², proposés par l'aménageur PONTHIEU DH et présentés comme libres de constructeur. Le permis d'aménager n° PA 013 041 22 K0001 est délivré, le dossier est consultable à la mairie de Gardanne (service urbanisme), la livraison est prévue en mars 2027. Disponibilité et plan sur demande : [les lots](/lots) et [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
+Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [les lots](/lots) et [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 :::callout À retenir
 - Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.
@@ -139,15 +139,16 @@ Pas pour ses règles d'urbanisme : elles deviennent caduques dix ans après l'au
 - [Taxe d'aménagement](https://www.service-public.fr/particuliers/vosdroits/F23263), Service-Public, consulté le 05/10/2026.
 - Code de l'urbanisme, Légifrance, consulté le 05/10/2026 : [L. 442-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815993), [L. 442-7](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815996), [L. 442-8](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667953), [L. 442-9](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052866874), [L. 442-14](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037694107), [R. 442-11](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047280445), [R. 442-12](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819520), [R. 442-13](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819794), [R. 442-18](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025430929), [L. 115-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210397), [L. 332-15](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054141958), [L. 410-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667619), [R. 423-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819920), [R. 424-17](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031830633), [R. 424-21](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043940372), [R. 600-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006820365).
 - Code de la construction et de l'habitation, Légifrance, consulté le 05/10/2026 : [L. 271-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667917), [L. 132-5](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041588033), [L. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041565667), [R. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043818711).
-- [Code des assurances, art. L. 242-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019265425), Légifrance, consulté le 05/10/2026.
+- [Code des assurances, art. L. 242-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019265425) et [code forestier, art. L. 134-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047810678), Légifrance, consultés le 05/10/2026.
 - [Achat d'un terrain à bâtir : droits et taxes](https://www.impots.gouv.fr/particulier/achat-dun-immeuble-batir), impots.gouv.fr, consulté le 05/10/2026.
 - [Taux de la taxe d'aménagement](https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/delta_deliberation_tam_17_01_23/), data.economie.gouv.fr, jeu mis à jour le 03/03/2026, consulté le 05/10/2026.
 - [Géorisques](https://www.georisques.gouv.fr/) et [PLUi à Gardanne](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/), consultés le 05/10/2026.
 :::
 
 :::cta Un projet de terrain à Biver ?
-Une question sur le dossier de vente, le plan de composition ou le calendrier des travaux ? Disponibilité et plan des lots sur demande.
+Une question sur le dossier de vente, le plan de composition ou le calendrier des travaux ? Parlons-en : le prix et les informations de chaque lot vous sont communiqués lors de notre échange.
 
+- [Appelez le 06 09 20 45 90](tel:+33609204590)
 - [Voir les lots](/lots)
 - [Nous contacter](/contact)
 :::

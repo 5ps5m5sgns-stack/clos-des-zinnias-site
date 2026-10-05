@@ -9,13 +9,13 @@ keyword: construire sur un terrain en pente en Provence
 image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone d'un terrain herbeux en pente douce, bordé d'une voie étroite et d'une haie de conifères, avec les maisons de Biver au loin
+image_alt: Vue de drone d'une prairie en pente, bordée d'une voie étroite et d'une haie de conifères, avec les toits du hameau de Biver au loin sur la colline
 og_image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/partage.jpg
 related: verifier-avant-dacheter-terrain-biver-gardanne, budget-terrain-maison-pres-aix-gardanne, terrain-libre-de-constructeur-definition
 draft: false
 ---
 
-Construire sur un terrain en pente en Provence est courant et réalisable, à condition de traiter la pente comme une donnée du projet dès l'achat : elle joue sur l'implantation de la maison, l'accès, le terrassement, les murs de soutènement, les eaux de pluie, les fondations et les vues. Ce guide explique ce qu'est une restanque, ce que prévoit le PLUi du Pays d'Aix, à quoi servent les études de sol G1 et G2 et quels postes de coût varient. Il vaut pour tout terrain ; le Clos des Cyprès, lotissement de huit [terrains à bâtir](/lots) à Biver, ne sert que d'exemple.
+Construire sur un terrain en pente en Provence est courant et réalisable, à condition de traiter la pente comme une donnée du projet dès l'achat : elle joue sur l'implantation de la maison, l'accès, le terrassement, les murs de soutènement, les eaux de pluie, les fondations et les vues. Ce guide explique ce qu'est une restanque, ce que prévoit le PLUi du Pays d'Aix, à quoi servent les études de sol G1 et G2 et quels postes de coût varient. Il vaut pour tout projet de construire sa maison sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille ; à Biver, le Clos des Cyprès propose huit [terrains à bâtir](/lots).
 
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article ne remplace ni l'avis d'un géotechnicien ou d'un architecte, ni celui du notaire pour votre dossier.
 
@@ -43,7 +43,7 @@ Trois partis dominent : **épouser la pente** (demi-niveaux, maison semi-enterr�
 
 ## Que prévoit le PLUi du Pays d'Aix pour un terrain en pente ?
 
-Selon la réglementation en vigueur au 05/10/2026, le PLUi du Pays d'Aix (approuvé le 5 décembre 2024, modification n° 1 approuvée le 15 décembre 2025) comporte des règles qui touchent directement la pente. À Gardanne, la parcelle CB 118 relève en partie de la zone UDb.
+Selon la réglementation en vigueur au 05/10/2026, le PLUi du Pays d'Aix (approuvé le 5 décembre 2024, modification n° 1 approuvée le 15 décembre 2025) comporte des règles qui touchent directement la pente.
 
 - **Relief.** Les mouvements de terre se limitent aux stricts besoins de l'implantation et de l'accès, sans que la maison émerge dans le paysage ni s'encaisse dans le sol.
 - **Hauteur.** Elle se mesure depuis le terrain naturel : le sol existant au dépôt de la demande, avant déblais ou remblais. En cas de déblai, elle se compte depuis le sol terrassé ; enterrer ou remblayer la maison ne permet donc pas de monter plus haut.
@@ -65,7 +65,7 @@ Tableau : Les missions géotechniques de la norme NF P 94-500
 | G3, G4 | Étude, suivi et supervision d'exécution | Pendant le chantier |
 | G5 | Diagnostic ponctuel | En cas de désordre |
 
-En zone d'exposition moyenne ou forte au retrait-gonflement des argiles, le vendeur d'un terrain non bâti constructible annexe une étude préalable à la promesse ou à l'acte (code de la construction et de l'habitation, art. L. 132-5) ; elle reste valable 30 ans sans remaniement du sol (art. R. 132-6). Avant tout contrat de construction, si elle n'est pas annexée au titre de propriété, le maître d'ouvrage fournit une étude équivalente ou une étude de conception adaptée au bâtiment (art. L. 132-6) ; une G2 de type avant-projet et projet vaut présomption de conformité (arrêté du 22 juillet 2020).
+En zone d'exposition moyenne ou forte au retrait-gonflement des argiles (la carte se consulte sur [Géorisques](https://www.georisques.gouv.fr/)), le vendeur d'un terrain non bâti constructible annexe une étude préalable à la promesse ou à l'acte (code de la construction et de l'habitation, art. L. 132-5) ; elle reste valable 30 ans sans remaniement du sol (art. R. 132-6). Avant tout contrat de construction, si elle n'est pas annexée au titre de propriété, le maître d'ouvrage fournit une étude équivalente ou une étude de conception adaptée au bâtiment (art. L. 132-6) ; une G2 de type avant-projet et projet vaut présomption de conformité (arrêté du 22 juillet 2020).
 
 Sur une pente, la G1 ne suffit pas : elle identifie les risques, la G2 fixe ce qui sera construit. Demandez qu'elle traite aussi la stabilité du versant et les venues d'eau.
 
@@ -85,14 +85,17 @@ Tableau : Postes de coût qui varient avec la pente
 | Accès et réseaux | Longueur de rampe, escaliers, tranchées |
 | Maison semi-enterrée | Étanchéité et drainage des murs enterrés |
 
-## Que sait-on de la pente du Clos des Cyprès ?
+## Comment connaître la pente d'un terrain avant d'acheter ?
 
-Le Clos des Cyprès compte huit terrains à bâtir de 500 à 1 133 m², [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par l'aménageur PONTHIEU DH avenue du Pilon du Roy, à Biver (Gardanne) : voir [la présentation du programme](/terrain-a-batir-gardanne). Ce sont des repères d'information, non des promesses.
+Une annonce parle volontiers de « terrain plat » ou de « légère pente » sans donner de chiffre : mesurez avant de signer.
 
-- **Pente.** D'après le modèle numérique de terrain de l'IGN (RGE ALTI), la parcelle CB 118, l'une de celles du permis d'aménager, présente une pente moyenne d'environ 8° (de l'ordre de 13 à 14 %), orientée vers le nord-nord-est. Ce calcul indicatif ne remplace pas le plan du géomètre.
-- **Lot par lot.** Une moyenne ne dit rien de chaque lot : regardez chacun individuellement, sur plan et sur place. Quant à la vue lointaine sur la montagne Sainte-Victoire, elle est à vérifier lot par lot.
-- **Sol.** Géorisques (consulté le 05/10/2026) classe cette parcelle en exposition forte au retrait-gonflement des argiles, et Gardanne est couverte par un plan de prévention des risques miniers approuvé le 9 mars 2023. Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr.
-- **Bois et feu.** Le terrain est bordé d'un espace boisé classé au PLUi, inconstructible, et situé dans une zone soumise aux obligations légales de débroussaillement (code forestier, art. L. 134-6). Le tracé exact de l'espace boisé se lit lot par lot sur le plan.
+- **Le plan topographique du géomètre** donne les courbes de niveau et les cotes du terrain : c'est le document de référence, à demander avant la promesse de vente.
+- **Le modèle numérique de terrain de l'IGN (RGE ALTI)** permet une première estimation de la pente ; elle reste indicative et ne remplace pas le relevé du géomètre.
+- **La visite**, à plusieurs heures de la journée : accès, murs existants, écoulement de l'eau après la pluie.
+
+Une pente exprimée en pourcentage se convertit en degrés : 10 % correspondent à environ 5,7° et 20 % à environ 11,3°.
+
+En lotissement, regardez chaque lot individuellement, sur plan et sur place : la moyenne d'un ensemble ne dit rien d'un lot. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 
 ## Quelles questions poser à l'architecte, et quelles erreurs éviter ?
 
@@ -136,8 +139,9 @@ Le PLUi interdit les mouvements de terre qui encaissent la construction et, en c
 :::
 
 :::cta Un projet sur une parcelle en pente ?
-Le plan des lots et leur disponibilité se demandent à l'aménageur.
+Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique.
 
+- [Appelez le 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
 - [Nous contacter](/contact)
 :::
@@ -148,6 +152,6 @@ Le plan des lots et leur disponibilité se demandent à l'aménageur.
 - [NF P94-500](https://norminfo.afnor.org/norme/nf-p94-500/missions-dingenierie-geotechnique-classification-et-specifications/103926) et [projet de révision](https://norminfo.afnor.org/norme/pr-nf-p94-500/missions-dingenierie-geotechnique-classification-et-specifications/203276), AFNOR Norm'Info, consultés le 05/10/2026.
 - [Code de l'urbanisme](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074075) (art. R. 421-2, R. 421-23), [code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429847) (art. 640, 641) et [code forestier](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047810678) (art. L. 134-6), Légifrance, consultés le 05/10/2026.
 - [Débroussaillement](https://www.service-public.gouv.fr/particuliers/vosdroits/F33298), Service-Public.fr, et [Géorisques](https://www.georisques.gouv.fr/), consultés le 05/10/2026.
-- [RGE ALTI](https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI), IGN, calcul de pente sur la parcelle CB 118, 05/10/2026.
+- [RGE ALTI](https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI), IGN, consulté le 05/10/2026.
 - [Restanque](https://fr.wikipedia.org/wiki/Restanque), Wikipédia (source secondaire), consulté le 05/10/2026.
 :::

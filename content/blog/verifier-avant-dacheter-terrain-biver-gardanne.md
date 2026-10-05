@@ -9,13 +9,13 @@ keyword: terrain constructible à Gardanne
 image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec, sur la prairie, une maison existante au second plan, une voie étroite à gauche et un bois de pins au fond
+image_alt: Vue de drone rapprochée d'une prairie close par un grillage et un muret, avec une voie étroite à gauche, des pins et des conifères, et un bois de pins au fond
 og_image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, construire-sur-terrain-en-pente-restanques-provence, terrain-libre-de-constructeur-definition
 draft: false
 ---
 
-Avant d'acheter un terrain constructible à Gardanne ou à Biver, il faut contrôler neuf points, la plupart avec des outils officiels gratuits : zonage du PLUi du Pays d'Aix, certificat d'urbanisme, risques, étude de sol, débroussaillement, servitudes, réseaux, pente et, en lotissement, règlement. Pour chacun : où regarder, ce que cela change pour une maison, à qui poser la question. Ces vérifications valent pour n'importe quel terrain, y compris ceux du [Clos des Cyprès](/terrain-a-batir-gardanne).
+Avant d'acheter un terrain constructible à Gardanne ou à Biver, il faut contrôler neuf points, la plupart avec des outils officiels gratuits : zonage du PLUi du Pays d'Aix, certificat d'urbanisme, risques, étude de sol, débroussaillement, servitudes, réseaux, pente et, en lotissement, règlement. Pour chacun : où regarder, ce que cela change pour la maison que vous voulez construire, à qui poser la question. Ces vérifications valent pour n'importe quel terrain à bâtir ; à Biver, voir [les terrains du Clos des Cyprès](/terrain-a-batir-gardanne).
 
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article n'est pas un conseil juridique personnalisé : pour votre dossier, le notaire reste l'interlocuteur.
 
@@ -27,12 +27,12 @@ Tableau : Liste de contrôle avant l'achat d'un terrain à Gardanne ou à Biver
 
 | Point | Où vérifier | Ce que cela change | À qui demander |
 |:------|:------------|:-------------------|:---------------|
-| Zonage et règlement du PLUi | [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.gouv.fr/) | Constructibilité, emprise, hauteur, reculs | Mairie (urbanisme) |
+| Zonage et règlement du PLUi | [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.gouv.fr/) | Constructibilité, emprise, hauteur, distances aux limites | Mairie (urbanisme) |
 | Certificat d'urbanisme | [Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F1633) | Règles figées 18 mois | Mairie ; notaire |
 | Risques, état des risques | [Géorisques](https://www.georisques.gouv.fr/) | Précautions, parfois limites au projet | Vendeur ; notaire |
 | Argiles : étude géotechnique | Remise par le vendeur ; carte Géorisques | Type de fondations | Vendeur ; géotechnicien |
 | Débroussaillement | [Géorisques](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement) | Entretien à vos frais | Mairie ; vendeur |
-| Espace boisé classé, zone N | Géoportail (prescriptions) | Surface réellement constructible | Mairie |
+| Espaces boisés classés, zones naturelles | Géoportail (prescriptions) | Surface réellement constructible | Mairie |
 | Servitudes | Géoportail ; titre de propriété | Implantation, passages | Notaire |
 | Réseaux, pente, accès | Visite ; plan du géomètre | Raccordements, terrassement | Géomètre ; constructeur |
 | Règlement de lotissement | Dossier de l'aménageur | Implantation, clôtures, aspect | Aménageur ; notaire |
@@ -45,25 +45,25 @@ Pas à pas sur le [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.
 
 1. Saisissez l'adresse ou la parcelle et relevez le code de zone : urbaine (U), à urbaniser (AU), agricole (A) ou naturelle (N).
 2. Affichez les prescriptions et les servitudes : espace boisé classé, emplacement réservé, secteur de risque.
-3. Lisez le règlement écrit de la zone (emprise, hauteur, reculs, stationnement) : le code seul ne suffit pas.
+3. Lisez le règlement écrit de la zone (emprise, hauteur, distances aux limites, stationnement) : le code seul ne suffit pas.
 
-Une parcelle peut cumuler plusieurs situations. Sur la parcelle CB 118, l'une de celles du Clos des Cyprès, le Géoportail (consulté le 05/10/2026) affiche une zone urbaine UDb, une partie en zone N et un espace boisé classé. Ce classement interdit tout changement d'affectation ou mode d'occupation du sol qui compromettrait les boisements (code de l'urbanisme, art. L. 113-2) ; en zone N, la construction d'une maison est en principe très limitée.
+Une même parcelle peut relever de plusieurs zones ou porter une prescription, comme un espace boisé classé. Ce classement interdit tout changement d'affectation ou mode d'occupation du sol qui compromettrait les boisements (code de l'urbanisme, art. L. 113-2) ; en zone naturelle (N), la construction d'une maison est en principe très limitée.
 
 Le certificat d'urbanisme (CU) confirme ces règles par écrit. Le CU d'information donne les règles du terrain ; le CU opérationnel dit aussi si votre projet est réalisable et décrit les équipements. Gratuit, instruit en un ou deux mois, valable 18 mois, il fige les règles et taxes si vous déposez votre permis de construire dans ce délai, sauf motif de sécurité ou de salubrité publiques ([Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F1633)). À Gardanne, la [mairie reçoit les demandes d'urbanisme](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/depot-des-demandes-durbanisme-en-ligne/) en ligne ou au service urbanisme (bâtiment Saint-Roch, avenue de Nice) ; le notaire en demande aussi un pour la vente.
 
 ## Comment connaître les risques d'un terrain à Gardanne ?
 
-[Géorisques](https://www.georisques.gouv.fr/) recense les risques connus à l'adresse ou à la parcelle, et son outil [ERRIAL](https://errial.georisques.gouv.fr/) établit l'état des risques. À Gardanne, les données consultées le 05/10/2026 font apparaître :
+[Géorisques](https://www.georisques.gouv.fr/) recense les risques connus d'une adresse ou d'une parcelle, et son outil [ERRIAL](https://errial.georisques.gouv.fr/) établit l'état des risques. Selon la commune, on y trouve :
 
-- un plan de prévention des risques miniers approuvé le 9 mars 2023, qui délimite des zones avec interdictions ou prescriptions ;
-- un plan de prévention des risques naturels sur le retrait-gonflement des argiles, approuvé le 27 février 2017 ;
-- une sismicité de niveau 3 (modérée), avec des règles de construction adaptées ;
-- un risque d'inondation (plan de prévention prescrit en 1998, bassin versant de Luynes) ;
+- des plans de prévention des risques (par exemple retrait-gonflement des argiles, mouvements de terrain, feu de forêt), qui délimitent des zones avec interdictions ou prescriptions ;
+- un zonage sismique, avec des règles de construction adaptées ;
 - des obligations légales de débroussaillement.
+
+À Gardanne, les données consultées le 05/10/2026 indiquent un plan de prévention du retrait-gonflement des argiles approuvé le 27 février 2017 et une sismicité de niveau 3 (modérée).
 
 Ces plans ne rendent pas tout terrain inconstructible : ils précisent, parcelle par parcelle, ce qui est autorisé, soumis à conditions ou exclu. Seul l'état des risques de la parcelle le dit.
 
-Selon la réglementation en vigueur au 05/10/2026, le vendeur remet cet état des risques à la première visite et l'annexe à la promesse de vente, ou à l'acte (code de l'environnement, art. L. 125-5). Dans une zone concernée notamment par un plan de prévention, une sismicité de niveau 2 à 5 ou le débroussaillement, l'annonce doit porter la phrase : « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr ». Pour le passé minier, le vendeur doit aussi communiquer toute information dont il dispose ([Géorisques](https://www.georisques.gouv.fr/minformer-sur-un-risque/risque-minier)).
+Selon la réglementation en vigueur au 05/10/2026, le vendeur remet cet état des risques à la première visite et l'annexe à la promesse de vente, ou à l'acte (code de l'environnement, art. L. 125-5). Dans une zone concernée notamment par un plan de prévention, une sismicité de niveau 2 à 5 ou le débroussaillement, l'annonce doit porter la phrase : « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr ».
 
 Pour une maison, certaines zones imposent des précautions de construction : un coût et un calendrier à intégrer avant de signer. Interrogez le vendeur et le notaire.
 
@@ -77,11 +77,11 @@ La carte d'exposition a été mise à jour en janvier 2026 ; son nouveau zonage 
 2. Si elle est moyenne ou forte, réclamez l'étude avant de signer la promesse.
 3. Faites-la lire à votre constructeur ou à un géotechnicien.
 
-Pour le Clos des Cyprès, ces informations par parcelle se demandent à l'aménageur, comme l'état des risques annexé à la promesse de vente.
+En lotissement, demandez-la à l'aménageur, comme l'état des risques annexé à la promesse de vente.
 
 ## Que prévoit la loi pour le débroussaillement ?
 
-Dans les territoires exposés aux incendies, le code forestier impose de débroussailler : sont concernées les constructions situées à l'intérieur ou à moins de 200 m de massifs, landes, maquis ou garrigues classés à risque. La profondeur est d'au moins 50 m autour des constructions (100 m sur décision du maire, art. L. 134-6), et jusqu'à 10 m de part et d'autre des voies privées ([Géorisques](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement)). Le rapport Géorisques consulté le 05/10/2026 pour l'avenue du Pilon du Roy, à Biver, indique que le bien est concerné.
+Dans les territoires exposés aux incendies, le code forestier impose de débroussailler : sont concernées les constructions situées à l'intérieur ou à moins de 200 m de massifs, landes, maquis ou garrigues classés à risque. La profondeur est d'au moins 50 m autour des constructions (100 m sur décision du maire, art. L. 134-6), et jusqu'à 10 m de part et d'autre des voies privées ([Géorisques](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement)). Géorisques indique, adresse par adresse, si un bien est concerné.
 
 Pour une maison, cela signifie un entretien régulier à la charge du propriétaire, sur 50 m qui peuvent déborder chez les voisins. Débroussailler n'est ni une coupe rase ni un défrichement, ce qui compte près d'un espace boisé classé. Des sanctions administratives et pénales sont prévues.
 
@@ -99,12 +99,14 @@ Depuis le 1er janvier 2025, le vendeur informe l'acquéreur dès l'annonce, puis
 
 Un lotissement ajoute des règles ([Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F34339)). Demandez :
 
-- le permis d'aménager : toute publicité indique la date de la décision et que le dossier est consultable en mairie (art. L. 442-6) ;
+- le permis d'aménager, dont le dossier est consultable en mairie (art. L. 442-6) ;
 - le règlement de lotissement, qui peut compléter le PLUi : implantation, aspect, clôtures ;
 - le cahier des charges : charges communes, servitudes entre voisins, entretien ;
 - le bornage, mentionné dans la promesse et dans l'acte de vente (art. L. 115-4).
 
-Le Clos des Cyprès, à Biver, est un lotissement de huit terrains à bâtir libres de constructeur ([ce que cela signifie](/blog/terrain-libre-de-constructeur-definition/)), proposés par l'aménageur PONTHIEU DH : ces pièces se demandent à l'aménageur via la page [contact](/contact). Pour la démarche complète, lisez le [guide pour acheter un terrain en lotissement](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
+Ces pièces se demandent à l'aménageur. Le Clos des Cyprès, à Biver, réunit huit terrains à bâtir [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par PONTHIEU DH : renseignez-vous auprès de l'aménageur, car les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Pour la démarche complète, lisez le [guide pour acheter un terrain en lotissement](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
+
+Vous cherchez un [terrain près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) pour construire votre maison ? Biver est à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture, hors heures de pointe.
 
 :::callout À retenir
 - Constructible n'est pas viabilisé : contrôlez zonage, risques, sol et réseaux.
@@ -130,8 +132,9 @@ Souvent oui, avec un projet adapté. L'espace boisé classé lui-même est prot�
 :::
 
 :::cta Une question sur un terrain à Biver ?
-Pour le Clos des Cyprès, les informations par parcelle se demandent à l'aménageur.
+Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique.
 
+- [Appelez le 06 09 20 45 90](tel:+33609204590)
 - [Les terrains du lotissement](/terrain-a-batir-gardanne)
 - [Nous contacter](/contact)
 :::
@@ -140,6 +143,6 @@ Pour le Clos des Cyprès, les informations par parcelle se demandent à l'aména
 - [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.gouv.fr/), IGN et ministère de la Transition écologique, consulté le 05/10/2026.
 - [PLUi du Pays d'Aix](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/) et [dépôt des demandes d'urbanisme](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/depot-des-demandes-durbanisme-en-ligne/), mairie de Gardanne, consultés le 05/10/2026.
 - Service-Public.fr, consulté le 05/10/2026 : [certificat d'urbanisme](https://www.service-public.gouv.fr/particuliers/vosdroits/F1633) (vérifié le 02/07/2025), [terrain en lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F34339), [information sur le débroussaillement](https://www.service-public.gouv.fr/particuliers/actualites/A17910).
-- Géorisques, ministère de la Transition écologique, consulté le 05/10/2026 : [argiles](https://www.georisques.gouv.fr/minformer-sur-un-risque/retrait-gonflement-des-argiles), [risque minier](https://www.georisques.gouv.fr/minformer-sur-un-risque/risque-minier), [débroussaillement](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement), [ERRIAL](https://errial.georisques.gouv.fr/).
+- Géorisques, ministère de la Transition écologique, consulté le 05/10/2026 : [argiles](https://www.georisques.gouv.fr/minformer-sur-un-risque/retrait-gonflement-des-argiles), [débroussaillement](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement), [ERRIAL](https://errial.georisques.gouv.fr/).
 - Légifrance, textes consolidés consultés le 05/10/2026 : [Code de la construction et de l'habitation](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074096), [Code de l'urbanisme](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074075), [Code de l'environnement](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074220).
 :::
