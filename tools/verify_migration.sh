@@ -561,6 +561,11 @@ else
   fetchh "$BASE/docs/plaquette-clos-des-zinnias.pdf" pdf
   case "$F_CODE" in
     404) row PASS "plaquette PDF non déployée" "HTTP 404 sur /docs/plaquette-clos-des-zinnias.pdf (dossier docs dans .assetsignore)" ;;
+    302|301|307|308)
+      case "$F_LOC" in
+        */contact*) row PASS "plaquette PDF non déployée" "HTTP $F_CODE vers /contact (_redirects : ancien lien imprimé redirigé)" ;;
+        *)          row WARN "plaquette PDF non déployée" "redirigée vers « $F_LOC » (attendu : /contact)" ;;
+      esac ;;
     200) row FAIL "plaquette PDF non déployée" "le PDF (ancienne marque) est encore servi : vérifier .assetsignore (ligne « docs »)" ;;
     *)   row WARN "plaquette PDF non déployée" "réponse inattendue : HTTP $F_CODE" ;;
   esac
