@@ -76,7 +76,7 @@
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-label", "Gestion des cookies");
     banner.innerHTML =
-      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces. Aucun autre traceur n\'est utilisé. <a href="/confidentialite">En savoir plus</a></p>' +
+      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces. La carte Google Maps de la page L\'Environnement ne se charge qu\'à votre demande. Aucun autre traceur n\'est utilisé. <a href="/confidentialite">En savoir plus</a></p>' +
       '<div class="consent-banner__btns">' +
       '<button type="button" class="btn btn-gold consent-accept">Accepter</button>' +
       '<button type="button" class="btn btn-outline-gold consent-deny">Refuser</button>' +

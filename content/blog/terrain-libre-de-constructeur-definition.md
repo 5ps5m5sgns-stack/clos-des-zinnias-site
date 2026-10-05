@@ -1,0 +1,155 @@
+---
+title: Terrain libre de constructeur : sens, avantages et limites
+description: Terrain libre de constructeur : ce que l'expression signifie, ce qu'elle ne garantit pas, et comment choisir entre CCMI, architecte et maître d'œuvre.
+slug: terrain-libre-de-constructeur-definition
+date: 2026-10-05
+category: acheter-un-terrain
+tags: terrain libre de constructeur, CCMI, architecte, maître d'œuvre, lotissement
+keyword: terrain libre de constructeur
+image: /assets-optimized/DJI_0061-1536.webp
+image_alt: Vue de drone d'un terrain herbeux non construit, bordé d'une voie goudronnée, avec une maison voisine et des collines boisées au fond
+related: guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne, verifier-avant-dacheter-terrain-biver-gardanne
+draft: false
+---
+
+Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. Les [huit terrains du Clos des Cyprès](/lots), à Biver (13120 Gardanne), sont proposés par l'aménageur comme libres de constructeur. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction.
+
+## Que signifie « terrain libre de constructeur » ?
+
+Acheter un terrain libre de constructeur, c'est acheter le terrain seul, sans clause ni offre qui vous lie à une entreprise précise : vous comparez plusieurs constructeurs, faites appel à un architecte ou pilotez vous-même les entreprises. On lit aussi « libre constructeur » ou « sans constructeur imposé » : c'est la même idée.
+
+L'expression n'apparaît ni dans le Code de l'urbanisme ni dans le Code de la construction et de l'habitation (CCH), dans leurs versions consolidées consultées le 05/10/2026. C'est un terme d'usage : sa portée dépend de la promesse de vente et des documents du lotissement.
+
+## Que ne garantit pas un terrain libre de constructeur ?
+
+Choisir son constructeur ne dispense pas de respecter des règles. Trois niveaux se cumulent :
+
+- **le PLUi** (plan local d'urbanisme intercommunal) fixe notamment implantation, emprise au sol et hauteur ; à Gardanne, celui du Pays d'Aix est opposable depuis le 19/12/2024 ;
+- **le règlement du lotissement**, s'il existe, peut le compléter (aspect, implantation, clôtures) ;
+- **le cahier des charges** fixe les droits et obligations entre propriétaires.
+
+Le permis d'aménager et le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
+
+**Clos des Cyprès.** Le site présente les huit terrains (de 500 à 1 133 m²) comme libres de constructeur. C'est l'information de l'aménageur, PONTHIEU DH, et non une promesse juridique : ce qui engage les parties, c'est la promesse de vente, avec le règlement et le cahier des charges. Disponibilité et plan des lots sur demande via la [page contact](/contact).
+
+## Terrain libre ou terrain lié à un constructeur : quelles différences ?
+
+Un terrain « lié » est vendu à condition de signer avec un constructeur désigné par le vendeur ou le lotisseur. L'offre « terrain + maison » en est la version packagée : un terrain et une maison présentés ensemble, au prix global.
+
+Tableau : Terrain libre ou offre liée à un constructeur
+
+| Point de comparaison | Terrain libre | Terrain lié ou terrain + maison |
+|:---------------------|:--------------|:--------------------------------|
+| Constructeur | Le vôtre | Imposé ou proposé par le vendeur |
+| Devis | Comparables à volonté | Limités au constructeur de l'offre |
+| Interlocuteurs | Plusieurs : notaire, constructeur ou architecte, banque | Souvent un seul au départ |
+| Prix | Terrain et construction chiffrés séparément | Prix global : vérifiez ce qu'il inclut |
+
+L'offre packagée n'est pas un défaut en soi. Vérifiez ce que le prix comprend, si l'achat du terrain dépend du contrat de construction et ce qui se passe si l'un des deux n'aboutit pas ; faites relire la clause par votre notaire.
+
+## Quels sont les avantages et les limites d'un terrain libre ?
+
+**Avantages**
+
+- Comparer plusieurs projets et plusieurs devis pour une même maison.
+- Adapter la maison à la parcelle : le terrain du Clos des Cyprès est en pente douce vers le nord-est, et chaque lot permet d'orienter la maison selon son projet.
+- Choisir ce que vous déléguez : conception, coordination, sécurité contractuelle.
+
+**Limites**
+
+- Du temps pour comparer et relire les contrats.
+- Un financement en deux temps, terrain puis construction : le déblocage des fonds suit en général l'échéancier du contrat de construction ; votre banque vous précisera ses modalités.
+- Plus de coordination, surtout hors contrat de construction de maison individuelle (CCMI).
+- Un budget à reconstituer poste par poste : voir notre article sur le [budget terrain et maison près d'Aix et de Gardanne](/blog/budget-terrain-maison-pres-aix-gardanne/).
+
+## Constructeur (CCMI), architecte, maître d'œuvre ou artisans : comment choisir ?
+
+Le bon choix dépend de ce que vous déléguez : conception, coordination, risque financier. Quatre modes courants, selon la réglementation en vigueur au 05/10/2026.
+
+Tableau : Quatre façons de construire sur un terrain libre
+
+| Mode | Qui fait quoi | Garanties et cadre légal | Point d'attention |
+|:-----|:--------------|:-------------------------|:------------------|
+| **Constructeur (CCMI)** | Il propose le plan (catalogue ou architecte qu'il recommande) et construit | Contrat écrit encadré : prix forfaitaire et définitif, délai et pénalités, garanties de livraison et de remboursement, rétractation de 10 jours (CCH, art. L. 231-1 et suivants) | Lisez la notice descriptive : ce qui n'y figure pas est à votre charge |
+| **Architecte + entreprises** | L'architecte conçoit, dépose le permis et peut suivre le chantier ; vous signez avec les entreprises | Architecte obligatoire au-delà de 150 m² de surface de plancher. Entrepreneur chargé du gros œuvre, du hors d'eau et du hors d'air : contrat écrit avec garantie de livraison (CCH, art. L. 232-1 et L. 232-2) | Vous êtes maître d'ouvrage ; coût final connu une fois tous les marchés signés |
+| **Maître d'œuvre + entreprises** | Il conçoit ou dirige les travaux ; vous contractez avec lui, puis avec les entreprises | Réputé constructeur (Code civil, art. 1792-1) : décennale et assurance obligatoires | Demandez ses attestations ; au-delà de 150 m², un architecte reste obligatoire |
+| **Artisans, lot par lot** | Vous coordonnez chaque métier | Chacun répond de ses travaux ; pas de garantie de livraison globale en général | Planning et défaillance éventuelle d'un artisan reposent sur vous |
+
+**Dans tous les cas**, vous souscrivez l'assurance dommages-ouvrage avant l'ouverture du chantier (Code des assurances, art. L. 242-1). Après la réception : un an de garantie de parfait achèvement, deux ans de bon fonctionnement des équipements, dix ans de responsabilité décennale (Code civil, art. 1792 et suivants). Les honoraires d'un architecte dépendent de la mission (conception, permis, suivi de chantier) : demandez-les par écrit, mission par mission.
+
+**À Gardanne**, la conception doit tenir compte du sol. La commune est concernée par le retrait-gonflement des argiles : en zone d'exposition moyenne ou forte, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, transmise ensuite aux constructeurs (CCH, art. L. 132-5 et L. 132-6). Un plan de prévention des risques miniers y a été approuvé le 9 mars 2023, et le terrain du Clos des Cyprès est situé dans une zone soumise aux obligations légales de débroussaillement (Code forestier, art. L. 134-6). Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : [www.georisques.gouv.fr](https://www.georisques.gouv.fr/). Sur un terrain en pente, voyez aussi [construire en restanques](/blog/construire-sur-terrain-en-pente-restanques-provence/).
+
+## Que vérifier et que demander avant de signer ?
+
+### Assurances, planning et devis
+
+- **Décennale** : demandez l'attestation de chaque intervenant ; l'assurance doit être justifiée à l'ouverture de tout chantier (Code des assurances, art. L. 241-1).
+- **Garanties de livraison et de remboursement** : en CCMI, leurs attestations sont annexées au contrat. Hors CCMI, demandez par écrit si une garantie de livraison est prévue.
+- **Retard et paiements** : en CCMI, les pénalités de retard ne peuvent être inférieures à 1/3 000 du prix par jour, et les paiements sont plafonnés par étapes, de 15 % à l'ouverture du chantier à 95 % avant la réception (CCH, art. R. 231-14 et R. 231-7).
+- **Devis comparables** : même surface, même finition, mêmes postes (terrassement, raccordements, étude de sol). Un devis plus bas peut simplement exclure des postes.
+
+### Questions à poser à un constructeur
+
+1. Quel contrat proposez-vous, et puis-je lire un modèle avant de m'engager ?
+2. Quel garant couvre la livraison et le remboursement ?
+3. Que comprend le prix, et que dois-je prévoir en plus ?
+4. Avez-vous construit sur des sols argileux ou en pente, et comment l'étude géotechnique est-elle prise en compte ?
+5. Quelles dates d'ouverture et de livraison, quelles pénalités de retard, et puis-je visiter des chantiers en cours ?
+
+## Dans quel ordre se déroule un projet sur terrain libre ?
+
+Ordre indicatif ; seuls figurent les délais fixés par les textes, aucune durée sans source.
+
+1. **Cadrer** votre projet et votre financement.
+2. **Lire les documents du terrain** : PLUi, règlement, cahier des charges, état des risques, étude géotechnique.
+3. **Choisir le mode de construction** et les intervenants.
+4. **Signer la promesse de vente du lot** : dix jours de rétractation (Code de l'urbanisme, art. L. 442-8).
+5. **Signer le contrat de construction** : en CCMI, dix jours de rétractation aussi, et conditions suspensives possibles (terrain, permis, prêts).
+6. **Obtenir le permis de construire** : dans un lotissement, à compter de l'achèvement des travaux d'aménagement ou, sous conditions, de l'autorisation de vendre avant travaux ; pas dès la délivrance du permis d'aménager pour une maison en CCMI (art. R. 442-18). Instruction de droit commun : deux mois pour une maison individuelle, à compter du dossier complet (art. R. 423-19 et R. 423-23).
+7. **Afficher le permis** : le délai de recours des tiers court à compter du premier jour d'une période continue de deux mois d'affichage (art. R. 600-2).
+8. **Acte authentique, ouverture du chantier** : le permis est périmé si les travaux ne sont pas entrepris dans les trois ans de la notification (art. R. 424-17).
+9. **Construire, réceptionner, recevoir les clés.**
+
+Pour le Clos des Cyprès, l'aménageur annonce une livraison prévue en mars 2027 ; la date à laquelle un permis de construire peut être demandé dépend de l'avancement des travaux (art. R. 442-18), à préciser avec le vendeur et le notaire. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
+
+:::callout À retenir
+- « Libre de constructeur » signifie que vous choisissez qui construit ; ce n'est pas un terme défini par la loi.
+- Il ne dispense ni du PLUi, ni du règlement et du cahier des charges, ni de l'étude géotechnique.
+- CCMI : garanties légales étendues. Architecte : obligatoire au-delà de 150 m² de surface de plancher. Maître d'œuvre ou artisans : plus de contrôle, plus de coordination.
+- Au Clos des Cyprès, c'est l'information de l'aménageur : sa portée se lit dans les documents de vente.
+:::
+
+## Questions fréquentes
+
+:::faq
+### Faut-il obligatoirement un architecte pour construire sur un terrain libre ?
+Selon la réglementation en vigueur au 05/10/2026, une personne physique qui construit pour elle-même peut se passer d'architecte tant que la surface de plancher n'excède pas 150 m² ; au-delà, le projet doit être établi par un architecte (art. R. 431-2 du Code de l'urbanisme). Pour un agrandissement, la surface totale après travaux compte. Un professionnel confirmera votre cas.
+
+### Le CCMI est-il obligatoire ?
+Il s'impose lorsqu'un constructeur réalise une maison d'au plus deux logements d'après un plan qu'il a proposé ou fait proposer (CCH, art. L. 231-1). Si vous apportez vos plans et confiez à un entrepreneur au moins le gros œuvre, la mise hors d'eau et hors d'air, un autre contrat écrit, lui aussi encadré, s'applique (art. L. 232-1). Votre notaire confirmera le régime de votre projet.
+
+### Un terrain libre de constructeur est-il moins cher ?
+Aucune règle ne permet de l'affirmer : le prix du terrain dépend du terrain, le coût de la maison du projet et du mode de construction. Un terrain libre permet surtout de comparer le coût global (terrain, frais d'acquisition, construction, raccordements, taxes) à partir de devis comparables.
+
+### Que devient mon contrat de construction si je n'obtiens pas mon permis ou mon prêt ?
+En CCMI, le contrat peut être conclu sous conditions suspensives : acquisition du terrain (si vous avez une promesse de vente), permis de construire, prêts, assurance dommages-ouvrage, garantie de livraison (CCH, art. L. 231-4). Le dépôt de garantie éventuel, limité à 3 % du prix, vous est restitué sans retenue ni pénalité si les conditions ne sont pas réalisées dans le délai prévu. Pour le terrain, vérifiez les conditions de la promesse avec votre notaire.
+:::
+
+:::cta Un projet de terrain à Biver ?
+Pour connaître la disponibilité des lots et obtenir le plan, écrivez-nous ou appelez-nous.
+
+- [Voir les huit lots](/lots)
+- [Nous contacter](/contact)
+:::
+
+:::source
+- [Code de la construction et de l'habitation](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074096), Légifrance, consulté le 05/10/2026.
+- [Code de l'urbanisme, art. R. 431-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038682379), Légifrance, consulté le 05/10/2026.
+- [Code de l'urbanisme](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074075), Légifrance, consulté le 05/10/2026.
+- [Code civil](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721), Légifrance, consulté le 05/10/2026.
+- [Code des assurances](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073984), Légifrance, consulté le 05/10/2026.
+- [Contrat de construction de maison individuelle (CCMI)](https://www.service-public.gouv.fr/particuliers/vosdroits/F34554), service-public.gouv.fr, vérifiée le 10/07/2026, consultée le 05/10/2026.
+- [Faire appel à un architecte](https://www.service-public.gouv.fr/particuliers/vosdroits/F20568), service-public.gouv.fr, vérifiée le 07/09/2026, consultée le 05/10/2026.
+- [Géorisques](https://www.georisques.gouv.fr/), ministère de la Transition écologique, consulté le 05/10/2026.
+- [PLUi de Gardanne](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/), Ville de Gardanne, consulté le 05/10/2026.
+:::

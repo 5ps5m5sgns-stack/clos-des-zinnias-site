@@ -537,12 +537,15 @@
     document.querySelectorAll(".map-facade").forEach((facade) => {
       const btn = facade.querySelector("[data-map-load]");
       if (!btn) return;
+      // Sans JavaScript le bouton reste masqué (style en ligne) : seul le lien « Ouvrir dans Google Maps » sert.
+      btn.style.display = "";
       btn.addEventListener("click", () => {
         const iframe = document.createElement("iframe");
         iframe.src = facade.dataset.mapSrc;
         iframe.title = facade.dataset.mapTitle || "Carte";
         iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
         facade.replaceWith(iframe);
+        iframe.focus(); // le bouton disparaît : on garde le focus clavier dans la carte
       });
     });
   }
