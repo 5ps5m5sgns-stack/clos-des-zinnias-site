@@ -47,6 +47,19 @@ Conséquences :
 (dernier commit, ou date de modification si le fichier est modifié et pas encore commité).
 Il n'écrit rien ; code retour 1 en cas d'écart.
 
+## Blog : couvertures allégées (srcset), polices et CSS critique
+
+`python3 tools/build_blog.py` fabrique les pages du blog (voir son en-tête) ; `--check` ne modifie rien.
+
+- **Couvertures** : dès que des variantes `<nom>-640.avif` et `<nom>-1024.avif` existent à côté de l'image (ex.
+  `images-optimized/blog/<slug>/couverture-640.avif`), la page déclare un `srcset` + `sizes` ; sans variantes, l'image
+  est servie seule. Fabrication d'une variante (macOS, `avifenc` de Homebrew), à partir de la couverture 1600 x 900 :
+  `avifdec couverture.avif /tmp/c.png && sips --resampleWidth 640 /tmp/c.png --out /tmp/c640.png &&
+  avifenc -q 38 -s 3 -y 420 -j all /tmp/c640.png couverture-640.avif` (idem en 1024).
+- **Polices préchargées** par le blog : constante `BLOG_FONT_PRELOADS` de `build_blog.py` (indépendante de l'accueil).
+- **CSS critique** : le blog reprend celui d'`index.html` (`<style data-critical>`) à chaque génération ; après une
+  modification à la main du CSS critique des 11 pages, relancer `python3 tools/build_blog.py`.
+
 ## Règle de déploiement
 
 Ce dossier ne doit pas être publié : l'ajouter à `.assetsignore` (ligne `tools`).

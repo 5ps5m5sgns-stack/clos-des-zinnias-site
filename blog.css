@@ -18,7 +18,7 @@
 
 /* ---- Zone de lecture (fond clair) ---- */
 .post-body{background:var(--beige);color:var(--texte);padding:clamp(2.25rem,6vw,4rem) 0 clamp(3rem,8vw,5.5rem)}
-.post-body :focus-visible{outline-color:var(--or-deep)}
+.post-body :focus-visible{outline-color:var(--or-deep)}.post-body .cta-block :focus-visible{outline-color:var(--or)}
 .post-layout,.post-body>.wrap{max-width:62rem}
 .toc{font-size:.95rem;background:#fffdf7;border:1px solid rgba(62,88,71,.28);border-radius:3px;padding:1.1rem 1.25rem;margin-bottom:2rem}
 .toc__title{font-family:var(--font-titre);font-size:1.35rem;color:var(--noir);margin-bottom:.6rem}

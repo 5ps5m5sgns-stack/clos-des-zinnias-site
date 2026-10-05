@@ -31,6 +31,8 @@
 #   PDF_PATH   chemin d'une plaquette PDF encore déployée        (défaut : vide ; la plaquette n'est plus déployée,
 #              dossier docs/ dans .assetsignore : le script contrôle alors qu'elle répond 404)
 #   WHOIS      1 : affiche l'échéance de OLD et NEW (AFNIC, nécessite whois) ; défaut 0
+#   EXT_LINKS  adresses externes dont le certificat TLS est testé (section H) ; défaut : les 2 pages de la mairie de Gardanne
+#              citées par le blog (PLUi, dépôt des demandes d'urbanisme)
 #   UA         User-Agent à envoyer (défaut : celui de curl)
 #   NO_COLOR   défini : pas de couleurs
 #
@@ -54,12 +56,15 @@
 #      aucun noindex sur les pages indexables ; e-mail affiché ; ancien e-mail absent ;
 #      mention résiduelle de l'ancien nom.
 #   D. robots.txt (ligne Sitemap: de NEW, pas de Disallow: /) et sitemap.xml (XML valide avec xmllint,
-#      URLs toutes sur NEW, toutes en 200 sans redirection, images comprises).
+#      URLs toutes sur NEW, toutes en 200 sans redirection, images comprises) ; ni « 20 min » ni « 23 min »
+#      (trajets périmés, décision D14) dans site.webmanifest, feed.xml et sitemap.xml : FAIL s'ils réapparaissent.
 #   E. En-têtes : HSTS, X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy
 #      (browsing-topics), cache CSS/JS (revalidation), cache immuable des polices et images ;
 #      la plaquette PDF n'est plus servie (404), ou, si PDF_PATH est renseigné, X-Robots-Tag: noindex.
 #   F. DNS (si dig) : NS Cloudflare, MX et SPF du courrier toujours présents, www existe, jeton
 #      google-site-verification de OLD toujours présent.
+#   H. Liens externes cités par le blog (mairie de Gardanne : PLUi, dépôt des demandes d'urbanisme) : WARN si le
+#      certificat TLS est invalide ou expiré (constaté le 05/10/2026 sur www.ville-gardanne.fr) ou si le site ne répond pas.
 #
 # ESSAI EN LOCAL (sans toucher à la production), pour tester le script lui-même
 #   Un petit serveur local qui imite Cloudflare (307 sur .html, 404 avec 404.html, _headers,
@@ -483,6 +488,20 @@ else
   fi
 fi
 
+# --- Trajets périmés (« 20 min d'Aix », « 23 min de Marseille » : décision D14) dans les fichiers publics hors pages
+_nb=$(printf '\302\240')   # espace insécable (UTF-8)
+for _f in site.webmanifest feed.xml sitemap.xml; do
+  fetch "$BASE/$_f" trj
+  if [ "$F_CODE" != 200 ]; then
+    row WARN "$_f : sans « 20 min » ni « 23 min »" "HTTP $F_CODE : fichier non contrôlé"
+  elif LC_ALL=C grep -q -E "(^|[^0-9])(20|23)( |$_nb)*min" "$T/trj.b"; then
+    _hit=$(LC_ALL=C grep -o -E "(^|[^0-9])(20|23)( |$_nb)*min[a-z]*" "$T/trj.b" | head -1 | sed -E 's/^[^0-9]+//' | tr -d '\n')
+    row FAIL "$_f : sans « 20 min » ni « 23 min »" "formulation périmée trouvée (« ${_hit} ») : écrire « environ 25 minutes d'Aix » / « environ 30 minutes de Marseille »"
+  else
+    row PASS "$_f : sans « 20 min » ni « 23 min »" "aucune formulation périmée"
+  fi
+done
+
 # ================================================================ E. EN-TÊTES
 section "E. En-têtes HTTP"
 
@@ -594,6 +613,25 @@ if [ "$WHOIS" = 1 ] && [ "$LOCAL" = 0 ]; then
     done
   fi
 fi
+
+# ================================================================ H. LIENS EXTERNES SENSIBLES
+section "H. Liens externes cités par le blog (certificat TLS valide)"
+# Le site de la mairie de Gardanne avait un certificat expiré le 04/10/2026 (6 liens du blog en dépendent). Ce contrôle ne
+# bloque jamais (WARN seulement) : le blog reste en ligne, mais le lien affiche une alerte de sécurité aux lecteurs.
+EXT_LINKS=${EXT_LINKS:-"https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/ https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/depot-des-demandes-durbanisme-en-ligne/"}
+for _u in $EXT_LINKS; do
+  _code=$(curlx -I -o /dev/null -w '%{http_code}' "$_u" 2>"$T/ext.err"); _rc=$?
+  _short=${_u#https://}
+  if [ "$_rc" -eq 0 ] && [ "$_code" -ge 200 ] && [ "$_code" -lt 400 ]; then
+    row PASS "lien externe : $_short" "HTTP $_code, certificat valide"
+  elif [ "$_rc" -eq 60 ] || [ "$_rc" -eq 35 ] || [ "$_rc" -eq 51 ] || [ "$_rc" -eq 58 ] || [ "$_rc" -eq 83 ]; then
+    row WARN "lien externe : $_short" "certificat TLS invalide ou expiré (curl $_rc) : les lecteurs voient une alerte. Reprendre l'adresse à la source ou la remplacer par une page officielle équivalente"
+  elif [ "$_rc" -ne 0 ]; then
+    row WARN "lien externe : $_short" "injoignable depuis ici (curl $_rc : $(head -c 90 "$T/ext.err" | tr '\n' ' '))"
+  else
+    row WARN "lien externe : $_short" "réponse HTTP $_code (certificat valide) : à regarder à la main"
+  fi
+done
 
 # ================================================================ BILAN
 printf '\n%sBilan%s : %s%d PASS%s, %s%d FAIL%s, %s%d WARN%s, %d SKIP\n' "$C_B" "$C_0" "$C_G" "$NPASS" "$C_0" "$C_R" "$NFAIL" "$C_0" "$C_Y" "$NWARN" "$C_0" "$NSKIP"

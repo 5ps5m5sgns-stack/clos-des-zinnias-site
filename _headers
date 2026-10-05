@@ -15,12 +15,14 @@
 # à chaque visite, une mise en ligne est visible tout de suite.
 
 # --- Sécurité (toutes les réponses) ---
+# HSTS : volontairement SANS la directive « preload » (inscription à la liste de préchargement des navigateurs :
+# quasi irréversible, https imposé à tous les sous-domaines du domaine, courrier compris). À n'ajouter que si c'est voulu.
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
   Cross-Origin-Opener-Policy: same-origin
   X-DNS-Prefetch-Control: on
 
@@ -45,8 +47,6 @@
 
 # --- Icônes et logo à la racine : un même nom peut changer de dessin => 7 jours ---
 /favicon-48.png
-  Cache-Control: public, max-age=604800
-/favicon.svg
   Cache-Control: public, max-age=604800
 /icon-192.png
   Cache-Control: public, max-age=604800

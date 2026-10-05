@@ -15,7 +15,7 @@ related: verifier-avant-dacheter-terrain-biver-gardanne, terrain-libre-de-constr
 draft: false
 ---
 
-Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Voici les étapes dans l'ordre, et la réponse nuancée à « peut-on construire librement ? ». Exemple local : les [terrains à bâtir à Gardanne](/terrain-a-batir-gardanne).
+Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Voici les étapes dans l'ordre, et la réponse nuancée à « peut-on construire librement ? ». Exemple local : [les huit terrains du Clos des Cyprès](/terrain-a-batir-gardanne).
 
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 

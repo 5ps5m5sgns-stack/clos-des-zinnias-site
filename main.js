@@ -174,7 +174,29 @@
       const offset = (nav ? nav.offsetHeight : 0) + 16;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: "smooth" });
+      // Le focus doit suivre l'ancre (lien d'évitement, sommaires, boutons vers le formulaire) :
+      // sans cela, la touche Tab suivante repartirait de l'en-tête (WCAG 2.4.1 / RGAA 12.7).
+      focusAnchorTarget(target);
     });
+  }
+
+  // Donne le focus à la cible d'une ancre, sans faire défiler (le défilement doux est géré à part).
+  // Un conteneur (section, main, formulaire) reçoit un tabindex="-1" temporaire, retiré à la perte
+  // du focus, et son contour est masqué pendant ce temps : ce n'est pas un contrôle, pas d'anneau
+  // autour. Un vrai contrôle (lien, bouton, champ) reçoit le focus et garde son anneau.
+  function focusAnchorTarget(target) {
+    if (document.activeElement === target) return;
+    const control = target.matches("a[href], button, input, select, textarea, summary, [tabindex]:not([tabindex^='-'])");
+    if (control) { target.focus({ preventScroll: true }); return; }
+    const addedTabindex = !target.hasAttribute("tabindex");
+    if (addedTabindex) target.setAttribute("tabindex", "-1");
+    const prevOutline = target.style.outline;
+    target.style.outline = "none";
+    target.focus({ preventScroll: true });
+    target.addEventListener("blur", () => {
+      if (addedTabindex) target.removeAttribute("tabindex");
+      target.style.outline = prevOutline;
+    }, { once: true });
   }
 
   /* ----------------------------------------------------------
@@ -353,13 +375,20 @@
       preload(idx + 1);
       preload(idx - 1);
     }
+    const closeBtn = box.querySelector(".lightbox__close");
     function open(i) {
       lastFocused = document.activeElement;
       show(i);
       box.classList.add("open");
       document.body.style.overflow = "hidden";
-      // déplace le focus dans la visionneuse (accessibilité clavier)
-      box.querySelector(".lightbox__close").focus();
+      // Déplace le focus dans la visionneuse (bouton « Fermer »). Au premier instant de la transition
+      // la boîte est encore « visibility:hidden » et focus() échoue sur un élément masqué : on
+      // réessaie brièvement jusqu'à ce que le focus y soit (WCAG 2.4.3).
+      let tries = 0;
+      (function focusClose() {
+        closeBtn.focus({ preventScroll: true });
+        if (document.activeElement !== closeBtn && box.classList.contains("open") && ++tries < 12) setTimeout(focusClose, 40);
+      })();
     }
     function close() {
       box.classList.remove("open");
@@ -370,12 +399,17 @@
 
     triggers.forEach((t, i) => {
       t.addEventListener("click", (e) => { e.preventDefault(); open(i); });
-      // déclencheurs non natifs (role="button") : activation clavier Entrée / Espace
+      // déclencheurs non natifs (role="button") : activation clavier comme un bouton natif,
+      // Entrée à l'appui, Espace au relâchement (sinon le relâchement tomberait sur « Fermer »)
       t.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(i); }
+        if (e.key === "Enter") { e.preventDefault(); open(i); }
+        else if (e.key === " ") e.preventDefault();
+      });
+      t.addEventListener("keyup", (e) => {
+        if (e.key === " ") { e.preventDefault(); open(i); }
       });
     });
-    box.querySelector(".lightbox__close").addEventListener("click", close);
+    closeBtn.addEventListener("click", close);
     box.querySelector(".lightbox__nav--prev")?.addEventListener("click", () => show(idx - 1));
     box.querySelector(".lightbox__nav--next")?.addEventListener("click", () => show(idx + 1));
     box.addEventListener("click", (e) => { if (e.target === box) close(); });
@@ -390,9 +424,14 @@
         const f = [...box.querySelectorAll("button")].filter((b) => b.offsetParent !== null);
         if (!f.length) return;
         const first = f[0], lastEl = f[f.length - 1];
-        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); lastEl.focus(); }
+        if (!box.contains(document.activeElement)) { e.preventDefault(); (e.shiftKey ? lastEl : first).focus(); }
+        else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); lastEl.focus(); }
         else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); first.focus(); }
       }
+    });
+    // si le focus quitte la visionneuse ouverte (clic à l'arrière-plan, lecteur d'écran), on l'y ramène
+    document.addEventListener("focusin", (e) => {
+      if (box.classList.contains("open") && !box.contains(e.target)) closeBtn.focus({ preventScroll: true });
     });
 
   }

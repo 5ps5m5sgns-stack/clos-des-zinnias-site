@@ -329,6 +329,10 @@ section {
   background: none;
   border: 0;
   z-index: 1100;
+  /* zone cliquable élargie (30 x 38,5 px au lieu de 30 x 14,5 ; WCAG 2.5.8 : 24 px minimum) sans changer
+     la mise en page : la marge négative compense exactement le remplissage */
+  padding-block: 12px;
+  margin-block: -12px;
 }
 .nav__burger span {
   height: 1.5px;
@@ -462,6 +466,24 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+/* Mise en page du hero de l'accueil, avant l'arrivée de la feuille de style complète (CSS critique) :
+   sans ces règles, le téléphone, son icône, la légende de l'image et le texte réservé aux lecteurs d'écran
+   s'affichaient « bruts » et le hero mesurait 1 138 px au lieu de 844 px jusqu'au chargement du CSS :
+   décalage de mise en page (CLS 0,78 mesuré sur mobile). Les règles complètes restent plus bas. */
+.hero__phone { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.75rem; font-size: 1rem; letter-spacing: 0.04em; color: var(--creme); opacity: 0.85; }
+.hero__phone svg { width: 17px; height: 17px; color: var(--or); }
+.fullimg__cap { position: absolute; bottom: 1.25rem; left: 1.25rem; }
+.lots-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+/* Même principe pour l'en-tête de section (kicker, titre de chapitre, chapô) qui suit le hero des pages intérieures :
+   copies des règles complètes (plus bas), pour que la section ait dès le premier rendu la hauteur qu'elle aura
+   une fois la feuille de style complète chargée (sinon le contenu glisse de 30 à 50 px à son arrivée). */
+.section-head { text-align: center; max-width: 46rem; margin: 0 auto clamp(2.5rem, 5vw, 4rem); }
+.section-head .lead { margin-top: 1rem; }
+.kicker { display: inline-flex; align-items: center; gap: 0.9rem; margin-bottom: 1.5rem; font-family: var(--font-corps); font-size: 0.83rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--or); }
+.kicker::before { content: ""; width: 2.5rem; height: 1px; background: currentColor; opacity: 0.55; flex: none; }
+.kicker .num { font-family: var(--font-titre); font-style: italic; letter-spacing: 0; text-transform: none; font-size: 1.05rem; }
+.section-head .kicker { justify-content: center; }
+.chapter-title { font-size: clamp(2.4rem, 5.5vw, 3.75rem); }
 
 .hero-sub-title {
   font-size: clamp(3rem, 8vw, 5rem);
@@ -601,6 +623,12 @@ section {
 .reveal { transform: translateY(34px); }
 .reveal-left { transform: translateX(-48px); }
 .reveal-right { transform: translateX(48px); }
+/* Les blocs « .reveal-left / .reveal-right » démarrent décalés de 48 px (translateX) : sans ce recadrage ils
+   élargissaient la zone défilable de la page (+28 px à 320 px, WCAG 1.4.10) et, sur mobile, la fenêtre de
+   mise en page s'élargissait puis se resserrait au chargement (CLS 0,78 sur l'accueil). « clip » ne crée pas de
+   conteneur de défilement : l'animation visible et le « sticky » ne changent pas. Dans le CSS critique :
+   la règle doit exister dès le premier rendu. */
+main { overflow-x: clip; }
 .reveal.in, .reveal-left.in, .reveal-right.in {
   opacity: 1;
   transform: none;
@@ -935,6 +963,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .info-item .t { font-family: var(--font-titre); font-size: 1.4rem; color: var(--or); }
 .info-item .d { font-size: 1.0rem; color: var(--muted); margin-top: 0.25rem; }
 .bg-creme .info-item .d { color: var(--muted-creme); }
+.bg-creme .info-item .t { color: var(--or-deep); }  /* titres des étapes (merci) : l'or faisait 1,5:1 sur le beige */
 
 /* ============================================================
    ACCORDION
@@ -1093,7 +1122,7 @@ table.elegant td:first-child { color: var(--or); font-weight: 500; }
 .fullimg__cap {
   position: absolute;
   bottom: 1.25rem; left: 1.25rem;
-  background: rgba(31,48,40,0.65);
+  background: rgba(31,48,40,0.72);  /* 0,65 donnait 4,4:1 au pire (photo claire dessous) ; 0,72 : > 4,5:1 */
   backdrop-filter: blur(8px);
   border: 1px solid rgba(201,188,150,0.3);
   padding: 0.5rem 1rem;
@@ -1863,6 +1892,11 @@ table.elegant tr.is-best td:first-child { color: var(--or-light); }
 /* Accessibilité : focus clavier visible (le curseur custom masque le focus souris) */
 :focus-visible { outline: 2px solid var(--or); outline-offset: 3px; }
 .btn:focus-visible { outline-offset: 4px; }
+/* Fonds clairs (sections beige, carte blanche du formulaire, cartes de contact) : l'anneau doré
+   (--or, #C9BC96) n'y fait que 1,5:1 (beige) et 1,9:1 (blanc) ; --or-deep (#3E5847) donne 6,3:1 et 7,7:1
+   (seuil 3:1, WCAG 1.4.11). Sur les fonds sombres l'anneau doré reste celui de la règle ci-dessus. */
+.bg-creme :focus-visible, .form :focus-visible, .contact-card:focus-visible { outline-color: var(--or-deep); }
+.bg-creme .map-facade :focus-visible { outline-color: var(--or); }  /* bloc sombre posé dans une section claire */
 
 /* Sélection de texte aux couleurs de la marque */
 ::selection { background: var(--or); color: var(--noir); }
@@ -2997,7 +3031,7 @@ section[data-chapter] .eyebrow::after {
 }
 
 /* Champ actif : le label s'éclaire discrètement */
-.field:focus-within label { color: var(--or-light); }
+.field:focus-within label { color: var(--or-deep); }  /* or-light faisait 1,3:1 sur la carte blanche */
 
 /* Selects : chevron doré sur-mesure (l'apparence native casse l'élégance) */
 .field select {
@@ -3020,7 +3054,7 @@ section[data-chapter] .eyebrow::after {
   color: var(--or); font-family: var(--font-body); font-weight: 500;
 }
 .form__required-note { font-size: 0.92rem; color: var(--muted); margin-bottom: 1.25rem; }
-.req { color: var(--or); margin-left: 0.15em; }
+.req { color: var(--or-deep); margin-left: 0.15em; }  /* astérisque « obligatoire » : l'or faisait 1,9:1 sur la carte blanche */
 .field__opt { color: var(--muted); font-size: 0.85em; letter-spacing: 0; }
 /* ===== /PAGE: contact ===== */
 
@@ -3093,7 +3127,7 @@ section[data-chapter] .eyebrow::after {
 .bg-creme .form { --muted: #9b9b8b; }
 
 /* 4 · Crédit « illustration » : fond plus opaque pour rester lisible sur tout visuel */
-.media-credit { background: rgba(31, 48, 40, 0.6); }
+.media-credit { background: rgba(31, 48, 40, 0.72); }  /* 0,6 donnait 3,4:1 au pire (photo claire dessous) */
 
 /* ============================================================
    LOGO — Le Clos des Cyprès (disque paysage)

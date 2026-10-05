@@ -15,7 +15,7 @@ related: guide-acheter-terrain-lotissement-gardanne-biver, construire-sur-terrai
 draft: false
 ---
 
-Avant d'acheter un terrain constructible à Gardanne ou à Biver, il faut contrôler neuf points, la plupart avec des outils officiels gratuits : zonage du PLUi du Pays d'Aix, certificat d'urbanisme, risques, étude de sol, débroussaillement, servitudes, réseaux, pente et, en lotissement, règlement. Pour chacun : où regarder, ce que cela change pour une maison, à qui poser la question. Ces vérifications valent pour n'importe quel terrain, y compris ceux de la page [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) du Clos des Cyprès.
+Avant d'acheter un terrain constructible à Gardanne ou à Biver, il faut contrôler neuf points, la plupart avec des outils officiels gratuits : zonage du PLUi du Pays d'Aix, certificat d'urbanisme, risques, étude de sol, débroussaillement, servitudes, réseaux, pente et, en lotissement, règlement. Pour chacun : où regarder, ce que cela change pour une maison, à qui poser la question. Ces vérifications valent pour n'importe quel terrain, y compris ceux du [Clos des Cyprès](/terrain-a-batir-gardanne).
 
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article n'est pas un conseil juridique personnalisé : pour votre dossier, le notaire reste l'interlocuteur.
 
@@ -132,7 +132,7 @@ Souvent oui, avec un projet adapté. L'espace boisé classé lui-même est prot�
 :::cta Une question sur un terrain à Biver ?
 Pour le Clos des Cyprès, les informations par parcelle se demandent à l'aménageur.
 
-- [Terrain à bâtir à Gardanne](/terrain-a-batir-gardanne)
+- [Les terrains du lotissement](/terrain-a-batir-gardanne)
 - [Nous contacter](/contact)
 :::
 

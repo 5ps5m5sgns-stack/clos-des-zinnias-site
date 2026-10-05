@@ -96,16 +96,36 @@ CTA_FINAL_TITLE = "Un projet de terrain à Biver ou à Gardanne ?"
 CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
                   "et proposés par l'aménageur PONTHIEU DH. Consultez les lots, la page consacrée au terrain à bâtir à Gardanne, "
                   "ou parlez de votre projet avec nous.")
+# Libellé du bouton vers la page « /terrain-a-batir-gardanne » : varié d'un article à l'autre (pas cinq liens
+# identiques vers la même page). Clé = slug ; un nouvel article reçoit le libellé par défaut.
+CTA_PILLAR_DEFAULT = "Présentation du programme"
+CTA_PILLAR_LABELS = {
+    "budget-terrain-maison-pres-aix-gardanne": "Découvrir le programme",
+    "construire-sur-terrain-en-pente-restanques-provence": "Les terrains du lotissement",
+    "guide-acheter-terrain-lotissement-gardanne-biver": "Le Clos des Cyprès en détail",
+    "terrain-libre-de-constructeur-definition": "Présentation des terrains",
+    "verifier-avant-dacheter-terrain-biver-gardanne": "La page du terrain à Biver",
+}
 CTA_FINAL_BUTTONS = (("Voir les huit lots", "/lots"),
-                     ("Terrain à bâtir à Gardanne", "/terrain-a-batir-gardanne"),
+                     (CTA_PILLAR_DEFAULT, "/terrain-a-batir-gardanne"),
                      ("Nous contacter", "/contact"))
 CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Nous contacter", "/contact"))
+# Couvertures : variantes allégées « <nom>-<largeur>.<ext> » placées à côté de l'image (ex. couverture-640.avif,
+# couverture-1024.avif). Si elles existent, la page déclare un srcset (la largeur d'origine reste le dernier choix) ;
+# sinon l'image est servie seule, comme avant. « sizes » = largeur d'affichage réelle (voir blog.css).
+COVER_VARIANT_WIDTHS = (640, 1024)
+COVER_SIZES = "(min-width: 62rem) 864px, calc(100vw - 2.5rem)"          # couverture de l'article
+CARD_SIZES = "(min-width: 40rem) 300px, calc(100vw - 2.5rem)"           # vignettes (index, « À lire aussi »)
 NOTE_INFO = ("Information générale, non contractuelle. Elle ne remplace pas l'avis d'un notaire, "
              "d'un géomètre ou de la mairie.")
 
-# Extraction du gabarit depuis index.html
-FONT_PRELOAD_KEEP = ("cormorant-garamond-400-normal", "dm-sans-400-normal")  # polices utiles au texte
-HOME_ONLY_CSS_PREFIXES = (".hero", ".scroll-hint", ".reveal")               # règles de l'accueil retirées
+# Polices préchargées par les pages du blog (texte courant et titres). Liste PROPRE au blog : les pages du site
+# n'en préchargent que celles de leur premier écran, ce ne sont donc plus elles qui dictent celles du blog.
+BLOG_FONT_PRELOADS = ("cormorant-garamond-400-normal-20", "dm-sans-400-normal-4")
+
+# Extraction du gabarit depuis index.html : règles du CSS critique qui ne servent pas au blog (retirées)
+HOME_ONLY_CSS_PREFIXES = (".hero", ".scroll-hint", ".reveal", ".fullimg__cap", ".lots-sr-only",
+                          ".section-head", ".kicker", ".chapter-title")
 HOME_ONLY_KEYFRAMES = ("heroRise", "heroFade", "scrollPulse")
 
 PLACEHOLDER_MARKERS = ("À RÉDIGER", "À COMPLÉTER", "TODO")
@@ -1035,7 +1055,6 @@ class Template:
 
     def parse_head(self, head):
         items, nodes, og = [], [], {}
-        fonts_all, fonts_kept = [], []
         for m in HEAD_ITEM_RE.finditer(head):
             it = m.group(0)
             low = it.lower()
@@ -1053,10 +1072,8 @@ class Template:
                 if rel in ("canonical", "alternate") or (rel == "preload" and as_ == "image"):
                     continue
                 if rel == "preload" and as_ == "font":
-                    fonts_all.append(it)
-                    if any(k in (attr(it, "href") or "") for k in FONT_PRELOAD_KEEP):
-                        fonts_kept.append(it)
-                    items.append(("FONT", it))
+                    if not any(kind == "FONTS" for kind, _ in items):
+                        items.append(("FONTS", None))   # emplacement des préchargements du blog
                     continue
             elif low.startswith("<script"):
                 if "application/ld+json" in low:
@@ -1070,8 +1087,14 @@ class Template:
                 body = re.search(r"<style[^>]*>(.*)</style>", it, re.S).group(1)
                 it = re.sub(r"(<style[^>]*>).*(</style>)", lambda mm: mm.group(1) + filter_home_css(body) + mm.group(2), it, flags=re.S)
             items.append(("ITEM", it))
-        keep = set(fonts_kept or fonts_all)
-        ordered = [it for kind, it in items if kind == "ITEM" or it in keep]
+        font_tags = ['<link rel="preload" as="font" type="font/woff2" href="/fonts/%s.woff2" crossorigin>' % n
+                     for n in BLOG_FONT_PRELOADS]
+        ordered = []
+        for kind, it in items:
+            if kind == "ITEM":
+                ordered.append(it)
+            else:
+                ordered.extend(font_tags)
         return ordered, nodes, og
 
 
@@ -1479,11 +1502,26 @@ class Builder:
                        else '<li><a href="%s">%s</a></li>' % (href, esc(name, False)))
         return '<nav class="crumbs" aria-label="Fil d\'Ariane"><ol>%s</ol></nav>' % "".join(lis)
 
+    def srcset_attrs(self, a, sizes):
+        """' srcset="..." sizes="..."' pour une image de l'article, ou '' si aucune variante n'existe sur le disque."""
+        stem, dot, ext = a.image.rpartition(".")
+        if not dot or not a.image_w:
+            return ""
+        parts = []
+        for w in COVER_VARIANT_WIDTHS:
+            variant = "%s-%d.%s" % (stem, w, ext)
+            if w < a.image_w and self.file_exists(variant):
+                parts.append("%s %dw" % (esc(variant), w))
+        if not parts:
+            return ""
+        parts.append("%s %dw" % (esc(a.image), a.image_w))
+        return ' srcset="%s" sizes="%s"' % (", ".join(parts), sizes)
+
     def card(self, a, level):
         media = ""
         if a.image and a.image_w:
-            media = ('<div class="post-card__media"><img src="%s" alt="" width="%d" height="%d" loading="lazy" decoding="async"></div>\n'
-                     % (esc(a.image), a.image_w, a.image_h))
+            media = ('<div class="post-card__media"><img src="%s"%s alt="" width="%d" height="%d" loading="lazy" decoding="async"></div>\n'
+                     % (esc(a.image), self.srcset_attrs(a, CARD_SIZES), a.image_w, a.image_h))
         draft = '<span class="post-card__draft">Brouillon</span> · ' if a.draft else ""
         return ('<li class="post-card">\n%s<div class="post-card__body">\n'
                 '<p class="post-card__meta">%s<span>%s</span> · <time datetime="%s">%s</time> · %d&nbsp;min</p>\n'
@@ -1500,8 +1538,10 @@ class Builder:
         rest.sort(key=lambda x: (x.category == a.category, len(set(x.tags) & set(a.tags)), x.date), reverse=True)
         return (chosen + rest)[:RELATED_MAX]
 
-    def cta_final(self):
-        btns = " ".join('<a class="btn %s" href="%s">%s</a>' % ("btn-gold" if k == 0 else "btn-outline", h, esc(typo(l), False))
+    def cta_final(self, a):
+        def label(l, h):
+            return CTA_PILLAR_LABELS.get(a.slug, l) if h == "/terrain-a-batir-gardanne" else l
+        btns = " ".join('<a class="btn %s" href="%s">%s</a>' % ("btn-gold" if k == 0 else "btn-outline", h, esc(typo(label(l, h)), False))
                         for k, (l, h) in enumerate(CTA_FINAL_BUTTONS))
         return ('<div class="cta-block cta-block--final">\n<p class="cta-block__title">%s</p>\n<p>%s</p>\n'
                 '<p class="cta-block__btns">%s</p>\n<p class="cta-block__tel">Ou appelez-nous&nbsp;: '
@@ -1528,8 +1568,8 @@ class Builder:
                          ld=self.article_ld(a), a=a, extra=extra)
         cover = ""
         if a.image:
-            cover = ('\n<figure class="post-cover"><img src="%s" alt="%s" width="%d" height="%d" fetchpriority="high" decoding="async"></figure>'
-                     % (esc(a.image), esc(a.image_alt), a.image_w, a.image_h))
+            cover = ('\n<figure class="post-cover"><img src="%s"%s alt="%s" width="%d" height="%d" fetchpriority="high" decoding="async"></figure>'
+                     % (esc(a.image), self.srcset_attrs(a, COVER_SIZES), esc(a.image_alt), a.image_w, a.image_h))
         draft = '\n<p class="draft-note">BROUILLON : cette page n\'est pas publiée (noindex).</p>' if a.draft else ""
         related = self.related_for(a)
         rel_html = ""
@@ -1547,7 +1587,7 @@ class Builder:
             "          " + self.meta_line(a) + cover, "        </div>", "      </header>",
             '      <div class="post-body">', '        <div class="wrap post-layout">',
             toc, '          <div class="post-main">', '<div class="prose">', a.html, "</div>",
-            self.cta_final(), '<p class="post-note">%s</p>' % esc(NOTE_INFO, False), "          </div>", "        </div>",
+            self.cta_final(a), '<p class="post-note">%s</p>' % esc(NOTE_INFO, False), "          </div>", "        </div>",
             rel_html, "      </div>", "    </article>", "  </main>"])
         return self.shell(head, main, "true")
 

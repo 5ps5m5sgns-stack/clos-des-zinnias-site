@@ -24,11 +24,15 @@ images-optimized/plan-officiel-implantation*
 # Photos drone originales non-optimisées (~105 Mo) — le site sert les WebP
 assets
 
-# Sources non minifiées — la prod sert les .min générés par npm run build:min
-# (fonts.css est inliné dans le <head> des pages par build-critical.mjs)
+# Sources non minifiées — la prod sert les .min (JS : générés par tools/minify.py ; style.min.css : tenu à la main,
+# voir tools/README.md). fonts.css est inliné dans le <head> des pages.
 style.css
 fonts.css
 main.js
 animations.js
 consent.js
 
+# Fichiers sans usage, inutiles en ligne : un fichier vide « Photo non upscale » et l'ancien favicon vectoriel
+# (ancienne identité noir et or), qu'aucune page ne référence (les icônes servies sont les PNG).
+Photo non upscale
+favicon.svg

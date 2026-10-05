@@ -15,7 +15,7 @@ related: guide-acheter-terrain-lotissement-gardanne-biver, terrain-libre-de-cons
 draft: false
 ---
 
-Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) ou ailleurs dans le Pays d'Aix.
+Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout terrain à bâtir à Gardanne, comme [les terrains du Clos des Cyprès](/terrain-a-batir-gardanne), ou ailleurs dans le Pays d'Aix.
 
 ## Que comprend le budget pour construire une maison près d'Aix-en-Provence ?
 

@@ -87,7 +87,7 @@ Tableau : Postes de coût qui varient avec la pente
 
 ## Que sait-on de la pente du Clos des Cyprès ?
 
-Le Clos des Cyprès compte huit terrains à bâtir de 500 à 1 133 m², [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par l'aménageur PONTHIEU DH avenue du Pilon du Roy, à Biver (Gardanne) : voir la page [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne). Ce sont des repères d'information, non des promesses.
+Le Clos des Cyprès compte huit terrains à bâtir de 500 à 1 133 m², [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par l'aménageur PONTHIEU DH avenue du Pilon du Roy, à Biver (Gardanne) : voir [la présentation du programme](/terrain-a-batir-gardanne). Ce sont des repères d'information, non des promesses.
 
 - **Pente.** D'après le modèle numérique de terrain de l'IGN (RGE ALTI), la parcelle CB 118, l'une de celles du permis d'aménager, présente une pente moyenne d'environ 8° (de l'ordre de 13 à 14 %), orientée vers le nord-nord-est. Ce calcul indicatif ne remplace pas le plan du géomètre.
 - **Lot par lot.** Une moyenne ne dit rien de chaque lot : regardez chacun individuellement, sur plan et sur place. Quant à la vue lointaine sur la montagne Sainte-Victoire, elle est à vérifier lot par lot.
