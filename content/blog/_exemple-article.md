@@ -71,11 +71,11 @@ Tableau : Exemple de tableau fictif (aucune donnée réelle)
 
 Le tableau défile horizontalement sur un écran étroit, sans casser la page.
 
-![Plan d'implantation des huit lots du Clos des Cyprès, indicatif non contractuel](/images-optimized/plan-masse-aerial-villas-v2-1024.webp "Plan d'implantation des huit lots, indicatif et non contractuel.")
+![Plan de composition des huit lots du Clos des Cyprès, indicatif non contractuel](/images-optimized/plan-officiel-composition-1024.webp "Plan de composition du lotissement (Cabinet Boulay, 3 avril 2026), 8 lots : indicatif et non contractuel.")
 
 Une image seule sur sa ligne devient une figure avec légende. Le texte alternatif (entre crochets) est obligatoire. Pour un format dont la taille ne se lit pas (certains AVIF, SVG), on ajoute la taille à la fin :
 
-![Le village de Biver et son clocher, adossés à la colline boisée](/images-optimized/village-biver-clocher-1024.avif "Le village de Biver."){1024x683}
+![Illustration : village provençal et son clocher, adossés à la colline boisée](/images-optimized/village-biver-clocher-1024.avif "Illustration : village provençal."){1024x683}
 
 :::cta Parlons de votre projet
 EXEMPLE : un bloc d'appel à l'action au milieu de l'article, avec un texte court et sans promesse.

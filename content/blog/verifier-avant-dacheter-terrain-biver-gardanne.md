@@ -9,7 +9,7 @@ keyword: terrain constructible à Gardanne
 image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec une maison au second plan, une voie étroite à gauche et un bois de pins au fond
+image_alt: Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec, sur la prairie, une maison existante au second plan, une voie étroite à gauche et un bois de pins au fond
 og_image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, construire-sur-terrain-en-pente-restanques-provence, terrain-libre-de-constructeur-definition
 draft: false
@@ -81,7 +81,7 @@ Pour le Clos des Cyprès, ces informations par parcelle se demandent à l'aména
 
 ## Que prévoit la loi pour le débroussaillement ?
 
-Dans les territoires exposés aux incendies, le code forestier impose de débroussailler : sont concernées les constructions situées à l'intérieur ou à moins de 200 m de massifs, landes, maquis ou garrigues classés à risque. La profondeur est d'au moins 50 m autour des constructions (100 m sur décision du maire ou du préfet), et jusqu'à 10 m de part et d'autre des voies privées ([Géorisques](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement)). Le rapport Géorisques consulté le 05/10/2026 pour l'avenue du Pilon du Roy, à Biver, indique que le bien est concerné.
+Dans les territoires exposés aux incendies, le code forestier impose de débroussailler : sont concernées les constructions situées à l'intérieur ou à moins de 200 m de massifs, landes, maquis ou garrigues classés à risque. La profondeur est d'au moins 50 m autour des constructions (100 m sur décision du maire, art. L. 134-6), et jusqu'à 10 m de part et d'autre des voies privées ([Géorisques](https://www.georisques.gouv.fr/me-preparer-me-proteger/OLD-obligations-legales-de-debroussaillement)). Le rapport Géorisques consulté le 05/10/2026 pour l'avenue du Pilon du Roy, à Biver, indique que le bien est concerné.
 
 Pour une maison, cela signifie un entretien régulier à la charge du propriétaire, sur 50 m qui peuvent déborder chez les voisins. Débroussailler n'est ni une coupe rase ni un défrichement, ce qui compte près d'un espace boisé classé. Des sanctions administratives et pénales sont prévues.
 

@@ -85,11 +85,11 @@ CATEGORIES = {
 INDEX_TITLE = "Blog terrain à bâtir Gardanne et Biver"          # + « | Le Clos des Cyprès »
 INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
 INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir en lotissement à Gardanne et Biver : "
-                     "démarches, règles à connaître, vie locale et suivi du chantier.")
+                     "démarches, règles à connaître, risques et financement.")
 INDEX_INTRO = ("Le Clos des Cyprès est un lotissement de huit terrains à bâtir à Biver, hameau de Gardanne, "
                "libres de constructeur et proposés par l'aménageur PONTHIEU DH. Ce blog rassemble des guides pratiques sur l'achat d'un terrain en "
-               "lotissement, les règles à connaître avant de construire, la vie à Gardanne et à Biver, et le "
-               "suivi de notre chantier. Chaque article cite ses sources et indique la date de sa dernière mise à jour.")
+               "lotissement, les règles à connaître avant de construire et la vie à Gardanne et à Biver. "
+               "Chaque article cite ses sources et indique la date de sa dernière mise à jour.")
 
 # Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
 CTA_FINAL_TITLE = "Un projet de terrain à Biver ou à Gardanne ?"
@@ -154,11 +154,15 @@ def fr_date(d):
 
 def typo(text):
     """Typographie française minimale sur du texte brut : espaces insécables avant : ; ! ? % et
-    dans les guillemets « », séparateur des milliers, espace avant les unités."""
-    t = re.sub(r" ([:;!?%»])", NBSP + r"\1", text)
+    dans les guillemets « », séparateur des milliers, espace avant les unités et le signe €,
+    après « n° », et dans le numéro du permis d'aménager (PA 013 041 22 K0001)."""
+    t = re.sub(r"PA 013 041 22 K0001", NBSP.join(["PA", "013", "041", "22", "K0001"]), text)
+    t = t.replace("n° ", "n°" + NBSP)
+    t = re.sub(r" ([:;!?%»])", NBSP + r"\1", t)
     t = t.replace("« ", "«" + NBSP)
     t = re.sub(r"(?<=\d) (?=\d{3}\b)", NBSP, t)
     t = re.sub(r"(?<=\d) (?=(?:m²|m2|km|min|ha|h|cm|mm|m)\b)", NBSP, t)
+    t = re.sub(r"(?<=\d) (?=€)", NBSP, t)
     return t
 
 
@@ -1500,7 +1504,7 @@ class Builder:
         btns = " ".join('<a class="btn %s" href="%s">%s</a>' % ("btn-gold" if k == 0 else "btn-outline", h, esc(typo(l), False))
                         for k, (l, h) in enumerate(CTA_FINAL_BUTTONS))
         return ('<div class="cta-block cta-block--final">\n<p class="cta-block__title">%s</p>\n<p>%s</p>\n'
-                '<p class="cta-block__btns">%s</p>\n<p class="cta-block__tel">Ou appelez-nous : '
+                '<p class="cta-block__btns">%s</p>\n<p class="cta-block__tel">Ou appelez-nous&nbsp;: '
                 '<a href="tel:%s">%s</a></p>\n</div>') % (
             nbsp_entities(esc(typo(CTA_FINAL_TITLE), False)), nbsp_entities(esc(typo(CTA_FINAL_TEXT), False)), nbsp_entities(btns),
             PHONE_TEL, PHONE_DISPLAY.replace(" ", "&nbsp;"))

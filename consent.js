@@ -2,13 +2,22 @@
    LE CLOS DES CYPRÈS — consent.js
    Bandeau de consentement (CNIL) + Meta Pixel conditionnel.
    Le Pixel ne se charge JAMAIS avant un consentement explicite.
+   Tant qu'aucun Pixel n'est configuré (PIXEL_ID ci-dessous), le site n'utilise
+   AUCUN traceur : le bandeau n'est PAS affiché et le lien « Cookies » du pied
+   de page est retiré. Dès qu'un identifiant valide est renseigné, le bandeau
+   et le lien réapparaissent d'eux-mêmes (rien d'autre à modifier dans les pages).
    ============================================================ */
 (function () {
   "use strict";
 
   /* ⚠️ CONFIGURATION — remplacer par l'ID du Pixel Meta
-     (Gestionnaire d'événements Meta → Sources de données). */
+     (Gestionnaire d'événements Meta → Sources de données).
+     Valeur valide = uniquement des chiffres (6 au moins). Toute autre valeur =
+     pas de Pixel : ni bandeau, ni traceur. Si vous activez le Pixel, vérifiez que
+     la politique de confidentialité et le registre des traitements sont à jour. */
   var PIXEL_ID = "REMPLACER_PAR_PIXEL_ID";
+
+  function pixelConfigured() { return /^\d{6,}$/.test(PIXEL_ID); }
 
   var KEY = "cypres-consent";
   var TTL = 180 * 24 * 3600 * 1000; // le choix expire après 6 mois (recommandation CNIL)
@@ -32,12 +41,7 @@
      ---------------------------------------------------------- */
   var pixelLoaded = false;
   function loadPixel() {
-    if (pixelLoaded) return;
-    if (!/^\d{6,}$/.test(PIXEL_ID)) {
-      // ID non configuré : le consentement est enregistré mais aucun traceur n'est posé.
-      console.info("[consent] Meta Pixel non configuré (PIXEL_ID placeholder) — aucun traceur chargé.");
-      return;
-    }
+    if (pixelLoaded || !pixelConfigured()) return;   // sans ID valide : aucun traceur, jamais
     pixelLoaded = true;
 
     /* Snippet officiel Meta Pixel */
@@ -76,7 +80,7 @@
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-label", "Gestion des cookies");
     banner.innerHTML =
-      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces. La carte Google Maps de la page L\'Environnement ne se charge qu\'à votre demande. Aucun autre traceur n\'est utilisé. <a href="/confidentialite">En savoir plus</a></p>' +
+      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces et en optimiser la diffusion. La carte Google Maps de la page L\'Environnement ne se charge qu\'à votre demande. Aucun autre traceur n\'est utilisé ; votre choix est simplement mémorisé dans votre navigateur. <a href="/confidentialite">En savoir plus</a></p>' +
       '<div class="consent-banner__btns">' +
       '<button type="button" class="btn btn-gold consent-accept">Accepter</button>' +
       '<button type="button" class="btn btn-outline-gold consent-deny">Refuser</button>' +
@@ -94,8 +98,21 @@
   function hideBanner() { if (banner) banner.classList.remove("show"); }
 
   function init() {
+    var links = document.querySelectorAll("[data-consent-open]");
+
+    // Aucun Pixel configuré = aucun traceur : pas de bandeau, et le lien « Cookies » du pied
+    // de page serait sans objet (il est retiré avec son séparateur « · »).
+    if (!pixelConfigured()) {
+      links.forEach(function (a) {
+        var prev = a.previousSibling;
+        if (prev && prev.nodeType === 3) prev.nodeValue = prev.nodeValue.replace(/\s*·\s*$/, " ");
+        if (a.parentNode) a.parentNode.removeChild(a);
+      });
+      return;
+    }
+
     // lien « Cookies » du pied de page : permet de retirer/changer son choix à tout moment
-    document.querySelectorAll("[data-consent-open]").forEach(function (a) {
+    links.forEach(function (a) {
       a.addEventListener("click", function (e) { e.preventDefault(); showBanner(); });
     });
 

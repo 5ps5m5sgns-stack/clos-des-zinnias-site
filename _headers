@@ -65,11 +65,10 @@
 /feed.xml
   Cache-Control: public, max-age=3600
 
-# --- Plaquette PDF ---
-/docs/*
-  Cache-Control: public, max-age=86400
-  X-Robots-Tag: noindex
-# PDF non indexé tant qu'il porte l'ancienne marque (Zinnias) : à retirer une fois la plaquette régénérée.
+# --- Plaquette PDF : retirée du déploiement ---
+# Le dossier docs/ est dans .assetsignore : il n'est plus servi (réponse 404). Aucune règle /docs/* n'a donc
+# d'objet. Si une plaquette régénérée est publiée un jour, retirer « docs » de .assetsignore et rétablir ici
+# un cache court (max-age=86400) ; un noindex n'est utile que si le PDF ne doit pas apparaître dans Google.
 
 # --- Content-Security-Policy : NON activée (risque de casser Pixel Meta, Formspree, carte) ---
 # Origines réellement utilisées dans le code (relevé du 05/10/2026) :

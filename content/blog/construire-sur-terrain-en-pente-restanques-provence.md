@@ -54,7 +54,7 @@ Selon la réglementation en vigueur au 05/10/2026, le PLUi du Pays d'Aix (approu
 
 ## À quoi servent les études de sol G1 et G2 ?
 
-La norme NF P 94-500 classe les missions des géotechniciens. Sa version publiée date de novembre 2013 ; AFNOR prépare une révision (enquête publique prévue le 03/12/2026, publication prévue le 27/06/2027). Une « norme 2026 » annoncée par certains sites n'est donc pas publiée à ce jour.
+La norme NF P 94-500 classe les missions des géotechniciens. Sa version publiée date de novembre 2013 ; AFNOR prépare une révision (calendrier prévisionnel publié par AFNOR : publication visée en 2027). Une « norme 2026 » annoncée par certains sites n'est donc pas publiée à ce jour.
 
 Tableau : Les missions géotechniques de la norme NF P 94-500
 

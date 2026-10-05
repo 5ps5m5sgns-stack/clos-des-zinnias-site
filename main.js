@@ -609,9 +609,8 @@
         if (res.ok) {
           // Redirige vers la page de remerciement : URL de conversion mesurable
           // (Pixel Lead, objectifs GA/Meta) et confirmation claire pour l'utilisateur.
-          const lot = form.querySelector('[name="lot"]');
-          const q = lot && lot.value && lot.value !== "tous" ? "?lot=" + encodeURIComponent(lot.value) : "";
-          window.location.href = "/merci" + q;
+          // (le lot choisi n'est volontairement pas ajouté à l'URL : pas de donnée de projet dans une URL de conversion)
+          window.location.href = "/merci";
         } else {
           if (btn) { btn.textContent = original; btn.disabled = false; }
           showError("Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous appeler au 06 09 20 45 90.");

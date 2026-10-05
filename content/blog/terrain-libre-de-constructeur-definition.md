@@ -9,7 +9,7 @@ keyword: terrain libre de constructeur
 image: /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec une maison et des toits de tuiles autour
+image_alt: Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec, sur la prairie, une maison existante et des toits de tuiles autour
 og_image: /images-optimized/blog/terrain-libre-de-constructeur-definition/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne, verifier-avant-dacheter-terrain-biver-gardanne
 draft: false
@@ -19,7 +19,7 @@ Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez ac
 
 ## Que signifie « terrain libre de constructeur » ?
 
-Acheter un terrain libre de constructeur, c'est acheter le terrain seul, sans clause ni offre qui vous lie à une entreprise précise : vous comparez plusieurs constructeurs, faites appel à un architecte ou pilotez vous-même les entreprises. On lit aussi « libre constructeur » ou « sans constructeur imposé » : c'est la même idée.
+Acheter un terrain libre de constructeur, c'est acheter le terrain seul, sans clause ni offre qui vous lie à une entreprise précise : vous comparez plusieurs constructeurs, faites appel à un architecte ou pilotez vous-même les entreprises. On lit aussi « sans constructeur imposé » : c'est la même idée.
 
 L'expression n'apparaît ni dans le Code de l'urbanisme ni dans le Code de la construction et de l'habitation (CCH), dans leurs versions consolidées consultées le 05/10/2026. C'est un terme d'usage : sa portée dépend de la promesse de vente et des documents du lotissement.
 
@@ -31,9 +31,9 @@ Choisir son constructeur ne dispense pas de respecter des règles. Trois niveaux
 - **le règlement du lotissement**, s'il existe, peut le compléter (aspect, implantation, clôtures) ;
 - **le cahier des charges** fixe les droits et obligations entre propriétaires.
 
-Le permis d'aménager et le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
+Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
 
-**Clos des Cyprès.** Le site présente les huit terrains (de 500 à 1 133 m²) comme libres de constructeur. C'est l'information de l'aménageur, PONTHIEU DH, et non une promesse juridique : ce qui engage les parties, c'est la promesse de vente, avec le règlement et le cahier des charges. Disponibilité et plan des lots sur demande via la [page contact](/contact).
+**Clos des Cyprès.** Le site présente les huit terrains (de 500 à 1 133 m²) comme libres de constructeur. C'est l'information de l'aménageur, PONTHIEU DH, et non une promesse juridique : ce qui engage les parties, c'est la promesse de vente, avec, le cas échéant, le règlement et le cahier des charges. Disponibilité et plan des lots sur demande via la [page contact](/contact).
 
 ## Terrain libre ou terrain lié à un constructeur : quelles différences ?
 
@@ -55,7 +55,7 @@ L'offre packagée n'est pas un défaut en soi. Vérifiez ce que le prix comprend
 **Avantages**
 
 - Comparer plusieurs projets et plusieurs devis pour une même maison.
-- Adapter la maison à la parcelle : le terrain du Clos des Cyprès est en pente douce vers le nord-est, et chaque lot permet d'orienter la maison selon son projet.
+- Adapter la maison à la parcelle : le terrain du Clos des Cyprès est en pente douce vers le nord-est, et chaque lot permet d'adapter la maison à la pente, dans les aires d'implantation du plan de composition.
 - Choisir ce que vous déléguez : conception, coordination, sécurité contractuelle.
 
 **Limites**
@@ -113,7 +113,7 @@ Ordre indicatif ; seuls figurent les délais fixés par les textes, aucune duré
 8. **Acte authentique, ouverture du chantier** : le permis est périmé si les travaux ne sont pas entrepris dans les trois ans de la notification (art. R. 424-17).
 9. **Construire, réceptionner, recevoir les clés.**
 
-Pour le Clos des Cyprès, l'aménageur annonce une livraison prévue en mars 2027 ; la date à laquelle un permis de construire peut être demandé dépend de l'avancement des travaux (art. R. 442-18), à préciser avec le vendeur et le notaire. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
+Pour le Clos des Cyprès, l'aménageur annonce une livraison prévue en mars 2027 ; la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux (art. R. 442-18), à préciser avec le vendeur et le notaire. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
 
 :::callout À retenir
 - « Libre de constructeur » signifie que vous choisissez qui construit ; ce n'est pas un terme défini par la loi.

@@ -28,7 +28,8 @@
 #   EMAIL_OK   adresse qui doit être affichée                    (défaut jessica@ownimmobilier.fr)
 #   EMAIL_OLD  adresse qui ne doit plus apparaître               (défaut zinnias@ponthieu.fr)
 #   OLDWORD    ancien nom de marque cherché dans les pages       (défaut zinnias)
-#   PDF_PATH   chemin de la plaquette                            (défaut /docs/plaquette-clos-des-zinnias.pdf)
+#   PDF_PATH   chemin d'une plaquette PDF encore déployée        (défaut : vide ; la plaquette n'est plus déployée,
+#              dossier docs/ dans .assetsignore : le script contrôle alors qu'elle répond 404)
 #   WHOIS      1 : affiche l'échéance de OLD et NEW (AFNIC, nécessite whois) ; défaut 0
 #   UA         User-Agent à envoyer (défaut : celui de curl)
 #   NO_COLOR   défini : pas de couleurs
@@ -43,7 +44,7 @@
 #
 # CE QUE LE SCRIPT VÉRIFIE
 #   A. Ancien domaine : https://OLD/ et https://OLD/lots?x=1 -> 301 vers NEW avec chemin et paramètres
-#      conservés ; chemin profond et PDF ; http://OLD aboutit sur https://NEW (nombre de sauts) ; www.OLD.
+#      conservés ; chemin profond (et PDF si PDF_PATH est renseigné) ; http://OLD aboutit sur https://NEW (nombre de sauts) ; www.OLD.
 #   B. Nouveau domaine : http -> https ; www -> apex (chemin et paramètres conservés) ;
 #      200 sur /, /lots, /contact, /terrain-a-batir-gardanne, /projet, /environnement, /galerie,
 #      /mentions-legales, /confidentialite, /blog/ (si publié) ; /lots.html -> /lots ; /index.html -> / ;
@@ -55,8 +56,8 @@
 #   D. robots.txt (ligne Sitemap: de NEW, pas de Disallow: /) et sitemap.xml (XML valide avec xmllint,
 #      URLs toutes sur NEW, toutes en 200 sans redirection, images comprises).
 #   E. En-têtes : HSTS, X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy
-#      (browsing-topics), cache CSS/JS (revalidation), cache immuable des polices et images,
-#      X-Robots-Tag: noindex sur /docs/.
+#      (browsing-topics), cache CSS/JS (revalidation), cache immuable des polices et images ;
+#      la plaquette PDF n'est plus servie (404), ou, si PDF_PATH est renseigné, X-Robots-Tag: noindex.
 #   F. DNS (si dig) : NS Cloudflare, MX et SPF du courrier toujours présents, www existe, jeton
 #      google-site-verification de OLD toujours présent.
 #
@@ -91,7 +92,7 @@ SPF_EXPECT=${SPF_EXPECT:-include:mx.ovh.com}
 EMAIL_OK=${EMAIL_OK:-jessica@ownimmobilier.fr}
 EMAIL_OLD=${EMAIL_OLD:-zinnias@ponthieu.fr}
 OLDWORD=${OLDWORD:-zinnias}
-PDF_PATH=${PDF_PATH:-/docs/plaquette-clos-des-zinnias.pdf}
+PDF_PATH=${PDF_PATH-}
 WHOIS=${WHOIS:-0}
 UA=${UA:-}
 
@@ -243,7 +244,11 @@ if [ -n "$OLD" ]; then
   chk_redirect "OLD /lots?x=1 : 301, chemin + paramètre"     "$OB/lots?x=1"                 "$TARGET/lots?x=1"
   chk_redirect "OLD /terrain-a-batir-gardanne : 301"         "$OB/terrain-a-batir-gardanne" "$TARGET/terrain-a-batir-gardanne"
   chk_redirect "OLD /lots.html : 301 (chemin conservé)"      "$OB/lots.html"                "$TARGET/lots.html" "301 308" "$TARGET/lots"
-  chk_redirect "OLD PDF : 301 (lien imprimé ou de portail)"  "$OB$PDF_PATH"                 "$TARGET$PDF_PATH"
+  if [ -n "$PDF_PATH" ]; then
+    chk_redirect "OLD PDF : 301 (lien imprimé ou de portail)"  "$OB$PDF_PATH"                 "$TARGET$PDF_PATH"
+  else
+    row SKIP "OLD PDF : 301" "plaquette retirée du déploiement (PDF_PATH vide)"
+  fi
   if [ "$LOCAL" = 1 ]; then
     row SKIP "OLD http:// et www. vers https://NEW/"         "non applicable en http"
   else
@@ -521,13 +526,24 @@ else row SKIP "cache polices" "aucune police trouvée dans l'accueil"; fi
 if [ -n "$_img" ]; then chk_cache "cache images : 1 an, immutable" "$BASE$_img" 'max-age=31536000.*immutable' "max-age=31536000, immutable"
 else row SKIP "cache images" "aucune image trouvée dans l'accueil"; fi
 
-fetchh "$BASE$PDF_PATH" pdf
-_xr=$(hget "$T/pdf.h" x-robots-tag | lc)
-if [ "$F_CODE" != 200 ]; then row FAIL "X-Robots-Tag: noindex sur /docs/" "PDF introuvable : HTTP $F_CODE sur $PDF_PATH"
+if [ -n "$PDF_PATH" ]; then
+  fetchh "$BASE$PDF_PATH" pdf
+  _xr=$(hget "$T/pdf.h" x-robots-tag | lc)
+  if [ "$F_CODE" != 200 ]; then row FAIL "X-Robots-Tag: noindex sur /docs/" "PDF introuvable : HTTP $F_CODE sur $PDF_PATH"
+  else
+    case "$_xr" in
+      *noindex*) row PASS "X-Robots-Tag: noindex sur /docs/" "$_xr" ;;
+      *)         row FAIL "X-Robots-Tag: noindex sur /docs/" "obtenu « ${_xr:-(absent)} » : le PDF reste indexable" ;;
+    esac
+  fi
+elif [ "$LOCAL" = 1 ]; then
+  row SKIP "plaquette PDF non déployée" "non applicable avec le serveur local (il ignore .assetsignore)"
 else
-  case "$_xr" in
-    *noindex*) row PASS "X-Robots-Tag: noindex sur /docs/" "$_xr" ;;
-    *)         row FAIL "X-Robots-Tag: noindex sur /docs/" "obtenu « ${_xr:-(absent)} » : le PDF (ancienne marque) reste indexable" ;;
+  fetchh "$BASE/docs/plaquette-clos-des-zinnias.pdf" pdf
+  case "$F_CODE" in
+    404) row PASS "plaquette PDF non déployée" "HTTP 404 sur /docs/plaquette-clos-des-zinnias.pdf (dossier docs dans .assetsignore)" ;;
+    200) row FAIL "plaquette PDF non déployée" "le PDF (ancienne marque) est encore servi : vérifier .assetsignore (ligne « docs »)" ;;
+    *)   row WARN "plaquette PDF non déployée" "réponse inattendue : HTTP $F_CODE" ;;
   esac
 fi
 

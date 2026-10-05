@@ -15,7 +15,7 @@ related: verifier-avant-dacheter-terrain-biver-gardanne, terrain-libre-de-constr
 draft: false
 ---
 
-Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec son règlement et son cahier des charges, et c'est le lotisseur qui réalise la viabilisation. Voici les étapes dans l'ordre, et la réponse nuancée à « peut-on construire librement ? ». Exemple local : les [terrains à bâtir à Gardanne](/terrain-a-batir-gardanne).
+Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Voici les étapes dans l'ordre, et la réponse nuancée à « peut-on construire librement ? ». Exemple local : les [terrains à bâtir à Gardanne](/terrain-a-batir-gardanne).
 
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 
@@ -37,7 +37,7 @@ Tableau : Les neuf étapes d'un achat de lot
 | 8. Permis de construire | Dépôt, instruction, affichage, recours éventuels |
 | 9. Avant le chantier | Branchements, taxe d'aménagement, assurance dommages-ouvrage |
 
-À la visite, demandez le plan de composition. Le permis d'aménager et le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
+À la visite, demandez le plan de composition. Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
 
 ## Que régissent le PLUi, le règlement et le cahier des charges ?
 
@@ -107,7 +107,7 @@ La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxa
 
 ### Ce qui change quand l'aménageur vend lui-même le lot
 
-Le vendeur est le lotisseur : il remet le permis d'aménager et le cahier des charges, fournit l'étude de sol et réalise les travaux. Le Clos des Cyprès, avenue du Pilon du Roy à Biver (Gardanne), compte huit terrains à bâtir de 500 à 1 133 m², proposés par l'aménageur PONTHIEU DH et présentés comme libres de constructeur. Le permis d'aménager n° PA 013 041 22 K0001 est délivré, le dossier est consultable à la mairie de Gardanne (service urbanisme), la livraison est prévue en mars 2027. Disponibilité et plan sur demande : [les lots](/lots) et [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
+Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. Le Clos des Cyprès, avenue du Pilon du Roy à Biver (Gardanne), compte huit terrains à bâtir de 500 à 1 133 m², proposés par l'aménageur PONTHIEU DH et présentés comme libres de constructeur. Le permis d'aménager n° PA 013 041 22 K0001 est délivré, le dossier est consultable à la mairie de Gardanne (service urbanisme), la livraison est prévue en mars 2027. Disponibilité et plan sur demande : [les lots](/lots) et [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 :::callout À retenir
 - Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.

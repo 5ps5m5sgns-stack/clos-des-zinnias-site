@@ -13,6 +13,14 @@ content
 *.bak
 *.map
 
+# Plaquette PDF : conservée dans le dépôt mais NON déployée (ancienne marque « Zinnias », contenu à régénérer)
+docs
+
+# Planche PA9 (hypothèse d'implantation du dossier initial : 9 lots) : conservée dans le dépôt, NON déployée.
+# Le plan de composition à 8 lots (plan-officiel-composition*) est le seul plan publié.
+images-optimized/plan-masse-aerial-villas-v2*
+images-optimized/plan-officiel-implantation*
+
 # Photos drone originales non-optimisées (~105 Mo) — le site sert les WebP
 assets
 
