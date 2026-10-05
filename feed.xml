@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog du Clos des Cyprès</title>
+    <link>https://clos-des-cypres.fr/blog/</link>
+    <description>Guides pratiques pour acheter un terrain à bâtir en lotissement à Gardanne et Biver : démarches, règles à connaître, vie locale et suivi du chantier.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 05 Oct 2026 08:00:00 GMT</lastBuildDate>
+    <generator>build_blog.py</generator>
+    <atom:link href="https://clos-des-cypres.fr/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Budget pour construire une maison près d'Aix-en-Provence</title>
+      <link>https://clos-des-cypres.fr/blog/budget-terrain-maison-pres-aix-gardanne/</link>
+      <guid isPermaLink="true">https://clos-des-cypres.fr/blog/budget-terrain-maison-pres-aix-gardanne/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Financer son projet</category>
+      <description>Budget pour construire une maison près d'Aix-en-Provence : les postes à prévoir du terrain à la livraison, le financement (PTZ, CCMI) et les leviers.</description>
+    </item>
+    <item>
+      <title>Construire sur un terrain en pente en Provence : sol, budget</title>
+      <link>https://clos-des-cypres.fr/blog/construire-sur-terrain-en-pente-restanques-provence/</link>
+      <guid isPermaLink="true">https://clos-des-cypres.fr/blog/construire-sur-terrain-en-pente-restanques-provence/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Construire en Provence</category>
+      <description>Construire sur un terrain en pente en Provence : restanques, terrassement, soutènements, étude de sol G2, règles du PLUi et postes de coût à chiffrer.</description>
+    </item>
+    <item>
+      <title>Acheter un terrain en lotissement : les étapes à suivre</title>
+      <link>https://clos-des-cypres.fr/blog/guide-acheter-terrain-lotissement-gardanne-biver/</link>
+      <guid isPermaLink="true">https://clos-des-cypres.fr/blog/guide-acheter-terrain-lotissement-gardanne-biver/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Acheter un terrain</category>
+      <description>Acheter un terrain en lotissement : visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, étape par étape.</description>
+    </item>
+    <item>
+      <title>Terrain libre de constructeur : sens, avantages et limites</title>
+      <link>https://clos-des-cypres.fr/blog/terrain-libre-de-constructeur-definition/</link>
+      <guid isPermaLink="true">https://clos-des-cypres.fr/blog/terrain-libre-de-constructeur-definition/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Acheter un terrain</category>
+      <description>Terrain libre de constructeur : ce que l'expression signifie, ce qu'elle ne garantit pas, et comment choisir entre CCMI, architecte et maître d'œuvre.</description>
+    </item>
+    <item>
+      <title>Terrain constructible à Gardanne : ce qu'il faut vérifier</title>
+      <link>https://clos-des-cypres.fr/blog/verifier-avant-dacheter-terrain-biver-gardanne/</link>
+      <guid isPermaLink="true">https://clos-des-cypres.fr/blog/verifier-avant-dacheter-terrain-biver-gardanne/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Acheter un terrain</category>
+      <description>Avant d'acheter un terrain constructible à Gardanne ou à Biver : zonage du PLUi, risques, argiles, débroussaillement, réseaux. Les vérifications pas à pas.</description>
+    </item>
+  </channel>
+</rss>

@@ -45,4 +45,48 @@
     <loc>https://clos-des-cypres.fr/confidentialite</loc>
     <lastmod>2026-10-05</lastmod>
   </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/budget-terrain-maison-pres-aix-gardanne/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif</image:loc>
+      <image:title>Vue aérienne par drone d'un terrain herbeux et des maisons de Biver, avec la montagne Sainte-Victoire à l'horizon</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/construire-sur-terrain-en-pente-restanques-provence/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif</image:loc>
+      <image:title>Vue de drone d'un terrain herbeux en pente douce, bordé d'une voie étroite et d'une haie de conifères, avec les maisons de Biver au loin</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/guide-acheter-terrain-lotissement-gardanne-biver/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif</image:loc>
+      <image:title>Vue aérienne par drone d'un terrain herbeux en bordure d'un quartier de maisons à piscines, au pied d'un bois de pins, avec des collines à l'horizon, à Biver</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/terrain-libre-de-constructeur-definition/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif</image:loc>
+      <image:title>Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec une maison et des toits de tuiles autour</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/verifier-avant-dacheter-terrain-biver-gardanne/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif</image:loc>
+      <image:title>Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec une maison au second plan, une voie étroite à gauche et un bois de pins au fond</image:title>
+    </image:image>
+  </url>
 </urlset>

@@ -6,9 +6,11 @@ date: 2026-10-05
 category: financer-son-projet
 tags: budget, financement, taxe d'aménagement, PTZ, CCMI, terrain à bâtir
 keyword: budget pour construire une maison près d'Aix-en-Provence
-image: /images-optimized/aerial-lotissement-collines-gardanne-1024.avif
-image_alt: Photo drone d'un terrain herbeux entouré de pins et de haies, au milieu de maisons individuelles à toits de tuiles, dans les collines de Biver
-og_image: /images-optimized/aerial-lotissement-collines-gardanne-og.jpg
+image: /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif
+image_width: 1600
+image_height: 900
+image_alt: Vue aérienne par drone d'un terrain herbeux et des maisons de Biver, avec la montagne Sainte-Victoire à l'horizon
+og_image: /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, terrain-libre-de-constructeur-definition, construire-sur-terrain-en-pente-restanques-provence
 draft: false
 ---

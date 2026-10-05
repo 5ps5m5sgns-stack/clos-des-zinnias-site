@@ -6,8 +6,11 @@ date: 2026-10-05
 category: acheter-un-terrain
 tags: terrain libre de constructeur, CCMI, architecte, maître d'œuvre, lotissement
 keyword: terrain libre de constructeur
-image: /assets-optimized/DJI_0061-1536.webp
-image_alt: Vue de drone d'un terrain herbeux non construit, bordé d'une voie goudronnée, avec une maison voisine et des collines boisées au fond
+image: /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif
+image_width: 1600
+image_height: 900
+image_alt: Vue de drone prise à la verticale d'un terrain herbeux clos, bordé d'une route et d'une haie de conifères, avec une maison et des toits de tuiles autour
+og_image: /images-optimized/blog/terrain-libre-de-constructeur-definition/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne, verifier-avant-dacheter-terrain-biver-gardanne
 draft: false
 ---

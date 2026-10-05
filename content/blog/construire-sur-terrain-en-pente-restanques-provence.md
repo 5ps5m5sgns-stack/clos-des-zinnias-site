@@ -6,11 +6,11 @@ date: 2026-10-05
 category: construire-en-provence
 tags: terrain en pente, restanques, étude de sol G2, mur de soutènement, terrassement, maison semi-enterrée
 keyword: construire sur un terrain en pente en Provence
-image: /images-optimized/aerial-lotissement-collines-gardanne-1024.avif
-image_width: 1024
-image_height: 684
-image_alt: Vue aérienne, prise par drone, d'un terrain herbeux entouré de pins et de haies de cyprès, avec des maisons individuelles et une rue sur le versant de la colline, à Biver
-og_image: /images-optimized/aerial-lotissement-collines-gardanne-og.jpg
+image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif
+image_width: 1600
+image_height: 900
+image_alt: Vue de drone d'un terrain herbeux en pente douce, bordé d'une voie étroite et d'une haie de conifères, avec les maisons de Biver au loin
+og_image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/partage.jpg
 related: verifier-avant-dacheter-terrain-biver-gardanne, budget-terrain-maison-pres-aix-gardanne, terrain-libre-de-constructeur-definition
 draft: false
 ---

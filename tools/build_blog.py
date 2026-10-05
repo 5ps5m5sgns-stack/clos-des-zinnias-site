@@ -86,15 +86,15 @@ INDEX_TITLE = "Blog terrain à bâtir Gardanne et Biver"          # + « | Le Cl
 INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
 INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir en lotissement à Gardanne et Biver : "
                      "démarches, règles à connaître, vie locale et suivi du chantier.")
-INDEX_INTRO = ("Le Clos des Cyprès est un lotissement de huit terrains à bâtir viabilisés à Biver, sur la "
-               "commune de Gardanne. Ce blog rassemble des guides pratiques sur l'achat d'un terrain en "
+INDEX_INTRO = ("Le Clos des Cyprès est un lotissement de huit terrains à bâtir à Biver, hameau de Gardanne, "
+               "libres de constructeur et proposés par l'aménageur PONTHIEU DH. Ce blog rassemble des guides pratiques sur l'achat d'un terrain en "
                "lotissement, les règles à connaître avant de construire, la vie à Gardanne et à Biver, et le "
                "suivi de notre chantier. Chaque article cite ses sources et indique la date de sa dernière mise à jour.")
 
 # Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
 CTA_FINAL_TITLE = "Un projet de terrain à Biver ou à Gardanne ?"
-CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir viabilisés, vendus directement par "
-                  "l'aménageur. Consultez les lots, la page consacrée au terrain à bâtir à Gardanne, "
+CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
+                  "et proposés par l'aménageur PONTHIEU DH. Consultez les lots, la page consacrée au terrain à bâtir à Gardanne, "
                   "ou parlez de votre projet avec nous.")
 CTA_FINAL_BUTTONS = (("Voir les huit lots", "/lots"),
                      ("Terrain à bâtir à Gardanne", "/terrain-a-batir-gardanne"),

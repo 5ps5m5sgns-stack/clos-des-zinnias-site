@@ -6,10 +6,11 @@ date: 2026-10-05
 category: acheter-un-terrain
 tags: terrain constructible, PLUi, Géorisques, argiles, débroussaillement, Biver
 keyword: terrain constructible à Gardanne
-image: /images-optimized/aerial-lotissement-collines-gardanne-1536.avif
-image_width: 1536
-image_height: 1026
-image_alt: Vue aérienne par drone d'un terrain herbeux non bâti, bordé de pins et de haies de conifères, entre des maisons individuelles et une rue, dans un quartier des collines de Biver
+image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif
+image_width: 1600
+image_height: 900
+image_alt: Vue de drone rapprochée d'un terrain herbeux clos par un grillage et un muret, avec une maison au second plan, une voie étroite à gauche et un bois de pins au fond
+og_image: /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/partage.jpg
 related: guide-acheter-terrain-lotissement-gardanne-biver, construire-sur-terrain-en-pente-restanques-provence, terrain-libre-de-constructeur-definition
 draft: false
 ---

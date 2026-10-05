@@ -6,9 +6,11 @@ date: 2026-10-05
 category: acheter-un-terrain
 tags: terrain en lotissement, achat terrain à bâtir, promesse de vente, cahier des charges, Gardanne, Biver
 keyword: acheter un terrain en lotissement
-image: /images-optimized/aerial-lotissement-collines-gardanne-1536.webp
-image_alt: Vue aérienne par drone d'un quartier des collines de Biver, avec des maisons individuelles, des haies, des pins et un terrain herbeux
-og_image: /images-optimized/aerial-lotissement-collines-gardanne-og.jpg
+image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif
+image_width: 1600
+image_height: 900
+image_alt: Vue aérienne par drone d'un terrain herbeux en bordure d'un quartier de maisons à piscines, au pied d'un bois de pins, avec des collines à l'horizon, à Biver
+og_image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/partage.jpg
 related: verifier-avant-dacheter-terrain-biver-gardanne, terrain-libre-de-constructeur-definition, budget-terrain-maison-pres-aix-gardanne
 draft: false
 ---
