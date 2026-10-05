@@ -70,6 +70,10 @@
 # d'objet. Si une plaquette régénérée est publiée un jour, retirer « docs » de .assetsignore et rétablir ici
 # un cache court (max-age=86400) ; un noindex n'est utile que si le PDF ne doit pas apparaître dans Google.
 
+# --- Adresses techniques workers.dev (aperçus et adresse de secours) : jamais indexées ---
+https://:sub1.:sub2.workers.dev/*
+  X-Robots-Tag: noindex
+
 # --- Content-Security-Policy : NON activée (risque de casser Pixel Meta, Formspree, carte) ---
 # Origines réellement utilisées dans le code (relevé du 05/10/2026) :
 #   scripts : 'self' + https://connect.facebook.net (Pixel Meta, uniquement après consentement)
