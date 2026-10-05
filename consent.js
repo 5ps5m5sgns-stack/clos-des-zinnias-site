@@ -10,7 +10,7 @@
      (Gestionnaire d'événements Meta → Sources de données). */
   var PIXEL_ID = "REMPLACER_PAR_PIXEL_ID";
 
-  var KEY = "zinnias-consent";
+  var KEY = "cypres-consent";
   var TTL = 180 * 24 * 3600 * 1000; // le choix expire après 6 mois (recommandation CNIL)
 
   function readChoice() {
@@ -53,8 +53,9 @@
     window.fbq("init", PIXEL_ID);
     window.fbq("track", "PageView");
 
-    // Conversion : l'arrivée sur merci.html signifie qu'un formulaire a été envoyé.
-    if (/(^|\/)merci\.html/.test(location.pathname)) {
+    // Conversion : l'arrivée sur la page de remerciement signifie qu'un formulaire a été envoyé.
+    // URL propre « /merci » ; « /merci/ » et l'ancienne forme « /merci.html » restent acceptées.
+    if (/(^|\/)merci(\.html)?\/?$/i.test(location.pathname)) {
       window.fbq("track", "Lead");
     }
 
@@ -75,7 +76,7 @@
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-label", "Gestion des cookies");
     banner.innerHTML =
-      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces. Aucun autre traceur n\'est utilisé. <a href="confidentialite.html">En savoir plus</a></p>' +
+      '<p class="consent-banner__txt">Avec votre accord, nous utilisons le <strong>Pixel Meta</strong> pour mesurer l\'efficacité de nos annonces. Aucun autre traceur n\'est utilisé. <a href="/confidentialite">En savoir plus</a></p>' +
       '<div class="consent-banner__btns">' +
       '<button type="button" class="btn btn-gold consent-accept">Accepter</button>' +
       '<button type="button" class="btn btn-outline-gold consent-deny">Refuser</button>' +

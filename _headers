@@ -1,30 +1,82 @@
+# En-têtes HTTP du site (Cloudflare Workers Static Assets).
+# Doc : developers.cloudflare.com/workers/static-assets/headers/
+#
+# Règles à connaître avant de modifier ce fichier :
+#  - Une URL qui correspond à plusieurs blocs reçoit les en-têtes de TOUS ces blocs.
+#  - Si deux blocs définissent le même en-tête, les valeurs sont FUSIONNÉES avec une
+#    virgule (ex. deux Cache-Control => valeur invalide). Les blocs de cache ci-dessous
+#    sont donc écrits pour ne jamais se chevaucher ; ne mettez pas de Cache-Control
+#    dans le bloc /*.
+#  - "*" est un joker glouton : /*.css couvre style.min.css comme /blog/x.css.
+#  - Ces en-têtes ne s'appliquent pas aux réponses d'un Worker (il n'y en a pas ici).
+#
+# HTML (/, /lots, /blog/...) : aucune règle voulue. La plate-forme envoie par défaut
+# "Cache-Control: public, max-age=0, must-revalidate" + ETag : le navigateur revalide
+# à chaque visite, une mise en ligne est visible tout de suite.
+
+# --- Sécurité (toutes les réponses) ---
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Cross-Origin-Opener-Policy: same-origin
   X-DNS-Prefetch-Control: on
-/*.html
+
+# --- CSS et JavaScript : noms de fichier NON versionnés (style.min.css, main.min.js...) ---
+# On revalide à chaque chargement (réponse 304 quasi instantanée si inchangé) :
+# plus de CSS périmé chez les visiteurs après une mise en ligne.
+# Pour un cache long, il faudrait un nom à empreinte (style.<hash>.css) généré au build.
+/*.css
   Cache-Control: public, max-age=0, must-revalidate
-/sitemap.xml
-  Cache-Control: public, max-age=3600
-/robots.txt
-  Cache-Control: public, max-age=3600
-/style.min.css
-  Cache-Control: public, max-age=2592000
-/main.min.js
-  Cache-Control: public, max-age=2592000
-/animations.min.js
-  Cache-Control: public, max-age=2592000
-/consent.min.js
-  Cache-Control: public, max-age=2592000
+/*.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# --- Fichiers dont le NOM ne change jamais de contenu : cache 1 an, immuable ---
+# Règle d'or : ne jamais écraser un fichier de ces dossiers sous le même nom
+# (un autre contenu => un autre nom de fichier).
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 /images-optimized/*
   Cache-Control: public, max-age=31536000, immutable
 /assets-optimized/*
   Cache-Control: public, max-age=31536000, immutable
-/fonts/*
-  Cache-Control: public, max-age=31536000, immutable
+
+# --- Icônes et logo à la racine : un même nom peut changer de dessin => 7 jours ---
+/favicon-48.png
+  Cache-Control: public, max-age=604800
+/favicon.svg
+  Cache-Control: public, max-age=604800
+/icon-192.png
+  Cache-Control: public, max-age=604800
+/icon-512.png
+  Cache-Control: public, max-age=604800
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
+/logo-cypres-rond.png
+  Cache-Control: public, max-age=604800
+
+# --- Fichiers pour les robots et flux ---
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
+/feed.xml
+  Cache-Control: public, max-age=3600
+
+# --- Plaquette PDF ---
 /docs/*
   Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex
+# PDF non indexé tant qu'il porte l'ancienne marque (Zinnias) : à retirer une fois la plaquette régénérée.
+
+# --- Content-Security-Policy : NON activée (risque de casser Pixel Meta, Formspree, carte) ---
+# Origines réellement utilisées dans le code (relevé du 05/10/2026) :
+#   scripts : 'self' + https://connect.facebook.net (Pixel Meta, uniquement après consentement)
+#   requêtes : 'self' + https://formspree.io (formulaire) + https://www.facebook.com (balise Pixel)
+#   cadres : https://www.google.com (carte de environnement.html)
+#   inline : <style> critique dans chaque page, attributs style="", onload="" sur les <link>
+# Brouillon à tester en mode rapport (n'empêche rien, ne fait qu'écrire dans la console du
+# navigateur), à coller dans le bloc /* pour l'essayer :
+#   Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://connect.facebook.net; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; connect-src 'self' https://formspree.io https://www.facebook.com https://connect.facebook.net; frame-src https://www.google.com; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'

@@ -87,21 +87,59 @@
   }
 
   /* ----------------------------------------------------------
+     URLS PROPRES — Cloudflare sert « /lots » (et redirige « /lots.html »
+     vers « /lots »). Les liens du site sont donc écrits sans extension.
+     normPath() ramène toutes les formes à une seule, pour les comparer :
+     « /lots », « /lots.html », « /lots/ » → « /lots » ;
+     « / », « /index.html » → « / » ; « /blog/ » → « /blog ».
+     ---------------------------------------------------------- */
+  function normPath(p) {
+    p = (p || "/").replace(/\/index\.html$/i, "/").replace(/\.html$/i, "");
+    if (p.length > 1) p = p.replace(/\/+$/, "");
+    return p === "" ? "/" : p;
+  }
+
+  /* ----------------------------------------------------------
      ACTIVE LINK based on current page
+     « /blog » reste actif sur « /blog/mon-article/ » (rubrique parente).
      ---------------------------------------------------------- */
   function initActiveLink() {
-    let page = location.pathname.split("/").pop();
-    if (!page || page === "") page = "index.html";
+    const here = normPath(location.pathname);
     document.querySelectorAll(".nav__links a, .mobile-menu a").forEach((a) => {
-      const href = a.getAttribute("href");
-      if (href === page) a.classList.add("active");
+      const href = a.getAttribute("href") || "";
+      if (!href || href.charAt(0) === "#") return;
+      let u;
+      try { u = new URL(href, location.href); } catch (_) { return; }
+      if (u.origin !== location.origin) return;
+      const path = normPath(u.pathname);
+      if (path === here || (path !== "/" && here.indexOf(path + "/") === 0)) {
+        a.classList.add("active");
+      }
     });
   }
 
   /* ----------------------------------------------------------
      PAGE TRANSITIONS (fade out → navigate)
+     S'applique aux liens internes vers une autre page du site
+     (« /lots » comme l'ancienne forme « lots.html »), sans ancre ni
+     paramètre, hors fichiers (pdf, xml, images).
      ---------------------------------------------------------- */
+  function pageLinkUrl(a) {
+    const href = a.getAttribute("href");
+    if (!href || a.target || a.hasAttribute("download") || a.hasAttribute("data-no-transition")) return null;
+    let u;
+    try { u = new URL(href, location.href); } catch (_) { return null; }
+    if (u.origin !== location.origin || u.hash || u.search) return null;
+    if (normPath(u.pathname) === normPath(location.pathname)) return null;
+    if (/\.[a-z0-9]+$/i.test(u.pathname.replace(/\.html$/i, ""))) return null;
+    return u;
+  }
+
   function initPageTransitions() {
+    // Retour arrière (cache de navigation) : ne jamais rester « en sortie »
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) document.body.classList.remove("page-leaving");
+    });
     // Pas de fondu de transition (ni de délai) si l'utilisateur préfère moins d'animation
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // Un seul listener délégué pour toute la page (au lieu d'un par lien)
@@ -109,17 +147,11 @@
       if (e.metaKey || e.ctrlKey || e.shiftKey) return;
       const a = e.target.closest("a[href]");
       if (!a || e.defaultPrevented) return;
-      const href = a.getAttribute("href");
-      const isInternal =
-        href &&
-        /\.html$/.test(href) &&
-        !a.target &&
-        !href.startsWith("http") &&
-        !a.hasAttribute("data-no-transition");
-      if (!isInternal) return;
+      const u = pageLinkUrl(a);
+      if (!u) return;
       e.preventDefault();
       document.body.classList.add("page-leaving");
-      setTimeout(() => { window.location.href = href; }, 150);
+      setTimeout(() => { window.location.href = u.href; }, 150);
     });
   }
 
@@ -576,7 +608,7 @@
           // (Pixel Lead, objectifs GA/Meta) et confirmation claire pour l'utilisateur.
           const lot = form.querySelector('[name="lot"]');
           const q = lot && lot.value && lot.value !== "tous" ? "?lot=" + encodeURIComponent(lot.value) : "";
-          window.location.href = "merci.html" + q;
+          window.location.href = "/merci" + q;
         } else {
           if (btn) { btn.textContent = original; btn.disabled = false; }
           showError("Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous appeler au 06 09 20 45 90.");

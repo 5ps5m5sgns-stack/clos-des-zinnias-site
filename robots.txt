@@ -1,11 +1,10 @@
-# Le Clos des Zinnias — Biver (13)
-# https://clos-des-zinnias.fr
+# Le Clos des Cyprès — lotissement de 8 terrains à bâtir, Biver (Gardanne, 13)
+# https://clos-des-cypres.fr
 
 User-agent: *
 Allow: /
-Disallow:
 
-# Pas de pages privées à exclure.
-# La page 404 n'est pas listée au sitemap (noindex) mais reste crawlable.
+# Rien à exclure. Les pages /merci et /404 portent une balise « noindex » :
+# ne pas les bloquer ici, sinon Google ne pourrait plus lire cette balise.
 
-Sitemap: https://clos-des-zinnias.fr/sitemap.xml
+Sitemap: https://clos-des-cypres.fr/sitemap.xml

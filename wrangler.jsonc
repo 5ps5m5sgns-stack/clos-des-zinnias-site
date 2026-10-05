@@ -6,7 +6,14 @@
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    // URL inconnue : Cloudflare renvoie le 404.html le plus proche (racine du site
+    // ou dossier parent) avec le statut HTTP 404. Sans cette ligne : 404 au corps vide.
+    "not_found_handling": "404-page",
+    // Valeur par défaut, écrite pour mémoire : /x sert x.html (200), /x.html et /x/
+    // redirigent en 307 vers /x ; /dossier/ sert dossier/index.html (200) et
+    // /dossier/index.html redirige en 307 vers /dossier/.
+    "html_handling": "auto-trailing-slash"
   },
   "compatibility_flags": [
     "nodejs_compat"
