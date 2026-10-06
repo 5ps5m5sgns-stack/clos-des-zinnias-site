@@ -82,20 +82,47 @@ CATEGORIES = {
 }
 
 # Page d'index du blog (texte éditorial STABLE : aucune date, aucun prix, aucun chiffre qui change)
-INDEX_TITLE = "Blog terrain à bâtir Gardanne et Biver"          # + « | Le Clos des Cyprès »
+INDEX_TITLE = "Construire sa maison : le blog"                  # + « | Le Clos des Cyprès »
 INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
 INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir et construire sa maison en Provence, "
                      "à Gardanne et à Biver : démarches, règles, budget et financement.")
-INDEX_INTRO = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur et vendus "
-               "directement par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous un message. "
-               "Ce blog rassemble des guides pratiques pour acheter un terrain en lotissement, construire sa maison en "
-               "Provence et connaître les règles à respecter. Chaque article cite ses sources et indique la date de sa "
+# Chapô sur fond sombre (texte brut, sans lien : les appels cliquables sont juste dessous)
+INDEX_INTRO = ("Des guides pratiques pour acheter un terrain en lotissement, construire sa maison en Provence et "
+               "connaître les règles à respecter. Chaque article cite ses sources officielles et indique la date de sa "
                "dernière mise à jour.")
+# Texte d'accueil de l'index (Markdown, même moteur que les articles : liens, encadré). Il porte les deux appels
+# exigés (D55) : « Appelez-nous au … » (tel:) et « Envoyez-nous un message » (/contact), les liens vers les pages
+# commerciales (une ancre par cible) et le parcours de lecture. Un seul lien par ancre et par cible.
+INDEX_BODY_MD = """Le Clos des Cyprès, à Biver (Gardanne), réunit huit [terrains libres de constructeur](/lots) proposés par l'aménageur PONTHIEU DH. Une question, un projet ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
+
+Pour voir les terrains : le [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne), le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille) et le [terrain à bâtir en Provence](/terrain-a-batir-provence).
+
+:::callout Par où commencer ?
+1. [Terrain à bâtir, constructible, viabilisé : les différences](/blog/terrain-a-batir-constructible-viabilise-differences/)
+2. [Terrain libre de constructeur : sens, avantages et limites](/blog/terrain-libre-de-constructeur-definition/)
+3. [Terrain constructible à Gardanne : ce qu'il faut vérifier](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)
+4. [Acheter un terrain en lotissement à Gardanne : les étapes](/blog/guide-acheter-terrain-lotissement-gardanne-biver/)
+5. [Budget pour construire une maison près d'Aix-en-Provence](/blog/budget-terrain-maison-pres-aix-gardanne/)
+6. [Construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/)
+7. [Quelle surface de terrain pour une maison avec piscine ?](/blog/surface-terrain-maison-piscine/)
+8. [Construire sur un terrain en pente en Provence : sol, budget](/blog/construire-sur-terrain-en-pente-restanques-provence/)
+:::
+"""
+INDEX_GUIDES_TITLE = "Tous les guides"
+# Bloc d'appel en bas de l'index (page 1)
+INDEX_CTA_MD = """:::cta Un projet de terrain à Biver ?
+Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur et proposés par l'aménageur PONTHIEU DH. Le prix et les informations de chaque lot vous sont présentés lors de notre échange.
+
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
+- [Envoyez-nous un message](/contact)
+- [Voir les huit lots](/lots)
+:::
+"""
 
 # Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
 CTA_FINAL_TITLE = "Un projet de terrain à Biver, pour construire votre maison ?"
 CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
-                  "et vendus directement par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous "
+                  "et proposés par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous "
                   "un message : le prix et les informations de chaque lot vous sont présentés lors de notre échange.")
 # Libellé du bouton vers la page « /terrain-a-batir-gardanne » : varié d'un article à l'autre (pas cinq liens
 # identiques vers la même page). Clé = slug ; un nouvel article reçoit le libellé par défaut.
@@ -106,12 +133,15 @@ CTA_PILLAR_LABELS = {
     "guide-acheter-terrain-lotissement-gardanne-biver": "Le Clos des Cyprès en détail",
     "terrain-libre-de-constructeur-definition": "Présentation des terrains",
     "verifier-avant-dacheter-terrain-biver-gardanne": "La page du terrain à Biver",
+    "terrain-a-batir-constructible-viabilise-differences": "Le terrain à bâtir à Gardanne",
+    "construire-sa-maison-etapes-du-terrain-aux-cles": "Découvrir le terrain à bâtir",
+    "surface-terrain-maison-piscine": "Le terrain à Gardanne en détail",
 }
-CTA_FINAL_BUTTONS = (("Appelez le " + PHONE_DISPLAY, "tel:" + PHONE_TEL),
+CTA_FINAL_BUTTONS = (("Appelez-nous au " + PHONE_DISPLAY.replace(" ", "\u00a0"), "tel:" + PHONE_TEL),
                      ("Voir les huit lots", "/lots"),
                      (CTA_PILLAR_DEFAULT, "/terrain-a-batir-gardanne"),
-                     ("Nous contacter", "/contact"))
-CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Nous contacter", "/contact"))
+                     ("Envoyez-nous un message", "/contact"))
+CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Envoyez-nous un message", "/contact"))
 # Couvertures : variantes allégées « <nom>-<largeur>.<ext> » placées à côté de l'image (ex. couverture-640.avif,
 # couverture-1024.avif). Si elles existent, la page déclare un srcset (la largeur d'origine reste le dernier choix) ;
 # sinon l'image est servie seule, comme avant. « sizes » = largeur d'affichage réelle (voir blog.css).
@@ -1591,6 +1621,19 @@ class Builder:
             rel_html, "      </div>", "    </article>", "  </main>"])
         return self.shell(head, main, "true")
 
+    def render_md_block(self, md, where):
+        """Rend un court texte Markdown écrit dans ce fichier (texte de l'index) avec le même moteur que les articles ;
+        les liens sont contrôlés comme ceux d'un article (page existante, forme propre, barre finale)."""
+        stub = Article(path=Path(__file__), rel=where, body=md, body_line=1)
+        renderer = MarkdownRenderer(self, stub)
+        out = renderer.render()
+        by = self.by_slug()
+        for href, ln in renderer.links:
+            problem = self.check_link(href, by, stub)
+            if problem:
+                self.report.error("%s:%d" % (where, ln), "lien « %s » : %s" % (href, problem))
+        return out
+
     def render_index_page(self, n, pages, chunk):
         url = SITE_URL + ("/blog/" if n == 1 else "/blog/page/%d/" % n)
         title = "%s%s | %s" % (INDEX_TITLE, "" if n == 1 else " (page %d)" % n, SITE_NAME)
@@ -1602,13 +1645,21 @@ class Builder:
         intro = '\n          <p class="post-lead">%s</p>' % nbsp_entities(esc(typo(INDEX_INTRO), quote=False)) if n == 1 else \
             '\n          <p class="post-lead">Page %d sur %d</p>' % (n, pages)
         pagination = self.pagination(n, pages)
+        body_top, body_bottom = [], []
+        if n == 1:
+            body_top = ['      <div class="wrap">', '        <div class="post-main"><div class="prose">',
+                        self.render_md_block(INDEX_BODY_MD, "tools/build_blog.py (INDEX_BODY_MD)"), "        </div></div>", "      </div>"]
+            body_bottom = ['      <div class="wrap">', '        <div class="post-main">',
+                           self.render_md_block(INDEX_CTA_MD, "tools/build_blog.py (INDEX_CTA_MD)"), "        </div>", "      </div>"]
         main = "\n".join([
             '  <main id="contenu" tabindex="-1">', '    <header class="post-head">', '      <div class="wrap post-head__inner">',
             "        " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/")]) + draft,
             '        <p class="label">Blog</p>', "        <h1>%s</h1>%s" % (nbsp_entities(esc(typo(INDEX_H1), quote=False)), intro),
-            "      </div>", "    </header>", '    <div class="post-body">', '      <div class="wrap">',
-            '        <ul class="post-grid post-grid--index">', "\n".join(self.card(a, 2) for a in chunk), "        </ul>",
-            pagination, "      </div>", "    </div>", "  </main>"])
+            "      </div>", "    </header>", '    <div class="post-body">'] + body_top + [
+            '      <section class="post-related" aria-labelledby="guides-title">', '        <div class="wrap">',
+            '          <h2 id="guides-title">%s</h2>' % esc(INDEX_GUIDES_TITLE, False),
+            '          <ul class="post-grid post-grid--index">', "\n".join(self.card(a, 3) for a in chunk), "          </ul>",
+            pagination, "        </div>", "      </section>"] + body_bottom + ["    </div>", "  </main>"])
         return self.shell(head, main, "page")
 
     @staticmethod

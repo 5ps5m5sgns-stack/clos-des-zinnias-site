@@ -1,8 +1,9 @@
 ---
-title: Acheter un terrain en lotissement : les étapes à suivre
-description: Acheter un terrain en lotissement : visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, étape par étape.
+title: Acheter un terrain en lotissement à Gardanne : les étapes
+description: Acheter un terrain en lotissement à Gardanne : visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, pas à pas.
 slug: guide-acheter-terrain-lotissement-gardanne-biver
 date: 2026-10-05
+updated: 2026-10-06
 category: acheter-un-terrain
 tags: terrain en lotissement, achat terrain à bâtir, promesse de vente, cahier des charges, Gardanne, Biver
 keyword: acheter un terrain en lotissement
@@ -11,11 +12,11 @@ image_width: 1600
 image_height: 900
 image_alt: Vue aérienne par drone d'une prairie en bordure d'un quartier résidentiel de jardins et de piscines, au pied d'un bois de pins, avec des collines boisées à l'horizon, à Biver
 og_image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/partage.jpg
-related: verifier-avant-dacheter-terrain-biver-gardanne, terrain-libre-de-constructeur-definition, budget-terrain-maison-pres-aix-gardanne
+related: terrain-a-batir-constructible-viabilise-differences, verifier-avant-dacheter-terrain-biver-gardanne, construire-sa-maison-etapes-du-terrain-aux-cles
 draft: false
 ---
 
-Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, commune de Gardanne, [les huit terrains du Clos des Cyprès](/terrain-a-batir-gardanne) sont proposés par l'aménageur PONTHIEU DH.
+Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, hameau de Gardanne, [huit terrains libres de constructeur](/lots) sont proposés par l'aménageur PONTHIEU DH : un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) en lotissement, avec permis d'aménager.
 
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 
@@ -38,6 +39,10 @@ Tableau : Les neuf étapes d'un achat de lot
 | 9. Avant le chantier | Branchements, taxe d'aménagement, assurance dommages-ouvrage |
 
 À la visite, demandez le plan de composition. Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
+
+:::callout Un projet de terrain à Biver ?
+Vous hésitez sur une étape, ou vous voulez connaître les terrains du lotissement ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
+:::
 
 ## Que régissent le PLUi, le règlement et le cahier des charges ?
 
@@ -77,7 +82,7 @@ L'article L. 271-1 du code de la construction et de l'habitation (CCH) ouvre dix
 
 Dans les zones d'exposition moyenne ou forte au retrait-gonflement des argiles, la vente d'un terrain non bâti constructible suppose une **étude géotechnique préalable**, fournie par le vendeur et annexée à la promesse ou, à défaut, à l'acte (art. L. 132-5 du CCH), valable trente ans si le sol n'est pas remanié (art. R. 132-6). Elle est transmise à vos constructeurs (art. L. 132-6).
 
-L'état des risques et pollutions est annexé à la promesse ; le site [Géorisques](https://www.georisques.gouv.fr/) permet de consulter les risques connus d'une commune ou d'une parcelle. Gardanne est couverte par un plan de prévention du retrait-gonflement des argiles approuvé le 27/02/2017. Dans les territoires exposés aux incendies, le code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6) : voir [ce qu'il faut vérifier avant d'acheter un terrain constructible](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
+L'état des risques et pollutions est annexé à la promesse ; le site [Géorisques](https://www.georisques.gouv.fr/) permet de consulter les risques connus d'une commune ou d'une parcelle. Dans les territoires exposés aux incendies, le code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6) : voir [ce qu'il faut vérifier avant d'acheter un terrain constructible](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 ### Financement
 
@@ -85,7 +90,7 @@ Chiffrez terrain, maison et frais, et vérifiez que la promesse comporte une con
 
 ## Après la signature : viabilisation, permis de construire et délais
 
-L'acte authentique se signe en principe après l'achèvement des équipements collectifs, sauf autorisation de différer les travaux de finition ou garantie d'achèvement (art. R. 442-13). Le lot doit être constructible, viabilisé et délimité ; le bornage est mentionné dans la promesse et l'acte (art. L. 115-4). Le lotisseur réalise et finance la viabilité du lotissement et son branchement sur les équipements publics (art. L. 332-15) ; le branchement de votre maison depuis la limite du lot se règle en principe avec votre constructeur : à vérifier dans les documents de vente.
+L'acte authentique se signe en principe après l'achèvement des équipements collectifs, sauf autorisation de différer les travaux de finition ou garantie d'achèvement (art. R. 442-13). Le lot doit être constructible, viabilisé et délimité (voir [terrain à bâtir, constructible, viabilisé : les différences](/blog/terrain-a-batir-constructible-viabilise-differences/)) ; le bornage est mentionné dans la promesse et l'acte (art. L. 115-4). Le lotisseur réalise et finance la viabilité du lotissement et son branchement sur les équipements publics (art. L. 332-15) ; le branchement de votre maison depuis la limite du lot se règle en principe avec votre constructeur : à vérifier dans les documents de vente.
 
 ### Permis de construire et délais
 
@@ -95,7 +100,7 @@ Le permis de construire d'un lot peut être accordé à l'achèvement des travau
 
 ### Taxe d'aménagement et assurance dommages-ouvrage
 
-La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxable (hors Île-de-France), auxquels s'appliquent un taux communal et un taux départemental, soit 5 % et 1,55 % à Gardanne d'après data.economie.gouv.fr ; le certificat d'urbanisme indique les taxes applicables (art. L. 410-1). Le maître d'ouvrage doit aussi souscrire une assurance dommages-ouvrage avant l'ouverture du chantier (art. L. 242-1 du code des assurances).
+La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxable (hors Île-de-France), auxquels s'appliquent un taux communal et un taux départemental, soit 5 % et 1,55 % à Gardanne d'après data.economie.gouv.fr ; le certificat d'urbanisme indique les taxes applicables (art. L. 410-1). Le maître d'ouvrage doit aussi souscrire une assurance dommages-ouvrage avant l'ouverture du chantier (art. L. 242-1 du code des assurances). Pour la suite, du contrat de construction à la réception, lisez [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/).
 
 ## Quelles erreurs éviter quand on achète un lot ?
 
@@ -107,7 +112,7 @@ La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxa
 
 ### Ce qui change quand l'aménageur vend lui-même le lot
 
-Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [les lots](/lots) et [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
+Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Selon votre trajet quotidien, voyez le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille). Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 :::callout À retenir
 - Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.
@@ -130,6 +135,9 @@ Dans les zones d'exposition moyenne ou forte au retrait-gonflement des argiles, 
 
 ### Le règlement de lotissement s'applique-t-il toujours au bout de dix ans ?
 Pas pour ses règles d'urbanisme : elles deviennent caduques dix ans après l'autorisation de lotir si un PLU couvre alors le lotissement (art. L. 442-9). Les droits et obligations entre colotis fixés par le cahier des charges demeurent.
+
+### Qui vend les lots du Clos des Cyprès ?
+Les terrains sont proposés par l'aménageur PONTHIEU DH. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 :::
 
 :::source Sources
@@ -148,7 +156,7 @@ Pas pour ses règles d'urbanisme : elles deviennent caduques dix ans après l'au
 :::cta Un projet de terrain à Biver ?
 Une question sur le dossier de vente, le plan de composition ou le calendrier des travaux ? Parlons-en : le prix et les informations de chaque lot vous sont communiqués lors de notre échange.
 
-- [Appelez le 06 09 20 45 90](tel:+33609204590)
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Voir les lots](/lots)
-- [Nous contacter](/contact)
+- [Envoyez-nous un message](/contact)
 :::

@@ -3,6 +3,7 @@ title: Terrain libre de constructeur : sens, avantages et limites
 description: Terrain libre de constructeur : ce que l'expression signifie, ce qu'elle ne garantit pas, et comment choisir entre CCMI, architecte et maître d'œuvre.
 slug: terrain-libre-de-constructeur-definition
 date: 2026-10-05
+updated: 2026-10-06
 category: acheter-un-terrain
 tags: terrain libre de constructeur, CCMI, architecte, maître d'œuvre, lotissement
 keyword: terrain libre de constructeur
@@ -11,17 +12,23 @@ image_width: 1600
 image_height: 900
 image_alt: Vue de drone prise à la verticale d'une prairie close, bordée d'une route et de haies de conifères, avec les jardins et les piscines d'un quartier résidentiel de l'autre côté de la route
 og_image: /images-optimized/blog/terrain-libre-de-constructeur-definition/partage.jpg
-related: guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne, verifier-avant-dacheter-terrain-biver-gardanne
+related: construire-sa-maison-etapes-du-terrain-aux-cles, guide-acheter-terrain-lotissement-gardanne-biver, budget-terrain-maison-pres-aix-gardanne
 draft: false
 ---
 
-Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. À Biver (13120 Gardanne), [les huit terrains du Clos des Cyprès](/lots) sont proposés libres de constructeur par l'aménageur PONTHIEU DH. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction, que vous cherchiez un terrain pour construire votre maison en Provence, près d'Aix-en-Provence ou près de Marseille.
+Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. À Biver (13120 Gardanne), les huit [terrains libres de constructeur](/lots) du Clos des Cyprès sont proposés par l'aménageur PONTHIEU DH. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction, que vous cherchiez un terrain pour construire votre maison en Provence, près d'Aix-en-Provence ou près de Marseille.
 
 ## Que signifie « terrain libre de constructeur » ?
 
 Acheter un terrain libre de constructeur, c'est acheter le terrain seul, sans clause ni offre qui vous lie à une entreprise précise : vous comparez plusieurs constructeurs, faites appel à un architecte ou pilotez vous-même les entreprises. On lit aussi « sans constructeur imposé » : c'est la même idée.
 
 L'expression n'apparaît ni dans le Code de l'urbanisme ni dans le Code de la construction et de l'habitation (CCH), dans leurs versions consolidées consultées le 05/10/2026. C'est un terme d'usage : sa portée dépend de la promesse de vente et des documents du lotissement.
+
+Au Clos des Cyprès, huit [terrains libres de constructeur de 500 à 1 133 m²](/lots) sont proposés par l'aménageur PONTHIEU DH : vous choisissez votre architecte et votre constructeur.
+
+:::callout Un projet de maison à Biver ?
+Une question sur un terrain libre de constructeur à Biver ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+:::
 
 ## Que ne garantit pas un terrain libre de constructeur ?
 
@@ -33,7 +40,7 @@ Choisir son constructeur ne dispense pas de respecter des règles. Trois niveaux
 
 Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
 
-**Au Clos des Cyprès**, les huit terrains sont proposés libres de constructeur par l'aménageur PONTHIEU DH. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+**Au Clos des Cyprès**, renseignez-vous auprès de l'aménageur PONTHIEU DH : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 
 ## Terrain libre ou terrain lié à un constructeur : quelles différences ?
 
@@ -80,7 +87,7 @@ Tableau : Quatre façons de construire sur un terrain libre
 
 **Dans tous les cas**, vous souscrivez l'assurance dommages-ouvrage avant l'ouverture du chantier (Code des assurances, art. L. 242-1). Après la réception : un an de garantie de parfait achèvement, deux ans de bon fonctionnement des équipements, dix ans de responsabilité décennale (Code civil, art. 1792 et suivants). Les honoraires d'un architecte dépendent de la mission (conception, permis, suivi de chantier) : demandez-les par écrit, mission par mission.
 
-**À Gardanne**, la conception doit tenir compte du sol. La commune est concernée par le retrait-gonflement des argiles : en zone d'exposition moyenne ou forte, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, transmise ensuite aux constructeurs (CCH, art. L. 132-5 et L. 132-6). Dans les territoires exposés aux incendies, le Code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6). [Géorisques](https://www.georisques.gouv.fr/) permet de vérifier ces points pour une adresse. Sur un terrain en pente, voyez aussi [construire en restanques](/blog/construire-sur-terrain-en-pente-restanques-provence/).
+**Côté sol**, la conception doit tenir compte du terrain. En zone d'exposition moyenne ou forte au retrait-gonflement des argiles, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, transmise ensuite aux constructeurs (CCH, art. L. 132-5 et L. 132-6). Dans les territoires exposés aux incendies, le Code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6). [Géorisques](https://www.georisques.gouv.fr/) permet de vérifier ces points pour une adresse. Sur un terrain en pente, voyez aussi [construire en restanques](/blog/construire-sur-terrain-en-pente-restanques-provence/).
 
 ## Que vérifier et que demander avant de signer ?
 
@@ -113,7 +120,7 @@ Ordre indicatif ; seuls figurent les délais fixés par les textes, aucune duré
 8. **Acte authentique, ouverture du chantier** : le permis est périmé si les travaux ne sont pas entrepris dans les trois ans de la notification (art. R. 424-17).
 9. **Construire, réceptionner, recevoir les clés.**
 
-En lotissement, la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux d'aménagement (art. R. 442-18) : à préciser avec l'aménageur et le notaire. Que le terrain soit [près de Marseille](/terrain-a-batir-marseille), près d'Aix-en-Provence ou ailleurs en Provence, cet ordre est le même. Notre [guide d'achat en lotissement à Gardanne-Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat.
+En lotissement, la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux d'aménagement (art. R. 442-18) : à préciser avec l'aménageur et le notaire. Que vous cherchiez un [terrain à bâtir près de Marseille](/terrain-a-batir-marseille), un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou un [terrain à bâtir en Provence](/terrain-a-batir-provence), cet ordre est le même. Notre [guide d'achat en lotissement à Gardanne](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat, et [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/) les suit jusqu'à la réception.
 
 :::callout À retenir
 - « Libre de constructeur » signifie que vous choisissez qui construit ; ce n'est pas un terme défini par la loi.
@@ -136,14 +143,17 @@ Aucune règle ne permet de l'affirmer : le prix du terrain dépend du terrain, l
 
 ### Que devient mon contrat de construction si je n'obtiens pas mon permis ou mon prêt ?
 En CCMI, le contrat peut être conclu sous conditions suspensives : acquisition du terrain (si vous avez une promesse de vente), permis de construire, prêts, assurance dommages-ouvrage, garantie de livraison (CCH, art. L. 231-4). Le dépôt de garantie éventuel, limité à 3 % du prix, vous est restitué sans retenue ni pénalité si les conditions ne sont pas réalisées dans le délai prévu. Pour le terrain, vérifiez les conditions de la promesse avec votre notaire.
+
+### Les terrains du Clos des Cyprès sont-ils libres de constructeur ?
+Oui : vous choisissez librement votre architecte et votre constructeur. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 :::
 
 :::cta Un projet de terrain à Biver ?
 Appelez-nous : le prix et les informations de chaque lot vous sont présentés lors de notre échange téléphonique.
 
-- [Appelez le 06 09 20 45 90](tel:+33609204590)
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
-- [Nous contacter](/contact)
+- [Envoyez-nous un message](/contact)
 :::
 
 :::source

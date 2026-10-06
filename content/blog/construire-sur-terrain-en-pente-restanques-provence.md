@@ -3,19 +3,20 @@ title: Construire sur un terrain en pente en Provence : sol, budget
 description: Construire sur un terrain en pente en Provence : restanques, terrassement, soutènements, étude de sol G2, règles du PLUi et postes de coût à chiffrer.
 slug: construire-sur-terrain-en-pente-restanques-provence
 date: 2026-10-05
+updated: 2026-10-06
 category: construire-en-provence
 tags: terrain en pente, restanques, étude de sol G2, mur de soutènement, terrassement, maison semi-enterrée
 keyword: construire sur un terrain en pente en Provence
 image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif
 image_width: 1600
 image_height: 900
-image_alt: Vue de drone d'une prairie en pente, bordée d'une voie étroite et d'une haie de conifères, avec les toits du hameau de Biver au loin sur la colline
+image_alt: Vue de drone d'une prairie bordée d'une voie étroite et d'une haie de conifères, avec les toits du hameau de Biver au loin sur la colline
 og_image: /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/partage.jpg
-related: verifier-avant-dacheter-terrain-biver-gardanne, budget-terrain-maison-pres-aix-gardanne, terrain-libre-de-constructeur-definition
+related: verifier-avant-dacheter-terrain-biver-gardanne, budget-terrain-maison-pres-aix-gardanne, surface-terrain-maison-piscine
 draft: false
 ---
 
-Construire sur un terrain en pente en Provence est courant et réalisable, à condition de traiter la pente comme une donnée du projet dès l'achat : elle joue sur l'implantation de la maison, l'accès, le terrassement, les murs de soutènement, les eaux de pluie, les fondations et les vues. Ce guide explique ce qu'est une restanque, ce que prévoit le PLUi du Pays d'Aix, à quoi servent les études de sol G1 et G2 et quels postes de coût varient. Il vaut pour tout projet de construire sa maison sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille ; à Biver, le Clos des Cyprès propose huit [terrains à bâtir](/lots).
+Construire sur un terrain en pente en Provence est courant et réalisable, à condition de traiter la pente comme une donnée du projet dès l'achat : elle joue sur l'implantation de la maison, l'accès, le terrassement, les murs de soutènement, les eaux de pluie, les fondations et les vues. Ce guide explique ce qu'est une restanque, ce que prévoit le PLUi du Pays d'Aix, à quoi servent les études de sol G1 et G2 et quels postes de coût varient. Il vaut pour tout projet de construire sa maison sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Autour de Biver, le paysage est fait de collines boisées et de pins : c'est le cadre de [vivre à Biver](/environnement), où le Clos des Cyprès propose huit [terrains libres de constructeur](/lots).
 
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article ne remplace ni l'avis d'un géotechnicien ou d'un architecte, ni celui du notaire pour votre dossier.
 
@@ -24,6 +25,10 @@ Les règles citées sont celles en vigueur au 05/10/2026. Cet article ne remplac
 Au sens strict, une restanque (du provençal *restanco*) est un mur de retenue en pierre sèche, à deux parements, qui barre un vallon intermittent pour retenir la terre et créer une terrasse de culture. Généralisés en Provence dès la fin du XVIIIe siècle, ils permettaient de cultiver les versants et de freiner l'érosion. Aujourd'hui, le mot désigne couramment les murets de pierres sèches étagés sur un coteau.
 
 Pour une maison, l'intérêt est réel : des plates-formes déjà planes, donc moins de terrassement. La réserve l'est aussi : ces murs retenaient de la terre cultivée, ils n'étaient pas conçus pour porter une maison ou une piscine. Dans une annonce, « en restanques » ne dit ni la hauteur des murs, ni leur état : il faut les faire expertiser.
+
+:::callout Un terrain à Biver, une question sur le relief ?
+Pour parler d'un projet de maison à Biver, [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les terrains et les informations de chaque lot.
+:::
 
 ## Construire sur un terrain en pente en Provence : qu'est-ce que la pente change ?
 
@@ -48,7 +53,7 @@ Selon la réglementation en vigueur au 05/10/2026, le PLUi du Pays d'Aix (approu
 - **Relief.** Les mouvements de terre se limitent aux stricts besoins de l'implantation et de l'accès, sans que la maison émerge dans le paysage ni s'encaisse dans le sol.
 - **Hauteur.** Elle se mesure depuis le terrain naturel : le sol existant au dépôt de la demande, avant déblais ou remblais. En cas de déblai, elle se compte depuis le sol terrassé ; enterrer ou remblayer la maison ne permet donc pas de monter plus haut.
 - **Accès.** Tout nouvel accès comporte devant le portail un espace d'attente de pente maximale 5 %.
-- **Eaux pluviales.** Les projets préservent les axes d'écoulement du terrain. En zone UD, toute nouvelle surface imperméabilisée de 50 m² ou plus se compense (rétention d'au moins 10 m³ pour 100 m² imperméabilisés, débit de fuite plafonné), l'infiltration étant recherchée d'abord.
+- **Eaux pluviales.** Les projets préservent les axes d'écoulement du terrain. Selon la zone du PLUi, toute nouvelle surface imperméabilisée de 50 m² ou plus se compense (rétention d'au moins 10 m³ pour 100 m² imperméabilisés, débit de fuite plafonné), l'infiltration étant recherchée d'abord.
 - **Murs et terrassements.** Les clôtures suivent la pente en limitant l'effet d'escalier et laissent passer l'eau. Un mur de moins de 2 m est en principe dispensé de formalité (art. R. 421-2) ; un déblai ou un remblai de plus de 2 m sur 100 m² ou plus, non nécessaire à un permis de construire, exige une déclaration préalable (art. R. 421-23).
 - **Feu de forêt.** Dans les secteurs de risque du règlement graphique (R, B, M, V), une maison neuve est interdite en R ; dans les autres, elle est admise si l'accès et l'implantation assurent la défense contre l'incendie (par exemple une voie de pente inférieure à 15 %). Là où il s'applique, le débroussaillement porte sur au moins 50 m autour de la maison, au-delà de la parcelle si besoin.
 
@@ -95,7 +100,7 @@ Une annonce parle volontiers de « terrain plat » ou de « légère pente » sa
 
 Une pente exprimée en pourcentage se convertit en degrés : 10 % correspondent à environ 5,7° et 20 % à environ 11,3°.
 
-En lotissement, regardez chaque lot individuellement, sur plan et sur place : la moyenne d'un ensemble ne dit rien d'un lot. Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+En lotissement, regardez chaque lot individuellement, sur plan et sur place : la moyenne d'un ensemble ne dit rien d'un lot. Pour un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne), renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 
 ## Quelles questions poser à l'architecte, et quelles erreurs éviter ?
 
@@ -114,7 +119,8 @@ En lotissement, regardez chaque lot individuellement, sur plan et sur place : la
 - Acheter sans plan topographique du lot.
 - Chiffrer la maison seule, sans terrassement, soutènements, drainage et accès.
 - Négliger les eaux de pluie : le fonds supérieur ne peut pas aggraver l'écoulement vers le fonds inférieur (code civil, art. 640 et 641).
-- Découvrir trop tard la règle de hauteur, le débroussaillement ou l'espace boisé classé.
+- Découvrir trop tard la règle de hauteur, le débroussaillement ou un espace boisé classé.
+- Oublier que la pente réduit la surface réellement utilisable : terrasses, piscine et accès demandent des plates-formes (voir [quelle surface de terrain pour une maison avec piscine](/blog/surface-terrain-maison-piscine/)).
 
 :::callout À retenir
 - La pente se traite dès l'achat : relevé du géomètre, étude G2 et chiffrage poste par poste.
@@ -136,14 +142,17 @@ Le règlement écrit du PLUi consulté ne fixe pas de seuil de pente pour le ter
 
 ### Une maison semi-enterrée est-elle possible à Gardanne ?
 Le PLUi interdit les mouvements de terre qui encaissent la construction et, en cas de déblai, mesure la hauteur depuis le sol terrassé. Une maison partiellement enterrée reste envisageable si le projet respecte ces règles, avec une étude de sol et un drainage soigné.
+
+### Peut-on visiter le terrain avant d'acheter ?
+Oui, sur rendez-vous : [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 :::
 
 :::cta Un projet sur une parcelle en pente ?
 Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique.
 
-- [Appelez le 06 09 20 45 90](tel:+33609204590)
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
-- [Nous contacter](/contact)
+- [Envoyez-nous un message](/contact)
 :::
 
 :::source
