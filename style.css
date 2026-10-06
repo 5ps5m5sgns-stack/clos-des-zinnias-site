@@ -3495,3 +3495,33 @@ main:has(.anchor-bar) [id] { scroll-margin-top: 9rem; }
    un <details> placé juste sous la note du tableau reprend la largeur du tableau */
 .travel-table__to { hyphens: manual; }
 .travel-table__note + .faq { max-width: 46rem; margin-inline: auto; margin-top: 1rem; }
+
+/* ===== Correctifs d'accessibilité (audit 06/10, WCAG 2.2 AA / RGAA 4.1.2) ===== */
+/* A11Y-01 : textes des héros et de l'en-tête sur photo (1.4.3 / 1.4.11) */
+.hero__overlay{background:linear-gradient(to bottom,rgba(31,48,40,.70) 0%,rgba(31,48,40,.66) 45%,rgba(31,48,40,.90) 100%)}
+.gal-hero .hero__overlay{background:linear-gradient(to bottom,rgba(31,48,40,.68) 0%,rgba(31,48,40,.60) 45%,rgba(31,48,40,.86) 100%)}
+.hero__overlay--heavy{background:rgba(31,48,40,.78)}
+.nav:not(.scrolled):not(.nav--solid){background:linear-gradient(to bottom,rgba(26,42,34,.86) 0%,rgba(26,42,34,.60) 70%,rgba(26,42,34,0) 100%)}
+.nav--solid,.nav.scrolled{background:rgba(26,42,34,.94)}
+.nav__brand .sub,.nav__links a.active,.breadcrumb span,.gal-hero__eyebrow,.ed-cinema__cap .l{color:var(--or-light)}
+.breadcrumb,.hero-sub-subtitle,.hero__tagline,.nav__links a{opacity:1}
+/* A11Y-02 : un élément focalisé ne reste pas sous l'en-tête fixe ni sous la barre d'appel (2.4.11) */
+html{scroll-padding-top:5.5rem}
+@media (max-width:639px){html{scroll-padding-bottom:calc(var(--cb-h) + env(safe-area-inset-bottom,0px) + 1rem)}}
+/* A11Y-03 : formulaire sur fond clair (1.4.11 / 2.4.7 / 1.4.3) */
+.bg-creme .field input,.bg-creme .field select,.bg-creme .field textarea{border-color:#767f78}
+.bg-creme .field input::placeholder,.bg-creme .field textarea::placeholder{color:#6f6a5a}
+.bg-creme .field input:focus,.bg-creme .field select:focus,.bg-creme .field textarea:focus{outline:2px solid var(--or-deep);outline-offset:2px;border-color:var(--or-deep);box-shadow:none}
+.bg-creme .field__hint{color:#9a2f2f}
+.bg-creme .field.is-invalid input{border-color:#a33232}
+.bg-creme .checkbox input{accent-color:var(--or-deep);width:24px;height:24px}
+.bg-creme .field__opt{font-size:.78rem}
+/* A11Y-06 : cibles tactiles >= 44 px (burger, pied de page, fil d'Ariane, liens d'action) */
+.nav__burger{box-sizing:border-box;width:44px;height:44px;padding:0 7px;justify-content:center;margin-right:-7px}
+.footer ul a{display:inline-block;padding-block:.6rem}.footer ul li{margin-bottom:0}
+.footer__col p a{display:inline-block;padding-block:.6rem}
+.breadcrumb a,.crumbs a{display:inline-block;padding-block:.75rem}
+.hero__phone{min-height:44px}
+.map-facade__link{display:inline-flex;align-items:center;min-height:44px}
+/* A11Y-07 : bandeau de consentement fermé = retiré de l'ordre de tabulation */
+.consent-banner:not(.show){visibility:hidden}

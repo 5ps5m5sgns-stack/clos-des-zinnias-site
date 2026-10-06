@@ -1153,6 +1153,9 @@ class Template:
         self.mobile = extract_element(text, r'<nav id="mobile-menu"', "nav")
         self.footer = extract_element(text, r"<footer\b", "footer")
         self.fab = extract_element(text, r'<div class="fab-contact"', "div")
+        self.callbar = extract_element(text, r'<nav class="call-bar"', "nav") or ""
+        hs = re.search(r"<style>@media\(max-width:639px\)\{body:has\(\.call-bar\)[^<]*</style>", text)
+        self.callbar_style = hs.group(0) if hs else ""
         skip = re.search(r'<a class="skip-link"[^>]*>.*?</a>', text, re.S)
         self.skip = skip.group(0) if skip else '<a class="skip-link" href="#contenu">Aller au contenu principal</a>'
         missing = [n for n, v in (("en-tête <header class=\"nav\">", self.header), ("menu mobile #mobile-menu", self.mobile),
@@ -1167,7 +1170,7 @@ class Template:
         self.ok = not missing
         if self.ok and 'href="/blog/"' not in self.header:
             report.warn("index.html", "le menu ne contient pas de lien href=\"/blog/\" : à ajouter par le coordinateur")
-        for part in ("header", "mobile", "footer", "fab"):
+        for part in ("header", "mobile", "footer", "fab", "callbar"):
             setattr(self, part, strip_comments(getattr(self, part) or ""))
 
     def parse_head(self, head):
@@ -1197,6 +1200,9 @@ class Template:
                     try:
                         data = json.loads(re.search(r">(.*)</script>", it, re.S).group(1))
                         nodes = [n for n in data.get("@graph", []) if n.get("@type") in ("Organization", "Place", "WebSite")]
+                        for n_ in nodes:
+                            if n_.get("@type") in ("Organization", "WebSite"):
+                                n_.pop("alternateName", None)   # option B (6/10) : « Clos des Zinnias » seulement sur l'accueil
                     except (ValueError, AttributeError):
                         pass
                     continue
@@ -1610,13 +1616,14 @@ class Builder:
     def shell(self, head, main, aria):
         t = self.template
         return "\n".join([
-            "<!DOCTYPE html>", '<html lang="fr">', "<head>", head, "</head>", '<body class="blog">',
+            "<!DOCTYPE html>", '<html lang="fr">', "<head>", head + (("\n  " + t.callbar_style) if t.callbar_style else ""), "</head>",
+            '<body class="blog has-call-bar">' if t.callbar else '<body class="blog">',
             "  " + t.skip, "",
             "  " + set_active(t.header, "/blog/", aria).strip(), "",
             "  " + set_active(t.mobile, "/blog/", aria).strip(), "",
             main, "",
             "  " + t.footer.strip(), "",
-            "  " + t.fab.strip(), "", "</body>", "</html>", ""])
+            "  " + t.fab.strip(), "", ("  " + t.callbar.strip() + "\n" if t.callbar else "") + "</body>", "</html>", ""])
 
     # ---------------------------------------------------------------- pages
     def meta_line(self, a):
@@ -1731,7 +1738,7 @@ class Builder:
         main = "\n".join([
             '  <main id="contenu" tabindex="-1">', '    <article class="post">', '      <header class="post-head">',
             '        <div class="wrap post-head__inner">',
-            "          " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/"), (truncate(a.title, 48), a.path_url)]) + draft,
+            "          " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/"), (a.title, a.path_url)]) + draft,
             '          <p class="label">%s</p>' % esc(a.category_label, False),
             "          <h1>%s</h1>" % nbsp_entities(esc(typo(a.title), quote=False)),
             "          " + self.meta_line(a) + cover, "        </div>", "      </header>",

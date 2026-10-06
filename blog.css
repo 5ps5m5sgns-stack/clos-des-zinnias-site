@@ -221,3 +221,4 @@
   .faq__item>.faq__a{animation:none}
   .faq__q::after{transition:none}
 }
+.post-bar{flex-wrap:wrap;border-radius:1.6rem}.post-bar__toc,.post-bar__call{flex:1 1 9rem}.post-bar__call{justify-content:center}.crumbs a{display:inline-block;padding-block:.75rem}
