@@ -17,12 +17,16 @@
 # --- Sécurité (toutes les réponses) ---
 # HSTS : volontairement SANS la directive « preload » (inscription à la liste de préchargement des navigateurs :
 # quasi irréversible, https imposé à tous les sous-domaines du domaine, courrier compris). À n'ajouter que si c'est voulu.
+# HSTS PAR PALIERS (migration de clos-des-cypres.fr vers de nouveaux serveurs de noms, octobre 2026) : une durée longue
+# rendrait le site inaccessible pour toute sa durée si le DNS ou le certificat posait problème. Paliers, J = jour de la
+# fusion dans main : J = 300 s ; J+2 = 86400 ; J+15 = 2592000 ; J+60 = 31536000. Sans « includeSubDomains » tant qu'aucun
+# inventaire des sous-domaines n'a été fait. Ne pas cumuler avec le réglage HSTS du tableau de bord Cloudflare.
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Strict-Transport-Security: max-age=300
   Cross-Origin-Opener-Policy: same-origin
   X-DNS-Prefetch-Control: on
 
