@@ -11,6 +11,13 @@ Il lit les articles écrits en Markdown dans `content/blog/*.md` et produit :
   - blog/<slug>/index.html pour chaque article ;
   - feed.xml (flux RSS 2.0) ;
   - sitemap.xml (pages de la racine reprises du sitemap existant + blog + articles).
+Blocs d'article en plus du Markdown courant (voir content/blog/_exemple-article.md) :
+  :::bref   « En bref » : 3 à 4 pastilles à pictogramme, 16 mots au plus (« - pictogramme | texte »)
+  :::cards  cartes à pictogramme (« - pictogramme | Titre | texte »)
+  :::faq    questions fréquentes (composant faq natif ; le JSON-LD FAQPage reprend le même texte)
+  :::cta, :::callout, :::source ; tableaux (une ligne = une carte sous 48 rem) ; « Tableau : légende » avant, « Note du tableau : » après.
+Les pictogrammes viennent de /icons.svg (le script refuse un nom absent du sprite).
+
 Il n'écrit QUE ces fichiers (liste blanche). Les 11 pages HTML de la racine, les
 feuilles de style et les scripts ne sont jamais modifiés : l'en-tête, le menu, le pied
 de page et le <head> technique sont LUS dans index.html à chaque exécution, pour que le
@@ -70,7 +77,7 @@ MIN_WORDS_WARN = 250      # en dessous : article jugé mince (avertissement)
 COMMERCIAL_PATHS = ("/lots", "/terrain-a-batir-gardanne", "/contact")
 SITEMAP_EXCLUDED = ("/merci", "/404")
 RESERVED_SLUGS = {"page", "categorie", "index", "feed", "auteur", "tag"}
-RESERVED_IDS = {"contenu", "mobile-menu", "toc-title", "related-title"}
+RESERVED_IDS = {"contenu", "mobile-menu", "toc-title", "related-title", "bref-title", "cta-titre", "guides-title", "decouvrir-title"}
 
 # Catégories admises (slug -> libellé). Une faute de frappe fait échouer le contrôle.
 CATEGORIES = {
@@ -86,44 +93,36 @@ INDEX_TITLE = "Construire sa maison : le blog"                  # + « | Le Clos
 INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
 INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir et construire sa maison en Provence, "
                      "à Gardanne et à Biver : démarches, règles, budget et financement.")
-# Chapô sur fond sombre (texte brut, sans lien : les appels cliquables sont juste dessous)
-INDEX_INTRO = ("Des guides pratiques pour acheter un terrain en lotissement, construire sa maison en Provence et "
-               "connaître les règles à respecter. Chaque article cite ses sources officielles et indique la date de sa "
-               "dernière mise à jour.")
-# Texte d'accueil de l'index (Markdown, même moteur que les articles : liens, encadré). Il porte les deux appels
-# exigés (D55) : « Appelez-nous au … » (tel:) et « Envoyez-nous un message » (/contact), les liens vers les pages
-# commerciales (une ancre par cible) et le parcours de lecture. Un seul lien par ancre et par cible.
-INDEX_BODY_MD = """Le Clos des Cyprès, à Biver (Gardanne), réunit huit [terrains libres de constructeur](/lots) proposés par l'aménageur PONTHIEU DH. Une question, un projet ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
-
-Pour voir les terrains : le [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne), le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille) et le [terrain à bâtir en Provence](/terrain-a-batir-provence).
-
-:::callout Par où commencer ?
-1. [Terrain à bâtir, constructible, viabilisé : les différences](/blog/terrain-a-batir-constructible-viabilise-differences/)
-2. [Terrain libre de constructeur : sens, avantages et limites](/blog/terrain-libre-de-constructeur-definition/)
-3. [Terrain constructible à Gardanne : ce qu'il faut vérifier](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)
-4. [Acheter un terrain en lotissement à Gardanne : les étapes](/blog/guide-acheter-terrain-lotissement-gardanne-biver/)
-5. [Budget pour construire une maison près d'Aix-en-Provence](/blog/budget-terrain-maison-pres-aix-gardanne/)
-6. [Construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/)
-7. [Quelle surface de terrain pour une maison avec piscine ?](/blog/surface-terrain-maison-piscine/)
-8. [Construire sur un terrain en pente en Provence : sol, budget](/blog/construire-sur-terrain-en-pente-restanques-provence/)
-:::
-"""
+# Chapô sur fond sombre (texte brut, 20 mots au plus : les appels cliquables sont juste dessous)
+INDEX_INTRO = ("Guides pratiques pour acheter un terrain, construire sa maison en Provence et connaître les règles. "
+               "Sources officielles citées.")
+# Les deux appels en texte (D55), sous le chapô, au-dessus de la ligne de flottaison. Markdown, même moteur que les articles
+# (les liens sont contrôlés). 22 mots au plus ; « terrains libres de constructeur » → /lots, une seule ancre par cible.
+INDEX_CALL_MD = ("Huit [terrains libres de constructeur](/lots) à Biver (Gardanne). "
+                 "[Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).")
 INDEX_GUIDES_TITLE = "Tous les guides"
-# Bloc d'appel en bas de l'index (page 1)
-INDEX_CTA_MD = """:::cta Un projet de terrain à Biver ?
-Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur et proposés par l'aménageur PONTHIEU DH. Le prix et les informations de chaque lot vous sont présentés lors de notre échange.
+# Section « Découvrir » (index) : tuiles photo vers /lots, /projet, /environnement (image, texte du lien), puis pastilles
+# vers les pages d'atterrissage (ancres exactes de phase2/02 §8.2). Images déjà publiées sur le site, jamais de nouveau fichier.
+INDEX_DISCOVER_TITLE = "Découvrir Le Clos des Cyprès"
+INDEX_TILES = (
+    ("/lots", "Les lots", "/images-optimized/hero-aerial-villas-golden-hour-640.webp"),
+    ("/projet", "Le projet", "/images-optimized/aerial-lotissement-collines-gardanne-640.webp"),
+    ("/environnement", "Vivre à Biver", "/images-optimized/village-biver-clocher-640.webp"),
+)
+INDEX_TILES_NOTE = "Photos aériennes et simulations non contractuelles."
+INDEX_PILLS = (
+    ("/terrain-a-batir-gardanne", "Terrain à bâtir à Gardanne"),
+    ("/terrain-a-batir-aix-en-provence", "Terrain à bâtir près d'Aix-en-Provence"),
+    ("/terrain-a-batir-marseille", "Terrain à bâtir près de Marseille"),
+    ("/terrain-a-batir-provence", "Terrain à bâtir en Provence"),
+)
+INDEX_CTA_TITLE = "Un projet de terrain à Biver ?"
 
-- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
-- [Envoyez-nous un message](/contact)
-- [Voir les huit lots](/lots)
-:::
-"""
-
-# Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
+# Bande d'appel finale (composant cta-band) : ajoutée automatiquement sous chaque article. Sous-ligne standard (phase3/02 §7.5).
 CTA_FINAL_TITLE = "Un projet de terrain à Biver, pour construire votre maison ?"
-CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
-                  "et proposés par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous "
-                  "un message : le prix et les informations de chaque lot vous sont présentés lors de notre échange.")
+CTA_FACT = "Huit terrains à bâtir à Biver, libres de constructeur, proposés par l'aménageur PONTHIEU DH."
+CTA_LEAD = "Le plan des lots, leur disponibilité et leur prix vous sont communiqués lors de notre échange."
+CTA_WHATSAPP_URL = "https://wa.me/33609204590?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20Le%20Clos%20des%20Cypr%C3%A8s"
 # Libellé du bouton vers la page « /terrain-a-batir-gardanne » : varié d'un article à l'autre (pas cinq liens
 # identiques vers la même page). Clé = slug ; un nouvel article reçoit le libellé par défaut.
 CTA_PILLAR_DEFAULT = "Présentation du programme"
@@ -137,17 +136,13 @@ CTA_PILLAR_LABELS = {
     "construire-sa-maison-etapes-du-terrain-aux-cles": "Découvrir le terrain à bâtir",
     "surface-terrain-maison-piscine": "Le terrain à Gardanne en détail",
 }
-CTA_FINAL_BUTTONS = (("Appelez-nous au " + PHONE_DISPLAY.replace(" ", "\u00a0"), "tel:" + PHONE_TEL),
-                     ("Voir les huit lots", "/lots"),
-                     (CTA_PILLAR_DEFAULT, "/terrain-a-batir-gardanne"),
-                     ("Envoyez-nous un message", "/contact"))
 CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Envoyez-nous un message", "/contact"))
 # Couvertures : variantes allégées « <nom>-<largeur>.<ext> » placées à côté de l'image (ex. couverture-640.avif,
 # couverture-1024.avif). Si elles existent, la page déclare un srcset (la largeur d'origine reste le dernier choix) ;
 # sinon l'image est servie seule, comme avant. « sizes » = largeur d'affichage réelle (voir blog.css).
 COVER_VARIANT_WIDTHS = (640, 1024)
 COVER_SIZES = "(min-width: 62rem) 864px, calc(100vw - 2.5rem)"          # couverture de l'article
-CARD_SIZES = "(min-width: 40rem) 300px, calc(100vw - 2.5rem)"           # vignettes (index, « À lire aussi »)
+CARD_SIZES = "(min-width: 40rem) 300px, 7.5rem"                         # vignettes (index, « À lire aussi ») : 120 px en mobile
 NOTE_INFO = ("Information générale, non contractuelle. Elle ne remplace pas l'avis d'un notaire, "
              "d'un géomètre ou de la mairie.")
 
@@ -169,7 +164,7 @@ MONTHS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "
 FM_FIELDS = ("title", "description", "slug", "date", "updated", "category", "tags", "keyword",
              "image", "image_alt", "image_width", "image_height", "og_image", "related", "draft")
 FM_REQUIRED = ("title", "description", "date", "category", "keyword")
-DIRECTIVES = ("callout", "faq", "cta", "source")
+DIRECTIVES = ("callout", "faq", "cta", "source", "bref", "cards")
 NBSP = " "
 
 
@@ -207,9 +202,10 @@ def fr_date(d):
 def typo(text):
     """Typographie française minimale sur du texte brut : espaces insécables avant : ; ! ? % et
     dans les guillemets « », séparateur des milliers, espace avant les unités et le signe €,
-    après « n° », et dans le numéro du permis d'aménager (PA 013 041 22 K0001)."""
+    après « n° », dans le numéro du permis d'aménager (PA 013 041 22 K0001) et dans un numéro de téléphone français."""
     t = re.sub(r"PA 013 041 22 K0001", NBSP.join(["PA", "013", "041", "22", "K0001"]), text)
     t = t.replace("n° ", "n°" + NBSP)
+    t = re.sub(r"(?<![\d.,])(0\d) (\d\d) (\d\d) (\d\d) (\d\d)(?![\d])", NBSP.join([r"\1", r"\2", r"\3", r"\4", r"\5"]), t)   # numéro de téléphone insécable
     t = re.sub(r" ([:;!?%»])", NBSP + r"\1", t)
     t = t.replace("« ", "«" + NBSP)
     t = re.sub(r"(?<=\d) (?=\d{3}\b)", NBSP, t)
@@ -502,6 +498,22 @@ def is_table_start(lines, i):
     return len(cells) >= 1 and "-" in lines[i + 1] and all(TABLE_SEP_CELL.match(c) for c in cells)
 
 
+BREF_MIN, BREF_MAX, BREF_WORDS = 3, 4, 16      # bloc « En bref » : 3 à 4 pastilles de 16 mots au plus
+CARD_TITLE_WORDS = 5                            # titre d'une carte : 5 mots au plus (3 visés)
+EXAMPLE_TABLE_PREFIX = "Exemple fictif"        # une légende qui commence par ces mots donne un tableau « exemple » (bordure en tirets)
+
+
+def icon_svg(name, size=24, extra=""):
+    """Pictogramme décoratif du sprite /icons.svg : toujours width/height, jamais lu par les lecteurs d'écran."""
+    return ('<svg class="ico%s" width="%d" height="%d" aria-hidden="true" focusable="false"><use href="/icons.svg#%s"/></svg>'
+            % (extra, size, size, name))
+
+
+def word_count(text):
+    """Nombre de mots (jetons contenant au moins une lettre ou un chiffre) d'un texte brut."""
+    return len([t for t in text.split() if re.search(r"\w", t)])
+
+
 class MarkdownRenderer:
     """Convertit le corps d'un article en HTML et collecte ce dont le reste du script a besoin
     (intertitres, liens, images, FAQ). Les erreurs sont signalées avec « fichier:ligne »."""
@@ -679,19 +691,41 @@ class MarkdownRenderer:
             rows.append((split_row(lines[j]), ln0 + (j - i)))
             j += 1
 
-        def cell(tag, text, k, ln, scope=""):
+        labels = [esc(strip_tags(self.inline(c, ln0)), True) for c in head]
+
+        def cell(tag, text, k, ln, scope="", label=False):
             cls = ' class="al-%s"' % aligns[k] if k < len(aligns) and aligns[k] else ""
-            return "<%s%s%s>%s</%s>" % (tag, scope, cls, self.inline(text, ln), tag)
+            lab = ' data-label="%s"' % labels[k] if label and k < len(labels) and labels[k] else ""
+            return "<%s%s%s%s>%s</%s>" % (tag, scope, cls, lab, self.inline(text, ln), tag)
+
+        def body_row(r, ln):
+            cells = [cell("th", c, 0, ln, ' scope="row"') if k == 0 else cell("td", c, k, ln, label=True)
+                     for k, c in enumerate(r)]
+            return "<tr>%s</tr>" % "".join(cells)
 
         if len(set(len(r) for r, _ in rows) | {len(head)}) > 1:
             self.err(ln0, "tableau irrégulier : toutes les lignes doivent avoir %d colonne(s)" % len(head))
         thead = "<thead><tr>%s</tr></thead>" % "".join(cell("th", c, k, ln0, ' scope="col"') for k, c in enumerate(head))
-        tbody = "<tbody>\n%s\n</tbody>" % "\n".join(
-            "<tr>%s</tr>" % "".join(cell("td", c, k, ln) for k, c in enumerate(r)) for r, ln in rows)
+        tbody = "<tbody>\n%s\n</tbody>" % "\n".join(body_row(r, ln) for r, ln in rows)
         cap = "<caption>%s</caption>" % self.inline(caption, ln0) if caption else ""
-        label = esc(strip_tags(self.inline(caption, ln0))) if caption else "Tableau"
-        out.append('<div class="table-scroll" role="region" aria-label="%s" tabindex="0"><table>%s%s%s</table></div>'
-                   % (label, cap, thead, tbody))
+        example = bool(caption) and caption.strip().lower().startswith(EXAMPLE_TABLE_PREFIX.lower())
+        if example and not re.search(r"pour comprendre le calcul", caption, re.I):
+            self.warn(ln0, "un tableau « exemple fictif » doit porter la légende « Exemple fictif, pour comprendre le calcul : … »")
+        if not caption:
+            self.warn(ln0, "tableau sans légende : ajoutez une ligne « Tableau : titre » juste avant")
+        note = ""
+        if j < len(lines) and re.match(r"^Note du tableau\s*:", lines[j].strip()):
+            k = j + 1
+            while k < len(lines) and lines[k].strip() and not self.starts_block(lines, k):
+                k += 1
+            text = re.sub(r"^Note du tableau\s*:\s*", "", self.join_lines(lines[j:k]).strip())
+            note = '\n<p class="table-wrap__note">%s</p>' % self.inline(text, ln0 + (j - i))
+            j = k
+        # tableau « exemple » compact : 3 colonnes au plus et cellules courtes (8 mots) = il reste un tableau en mobile ; sinon chaque ligne
+        # devient une carte sous 48 rem (voir blog.css)
+        compact = example and len(head) <= 3 and all(word_count(strip_tags(self.inline(c, ln))) <= 8 for r, ln in rows for c in r)
+        out.append('<div class="table-wrap%s%s">\n<table>%s%s%s</table>%s\n</div>'
+                   % (" table-wrap--example" if example else "", " table-wrap--compact" if compact else "", cap, thead, tbody, note))
         return j
 
     # ---- listes ---------------------------------------------------------------------
@@ -822,9 +856,60 @@ class MarkdownRenderer:
                 self.err(qln, "question « %s » sans réponse" % q)
             q_html = self.inline(q, qln)
             self.faq.append((strip_tags(q_html), ans_html, strip_tags(ans_html)))
-            items.append('<details class="faq__item">\n<summary>%s</summary>\n<div class="faq__answer">\n%s\n</div>\n</details>'
+            items.append('<details class="faq__item">\n<summary class="faq__q">%s</summary>\n<div class="faq__a">\n%s\n</div>\n</details>'
                          % (q_html, ans_html))
         return '<div class="faq">\n%s\n</div>' % "\n".join(items)
+
+    def icon_rows(self, name, inner, first, expected):
+        """Lit les lignes « - pictogramme | texte » (ou « | titre | texte ») d'un bloc ; contrôle le pictogramme."""
+        rows = []
+        pat = re.compile(r"^\s*[-*+]\s+([a-z0-9-]+)\s*\|\s*(.+?)\s*$")
+        for k, l in enumerate(inner):
+            if not l.strip():
+                continue
+            m = pat.match(l)
+            if not m:
+                self.err(first + k, "dans un bloc :::%s, chaque ligne s'écrit « - pictogramme | %s »" % (name, expected))
+                continue
+            icon, rest = m.group(1), m.group(2)
+            if not self.b.icon_known(icon):
+                self.err(first + k, "pictogramme « %s » absent de /icons.svg (voir la liste dans phase3/03-design-system.md §5)" % icon)
+            rows.append((icon, rest, first + k))
+        return rows
+
+    def d_bref(self, arg, inner, first, ln):
+        """« En bref » : 3 à 4 pastilles à pictogramme, 16 mots au plus chacune (reprises du fond de l'article, aucun fait nouveau)."""
+        rows = self.icon_rows("bref", inner, first, "texte de 16 mots au plus")
+        if not BREF_MIN <= len(rows) <= BREF_MAX:
+            self.err(ln, "le bloc :::bref porte %d pastille(s) : il en faut de %d à %d" % (len(rows), BREF_MIN, BREF_MAX))
+        lis = []
+        for icon, text, tln in rows:
+            html_text = self.inline(text, tln)
+            n = word_count(strip_tags(html_text))
+            if n > BREF_WORDS:
+                self.err(tln, "pastille de %d mots : %d au plus" % (n, BREF_WORDS))
+            lis.append('<li class="bref__item">%s<span>%s</span></li>' % (icon_svg(icon), html_text))
+        title = self.inline(arg or "En bref", ln)
+        return ('<div class="bref" role="group" aria-labelledby="bref-title">\n<p class="bref__title" id="bref-title">%s</p>\n'
+                '<ul class="bref__list">\n%s\n</ul>\n</div>' % (title, "\n".join(lis)))
+
+    def d_cards(self, arg, inner, first, ln):
+        """Cartes à pictogramme (composant icon-cards) : « - pictogramme | Titre | texte »."""
+        rows = self.icon_rows("cards", inner, first, "Titre | texte")
+        if not 2 <= len(rows) <= 8:
+            self.err(ln, "le bloc :::cards porte %d carte(s) : il en faut de 2 à 8" % len(rows))
+        lis = []
+        for icon, rest, cln in rows:
+            if "|" not in rest:
+                self.err(cln, "carte sans texte : « - pictogramme | Titre | texte »")
+                continue
+            title, text = [x.strip() for x in rest.split("|", 1)]
+            t_html = self.inline(title, cln)
+            if word_count(strip_tags(t_html)) > CARD_TITLE_WORDS:
+                self.err(cln, "titre de carte de plus de %d mots : « %s »" % (CARD_TITLE_WORDS, title))
+            lis.append('<li><div class="icon-cards__card">%s<p class="icon-cards__title">%s</p><p class="icon-cards__text">%s</p></div></li>'
+                       % (icon_svg(icon, 32, " ico--lg"), t_html, self.inline(text, cln)))
+        return '<ul class="icon-cards">\n%s\n</ul>' % "\n".join(lis)
 
     # ---- inline ---------------------------------------------------------------------
     def text(self, raw):
@@ -1206,6 +1291,15 @@ class Builder:
             self.report.error(where, "dimensions déclarées %dx%d différentes du fichier %s (%dx%d réels)" % (w, h, src, real[0], real[1]))
         return real
 
+    def icon_known(self, name):
+        """Le pictogramme existe-t-il dans le sprite /icons.svg ? (lu une fois ; sprite absent = tout est refusé)"""
+        if not hasattr(self, "_icons"):
+            path = self.root / "icons.svg"
+            self._icons = set(re.findall(r'<symbol[^>]*\bid="([^"]+)"', path.read_text(encoding="utf-8"))) if path.exists() else set()
+            if not self._icons:
+                self.report.error("icons.svg", "sprite introuvable ou vide : les pictogrammes du blog en dépendent")
+        return name in self._icons
+
     # ---------------------------------------------------------------- chargement des articles
     def load(self):
         folder = self.root / "content" / "blog"
@@ -1350,6 +1444,8 @@ class Builder:
             self.report.warn(a.rel, "aucun intertitre « ## » : structurez l'article")
         if not md.has_sources and not any(re.match(r"^https?://", h) for h, _ in a.links):
             self.report.warn(a.rel, "aucune source citée (bloc :::source ou lien externe) : les faits doivent être sourcés")
+        if 'class="bref"' not in a.html:
+            self.report.warn(a.rel, "aucun bloc :::bref (« En bref » : 3 à 4 pastilles à pictogramme) : à placer juste après le chapô")
         first_p = re.search(r"<p>(.*?)</p>", a.html, re.S)
         if a.keyword and first_p and a.keyword.lower() not in strip_tags(first_p.group(1)).lower():
             self.report.warn(a.rel, "le mot-clé « %s » n'apparaît pas dans le premier paragraphe" % a.keyword)
@@ -1468,6 +1564,9 @@ class Builder:
         coll = {"@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": INDEX_H1,
                 "description": INDEX_DESCRIPTION, "inLanguage": "fr-FR",
                 "isPartOf": {"@id": SITE_URL + "/#website"}, "mainEntity": listing}
+        pub = self.published
+        if pub:
+            coll["dateModified"] = max(a.lastmod for a in pub).isoformat()      # date de la dernière mise à jour d'un article
         return {"@context": "https://schema.org", "@graph": self.org_nodes() + [coll, self.breadcrumb(url, trail)]}
 
     # ---------------------------------------------------------------- gabarit de page
@@ -1556,10 +1655,10 @@ class Builder:
                      % (esc(a.image), self.srcset_attrs(a, CARD_SIZES), a.image_w, a.image_h))
         draft = '<span class="post-card__draft">Brouillon</span> · ' if a.draft else ""
         return ('<li class="post-card">\n%s<div class="post-card__body">\n'
-                '<p class="post-card__meta">%s<span>%s</span> · <time datetime="%s">%s</time> · %d&nbsp;min</p>\n'
+                '<p class="post-card__meta">%s<span class="post-card__cat">%s</span><span class="post-card__time">%s %d&nbsp;min</span></p>\n'
                 '<h%d class="post-card__title"><a href="%s">%s</a></h%d>\n'
                 '<p class="post-card__excerpt">%s</p>\n</div>\n</li>') % (
-            media, draft, esc(a.category_label, False), a.date.isoformat(), nbsp_entities(fr_date(a.date)), a.minutes,
+            media, draft, esc(a.category_label, False), icon_svg("clock", 16), a.minutes,
             level, a.path_url, nbsp_entities(esc(typo(a.title), quote=False)), level,
             nbsp_entities(esc(typo(a.description), quote=False)))
 
@@ -1570,20 +1669,38 @@ class Builder:
         rest.sort(key=lambda x: (x.category == a.category, len(set(x.tags) & set(a.tags)), x.date), reverse=True)
         return (chosen + rest)[:RELATED_MAX]
 
-    def cta_final(self, a):
-        def label(l, h):
-            return CTA_PILLAR_LABELS.get(a.slug, l) if h == "/terrain-a-batir-gardanne" else l
-        btns = " ".join('<a class="btn %s" href="%s">%s</a>' % ("btn-gold" if k == 0 else "btn-outline", h, esc(typo(label(l, h)), False))
-                        for k, (l, h) in enumerate(CTA_FINAL_BUTTONS))
-        return ('<div class="cta-block cta-block--final">\n<p class="cta-block__title">%s</p>\n<p>%s</p>\n'
-                '<p class="cta-block__btns">%s</p>\n</div>') % (
-            nbsp_entities(esc(typo(CTA_FINAL_TITLE), False)), nbsp_entities(esc(typo(CTA_FINAL_TEXT), False)), nbsp_entities(btns))
+    def cta_band(self, *, theme, title, extra=""):
+        """Bande d'appel (composant cta-band du système de design) : rappel produit, sous-ligne standard, deux boutons
+        (téléphone, message) et le lien WhatsApp. `extra` : pastilles de liens ajoutées sous le lien WhatsApp."""
+        tel = PHONE_DISPLAY.replace(" ", "&nbsp;")
+        return ('<section class="section section--%s cta-band" aria-labelledby="cta-titre">\n<div class="cta-band__body">\n'
+                '<h2 class="cta-band__heading" id="cta-titre">%s</h2>\n'
+                '<p class="cta-band__fact">%s</p>\n<p class="cta-band__lead">%s</p>\n'
+                '<div class="cta-band__actions">\n'
+                '<a class="cta-band__btn" href="tel:%s">%s<span>Appelez-nous au %s</span></a>\n'
+                '<a class="cta-band__btn cta-band__btn--ghost" href="/contact">%s<span>Envoyez-nous un message</span></a>\n</div>\n'
+                '<p class="cta-band__wa"><a href="%s" target="_blank" rel="noopener">%s<span>Ou écrivez-nous sur WhatsApp'
+                '<span class="sr-only"> (nouvelle fenêtre)</span></span></a></p>\n%s</div>\n</section>') % (
+            theme, nbsp_entities(esc(typo(title), False)), nbsp_entities(esc(typo(CTA_FACT), False)),
+            nbsp_entities(esc(typo(CTA_LEAD), False)), PHONE_TEL, icon_svg("phone"), tel, icon_svg("message-circle"),
+            CTA_WHATSAPP_URL, icon_svg("whatsapp"), extra)
 
-    def toc_html(self, a):
-        if len(a.toc) < TOC_MIN_H2:
-            return ""
-        lis = "\n".join('<li><a href="#%s">%s</a></li>' % (i, nbsp_entities(esc(typo(t), quote=False))) for i, t in a.toc)
-        return ('<nav class="toc" aria-labelledby="toc-title"><p class="toc__title" id="toc-title">Sommaire</p>\n<ol>\n%s\n</ol></nav>' % lis)
+    def pills(self, items):
+        """Pastilles-liens (composant badge-row) : [(href, pictogramme, texte)]."""
+        lis = "\n".join('<li><a class="badge-row__item" href="%s">%s%s</a></li>' % (
+            h, icon_svg(i), nbsp_entities(esc(typo(t), False))) for h, i, t in items)
+        return '<ul class="badge-row">\n%s\n</ul>' % lis
+
+    def post_bar(self, a):
+        """Barre « Sommaire + Appeler » : sommaire déroulant (<details>, aucun JavaScript) et lien téléphonique."""
+        toc = ""
+        if len(a.toc) >= TOC_MIN_H2:
+            lis = "\n".join('<li><a href="#%s">%s</a></li>' % (i, nbsp_entities(esc(typo(t), quote=False))) for i, t in a.toc)
+            toc = ('<details class="post-bar__toc">\n<summary class="post-bar__sum">%s<span>Sommaire</span></summary>\n'
+                   '<ol class="post-bar__list">\n%s\n</ol>\n</details>\n' % (icon_svg("book-open"), lis))
+        call = ('<a class="post-bar__call" href="tel:%s">%s<span><span class="post-bar__lead">Appelez-nous au </span>%s</span></a>'
+                % (PHONE_TEL, icon_svg("phone"), PHONE_DISPLAY.replace(" ", "&nbsp;")))
+        return '<nav class="post-bar" aria-label="Sommaire et contact">\n%s%s\n</nav>' % (toc, call)
 
     def render_article(self, a):
         title_tag = "%s | %s" % (a.title, SITE_NAME)
@@ -1607,7 +1724,10 @@ class Builder:
             rel_html = ('<section class="post-related" aria-labelledby="related-title">\n<div class="wrap">\n'
                         '<h2 id="related-title">À lire aussi</h2>\n<ul class="post-grid">\n%s\n</ul>\n</div>\n</section>'
                         % "\n".join(self.card(x, 3) for x in related))
-        toc = self.toc_html(a)
+        pillar = CTA_PILLAR_LABELS.get(a.slug, CTA_PILLAR_DEFAULT)
+        band = self.cta_band(theme="vert", title=CTA_FINAL_TITLE, extra=self.pills([
+            ("/lots", "layout-grid", "Voir les huit lots"), ("/terrain-a-batir-gardanne", "map-pin", pillar)]).replace(
+            '<ul class="badge-row">', '<ul class="badge-row cta-band__more">') + "\n")
         main = "\n".join([
             '  <main id="contenu" tabindex="-1">', '    <article class="post">', '      <header class="post-head">',
             '        <div class="wrap post-head__inner">',
@@ -1616,9 +1736,9 @@ class Builder:
             "          <h1>%s</h1>" % nbsp_entities(esc(typo(a.title), quote=False)),
             "          " + self.meta_line(a) + cover, "        </div>", "      </header>",
             '      <div class="post-body">', '        <div class="wrap post-layout">',
-            toc, '          <div class="post-main">', '<div class="prose">', a.html, "</div>",
-            self.cta_final(a), '<p class="post-note">%s</p>' % esc(NOTE_INFO, False), "          </div>", "        </div>",
-            rel_html, "      </div>", "    </article>", "  </main>"])
+            self.post_bar(a), '          <div class="post-main">', '<div class="prose">', a.html, "</div>",
+            '<p class="post-note">%s</p>' % esc(NOTE_INFO, False), "          </div>", "        </div>",
+            rel_html, "      </div>", "    </article>", band, "  </main>"])
         return self.shell(head, main, "true")
 
     def render_md_block(self, md, where):
@@ -1634,6 +1754,26 @@ class Builder:
                 self.report.error("%s:%d" % (where, ln), "lien « %s » : %s" % (href, problem))
         return out
 
+    def check_hrefs(self, where, hrefs):
+        """Contrôle des liens écrits dans les constantes de ce fichier (même règles que dans un article)."""
+        by = self.by_slug()
+        for href in hrefs:
+            problem = self.check_link(href, by, Article(path=Path(__file__), rel=where))
+            if problem:
+                self.report.error(where, "lien « %s » : %s" % (href, problem))
+
+    def nav_tiles(self):
+        """Tuiles photo de navigation (composant nav-tiles) : alt vide, le lien porte son texte."""
+        where = "tools/build_blog.py (INDEX_TILES)"
+        self.check_hrefs(where, [h for h, _, _ in INDEX_TILES])
+        lis = []
+        for href, label, src in INDEX_TILES:
+            size = self.image_dims(src, 0, 0, where, 1)
+            dims = ' width="%d" height="%d"' % size if size else ""
+            lis.append('<li>\n<a class="nav-tiles__tile" href="%s">\n<img src="%s" alt=""%s loading="lazy" decoding="async">\n'
+                       '<span class="nav-tiles__label">%s %s</span>\n</a>\n</li>' % (href, src, dims, esc(label, False), icon_svg("arrow-right")))
+        return '<ul class="nav-tiles">\n%s\n</ul>' % "\n".join(lis)
+
     def render_index_page(self, n, pages, chunk):
         url = SITE_URL + ("/blog/" if n == 1 else "/blog/page/%d/" % n)
         title = "%s%s | %s" % (INDEX_TITLE, "" if n == 1 else " (page %d)" % n, SITE_NAME)
@@ -1644,22 +1784,30 @@ class Builder:
         draft = '\n<p class="draft-note">APERÇU : des brouillons sont inclus (noindex).</p>' if has_draft else ""
         intro = '\n          <p class="post-lead">%s</p>' % nbsp_entities(esc(typo(INDEX_INTRO), quote=False)) if n == 1 else \
             '\n          <p class="post-lead">Page %d sur %d</p>' % (n, pages)
-        pagination = self.pagination(n, pages)
-        body_top, body_bottom = [], []
+        calls = ""
         if n == 1:
-            body_top = ['      <div class="wrap">', '        <div class="post-main"><div class="prose">',
-                        self.render_md_block(INDEX_BODY_MD, "tools/build_blog.py (INDEX_BODY_MD)"), "        </div></div>", "      </div>"]
-            body_bottom = ['      <div class="wrap">', '        <div class="post-main">',
-                           self.render_md_block(INDEX_CTA_MD, "tools/build_blog.py (INDEX_CTA_MD)"), "        </div>", "      </div>"]
+            calls = '\n          <div class="post-calls">%s</div>' % self.render_md_block(INDEX_CALL_MD, "tools/build_blog.py (INDEX_CALL_MD)")
+        pagination = self.pagination(n, pages)
+        discover, band = [], ""
+        if n == 1:
+            where = "tools/build_blog.py (INDEX_PILLS)"
+            self.check_hrefs(where, [h for h, _ in INDEX_PILLS])
+            discover = [
+                '    <section class="section section--vert" aria-labelledby="decouvrir-title">', '      <div class="wrap">',
+                '        <div class="section-head"><h2 class="section__title" id="decouvrir-title">%s</h2></div>' % esc(INDEX_DISCOVER_TITLE, False),
+                self.nav_tiles(),
+                self.pills([(h, "map-pin", t) for h, t in INDEX_PILLS]).replace('<ul class="badge-row">', '<ul class="badge-row badge-row--after">'),
+                '<p class="tiles-note">%s</p>' % esc(INDEX_TILES_NOTE, False), "      </div>", "    </section>"]
+            band = self.cta_band(theme="creme", title=INDEX_CTA_TITLE)
         main = "\n".join([
             '  <main id="contenu" tabindex="-1">', '    <header class="post-head">', '      <div class="wrap post-head__inner">',
             "        " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/")]) + draft,
-            '        <p class="label">Blog</p>', "        <h1>%s</h1>%s" % (nbsp_entities(esc(typo(INDEX_H1), quote=False)), intro),
-            "      </div>", "    </header>", '    <div class="post-body">'] + body_top + [
-            '      <section class="post-related" aria-labelledby="guides-title">', '        <div class="wrap">',
+            '        <p class="label">Blog</p>', "        <h1>%s</h1>%s%s" % (nbsp_entities(esc(typo(INDEX_H1), quote=False)), intro, calls),
+            "      </div>", "    </header>", '    <div class="post-body">',
+            '      <div class="post-related post-related--first" role="region" aria-labelledby="guides-title">', '        <div class="wrap">',
             '          <h2 id="guides-title">%s</h2>' % esc(INDEX_GUIDES_TITLE, False),
             '          <ul class="post-grid post-grid--index">', "\n".join(self.card(a, 3) for a in chunk), "          </ul>",
-            pagination, "        </div>", "      </section>"] + body_bottom + ["    </div>", "  </main>"])
+            pagination, "        </div>", "      </div>", "    </div>"] + discover + ([band] if band else []) + ["  </main>"])
         return self.shell(head, main, "page")
 
     @staticmethod

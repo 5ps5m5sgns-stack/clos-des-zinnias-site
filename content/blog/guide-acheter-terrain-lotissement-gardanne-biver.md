@@ -18,6 +18,13 @@ draft: false
 
 Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, hameau de Gardanne, [huit terrains libres de constructeur](/lots) sont proposés par l'aménageur PONTHIEU DH : un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) en lotissement, avec permis d'aménager.
 
+:::bref
+- calendar-check | Ni promesse ni acompte avant le permis d'aménager ; ensuite, dix jours de rétractation.
+- files | PLUi, règlement, cahier des charges : trois documents à lire avant de signer.
+- house | On construit librement dans le cadre du lotissement, pas hors cadre.
+- scale | Le notaire valide votre cas : interrogez-le avant la promesse.
+:::
+
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 
 ## Comment acheter un terrain en lotissement, étape par étape ?
@@ -39,10 +46,6 @@ Tableau : Les neuf étapes d'un achat de lot
 | 9. Avant le chantier | Branchements, taxe d'aménagement, assurance dommages-ouvrage |
 
 À la visite, demandez le plan de composition. Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
-
-:::callout Un projet de terrain à Biver ?
-Vous hésitez sur une étape, ou vous voulez connaître les terrains du lotissement ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
-:::
 
 ## Que régissent le PLUi, le règlement et le cahier des charges ?
 
@@ -113,13 +116,6 @@ La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxa
 ### Ce qui change quand l'aménageur vend lui-même le lot
 
 Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Selon votre trajet quotidien, voyez le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille). Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
-
-:::callout À retenir
-- Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.
-- PLUi, règlement et cahier des charges : trois documents à lire avant de signer.
-- On construit **librement dans le cadre** du lotissement, pas hors cadre.
-- Le notaire valide votre cas : interrogez-le avant la promesse.
-:::
 
 ## Questions fréquentes
 

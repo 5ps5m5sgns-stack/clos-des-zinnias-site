@@ -18,6 +18,13 @@ draft: false
 
 Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), à Gardanne comme [au Clos des Cyprès](/terrain-a-batir-gardanne), ou pour tout autre [terrain à bâtir en Provence](/terrain-a-batir-provence).
 
+:::bref
+- list-checks | Une dizaine de postes, pas seulement « terrain + maison ».
+- landmark | En PACA en 2024, le terrain pèse en moyenne 44 % du coût total.
+- file-check | Dommages-ouvrage obligatoire ; CCMI : prix forfaitaire et garanties.
+- calculator | Le PTZ n'est jamais acquis : simulez-le.
+:::
+
 ## Que comprend le budget pour construire une maison près d'Aix-en-Provence ?
 
 Acheter le terrain, le rendre constructible, construire et assurer, aménager les extérieurs, financer : ce tableau sans montant indique ce qui fait varier chaque poste et où obtenir le chiffre.
@@ -36,10 +43,6 @@ Tableau : Les postes d'un budget terrain et maison, sans montants
 | Aménagements extérieurs | Terrassement, clôtures, accès, plantations, piscine, débroussaillement | Devis par corps de métier, mairie |
 | Imprévus | Sol, aléas de chantier, options, évolution des prix | Réserve à fixer avec banque et constructeur |
 | Financement et période de travaux | Durée, garanties, assurance emprunteur, intérêts intercalaires, taxe foncière du terrain avant construction, loyer actuel | Banque, courtier, Service-Public.fr |
-
-:::callout Un budget à comparer à un terrain précis ?
-Vous voulez situer votre projet sur un terrain à Biver ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : le prix vous est communiqué lors de notre échange.
-:::
 
 ## Quel est le prix de construction d'une maison en PACA, et que valent ces chiffres ?
 
@@ -63,7 +66,17 @@ Dans un lotissement, l'aménageur réalise les réseaux (art. L. 332-15 du code 
 
 Calcul : surface taxable × valeur forfaitaire (892 € par m² en 2026) × (taux communal + taux départemental). À Gardanne, les taux en vigueur au 05/10/2026 sont de **5 %** (part communale, Métropole) et de **1,55 %** (part départementale), révisables chaque année. Un abattement de 50 % s'applique aux 100 premiers m² d'une résidence principale ; la piscine est taxée 251 € par m² (pour la place qu'elle occupe sur le terrain, voir [quelle surface de terrain pour une maison avec piscine](/blog/surface-terrain-maison-piscine/)), chaque place de stationnement extérieure 5 000 € à Gardanne. La taxe est due après les travaux, pas à l'acte : on la déclare sur impots.gouv.fr dans les 90 jours suivant l'achèvement (autorisation délivrée depuis le 21/02/2026).
 
-*Exemple fictif.* Hypothèses : 120 m² de surface taxable, résidence principale, sans piscine, stationnement extérieur ni exonération, hors redevance d'archéologie préventive. 100 m² × 446 € + 20 m² × 892 € = 62 440 € ; × 6,55 % ≈ 4 090 €. Gardanne a par ailleurs voté, d'après le même jeu de données, une exonération partielle (taux de 40 %) pour les surfaces de résidence principale financées par un prêt à taux zéro, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) : cet exemple n'en tient pas compte. À vérifier en mairie.
+Tableau : Exemple fictif, pour comprendre le calcul : taxe d'aménagement d'une maison de 120 m²
+
+| Étape | Calcul | Résultat |
+|:------|:-------|---------:|
+| Hypothèses | 120 m² de surface taxable, résidence principale, sans piscine ni stationnement extérieur, sans exonération, hors redevance d'archéologie préventive | — |
+| 100 premiers m² | 100 m² × 446 € (892 € × 50 %, abattement de la résidence principale) | 44 600 € |
+| 20 m² restants | 20 m² × 892 € | 17 840 € |
+| Base taxable | 44 600 € + 17 840 € | 62 440 € |
+| Taxe | 62 440 € × 6,55 % (5 % + 1,55 %) | ≈ 4 090 € |
+| Non pris en compte | Exonération partielle (taux de 40 %) votée à Gardanne pour les surfaces de résidence principale financées par un prêt à taux zéro, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) | À vérifier en mairie |
+Note du tableau : Formule : surface taxable × valeur forfaitaire (892 € par m² en 2026) × (taux communal + taux départemental). Sources : [Service-Public, taxe d'aménagement](https://www.service-public.gouv.fr/particuliers/vosdroits/F23263) ; taux de Gardanne au 05/10/2026 : [data.economie.gouv.fr](https://data.economie.gouv.fr/explore/dataset/delta_deliberation_tam_17_01_23/).
 
 ## Quelles assurances et garanties faut-il budgéter ?
 
@@ -95,18 +108,13 @@ Selon la réglementation en vigueur au 05/10/2026, le prêt à taux zéro financ
 
 Quelques leviers, utiles pour construire sa maison près d'Aix-en-Provence comme ailleurs en Provence (l'ordre des démarches est détaillé dans [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/)) :
 
-- **La surface.** Chaque m² compte à la construction, dans la taxe d'aménagement et dans les consommations. Au-delà de 150 m² de surface de plancher, un architecte est obligatoire.
-- **Un plan simple.** Un volume compact, une toiture simple et peu de décrochés limitent en général la structure et les finitions.
-- **Le mode de construction.** Le CCMI apporte prix forfaitaire et garanties ; un architecte ou un maître d'œuvre qui coordonne des entreprises laisse plus de liberté, mais vous gérez des contrats séparés, sans la garantie de livraison du CCMI. Comparez des devis établis sur la même base ; un terrain [libre de constructeur](/blog/terrain-libre-de-constructeur-definition/) permet de mettre plusieurs professionnels en concurrence.
-- **La pente du terrain.** Terrassements, soutènements et fondations se chiffrent à partir de l'étude de sol : voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/).
-- **Les extérieurs.** Clôtures, accès, terrassements, plantations, piscine : vérifiez ce que la notice descriptive inclut. Là où il s'applique, le débroussaillement obligatoire est à la charge du propriétaire (code forestier, art. L. 134-8).
-- **Un chiffrage avant de signer.** Faites chiffrer chaque poste du tableau et gardez une réserve pour les imprévus. Voir aussi notre [guide pour acheter un terrain en lotissement à Gardanne et Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
-
-:::callout À retenir
-- Un budget compte une dizaine de postes ; en PACA en 2024, le terrain pèse en moyenne 44 % du coût total (moyenne officielle, ni devis ni prix 2026).
-- Les frais d'acquisition dépendent du régime de TVA ; la taxe d'aménagement se paie après les travaux.
-- L'assurance dommages-ouvrage est obligatoire ; le CCMI apporte un prix forfaitaire et des garanties.
-- Le PTZ n'est jamais acquis : simulez-le et faites valider votre financement.
+:::cards
+- maximize-2 | La surface | Chaque m² compte à la construction, dans la taxe d'aménagement et dans les consommations. Au-delà de 150 m² de surface de plancher, un architecte est obligatoire.
+- pencil-ruler | Un plan simple | Un volume compact, une toiture simple et peu de décrochés limitent en général la structure et les finitions.
+- hammer | Le mode de construction | Le CCMI apporte prix forfaitaire et garanties ; un architecte ou un maître d'œuvre qui coordonne des entreprises laisse plus de liberté, mais vous gérez des contrats séparés, sans la garantie de livraison du CCMI. Comparez des devis établis sur la même base ; un terrain [libre de constructeur](/blog/terrain-libre-de-constructeur-definition/) permet de mettre plusieurs professionnels en concurrence.
+- mountain | La pente du terrain | Terrassements, soutènements et fondations se chiffrent à partir de l'étude de sol : voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/).
+- trees | Les extérieurs | Clôtures, accès, terrassements, plantations, piscine : vérifiez ce que la notice descriptive inclut. Là où il s'applique, le débroussaillement obligatoire est à la charge du propriétaire (code forestier, art. L. 134-8).
+- calculator | Un chiffrage avant de signer | Faites chiffrer chaque poste du tableau et gardez une réserve pour les imprévus. Voir aussi notre [guide pour acheter un terrain en lotissement à Gardanne et Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
 :::
 
 ## Questions fréquentes

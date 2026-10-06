@@ -18,6 +18,13 @@ draft: false
 
 Un **terrain libre de constructeur** est un terrain à bâtir que vous pouvez acheter sans être obligé de confier la construction à une entreprise désignée à l'avance : vous choisissez qui conçoit et construit votre maison. L'expression est commerciale, pas juridique, et ne dit rien des règles que cette maison devra respecter. À Biver (13120 Gardanne), les huit [terrains libres de constructeur](/lots) du Clos des Cyprès sont proposés par l'aménageur PONTHIEU DH. Voici ce que cela signifie, ce que cela n'assure pas, et comment choisir votre mode de construction, que vous cherchiez un terrain pour construire votre maison en Provence, près d'Aix-en-Provence ou près de Marseille.
 
+:::bref
+- key-round | « Libre de constructeur » : vous choisissez qui construit ; terme d'usage, non défini par la loi.
+- file-check | Il ne dispense ni du PLUi, ni du règlement, ni de l'étude géotechnique.
+- hammer | CCMI, architecte, maître d'œuvre ou artisans : garanties et coordination diffèrent.
+- search-check | La portée de la mention se lit dans les documents de vente.
+:::
+
 ## Que signifie « terrain libre de constructeur » ?
 
 Acheter un terrain libre de constructeur, c'est acheter le terrain seul, sans clause ni offre qui vous lie à une entreprise précise : vous comparez plusieurs constructeurs, faites appel à un architecte ou pilotez vous-même les entreprises. On lit aussi « sans constructeur imposé » : c'est la même idée.
@@ -26,17 +33,15 @@ L'expression n'apparaît ni dans le Code de l'urbanisme ni dans le Code de la co
 
 Au Clos des Cyprès, huit [terrains libres de constructeur de 500 à 1 133 m²](/lots) sont proposés par l'aménageur PONTHIEU DH : vous choisissez votre architecte et votre constructeur.
 
-:::callout Un projet de maison à Biver ?
-Une question sur un terrain libre de constructeur à Biver ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
-:::
-
 ## Que ne garantit pas un terrain libre de constructeur ?
 
 Choisir son constructeur ne dispense pas de respecter des règles. Trois niveaux se cumulent :
 
-- **le PLUi** (plan local d'urbanisme intercommunal) fixe notamment implantation, emprise au sol et hauteur ; à Gardanne, celui du Pays d'Aix est opposable depuis le 19/12/2024 ;
-- **le règlement du lotissement**, s'il existe, peut le compléter (aspect, implantation, clôtures) ;
-- **le cahier des charges** fixe les droits et obligations entre propriétaires.
+:::cards
+- landmark | Le PLUi | Plan local d'urbanisme intercommunal : il fixe notamment implantation, emprise au sol et hauteur. À Gardanne, celui du Pays d'Aix est opposable depuis le 19/12/2024.
+- file-text | Le règlement du lotissement | S'il existe, il peut compléter le PLUi : aspect, implantation, clôtures.
+- files | Le cahier des charges | Il fixe les droits et obligations entre propriétaires.
+:::
 
 Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (Code de l'urbanisme, art. L. 442-7). Lisez-les avant de choisir votre constructeur : une clause sur l'aspect des façades ou sur un délai pour construire peut changer le projet. Un terrain libre ne dit rien non plus du sol ni des risques ([ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/)).
 
@@ -121,13 +126,6 @@ Ordre indicatif ; seuls figurent les délais fixés par les textes, aucune duré
 9. **Construire, réceptionner, recevoir les clés.**
 
 En lotissement, la date à laquelle un permis de construire peut être accordé dépend de l'avancement des travaux d'aménagement (art. R. 442-18) : à préciser avec l'aménageur et le notaire. Que vous cherchiez un [terrain à bâtir près de Marseille](/terrain-a-batir-marseille), un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou un [terrain à bâtir en Provence](/terrain-a-batir-provence), cet ordre est le même. Notre [guide d'achat en lotissement à Gardanne](/blog/guide-acheter-terrain-lotissement-gardanne-biver/) détaille les étapes côté achat, et [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/) les suit jusqu'à la réception.
-
-:::callout À retenir
-- « Libre de constructeur » signifie que vous choisissez qui construit ; ce n'est pas un terme défini par la loi.
-- Il ne dispense ni du PLUi, ni du règlement et du cahier des charges, ni de l'étude géotechnique.
-- CCMI : garanties légales étendues. Architecte : obligatoire au-delà de 150 m² de surface de plancher. Maître d'œuvre ou artisans : plus de contrôle, plus de coordination.
-- La portée de la mention se lit dans les documents de vente : promesse, règlement, cahier des charges.
-:::
 
 ## Questions fréquentes
 

@@ -3490,3 +3490,8 @@ main:has(.anchor-bar) [id] { scroll-margin-top: 9rem; }
   .gallery-strip__item:hover img, .nav-tiles__tile:hover img { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) { .anchor-bar, .anchor-bar * { transition: none !important; } }
+
+/* Tableau des trajets : pas de césure automatique dans les noms de lieux (« Aix-en-Pro-vence TGV ») ;
+   un <details> placé juste sous la note du tableau reprend la largeur du tableau */
+.travel-table__to { hyphens: manual; }
+.travel-table__note + .faq { max-width: 46rem; margin-inline: auto; margin-top: 1rem; }

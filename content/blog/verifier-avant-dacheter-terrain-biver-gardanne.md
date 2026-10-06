@@ -18,6 +18,13 @@ draft: false
 
 Avant d'acheter un terrain constructible à Gardanne ou à Biver, il faut contrôler neuf points, la plupart avec des outils officiels gratuits : zonage du PLUi du Pays d'Aix, certificat d'urbanisme, risques, étude de sol, débroussaillement, servitudes, réseaux, pente et, en lotissement, règlement. Pour chacun : où regarder, ce que cela change pour la maison que vous voulez construire, à qui poser la question. Ces vérifications valent pour n'importe quel terrain à bâtir. À Biver, le Clos des Cyprès propose huit [terrains libres de constructeur](/lots) : voyez aussi le [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne).
 
+:::bref
+- search-check | Constructible n'est pas viabilisé : contrôlez zonage, risques, sol et réseaux.
+- landmark | Trois outils officiels : Géoportail de l'urbanisme, Géorisques, certificat d'urbanisme.
+- layers | En exposition moyenne ou forte aux argiles, le vendeur fournit l'étude géotechnique.
+- scale | Pour votre cas particulier, consultez le notaire avant la promesse.
+:::
+
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article n'est pas un conseil juridique personnalisé : pour votre dossier, le notaire reste l'interlocuteur.
 
 ## Terrain constructible à Gardanne : quelles vérifications faire ?
@@ -37,10 +44,6 @@ Tableau : Liste de contrôle avant l'achat d'un terrain à Gardanne ou à Biver
 | Servitudes | Géoportail ; titre de propriété | Implantation, passages | Notaire |
 | Réseaux, pente, accès | Visite ; plan du géomètre | Raccordements, terrassement | Géomètre ; constructeur |
 | Règlement de lotissement | Dossier de l'aménageur | Implantation, clôtures, aspect | Aménageur ; notaire |
-
-:::callout Une question avant d'acheter à Biver ?
-Pour un terrain à Biver, [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous répondons à vos questions, sans pression.
-:::
 
 ## Que dit le PLUi du Pays d'Aix, et que vaut un certificat d'urbanisme ?
 
@@ -104,21 +107,16 @@ Depuis le 1er janvier 2025, le vendeur informe l'acquéreur dès l'annonce, puis
 
 Un lotissement ajoute des règles ([Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F34339)). Demandez :
 
-- le permis d'aménager, dont le dossier est consultable en mairie (art. L. 442-6) ;
-- le règlement de lotissement, qui peut compléter le PLUi : implantation, aspect, clôtures ;
-- le cahier des charges : charges communes, servitudes entre voisins, entretien ;
-- le bornage, mentionné dans la promesse et dans l'acte de vente (art. L. 115-4).
+:::cards
+- stamp | Le permis d'aménager | Son dossier est consultable en mairie (art. L. 442-6).
+- file-text | Le règlement de lotissement | Il peut compléter le PLUi : implantation, aspect, clôtures.
+- file-signature | Le cahier des charges | Charges communes, servitudes entre voisins, entretien.
+- land-plot | Le bornage | Il est mentionné dans la promesse et dans l'acte de vente (art. L. 115-4).
+:::
 
 Ces pièces se demandent à l'aménageur. Le Clos des Cyprès, à Biver, réunit huit terrains à bâtir [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par PONTHIEU DH : renseignez-vous auprès de l'aménageur, car les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Pour la démarche complète, lisez le [guide pour acheter un terrain en lotissement](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
 
 Vous cherchez un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) pour construire votre maison ? Biver est à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture, hors heures de pointe.
-
-:::callout À retenir
-- Constructible n'est pas viabilisé : contrôlez zonage, risques, sol et réseaux.
-- Trois outils officiels couvrent l'essentiel : le Géoportail de l'urbanisme, Géorisques et le certificat d'urbanisme.
-- En exposition moyenne ou forte aux argiles, le vendeur fournit l'étude géotechnique préalable.
-- Pour votre cas particulier, consultez le notaire avant la promesse.
-:::
 
 ## Questions fréquentes
 

@@ -15,6 +15,13 @@ draft: false
 
 Il n'existe pas de **surface de terrain pour une maison avec piscine** valable partout : tout dépend de votre projet (maison, terrasse, bassin, accès, jardin) et du règlement d'urbanisme qui s'applique à la parcelle (emprise au sol, distances aux limites, part de surfaces non imperméabilisées). Ce guide explique comment faire le calcul vous-même, quelle autorisation une piscine demande et ce qu'il faut vérifier avant d'acheter. Pour comparer avec des surfaces réelles, voyez les huit [terrains libres de constructeur de 500 à 1 133 m²](/lots) du Clos des Cyprès, à Biver.
 
+:::bref
+- ruler | Aucune surface minimale pour tous : le règlement de la zone et votre programme décident.
+- layout-grid | Faites un budget de surface : maison, terrasse, bassin, accès, jardin.
+- waves | Bassin enterré sans couverture : déclaration préalable au-delà de 10 m², permis au-delà de 100 m².
+- file-text | En lotissement, lisez aussi le règlement de lotissement et le cahier des charges.
+:::
+
 Les règles citées sont celles en vigueur au 06/10/2026. Cet article est une information générale : il ne remplace ni le règlement de la zone, ni l'avis de la mairie, ni celui du notaire.
 
 ## Quelle surface de terrain pour une maison avec piscine : la méthode
@@ -32,10 +39,27 @@ Tableau : Les postes d'un budget de surface
 | Accès et stationnement | Allée, places, aire de retournement éventuelle | Souvent sous-estimés |
 | Jardin | Ce qui reste, plantations comprises | Le règlement peut en exiger une part minimale |
 
-Voici, **à titre d'exemple fictif** et sans valeur de norme, ce que donne ce calcul avec un programme de départ : maison de plain-pied de 120 m² d'emprise, terrasse de 30 m², bassin de 8 m sur 4 m (32 m²), plage et abords de 28 m², allée et deux places de stationnement de 50 m², soit 260 m² bâtis ou aménagés. Il resterait alors 240 m² de jardin sur 500 m², 540 m² sur 800 m² et 740 m² sur 1 000 m². Ces dimensions sont à remplacer par les vôtres ; le résultat montre seulement si le projet tient sur le papier, pas s'il est autorisé.
+Tableau : Exemple fictif, pour comprendre le calcul : surface bâtie ou aménagée, puis jardin restant
 
-:::callout Un projet de maison avec piscine à Biver ?
-Vous voulez situer votre projet sur un terrain à Biver ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : les règles applicables à chaque lot vous sont présentées lors de notre échange.
+| Poste | Calcul | Surface |
+|:------|:-------|--------:|
+| Maison de plain-pied (emprise au sol) | Hypothèse | 120 m² |
+| Terrasse | Hypothèse | 30 m² |
+| Bassin | 8 m × 4 m | 32 m² |
+| Plage et abords | Hypothèse | 28 m² |
+| Allée et deux places de stationnement | Hypothèse | 50 m² |
+| **Total bâti ou aménagé** | 120 + 30 + 32 + 28 + 50 | **260 m²** |
+| Jardin restant sur 500 m² | 500 − 260 | 240 m² |
+| Jardin restant sur 800 m² | 800 − 260 | 540 m² |
+| Jardin restant sur 1 000 m² | 1 000 − 260 | 740 m² |
+Note du tableau : Formule : jardin restant = surface du terrain − total bâti ou aménagé. Dimensions inventées pour l'exemple, sans valeur de norme : remplacez-les par les vôtres. Le résultat montre seulement si le projet tient sur le papier, pas s'il est autorisé. Notion d'emprise au sol : art. R. 420-1 du code de l'urbanisme (Légifrance, voir les sources).
+
+:::cta Un projet de maison avec piscine à Biver ?
+Les règles applicables à chaque lot vous sont présentées lors de notre échange.
+
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
+- [Envoyez-nous un message](/contact)
+- [Voir les huit lots](/lots)
 :::
 
 ## Ce que le règlement d'urbanisme peut limiter
@@ -77,13 +101,6 @@ Pour les lots du Clos des Cyprès, les règles applicables à chaque lot vous so
 La surface du cadastre n'est pas la surface utilisable. Sur un terrain en pente, une terrasse et un bassin demandent des plates-formes : terrassements et soutènements prennent de la place et se chiffrent à part (voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/)). L'accès, le stationnement et le passage des engins de chantier comptent aussi. Mesurez sur plan, puis sur place, à plusieurs heures de la journée.
 
 Si la piscine est prévue pour plus tard, réservez-lui dès le départ sa place, son accès et le passage des réseaux : l'ajouter après coup demande de vérifier à nouveau le règlement et l'autorisation.
-
-:::callout À retenir
-- Aucune surface minimale ne fait loi pour tous : c'est le règlement de la zone et votre programme qui décident.
-- Faites un budget de surface : maison, terrasse, bassin, accès, jardin.
-- Piscine enterrée sans couverture : déclaration préalable au-delà de 10 m² de bassin, permis de construire au-delà de 100 m².
-- En lotissement, lisez aussi le règlement de lotissement et le cahier des charges.
-:::
 
 ## Questions fréquentes
 

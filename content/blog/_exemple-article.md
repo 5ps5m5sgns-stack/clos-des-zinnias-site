@@ -6,7 +6,7 @@
 # Titre = titre de la page ET H1 (60 caractères visés, 65 maximum). Pas de « # » dans le texte.
 title: EXEMPLE : modèle d'article pour le blog du Clos des Cyprès
 # 120 à 155 caractères, 160 maximum. Une phrase qui donne envie de lire, avec le mot-clé.
-description: EXEMPLE fictif : un modèle d'article qui montre tous les blocs du blog (sommaire, encadré, tableau, FAQ, sources, appel à l'action).
+description: EXEMPLE fictif : un modèle d'article qui montre tous les blocs du blog (sommaire, « En bref », cartes, tableau, FAQ, sources, appel à l'action).
 # Adresse de l'article : /blog/<slug>/ (minuscules, tirets, sans accent). Par défaut : le nom du fichier.
 slug: exemple-article
 # Dates au format AAAA-MM-JJ. « updated » : seulement pour un VRAI changement de fond.
@@ -28,6 +28,12 @@ draft: true
 ---
 
 EXEMPLE — texte fictif. Ce **modèle d'article** montre comment écrire pour le blog : un premier paragraphe qui répond tout de suite à la question, avec le mot-clé placé naturellement, puis des intertitres clairs. Il pointe aussi vers la page des [huit lots](/lots) dès les premières lignes, comme le fait tout article utile.
+
+:::bref
+- list-checks | EXEMPLE : trois à quatre pastilles, seize mots au plus chacune.
+- book-open | Chaque pastille reprend un point du texte, sans fait nouveau.
+- phone | Le pictogramme se choisit dans /icons.svg (liste dans le guide du système de design).
+:::
 
 ## Ce que montre ce modèle d'article
 
@@ -59,6 +65,15 @@ Un encadré met en avant **une** information importante, par exemple une défini
 - un autre point, avec un [lien vers les lots](/lots).
 :::
 
+## Des cartes à pictogramme
+
+Un bloc `:::cards` met en cartes une énumération (2 à 8 lignes : « - pictogramme | Titre | texte »).
+
+:::cards
+- ruler | Première carte | EXEMPLE : le titre tient en cinq mots au plus, le texte peut contenir un [lien](/lots).
+- scale | Deuxième carte | EXEMPLE : le texte de la liste d'origine est repris tel quel.
+:::
+
 ## Un tableau lisible sur téléphone
 
 Tableau : Exemple de tableau fictif (aucune donnée réelle)
@@ -69,9 +84,18 @@ Tableau : Exemple de tableau fictif (aucune donnée réelle)
 | Étape B (exemple) | Notaire | 3 mois |
 | Étape C (exemple) | Constructeur | à définir |
 
-Le tableau défile horizontalement sur un écran étroit, sans casser la page.
+Sous 48 rem de large, chaque ligne devient une carte (la première colonne en titre) : aucun défilement horizontal. Un tableau « exemple fictif » porte une légende qui commence par « Exemple fictif, pour comprendre le calcul : » et une ligne « Note du tableau : » avec la formule et la source.
 
-![Plan de composition des huit lots du Clos des Cyprès, indicatif non contractuel](/images-optimized/plan-officiel-composition-1024.webp "Plan de composition du lotissement (Cabinet Boulay, 3 avril 2026), 8 lots : indicatif et non contractuel.")
+Tableau : Exemple fictif, pour comprendre le calcul : somme de deux postes
+
+| Poste | Calcul | Résultat |
+|:------|:-------|---------:|
+| Poste A | Hypothèse | 10 |
+| Poste B | Hypothèse | 20 |
+| **Total** | 10 + 20 | **30** |
+Note du tableau : Formule : total = poste A + poste B. Source : EXEMPLE, à citer avec sa date de consultation.
+
+![Plan de composition des huit lots du Clos des Cyprès, indicatif non contractuel](/images-optimized/plan-officiel-composition-1024.webp "Plan de composition, 8 lots : indicatif et non contractuel.")
 
 Une image seule sur sa ligne devient une figure avec légende. Le texte alternatif (entre crochets) est obligatoire. Pour un format dont la taille ne se lit pas (certains AVIF, SVG), on ajoute la taille à la fin :
 
