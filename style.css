@@ -2737,7 +2737,10 @@ section[data-chapter] .eyebrow::after {
   margin-bottom: 0.5rem;
   font-family: var(--font-corps); /* corrige l'ancien --font-body inexistant */
   font-weight: 500;
+  line-height: 1.65; /* titres de colonne passés de <div> à <h3> : garde la hauteur d'origine */
 }
+/* /lots#lot-N : la ligne ciblée ne doit pas se loger sous l'en-tête fixe */
+#tableau-des-lots tr[id] { scroll-margin-top: 96px; }
 .info-item-sm {
   display: flex;
   justify-content: space-between;
