@@ -72,7 +72,7 @@ Dans un lotissement, la règle est plus protectrice : le lot vendu doit être co
 Au Clos des Cyprès, le [lotissement à Biver](/projet) prévoit des terrains livrés viabilisés ; la présentation du [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) est sur sa page dédiée. Le règlement de lotissement, l'état des risques et les études techniques vous sont présentés lors de notre échange téléphonique.
 
 :::cta Un terrain à bâtir viabilisé à Biver ?
-Huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH à Biver (Gardanne). Le prix vous est communiqué lors de notre échange.
+Huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH à Biver. Le prix vous est communiqué lors de notre échange.
 
 - [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Envoyez-nous un message](/contact)

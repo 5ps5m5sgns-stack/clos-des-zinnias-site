@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clos-des-cypres.fr/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
       <image:title>Vue aérienne du lotissement Le Clos des Cyprès à Biver — projection illustrative</image:title>
@@ -11,19 +11,15 @@
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/lots</loc>
-    <lastmod>2026-10-06</lastmod>
-    <image:image>
-      <image:loc>https://clos-des-cypres.fr/images-optimized/plan-officiel-composition.webp</image:loc>
-      <image:title>Plan de composition du lotissement Le Clos des Cyprès : huit lots numérotés de 1 à 8, avec la surface de chacun</image:title>
-    </image:image>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-gardanne</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-aix-en-provence</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/terrain-provence-collines-doree.webp</image:loc>
       <image:title>Simulation d'ambiance, non contractuelle : maisons provençales à toits de tuiles le long d'une rue, parmi les pins et les cyprès, avec une montagne à l'horizon</image:title>
@@ -31,7 +27,7 @@
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-marseille</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
       <image:title>Visualisation aérienne illustrative, non contractuelle : maisons à toits de tuiles et piscines en lisière de bois</image:title>
@@ -39,7 +35,7 @@
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-provence</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/villa-piscine-jardin-provencal.webp</image:loc>
       <image:title>Visualisation non contractuelle : villa provençale à toit de tuiles, terrasse, jardin planté de lavandes et piscine</image:title>
@@ -47,27 +43,27 @@
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/projet</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/environnement</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/galerie</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/contact</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/mentions-legales</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/confidentialite</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/</loc>

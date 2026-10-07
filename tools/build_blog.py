@@ -76,16 +76,16 @@ RESERVED_IDS = {"contenu", "mobile-menu", "toc-title", "related-title"}
 CATEGORIES = {
     "acheter-un-terrain": "Acheter un terrain",
     "construire-en-provence": "Construire en Provence",
-    "vivre-a-gardanne-biver": "Vivre à Gardanne et Biver",
+    "vivre-a-gardanne-biver": "Vivre à Biver",
     "financer-son-projet": "Financer son projet",
     "suivi-du-chantier": "Suivi du chantier",
 }
 
 # Page d'index du blog (texte éditorial STABLE : aucune date, aucun prix, aucun chiffre qui change)
 INDEX_TITLE = "Construire sa maison : le blog"                  # + « | Le Clos des Cyprès »
-INDEX_H1 = "Le blog : acheter un terrain à bâtir à Gardanne et Biver"
+INDEX_H1 = "Le blog : acheter un terrain à bâtir à Biver"
 INDEX_DESCRIPTION = ("Guides pratiques pour acheter un terrain à bâtir et construire sa maison en Provence, "
-                     "à Gardanne et à Biver : démarches, règles, budget et financement.")
+                     "près de Biver : démarches, règles, budget et financement.")
 # Chapô sur fond sombre (texte brut, sans lien : les appels cliquables sont juste dessous)
 INDEX_INTRO = ("Des guides pratiques pour acheter un terrain en lotissement, construire sa maison en Provence et "
                "connaître les règles à respecter. Chaque article cite ses sources officielles et indique la date de sa "
@@ -93,9 +93,7 @@ INDEX_INTRO = ("Des guides pratiques pour acheter un terrain en lotissement, con
 # Texte d'accueil de l'index (Markdown, même moteur que les articles : liens, encadré). Il porte les deux appels
 # exigés (D55) : « Appelez-nous au … » (tel:) et « Envoyez-nous un message » (/contact), les liens vers les pages
 # commerciales (une ancre par cible) et le parcours de lecture. Un seul lien par ancre et par cible.
-INDEX_BODY_MD = """Le Clos des Cyprès, à Biver (Gardanne), réunit huit [terrains libres de constructeur](/lots) proposés par l'aménageur PONTHIEU DH. Une question, un projet ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
-
-Pour voir les terrains : le [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne), le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille) et le [terrain à bâtir en Provence](/terrain-a-batir-provence).
+INDEX_BODY_MD = """Une question, un projet ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Les huit [terrains libres de constructeur](/lots) du Clos des Cyprès sont à Biver.
 
 :::callout Par où commencer ?
 1. [Terrain à bâtir, constructible, viabilisé : les différences](/blog/terrain-a-batir-constructible-viabilise-differences/)
@@ -111,7 +109,7 @@ Pour voir les terrains : le [terrain à bâtir à Gardanne](/terrain-a-batir-gar
 INDEX_GUIDES_TITLE = "Tous les guides"
 # Bloc d'appel en bas de l'index (page 1)
 INDEX_CTA_MD = """:::cta Un projet de terrain à Biver ?
-Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur et proposés par l'aménageur PONTHIEU DH. Le prix et les informations de chaque lot vous sont présentés lors de notre échange.
+Huit terrains à bâtir libres de constructeur, à Biver. Le prix vous est communiqué lors de notre échange.
 
 - [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Envoyez-nous un message](/contact)
@@ -121,9 +119,8 @@ Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres 
 
 # Bloc d'appel à l'action final (ajouté automatiquement sous chaque article)
 CTA_FINAL_TITLE = "Un projet de terrain à Biver, pour construire votre maison ?"
-CTA_FINAL_TEXT = ("Le Clos des Cyprès réunit huit terrains à bâtir à Biver (Gardanne), libres de constructeur "
-                  "et proposés par l'aménageur PONTHIEU DH. Appelez-nous au 06 09 20 45 90 ou envoyez-nous "
-                  "un message : le prix et les informations de chaque lot vous sont présentés lors de notre échange.")
+CTA_FINAL_TEXT = ("Huit terrains à bâtir libres de constructeur, à Biver. Appelez-nous au 06 09 20 45 90 "
+                  "ou envoyez-nous un message : le prix vous est communiqué lors de notre échange.")
 # Libellé du bouton vers la page « /terrain-a-batir-gardanne » : varié d'un article à l'autre (pas cinq liens
 # identiques vers la même page). Clé = slug ; un nouvel article reçoit le libellé par défaut.
 CTA_PILLAR_DEFAULT = "Présentation du programme"

@@ -52,7 +52,7 @@ Trois voies existent : un constructeur, un architecte, un maître d'œuvre qui c
 Pour un projet de plus de 150 m² de surface de plancher, les plans doivent être établis par un architecte ; en dessous, c'est facultatif pour un particulier (Service-Public). Vous pouvez aussi vous faire accompagner par un professionnel du bâtiment (architecte, contrôleur technique ou autre professionnel assuré). Les quatre modes de construction sont comparés dans [constructeur, architecte, maître d'œuvre ou artisans : comment choisir ?](/blog/terrain-libre-de-constructeur-definition/).
 
 :::cta Un terrain pour construire votre maison à Biver ?
-Le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur à Biver (Gardanne), proposés par l'aménageur PONTHIEU DH. Le prix vous est communiqué lors de notre échange.
+Le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur à Biver, proposés par l'aménageur PONTHIEU DH. Le prix vous est communiqué lors de notre échange.
 
 - [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Envoyez-nous un message](/contact)
@@ -110,7 +110,7 @@ Avant le début des travaux. Elle est obligatoire pour le propriétaire qui fait
 La réception peut être prononcée avec ou sans réserves. Elle déclenche la garantie de parfait achèvement (un an), la garantie de bon fonctionnement (deux ans) et la garantie décennale (dix ans).
 
 ### Où trouver un terrain pour construire sa maison près d'Aix-en-Provence ?
-À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les lots.
+À Biver, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les lots.
 :::
 
 :::source Sources
