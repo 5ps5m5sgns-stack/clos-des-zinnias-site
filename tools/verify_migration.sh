@@ -537,7 +537,7 @@ for _f in site.webmanifest feed.xml sitemap.xml; do
     row WARN "$_f : sans « 20 min » ni « 23 min »" "HTTP $F_CODE : fichier non contrôlé"
   elif LC_ALL=C grep -q -E "(^|[^0-9])(20|23)( |$_nb)*min" "$T/trj.b"; then
     _hit=$(LC_ALL=C grep -o -E "(^|[^0-9])(20|23)( |$_nb)*min[a-z]*" "$T/trj.b" | head -1 | sed -E 's/^[^0-9]+//' | tr -d '\n')
-    row FAIL "$_f : sans « 20 min » ni « 23 min »" "formulation périmée trouvée (« ${_hit} ») : écrire « à 25 minutes d'Aix-en-Provence » / « à 30 minutes de Marseille » (hors heures de pointe)"
+    row FAIL "$_f : sans « 20 min » ni « 23 min »" "formulation périmée trouvée (« ${_hit} ») : écrire « à 25 minutes d'Aix-en-Provence » / « à 30 minutes de Marseille »"
   else
     row PASS "$_f : sans « 20 min » ni « 23 min »" "aucune formulation périmée ; ni ownimmobilier, ni jessica@, ni 33630073601"
   fi

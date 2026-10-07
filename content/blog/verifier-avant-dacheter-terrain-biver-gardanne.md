@@ -111,7 +111,7 @@ Un lotissement ajoute des règles ([Service-Public](https://www.service-public.g
 
 Ces pièces se demandent à l'aménageur. Le Clos des Cyprès, à Biver, réunit huit terrains à bâtir [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), proposés par PONTHIEU DH : renseignez-vous auprès de l'aménageur, car les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Pour la démarche complète, lisez le [guide pour acheter un terrain en lotissement](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
 
-Vous cherchez un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) pour construire votre maison ? Biver est à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture, hors heures de pointe.
+Vous cherchez un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) pour construire votre maison ? Biver est à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture.
 
 :::callout À retenir
 - Constructible n'est pas viabilisé : contrôlez zonage, risques, sol et réseaux.

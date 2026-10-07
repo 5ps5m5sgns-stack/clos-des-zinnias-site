@@ -110,7 +110,7 @@ Avant le début des travaux. Elle est obligatoire pour le propriétaire qui fait
 La réception peut être prononcée avec ou sans réserves. Elle déclenche la garantie de parfait achèvement (un an), la garantie de bon fonctionnement (deux ans) et la garantie décennale (dix ans).
 
 ### Où trouver un terrain pour construire sa maison près d'Aix-en-Provence ?
-À Biver, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les lots.
+À Biver, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture, le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les lots.
 :::
 
 :::source Sources
