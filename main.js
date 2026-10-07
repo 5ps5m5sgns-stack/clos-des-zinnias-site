@@ -68,13 +68,17 @@
     const menu = document.querySelector(".mobile-menu");
     if (!burger || !menu) return;
 
-    const toggle = (open) => {
+    // Ce qui est derrière le menu plein écran devient inerte : le clavier et les lecteurs d'écran ne s'y égarent plus.
+    const behind = () => document.querySelectorAll("main, footer, .fab-contact, .call-bar, .to-top, .skip-link");
+    const toggle = (open, giveFocusBack) => {
       const willOpen = open ?? !menu.classList.contains("open");
       menu.classList.toggle("open", willOpen);
       burger.classList.toggle("open", willOpen);
       burger.setAttribute("aria-expanded", willOpen ? "true" : "false"); // synchronise l'état a11y
       document.body.classList.toggle("menu-open", willOpen);
       document.body.style.overflow = willOpen ? "hidden" : "";
+      behind().forEach((el) => (willOpen ? el.setAttribute("inert", "") : el.removeAttribute("inert")));
+      if (!willOpen && giveFocusBack) burger.focus();
     };
 
     burger.addEventListener("click", () => toggle());
@@ -82,7 +86,7 @@
       a.addEventListener("click", () => toggle(false))
     );
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") toggle(false);
+      if (e.key === "Escape" && menu.classList.contains("open")) toggle(false, true);
     });
   }
 
@@ -542,6 +546,9 @@
       hint.setAttribute("aria-live", "polite");
       field.appendChild(hint);
     }
+    // l'erreur est reliée au champ pour les lecteurs d'écran (WCAG 3.3.1 / 4.1.2)
+    hint.id = "email-hint";
+    email.setAttribute("aria-describedby", "email-hint");
 
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let touched = false;
@@ -550,16 +557,19 @@
       const v = email.value.trim();
       if (!v) {
         field.classList.remove("is-valid", "is-invalid");
+        email.removeAttribute("aria-invalid");
         hint.textContent = "";
         return;
       }
       if (re.test(v)) {
         field.classList.add("is-valid");
         field.classList.remove("is-invalid");
+        email.removeAttribute("aria-invalid");
         hint.textContent = "";
       } else {
         field.classList.add("is-invalid");
         field.classList.remove("is-valid");
+        email.setAttribute("aria-invalid", "true");
         hint.textContent = "Format d'e-mail invalide — exemple : prenom@email.com";
       }
     }
