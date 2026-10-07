@@ -18,12 +18,6 @@ draft: false
 
 Construire sur un terrain en pente en Provence est courant et réalisable, à condition de traiter la pente comme une donnée du projet dès l'achat : elle joue sur l'implantation de la maison, l'accès, le terrassement, les murs de soutènement, les eaux de pluie, les fondations et les vues. Ce guide explique ce qu'est une restanque, ce que prévoit le PLUi du Pays d'Aix, à quoi servent les études de sol G1 et G2 et quels postes de coût varient. Il vaut pour tout projet de construire sa maison sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Autour de Biver, le paysage est fait de collines boisées et de pins : c'est le cadre de [vivre à Biver](/environnement), où le Clos des Cyprès propose huit [terrains libres de constructeur](/lots).
 
-:::bref
-- ruler | La pente se traite dès l'achat : relevé du géomètre, étude G2, chiffrage.
-- layers | G1 fournie par le vendeur en zone argileuse ; G2 selon votre maison.
-- map-pin | Regardez chaque lot individuellement ; le notaire reste l'interlocuteur.
-:::
-
 Les règles citées sont celles en vigueur au 05/10/2026. Cet article ne remplace ni l'avis d'un géotechnicien ou d'un architecte, ni celui du notaire pour votre dossier.
 
 ## Qu'est-ce qu'une restanque, et pourquoi en parle-t-on pour construire ?
@@ -31,6 +25,10 @@ Les règles citées sont celles en vigueur au 05/10/2026. Cet article ne remplac
 Au sens strict, une restanque (du provençal *restanco*) est un mur de retenue en pierre sèche, à deux parements, qui barre un vallon intermittent pour retenir la terre et créer une terrasse de culture. Généralisés en Provence dès la fin du XVIIIe siècle, ils permettaient de cultiver les versants et de freiner l'érosion. Aujourd'hui, le mot désigne couramment les murets de pierres sèches étagés sur un coteau.
 
 Pour une maison, l'intérêt est réel : des plates-formes déjà planes, donc moins de terrassement. La réserve l'est aussi : ces murs retenaient de la terre cultivée, ils n'étaient pas conçus pour porter une maison ou une piscine. Dans une annonce, « en restanques » ne dit ni la hauteur des murs, ni leur état : il faut les faire expertiser.
+
+:::callout Un terrain à Biver, une question sur le relief ?
+Pour parler d'un projet de maison à Biver, [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les terrains et les informations de chaque lot.
+:::
 
 ## Construire sur un terrain en pente en Provence : qu'est-ce que la pente change ?
 
@@ -52,14 +50,12 @@ Trois partis dominent : **épouser la pente** (demi-niveaux, maison semi-enterr�
 
 Selon la réglementation en vigueur au 05/10/2026, le PLUi du Pays d'Aix (approuvé le 5 décembre 2024, modification n° 1 approuvée le 15 décembre 2025) comporte des règles qui touchent directement la pente.
 
-:::cards
-- mountain | Relief | Les mouvements de terre se limitent aux stricts besoins de l'implantation et de l'accès, sans que la maison émerge dans le paysage ni s'encaisse dans le sol.
-- ruler | Hauteur | Elle se mesure depuis le terrain naturel : le sol existant au dépôt de la demande, avant déblais ou remblais. En cas de déblai, elle se compte depuis le sol terrassé ; enterrer ou remblayer la maison ne permet donc pas de monter plus haut.
-- route | Accès | Tout nouvel accès comporte devant le portail un espace d'attente de pente maximale 5 %.
-- cloud-rain | Eaux pluviales | Les projets préservent les axes d'écoulement du terrain. Selon la zone du PLUi, toute nouvelle surface imperméabilisée de 50 m² ou plus se compense (rétention d'au moins 10 m³ pour 100 m² imperméabilisés, débit de fuite plafonné), l'infiltration étant recherchée d'abord.
-- layers | Murs et terrassements | Les clôtures suivent la pente en limitant l'effet d'escalier et laissent passer l'eau. Un mur de moins de 2 m est en principe dispensé de formalité (art. R. 421-2) ; un déblai ou un remblai de plus de 2 m sur 100 m² ou plus, non nécessaire à un permis de construire, exige une déclaration préalable (art. R. 421-23).
-- trees | Feu de forêt | Dans les secteurs de risque du règlement graphique (R, B, M, V), une maison neuve est interdite en R ; dans les autres, elle est admise si l'accès et l'implantation assurent la défense contre l'incendie (par exemple une voie de pente inférieure à 15 %). Là où il s'applique, le débroussaillement porte sur au moins 50 m autour de la maison, au-delà de la parcelle si besoin.
-:::
+- **Relief.** Les mouvements de terre se limitent aux stricts besoins de l'implantation et de l'accès, sans que la maison émerge dans le paysage ni s'encaisse dans le sol.
+- **Hauteur.** Elle se mesure depuis le terrain naturel : le sol existant au dépôt de la demande, avant déblais ou remblais. En cas de déblai, elle se compte depuis le sol terrassé ; enterrer ou remblayer la maison ne permet donc pas de monter plus haut.
+- **Accès.** Tout nouvel accès comporte devant le portail un espace d'attente de pente maximale 5 %.
+- **Eaux pluviales.** Les projets préservent les axes d'écoulement du terrain. Selon la zone du PLUi, toute nouvelle surface imperméabilisée de 50 m² ou plus se compense (rétention d'au moins 10 m³ pour 100 m² imperméabilisés, débit de fuite plafonné), l'infiltration étant recherchée d'abord.
+- **Murs et terrassements.** Les clôtures suivent la pente en limitant l'effet d'escalier et laissent passer l'eau. Un mur de moins de 2 m est en principe dispensé de formalité (art. R. 421-2) ; un déblai ou un remblai de plus de 2 m sur 100 m² ou plus, non nécessaire à un permis de construire, exige une déclaration préalable (art. R. 421-23).
+- **Feu de forêt.** Dans les secteurs de risque du règlement graphique (R, B, M, V), une maison neuve est interdite en R ; dans les autres, elle est admise si l'accès et l'implantation assurent la défense contre l'incendie (par exemple une voie de pente inférieure à 15 %). Là où il s'applique, le débroussaillement porte sur au moins 50 m autour de la maison, au-delà de la parcelle si besoin.
 
 ## À quoi servent les études de sol G1 et G2 ?
 
@@ -126,6 +122,12 @@ En lotissement, regardez chaque lot individuellement, sur plan et sur place : la
 - Découvrir trop tard la règle de hauteur, le débroussaillement ou un espace boisé classé.
 - Oublier que la pente réduit la surface réellement utilisable : terrasses, piscine et accès demandent des plates-formes (voir [quelle surface de terrain pour une maison avec piscine](/blog/surface-terrain-maison-piscine/)).
 
+:::callout À retenir
+- La pente se traite dès l'achat : relevé du géomètre, étude G2 et chiffrage poste par poste.
+- La G1 est fournie par le vendeur en zone argileuse ; la G2 dépend de votre maison.
+- Regardez chaque lot individuellement ; pour votre cas, le notaire reste l'interlocuteur.
+:::
+
 ## Questions fréquentes
 
 :::faq
@@ -141,8 +143,8 @@ Le règlement écrit du PLUi consulté ne fixe pas de seuil de pente pour le ter
 ### Une maison semi-enterrée est-elle possible à Gardanne ?
 Le PLUi interdit les mouvements de terre qui encaissent la construction et, en cas de déblai, mesure la hauteur depuis le sol terrassé. Une maison partiellement enterrée reste envisageable si le projet respecte ces règles, avec une étude de sol et un drainage soigné.
 
-### Comment connaître la pente d'un terrain avant d'acheter ?
-Le plan topographique du géomètre donne les courbes de niveau et les cotes du terrain : c'est le document de référence, à demander avant la promesse de vente. Le modèle numérique de terrain de l'IGN (RGE ALTI) permet une première estimation, indicative. Pour un lot du Clos des Cyprès, [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+### Peut-on visiter le terrain avant d'acheter ?
+Oui, sur rendez-vous : [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
 :::
 
 :::cta Un projet sur une parcelle en pente ?

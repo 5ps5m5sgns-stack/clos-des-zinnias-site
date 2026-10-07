@@ -18,13 +18,6 @@ draft: false
 
 Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, hameau de Gardanne, [huit terrains libres de constructeur](/lots) sont proposés par l'aménageur PONTHIEU DH : un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) en lotissement, avec permis d'aménager.
 
-:::bref
-- calendar-check | Ni promesse ni acompte avant le permis d'aménager ; ensuite, dix jours de rétractation.
-- files | PLUi, règlement, cahier des charges : trois documents à lire avant de signer.
-- house | On construit librement dans le cadre du lotissement, pas hors cadre.
-- scale | Le notaire valide votre cas : interrogez-le avant la promesse.
-:::
-
 Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
 
 ## Comment acheter un terrain en lotissement, étape par étape ?
@@ -46,6 +39,10 @@ Tableau : Les neuf étapes d'un achat de lot
 | 9. Avant le chantier | Branchements, taxe d'aménagement, assurance dommages-ouvrage |
 
 À la visite, demandez le plan de composition. Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
+
+:::callout Un projet de terrain à Biver ?
+Vous hésitez sur une étape, ou vous voulez connaître les terrains du lotissement ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
+:::
 
 ## Que régissent le PLUi, le règlement et le cahier des charges ?
 
@@ -117,6 +114,13 @@ La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxa
 
 Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, hameau de Gardanne, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture (hors heures de pointe), le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Selon votre trajet quotidien, voyez le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille). Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
+:::callout À retenir
+- Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.
+- PLUi, règlement et cahier des charges : trois documents à lire avant de signer.
+- On construit **librement dans le cadre** du lotissement, pas hors cadre.
+- Le notaire valide votre cas : interrogez-le avant la promesse.
+:::
+
 ## Questions fréquentes
 
 :::faq
@@ -137,10 +141,10 @@ Les terrains sont proposés par l'aménageur PONTHIEU DH. Appelez-nous au [06 09
 :::
 
 :::source Sources
-- [Promesse de vente d'un terrain situé dans un lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F16455), Service-Public, consulté le 05/10/2026.
-- [Acte de vente d'un terrain situé dans un lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F12702), Service-Public, consulté le 05/10/2026.
-- [Obligations du vendeur d'un terrain en lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F2484), Service-Public, consulté le 05/10/2026.
-- [Taxe d'aménagement](https://www.service-public.gouv.fr/particuliers/vosdroits/F23263), Service-Public, consulté le 05/10/2026.
+- [Promesse de vente d'un terrain situé dans un lotissement](https://www.service-public.fr/particuliers/vosdroits/F16455), Service-Public, consulté le 05/10/2026.
+- [Acte de vente d'un terrain situé dans un lotissement](https://www.service-public.fr/particuliers/vosdroits/F12702), Service-Public, consulté le 05/10/2026.
+- [Obligations du vendeur d'un terrain en lotissement](https://www.service-public.fr/particuliers/vosdroits/F2484), Service-Public, consulté le 05/10/2026.
+- [Taxe d'aménagement](https://www.service-public.fr/particuliers/vosdroits/F23263), Service-Public, consulté le 05/10/2026.
 - Code de l'urbanisme, Légifrance, consulté le 05/10/2026 : [L. 442-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815993), [L. 442-7](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815996), [L. 442-8](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667953), [L. 442-9](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052866874), [L. 442-14](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037694107), [R. 442-11](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047280445), [R. 442-12](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819520), [R. 442-13](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819794), [R. 442-18](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025430929), [L. 115-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210397), [L. 332-15](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054141958), [L. 410-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667619), [R. 423-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819920), [R. 424-17](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031830633), [R. 424-21](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043940372), [R. 600-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006820365).
 - Code de la construction et de l'habitation, Légifrance, consulté le 05/10/2026 : [L. 271-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667917), [L. 132-5](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041588033), [L. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041565667), [R. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043818711).
 - [Code des assurances, art. L. 242-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019265425) et [code forestier, art. L. 134-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047810678), Légifrance, consultés le 05/10/2026.

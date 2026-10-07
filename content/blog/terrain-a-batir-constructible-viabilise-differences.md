@@ -15,13 +15,6 @@ draft: false
 
 **Terrain à bâtir, constructible, viabilisé** : ces trois expressions se croisent dans les annonces, mais elles ne disent pas la même chose. « Constructible » renvoie aux règles d'urbanisme, « à bâtir » est d'abord une notion fiscale, « viabilisé » parle des réseaux. Un terrain peut réunir les trois, comme un lot de lotissement, ou seulement l'un d'eux : mieux vaut donc vérifier avant d'acheter. À Biver, hameau de Gardanne, le Clos des Cyprès réunit huit [terrains libres de constructeur](/lots) proposés par l'aménageur PONTHIEU DH.
 
-:::bref
-- file-check | Constructible : les règles d'urbanisme permettent d'y construire.
-- landmark | À bâtir : un sens fiscal ; dans l'usage, un terrain destiné à recevoir une maison.
-- plug-zap | Viabilisé : raccordable à la voirie et aux réseaux, pas forcément raccordé.
-- circle-alert | Un terrain peut réunir les trois, ou un seul : vérifiez avant d'acheter.
-:::
-
 Les textes cités sont ceux en vigueur au 06/10/2026. Cet article est une information générale : pour votre dossier, le notaire fait foi.
 
 ## Terrain à bâtir, constructible, viabilisé : le résumé en un tableau
@@ -40,17 +33,17 @@ Service-Public le résume ainsi : un terrain constructible est apte à recevoir 
 
 Dans un PLU, le territoire est découpé en zones :
 
-Tableau : Les zones d'un plan local d'urbanisme
-
-| Zone | Ce qu'elle regroupe | Article |
-|:-----|:--------------------|:--------|
-| **Zones urbaines (U)** | Les secteurs déjà urbanisés et ceux dont les équipements publics ont une capacité suffisante pour desservir les constructions à implanter | R. 151-18 du code de l'urbanisme |
-| **Zones à urbaniser (AU)** | Les secteurs destinés à être ouverts à l'urbanisation, selon la capacité des voies et des réseaux voisins | R. 151-20 |
-| **Zones agricoles (A) et zones naturelles et forestières (N)** | Les secteurs à protéger : la construction d'une maison y est en principe très limitée | R. 151-22 et R. 151-24 |
+- les **zones urbaines (U)** regroupent les secteurs déjà urbanisés et ceux dont les équipements publics ont une capacité suffisante pour desservir les constructions à implanter (art. R. 151-18 du code de l'urbanisme) ;
+- les **zones à urbaniser (AU)** sont destinées à être ouvertes à l'urbanisation, selon la capacité des voies et des réseaux voisins (art. R. 151-20) ;
+- les **zones agricoles (A)** et les **zones naturelles et forestières (N)** sont des secteurs à protéger (art. R. 151-22 et R. 151-24) : la construction d'une maison y est en principe très limitée.
 
 Être en zone constructible ne veut pas dire construire sans règle. Le règlement de la zone peut notamment prévoir des règles maximales d'emprise au sol et de hauteur, exprimées par rapport aux voies, aux limites séparatives et aux autres constructions (art. R. 151-39). Pour connaître la zone d'un terrain, saisissez son adresse sur le Géoportail de l'urbanisme, puis lisez le règlement écrit de cette zone ; la démarche complète est décrite dans [ce qu'il faut vérifier avant d'acheter un terrain constructible](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
 
 Pour savoir si **votre** projet est réalisable, demandez un certificat d'urbanisme opérationnel : la mairie a deux mois pour le délivrer, il est valable 18 mois et la demande est gratuite. Il garantit la stabilité des renseignements qu'il fournit, mais il n'est pas une autorisation d'urbanisme : le permis de construire reste à obtenir (Service-Public).
+
+:::callout Un terrain viabilisé pour votre maison ?
+Vous cherchez un terrain constructible et viabilisé à Biver pour construire votre maison ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les terrains, sans pression.
+:::
 
 ## Terrain à bâtir : un sens fiscal et un sens courant
 

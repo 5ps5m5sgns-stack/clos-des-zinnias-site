@@ -36,9 +36,3 @@ consent.js
 # (ancienne identité noir et or), qu'aucune page ne référence (les icônes servies sont les PNG).
 Photo non upscale
 favicon.svg
-
-# Images retirées des pages, NON déployées (conservées dans le dépôt) : le plan officiel porte les coordonnées du géomètre
-# et le nom officiel du lotissement ; les deux autres portent le nom officiel ou l'ancien nom dans leurs pixels.
-images-optimized/plan-officiel-composition*
-images-optimized/rue-lotissement-provence*
-images-optimized/avant-apres-terrain-projet*

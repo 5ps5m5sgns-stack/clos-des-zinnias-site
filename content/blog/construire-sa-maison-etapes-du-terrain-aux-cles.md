@@ -15,13 +15,6 @@ draft: false
 
 Pour **construire sa maison**, on suit neuf étapes dans l'ordre : définir son projet et son budget, trouver un terrain, vérifier ce qu'on peut y bâtir, choisir qui construit, financer, obtenir le permis de construire, ouvrir le chantier, réceptionner les travaux, puis déclarer l'achèvement. Ce guide donne cet ordre et, pour chaque étape, le texte officiel qui s'applique. Il vaut pour tout projet de maison sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. À Biver, hameau de Gardanne, le Clos des Cyprès réunit huit [terrains libres de constructeur](/lots).
 
-:::bref
-- list-checks | Neuf étapes, dans l'ordre : du projet à l'achèvement.
-- search-check | Le certificat d'urbanisme opérationnel dit si votre projet est réalisable.
-- file-signature | Permis obligatoire au-delà de 20 m² ; architecte au-delà de 150 m² de plancher.
-- file-check | Dommages-ouvrage : à souscrire avant le début des travaux.
-:::
-
 Les règles citées sont celles en vigueur au 06/10/2026. Cet article ne remplace pas l'avis de votre notaire, de votre architecte ou de votre constructeur.
 
 ## Construire sa maison : les neuf étapes dans l'ordre
@@ -39,6 +32,10 @@ Tableau : Les neuf étapes pour construire sa maison
 | 7. Chantier | Assurance dommages-ouvrage, déclaration d'ouverture, suivi | [Déclaration d'ouverture de chantier (Service-Public)](https://www.service-public.gouv.fr/particuliers/vosdroits/F1992) |
 | 8. Réception | Procès-verbal, avec ou sans réserves, garanties | [Garanties après réception (Service-Public)](https://www.service-public.gouv.fr/particuliers/vosdroits/F2958) |
 | 9. Achèvement | Déclaration de conformité en mairie, déclaration aux impôts | [DAACT (Service-Public)](https://www.service-public.gouv.fr/particuliers/vosdroits/F1997) |
+
+:::callout Un projet de maison à Biver ?
+Vous cherchez un terrain pour construire votre maison près d'Aix-en-Provence ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous présentons les terrains, sans pression.
+:::
 
 ## Étapes 1 à 3 : le projet, le budget, le terrain
 
@@ -72,10 +69,8 @@ Pour construire un bâtiment de plus de 20 m², comme une maison, le permis de c
 
 Deux délais méritent d'être connus :
 
-:::cards
-- scale | Le recours des tiers | Il court à compter du premier jour d'une période continue de deux mois d'affichage sur le terrain (art. R. 600-2 du code de l'urbanisme).
-- calendar-days | La validité du permis | Trois ans à compter de la notification ; il est périmé si les travaux ne sont pas entrepris dans ce délai ou interrompus plus d'un an, et prorogeable deux fois un an à condition de le demander au moins deux mois avant l'échéance (Service-Public).
-:::
+- **le recours des tiers** : il court à compter du premier jour d'une période continue de deux mois d'affichage sur le terrain (art. R. 600-2 du code de l'urbanisme) ;
+- **la validité du permis** : trois ans à compter de la notification ; il est périmé si les travaux ne sont pas entrepris dans ce délai ou interrompus plus d'un an, et prorogeable deux fois un an à condition de le demander au moins deux mois avant l'échéance (Service-Public).
 
 ## Étapes 7 à 9 : le chantier, la réception, l'achèvement
 
@@ -91,6 +86,13 @@ Deux délais méritent d'être connus :
 ## Combien de temps faut-il pour construire sa maison ?
 
 Aucune durée ne vaut pour tous les projets : elle dépend du terrain, de la maison et du constructeur. Seuls sont donnés ici les délais que fixent les textes : deux mois d'instruction pour une maison individuelle, deux mois d'affichage pour le délai de recours, trois ans de validité du permis, trois mois de contrôle de conformité, un, deux et dix ans de garantie. Pour le chantier lui-même, c'est le contrat qui fixe le délai de livraison ; en CCMI, il prévoit des pénalités d'au moins 1/3 000 du prix par jour de retard.
+
+:::callout À retenir
+- Dans l'ordre : projet et budget, terrain, faisabilité, mode de construction, financement, permis, chantier, réception, achèvement.
+- Le certificat d'urbanisme opérationnel dit si votre projet est réalisable ; il n'est pas une autorisation.
+- Le permis est obligatoire au-delà de 20 m², et un architecte l'est au-delà de 150 m² de surface de plancher.
+- L'assurance dommages-ouvrage se souscrit avant le début des travaux.
+:::
 
 ## Questions fréquentes
 

@@ -74,7 +74,7 @@
      ---------------------------------------------------------- */
   var banner = null;
   function showBanner() {
-    if (banner) { banner.removeAttribute("inert"); banner.classList.add("show"); return; }
+    if (banner) { banner.classList.add("show"); return; }
     banner = document.createElement("div");
     banner.className = "consent-banner";
     banner.setAttribute("role", "region");
@@ -95,7 +95,7 @@
       saveChoice("denied"); hideBanner();
     });
   }
-  function hideBanner() { if (banner) { banner.classList.remove("show"); banner.setAttribute("inert", ""); } }
+  function hideBanner() { if (banner) banner.classList.remove("show"); }
 
   function init() {
     var links = document.querySelectorAll("[data-consent-open]");

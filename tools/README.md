@@ -60,37 +60,6 @@ Il n'écrit rien ; code retour 1 en cas d'écart.
 - **CSS critique** : le blog reprend celui d'`index.html` (`<style data-critical>`) à chaque génération ; après une
   modification à la main du CSS critique des 11 pages, relancer `python3 tools/build_blog.py`.
 
-## Système de design : guide de style, sprite de pictogrammes, CSS des composants (refonte visuelle)
-
-Catalogue complet pour les pages : `phase3/03-design-system.md` (hors dépôt). Ici, seulement l'outillage.
-
-- **`tools/styleguide.html`** : tous les composants et variantes, avec le marquage HTML à copier. Non déployé (`tools` est dans `.assetsignore`).
-  Voir le rendu : `phase3/qa/serve.sh start 8765`, puis `http://localhost:8765/tools/styleguide.html`.
-- **`icons.svg`** (racine, déployé) : sprite de pictogrammes Lucide (ISC ; quelques dessins dérivés de Feather, MIT) et WhatsApp (Simple Icons, CC0).
-  Licences en commentaire du fichier. Appel : `<svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="/icons.svg#nom"/></svg>`.
-  Ajouter un pictogramme : prendre `https://cdn.jsdelivr.net/npm/lucide-static@1.52.0/icons/<nom>.svg`, en garder les balises internes
-  (`<path>`, `<circle>`…) sans `fill`, `stroke` ni `stroke-width`, les mettre dans un `<symbol id="<nom>" viewBox="0 0 24 24">` du sprite. Le trait
-  (1,5 px) vient de la classe `.ico`. Cache de 1 jour (`_headers`) : un pictogramme ajouté apparaît chez un visiteur au plus tard le lendemain.
-- **Élaguer le sprite en fin de refonte** (garder les seuls pictogrammes utilisés) : lister les `/icons.svg#nom` des `*.html` et `blog/**/*.html`, puis
-  recopier dans un nouveau fichier l'en-tête de licences et les `<symbol>` correspondants (un alias comme `bus-front` renvoie à `#bus` : garder `bus`).
-  Le sprite complet pèse 21,7 Ko (7,2 Ko en gzip, dont 1,6 Ko de licences).
-- **CSS** : les composants forment un bloc à la fin de `style.css` (à partir du commentaire « SYSTÈME DE DESIGN »), recopié minifié à la fin de
-  `style.min.css`. Après une modification du bloc dans `style.css`, remplacer la fin de `style.min.css` (le reste du fichier ne change pas) :
-
-```sh
-~/.venv-clos-qa/bin/python - <<'PY'
-import rcssmin
-css = open('style.css', encoding='utf-8').read()
-block = rcssmin.cssmin(css[css.index('/* ============================================================\n   SYSTÈME DE DESIGN'):])
-mini = open('style.min.css', encoding='utf-8').read()
-open('style.min.css', 'w', encoding='utf-8').write(mini[:mini.index(':root{--cb-h')] + block)
-PY
-```
-
-  (`rcssmin` : `~/.venv-clos-qa/bin/pip install rcssmin`, testé avec 1.2.2 ; relancée sans modification, la commande redonne exactement le même fichier.)
-  Le CSS critique en ligne des pages n'est pas concerné : aucun composant n'est au-dessus de la ligne de flottaison, sauf la barre d'appel `call-bar`
-  (voir `phase3/03-design-system.md`).
-
 ## Règle de déploiement
 
 Ce dossier ne doit pas être publié : l'ajouter à `.assetsignore` (ligne `tools`).

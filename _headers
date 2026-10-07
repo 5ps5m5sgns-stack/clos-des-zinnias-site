@@ -61,11 +61,6 @@
 /logo-cypres-rond.png
   Cache-Control: public, max-age=604800
 
-# --- Sprite de pictogrammes (refonte visuelle) : le nom ne change pas mais le contenu s'enrichit quand on ajoute un
-# pictogramme => 1 jour (un visiteur ne reste jamais plus d'un jour sans le nouveau dessin ; 304 ensuite).
-/icons.svg
-  Cache-Control: public, max-age=86400
-
 # --- Fichiers pour les robots et flux ---
 /sitemap.xml
   Cache-Control: public, max-age=3600
