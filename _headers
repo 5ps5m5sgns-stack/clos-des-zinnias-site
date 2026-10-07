@@ -87,3 +87,7 @@ https://:sub1.:sub2.workers.dev/*
 # Brouillon à tester en mode rapport (n'empêche rien, ne fait qu'écrire dans la console du
 # navigateur), à coller dans le bloc /* pour l'essayer :
 #   Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://connect.facebook.net; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; connect-src 'self' https://formspree.io https://www.facebook.com https://connect.facebook.net; frame-src https://www.google.com; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'
+
+# Pictogrammes des trajets : le nom peut changer de dessin => 7 jours
+/icons-trajets.svg
+  Cache-Control: public, max-age=604800
