@@ -3433,4 +3433,45 @@ table.elegant thead th { font-size: .86rem; }
 .map-facade__note { opacity: .9; font-size: 1rem; }
 .map-facade__link { font-size: 1.05rem; color: var(--or); }
 .map-facade .btn { margin-block: .4rem; }
+/*ACCUEIL-V7-START*/
+/* ACCUEIL-V7 : lots en barres, trajets en infographie, trois atouts */
+.lb { list-style: none; display: grid; grid-template-columns: 1fr; column-gap: 4rem; max-width: 1040px; margin: 3rem auto 0; padding: 0; border-top: 2px solid var(--brun); }
+.lb a { display: grid; grid-template-columns: 2.4rem 7rem 1fr 1.4rem; align-items: center; gap: .9rem; min-height: 4.5rem; padding: .8rem .2rem; border-bottom: 1px solid rgba(75, 52, 38, .28); color: inherit; transition: background .3s; }
+.lb a:hover, .lb a:focus-visible { background: rgba(107, 68, 38, .07); }
+.lb__n { font: 600 1.1rem var(--font-titre); color: var(--brun); font-variant-numeric: lining-nums; }
+.lb__m { font: 500 2.1rem/1 var(--font-titre); color: #1F3028; font-variant-numeric: lining-nums; white-space: nowrap; }
+.lb__m i { margin-left: .3rem; font: 400 .95rem var(--font-corps); font-style: normal; color: #3B4A41; }
+.lb__bar { position: relative; display: block; height: 10px; background: rgba(75, 52, 38, .13); }
+.lb__bar::after { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--s) * 100%); background: var(--brun); transition: background .3s; }
+.lb a:hover .lb__bar::after { background: #1F3028; }
+.lb__go { font-style: normal; color: var(--brun); font-size: 1.2rem; }
+.lb__legend { max-width: 40rem; margin: 1.1rem auto 0; text-align: center; font-size: .98rem; color: #3B4A41; }
+@media (min-width: 900px) { .lb { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 420px) { .lb a { grid-template-columns: 2.1rem 6rem 1fr 1.1rem; gap: .65rem; } .lb__m { font-size: 1.85rem; } }
+
+/* trajets : version accueil, plus compacte sur téléphone */
+@media (max-width: 899px) {
+  .trip--home .trip__col { padding: 1.9rem 0 1.6rem; }
+  .trip--home .trip__ico { margin-bottom: .8rem; }
+  .trip--home .trip__title { margin-bottom: .7rem; }
+  .trip--home .trip__steps li { display: flex; align-items: baseline; gap: 1rem; padding: .55rem 0; border-bottom: 1px dashed rgba(75, 52, 38, .3); text-align: left; }
+  .trip--home .trip__steps li + li { padding-top: .55rem; }
+  .trip--home .trip__steps li + li::before { display: none; }
+  .trip--home .trip__steps b { flex: none; min-width: 8.2rem; font-size: 1.6rem; }
+  .trip--home .trip__steps span { margin-top: 0; font-size: 1.02rem; }
+}
+
+/* trois atouts + preuves, sur fond marron */
+.atouts { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 1040px; margin: 3rem auto 0; padding: 0; list-style: none; }
+.atouts li { padding: 2rem 1.5rem; text-align: center; border: 1px solid rgba(201, 188, 150, .42); background: rgba(0, 0, 0, .16); }
+.atout__ico { display: block; margin: 0 auto 1rem; color: var(--or); }
+.atouts h3 { margin: 0 0 .5rem; font: 600 1.7rem/1.15 var(--font-titre); color: var(--creme); }
+.atouts p { margin: 0 auto; max-width: 20rem; font-size: 1.08rem; color: #EADFC9; }
+@media (min-width: 800px) { .atouts { grid-template-columns: repeat(3, 1fr); } }
+.badges { display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; max-width: 1040px; margin: 1.6rem auto 0; padding: 0; list-style: none; }
+.badges li { display: flex; align-items: flex-start; gap: .75rem; flex: 1 1 18rem; padding: .85rem 1.1rem; border: 1px solid rgba(201, 188, 150, .42); font-size: .98rem; line-height: 1.45; color: #EADFC9; }
+.badge__ico { flex: none; margin-top: .1rem; color: var(--or); }
+.badges a { color: #F3E3BC; text-decoration: underline; text-underline-offset: 3px; }
+.bg-creme .lb a, .bg-creme .lb a:hover { color: inherit !important; text-decoration: none !important; }
+.bg-brun .atouts a, .bg-brun .badges a { text-decoration: underline; }
 
