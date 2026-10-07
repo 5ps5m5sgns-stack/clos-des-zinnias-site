@@ -1,4 +1,4 @@
-# Le Clos des Cyprès — lotissement de 8 terrains à bâtir, Biver (Gardanne, 13)
+# Le Clos des Cyprès — lotissement de 8 terrains à bâtir, Biver (Bouches-du-Rhône)
 # https://clos-des-cypres.fr
 
 User-agent: *

@@ -191,7 +191,8 @@ def slugify(text):
 
 def strip_tags(fragment):
     """Texte brut d'un fragment HTML (balises retirées, entités décodées, espaces normalisés)."""
-    t = html.unescape(re.sub(r"<[^>]+>", " ", fragment)).replace(NBSP, " ")
+    t = re.sub(r"<(?:/?(?:p|li|ul|ol|br|div|h[1-6]|tr|td|th|table|summary|details|blockquote))\b[^>]*>", " ", fragment)
+    t = html.unescape(re.sub(r"<[^>]+>", "", t)).replace(NBSP, " ")
     return re.sub(r"\s+", " ", t).strip()
 
 
