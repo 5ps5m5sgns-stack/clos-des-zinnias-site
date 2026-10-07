@@ -3267,4 +3267,73 @@ h1, h2, h3 { text-wrap: balance; }
   .fab-contact { right: 0.75rem; bottom: 0.75rem; gap: 0.5rem; }
   .to-top { display: none; }
 }
+/*TYPO-V3-START*/
+/* TYPO-V3 (critique) : texte plus grand, chiffres alignés, traits plus francs, logo plus présent */
+html{font-size:106.25%}
+@media (min-width:900px){html{font-size:112.5%}}
+body{line-height:1.7}
+h1,h2,h3,h4,.counter__num,.lot-tile__num,.lot-tile__surface,.step__num{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1,"kern" 1}
+.hero h1,.hero-sub-title{font-weight:400}
+.hero h1 .italic-or{font-weight:400}
+.hero__tagline{font-weight:400;opacity:.95}
+.hero-sub-subtitle{opacity:.92}
+.nav__brand-logo{width:54px;height:54px}
+.nav__brand .name{font-size:1.6rem;font-weight:600;letter-spacing:.005em}
+.nav__brand .sub{font-size:.78rem;margin-top:.3rem}
+.nav__links a{font-size:1rem}
+.lead{font-size:clamp(1.15rem,1.7vw,1.3rem);line-height:1.7}
+.section-title{font-size:clamp(2.4rem,5.8vw,3.75rem)}
+.kicker,.label{font-size:.88rem}
+.hero h1{font-size:clamp(3rem,11vw,6rem)}
+.hero__tagline{font-size:clamp(1.05rem,1.8vw,1.3rem);margin:1.25rem auto 1.75rem}
+.hero--stats .hero__inner{padding-bottom:6rem}
+@media (max-width:1100px){.hero--stats .hero__inner{padding-bottom:9.5rem}}
+@media (max-width:640px){.hero--stats .hero__inner{padding-bottom:11.5rem}.hero .fullimg__cap~.hero__inner{padding-top:9.5rem}}
+.hero h1,.hero-sub-title,.hero__tagline,.hero-sub-subtitle,.hero__phone{text-shadow:0 2px 20px rgba(12,22,17,.6)}
+.breadcrumb{opacity:.92}
+.breadcrumb{font-size:1rem}
+.btn{font-size:1rem}
+@font-face{font-family:"Cormorant Fallback";font-style:normal;font-weight:100 500;src:local("Georgia");size-adjust:87.3%}
+@font-face{font-family:"Cormorant Fallback";font-style:normal;font-weight:600 900;src:local("Georgia Bold"),local("Georgia-Bold");size-adjust:75.5%}
+@font-face{font-family:"Cormorant Fallback";font-style:italic;font-weight:100 900;src:local("Georgia Italic"),local("Georgia-Italic");size-adjust:77.8%}
+@font-face{font-family:"DM Sans Fallback";src:local("Arial");size-adjust:104%}
+:root{--font-titre:"Cormorant Garamond","Cormorant Fallback",Georgia,serif;--font-corps:"DM Sans","DM Sans Fallback",system-ui,sans-serif}
+
+/* TYPO-V3 (reste de la page) */
+.bg-creme { color: #1c2923; }
+.bg-creme .lead, .bg-creme .section-head p { color: #34423a; }
+.bg-creme p, .bg-creme li { line-height: 1.7; }
+.counter__num { font-weight: 400; }
+.lot-tile__num { font-weight: 400; font-size: clamp(2.2rem, 3vw, 2.8rem); }
+.lot-tile__surface { font-weight: 400; font-size: clamp(2rem, 3vw, 2.6rem); }
+.lot-tile__surface i { font-size: 1rem; }
+.lot-tile__cta { font-size: .88rem; }
+.acc-head { font-weight: 600; font-size: clamp(1.3rem, 2.6vw, 1.7rem); line-height: 1.25; }
+.acc-body__inner { font-size: 1.08rem; line-height: 1.7; }
+.bg-creme .acc-body__inner { color: #34423a; }
+.feature-list li { font-size: 1.12rem; }
+.feat-card h3, .assurance__item h3, .step h3 { font-size: 1.65rem; font-weight: 600; }
+.feat-card p, .assurance__item p, .step p { font-size: 1.05rem; }
+.info-item .t { font-size: 1.6rem; font-weight: 600; }
+.info-item .d { font-size: 1.08rem; }
+.info-item-sm { font-size: 1.1rem; }
+.info-col-head { font-size: .9rem; }
+.table-note { font-size: 1.02rem; }
+table.elegant th, table.elegant td { font-size: 1.08rem; }
+table.elegant thead th { font-size: .86rem; }
+.bg-creme table.elegant tbody th { font-size: 1.08rem; font-weight: 600; }
+.cal-step__title { font-size: 1.5rem; font-weight: 600; }
+.cal-step__desc, .cal-step__date { font-size: 1.05rem; }
+.field label { font-size: .9rem; }
+.field input, .field select, .field textarea { font-size: 1.08rem; }
+.form__head h3 { font-size: 1.9rem; font-weight: 600; }
+.footer ul li, .footer p { font-size: 1.02rem; }
+.footer__legal { font-size: .95rem !important; }
+.footer__logo { width: 76px; height: 76px; }
+.footer .name { font-size: 1.7rem; font-weight: 600; }
+.mobile-menu a:not(.btn) { font-size: 2rem; }
+
+/* Photos : coins adoucis et ombre légère dans les sections claires */
+.bg-creme .split__media, .bg-creme .ed-figure, .bg-creme .fullimg:not(.fullimg--full) { border-radius: 8px; overflow: hidden; }
+.bg-creme .split__media { box-shadow: 0 22px 48px rgba(31, 48, 40, 0.16); }
 
