@@ -3423,4 +3423,14 @@ table.elegant thead th { font-size: .86rem; }
   .matrix td { font-size: 1.08rem; }
   .matrix tbody th { font-size: 1.05rem; }
 }
+/*CARTE-V6-START*/
+/* CARTE-V6 : carte nette (couleurs d'origine de Google), plus haute, façade aux couleurs du site */
+.map-frame { border: 2px solid var(--brun, #6B4426); }
+.map-frame iframe { height: 500px; filter: none; }
+@media (max-width: 640px) { .map-frame iframe { height: 420px; } }
+.map-facade { min-height: 500px; background: radial-gradient(ellipse at 50% 40%, rgba(201,188,150,.14), transparent 65%), var(--noir, #1F3028); }
+.map-facade__txt { font-size: 1.2rem; font-weight: 500; }
+.map-facade__note { opacity: .9; font-size: 1rem; }
+.map-facade__link { font-size: 1.05rem; color: var(--or); }
+.map-facade .btn { margin-block: .4rem; }
 
