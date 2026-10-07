@@ -3336,4 +3336,49 @@ table.elegant thead th { font-size: .86rem; }
 /* Photos : coins adoucis et ombre légère dans les sections claires */
 .bg-creme .split__media, .bg-creme .ed-figure, .bg-creme .fullimg:not(.fullimg--full) { border-radius: 8px; overflow: hidden; }
 .bg-creme .split__media { box-shadow: 0 22px 48px rgba(31, 48, 40, 0.16); }
+/*PALETTE-V4-START*/
+/* PALETTE-V4 : vert sapin + beige, avec un marron pour le contraste */
+:root { --brun: #6B4426; --brun-fonce: #4A3426; --beige-teinte: #EBE2CE; }
+
+/* Sections claires : texte sapin, accents marron (plus de vert moyen ni de gris-vert pâle) */
+.bg-creme { --or-deep: #6B4426; --muted: #2F3F36; --muted-creme: #2F3F36; color: #18241E; }
+.bg-creme.tint { background: var(--beige-teinte); }
+.bg-creme .lead, .bg-creme .section-head p, .bg-creme .acc-body__inner, .bg-creme .table-note { color: #25342C; }
+.bg-creme h1, .bg-creme h2, .bg-creme h3 { color: #1F3028; }
+.bg-creme .lot-tile__surface i, .bg-creme .lot-tile__cta { color: #3B4A41; }
+
+/* Distances, durées et valeurs : marron franc, plus gros, plus épais */
+.bg-creme .info-item-sm { font-size: 1.12rem; border-bottom-color: rgba(75, 52, 38, 0.28); }
+.bg-creme .info-item-sm span:last-child { color: var(--brun); font-weight: 500; font-size: 1.12rem; font-variant-numeric: lining-nums tabular-nums; }
+.bg-creme .info-col-head { color: var(--brun); font-weight: 500; letter-spacing: .14em; border-bottom: 2px solid var(--brun); padding-bottom: .5rem; margin-bottom: .5rem; display: block; }
+.bg-creme table.elegant td:first-child, .bg-creme table.elegant th { color: var(--brun); }
+.bg-creme table.elegant td { font-weight: 500; }
+
+/* Section marron, de temps en temps */
+.bg-brun { background: var(--brun-fonce); color: var(--texte-inv); --muted: #DCCFB6; --or-deep: #F3DDAE; }
+.bg-brun h1, .bg-brun h2, .bg-brun h3 { color: var(--creme); }
+.bg-brun .label, .bg-brun .kicker, .bg-brun .eyebrow, .bg-brun .num, .bg-brun dt, .bg-brun .step__num, .bg-brun .info-col-head, .bg-brun .cal-step__date { color: var(--or); }
+.bg-brun .lead, .bg-brun p, .bg-brun .step p, .bg-brun .cal-step__desc { color: #EADFC9; }
+.bg-brun .cal-step__title, .bg-brun .step h3, .bg-brun .assurance__item h3, .bg-brun .feat-card h3 { color: var(--creme); }
+.bg-brun a:not(.btn), .bg-brun [style*="or-deep"] { color: #F3E3BC !important; text-decoration: underline; text-underline-offset: 3px; }
+.bg-brun .btn-outline { border-color: var(--creme); color: var(--creme); }
+.bg-brun .btn-outline:hover { background: var(--creme); color: var(--brun-fonce); }
+.bg-brun .assurance__item, .bg-brun .feat-card { background: rgba(0, 0, 0, .16); border-color: rgba(201, 188, 150, .38); }
+.bg-brun .info-item-sm { font-size: 1.12rem; border-bottom-color: rgba(242, 237, 223, .22); }
+.bg-brun .info-item-sm span:last-child { color: #F3DDAE; font-weight: 500; font-size: 1.12rem; font-variant-numeric: lining-nums tabular-nums; }
+.bg-brun .info-col-head { border-bottom: 2px solid var(--or); padding-bottom: .5rem; margin-bottom: .5rem; display: block; }
+.bg-brun table.elegant { background: rgba(0, 0, 0, .16); }
+.bg-brun table.elegant td { color: var(--creme); }
+.bg-brun table.elegant td:first-child, .bg-brun table.elegant th { color: #F3DDAE; }
+.bg-brun .table-wrap { border-color: rgba(201, 188, 150, .4); }
+.bg-brun .cal-step__dot { background: var(--brun-fonce); }
+.bg-brun .cal-step::after { background: rgba(201, 188, 150, .4); }
+.bg-brun .rule-top::before, .bg-brun.rule-top::before { background: var(--or); opacity: .3; }
+
+/* Boutons flottants : sapin et or (plus de vert vif) */
+.fab-contact__btn--whatsapp { background: var(--noir); color: var(--creme); border: 2px solid var(--or); }
+.fab-contact__btn--whatsapp:hover { background: var(--gris); }
+.fab-contact__btn--phone { background: var(--or); color: var(--noir); }
+
+.bg-brun .ico { color: var(--or); }
 
