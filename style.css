@@ -3451,41 +3451,47 @@ table.elegant thead th { font-size: .86rem; }
 
 /*REFONTE-V1-START*/
 /* REFONTE-V1 : Au quotidien (cartes), carte toujours affichée, lots, page fusionnée, galerie. */
-/* ---------- Vivre à Biver : « Au quotidien » (cartes aérées, icônes une seule fois en tête de colonne) ---------- */
-.pv .section-head { margin-bottom: clamp(2.5rem, 5vw, 3.75rem); }
-.pv-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.5rem, 3vw, 2.25rem); max-width: 880px; margin: 0 auto; }
-.pv-card { position: relative; padding: clamp(1.6rem, 3vw, 2.4rem) clamp(1.4rem, 3vw, 2.5rem) clamp(1.1rem, 2vw, 1.6rem); border: 1px solid rgba(201, 188, 150, .3); border-radius: 14px; background: rgba(0, 0, 0, .14); }
-.pv-card__head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-.pv-card__ico { display: grid; place-items: center; width: 3rem; height: 3rem; flex: none; border-radius: 50%; background: rgba(201, 188, 150, .16); color: var(--or); }
-.pv-card__ico svg { width: 1.55rem; height: 1.55rem; }
-.pv-card__title { margin: 0; font: 500 clamp(1.7rem, 2.6vw, 2rem)/1.1 var(--font-titre); color: var(--creme); }
-.pv-cols, .pv-row { display: grid; grid-template-columns: minmax(0, 1fr) 9rem 9rem; align-items: center; column-gap: .6rem; }
-.pv-cols { padding: 0 0 .8rem; border-bottom: 1px solid rgba(201, 188, 150, .45); font: 500 .74rem/1 var(--font-corps); letter-spacing: .14em; text-transform: uppercase; color: var(--or); }
-.pv-cols span { display: flex; align-items: center; gap: .5rem; }
+
+/* ---------- Vivre à Biver : « Au quotidien » (compact : tient sur environ un écran) ---------- */
+.pv { padding-block: clamp(3.5rem, 6vw, 5.5rem); }
+.pv .section-head { max-width: 64rem; margin-bottom: clamp(1.75rem, 3.5vw, 2.5rem); }
+.pv .section-title { font-size: clamp(2rem, 3.6vw, 2.9rem); }
+.pv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.1rem, 2vw, 1.6rem); max-width: 1120px; margin: 0 auto; align-items: stretch; }
+.pv-card--autres { grid-column: 1 / -1; }
+.pv-card { display: flex; flex-direction: column; padding: clamp(1.3rem, 2.4vw, 1.8rem) clamp(1.2rem, 2.6vw, 2rem) clamp(.7rem, 1.4vw, 1rem); border: 1px solid rgba(201, 188, 150, .3); border-radius: 14px; background: rgba(0, 0, 0, .14); }
+.pv-card__head { display: flex; align-items: center; gap: .85rem; margin-bottom: 1rem; }
+.pv-card__ico { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; flex: none; border-radius: 50%; background: rgba(201, 188, 150, .16); color: var(--or); }
+.pv-card__ico svg { width: 1.35rem; height: 1.35rem; }
+.pv-card__title { margin: 0; font: 500 clamp(1.5rem, 2.2vw, 1.8rem)/1.1 var(--font-titre); color: var(--creme); }
+.pv-cols, .pv-row { display: grid; grid-template-columns: minmax(0, 1fr) 7.6rem 6.2rem; align-items: center; column-gap: .5rem; }
+.pv-cols { padding: 0 0 .65rem; border-bottom: 1px solid rgba(201, 188, 150, .45); font: 500 .7rem/1 var(--font-corps); letter-spacing: .12em; text-transform: uppercase; color: var(--or); }
+.pv-cols span { display: flex; align-items: center; gap: .45rem; }
 .pv-cols svg, .pv-val svg { fill: currentColor; flex: none; }
-.pv-list { list-style: none; margin: 0; padding: 0; }
-.pv-row { padding: 1.15rem 0; border-bottom: 1px solid rgba(242, 237, 223, .12); }
+.pv-list { list-style: none; margin: 0; padding: 0; flex: 1; display: flex; flex-direction: column; }
+.pv-row { flex: 1; padding: .8rem 0; border-bottom: 1px solid rgba(242, 237, 223, .12); }
 .pv-row:last-child { border-bottom: 0; }
-.pv-name { font-size: 1.1rem; line-height: 1.35; color: var(--creme); padding-right: .8rem; }
-.pv-val { font: 500 1.2rem/1.2 var(--font-corps); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.pv-name { font-size: 1.04rem; line-height: 1.3; color: var(--creme); padding-right: .6rem; }
+.pv-val { font: 500 1.08rem/1.2 var(--font-corps); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
 .pv-val--walk { color: #F3DDAE; }
 .pv-val--car { color: var(--creme); }
 .pv-row .pv-ico { display: none; }
-.pv-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.pv-tile { display: flex; flex-direction: column; gap: .55rem; padding: 1.3rem 1.35rem; border: 1px solid rgba(242, 237, 223, .16); border-radius: 12px; background: rgba(242, 237, 223, .04); }
-.pv-tile__val { display: flex; align-items: center; gap: .65rem; font: 500 1.9rem/1 var(--font-titre); font-variant-numeric: lining-nums; color: #F3DDAE; white-space: nowrap; }
+.pv-tiles { list-style: none; margin: 0 0 .6rem; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: .75rem; }
+.pv-tile { display: flex; flex-direction: column; gap: .4rem; padding: .95rem 1rem; border: 1px solid rgba(242, 237, 223, .16); border-radius: 12px; background: rgba(242, 237, 223, .04); }
+.pv-tile__val { display: flex; align-items: center; gap: .5rem; font: 500 1.45rem/1 var(--font-titre); font-variant-numeric: lining-nums; color: #F3DDAE; white-space: nowrap; }
 .pv-tile__val svg { fill: currentColor; opacity: .75; }
-.pv-tile__name { font-size: 1.02rem; line-height: 1.4; color: var(--creme); }
-@media (max-width: 760px) { .pv-tiles { grid-template-columns: repeat(2, 1fr); } }
+.pv-tile__name { font-size: .92rem; line-height: 1.35; color: var(--creme); }
+.pv .table-note { margin-top: 1.4rem !important; }
+@media (max-width: 1024px) { .pv-tiles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 860px) { .pv-grid { grid-template-columns: 1fr; } .pv-row { flex: none; } }
 @media (max-width: 560px) {
   .pv-cols { display: none; }
-  .pv-row { grid-template-columns: 1fr 1fr; row-gap: .7rem; padding: 1.1rem 0; }
+  .pv-row { grid-template-columns: 1fr 1fr; row-gap: .6rem; padding: 1rem 0; }
   .pv-name { grid-column: 1 / -1; padding-right: 0; }
   .pv-row .pv-ico { display: inline-block; margin-right: .5rem; vertical-align: -1px; }
-  .pv-card__head { margin-bottom: 1rem; }
-  .pv-tiles { grid-template-columns: 1fr; gap: .8rem; }
-  .pv-tile { padding: 1.1rem 1.2rem; }
+  .pv-tiles { grid-template-columns: 1fr 1fr; }
+  .pv-tile__val { font-size: 1.3rem; }
 }
+@media (max-width: 380px) { .pv-tiles { grid-template-columns: 1fr; } }
 
 /* ---------- Vivre à Biver : carte toujours affichée ---------- */
 .map-card { display: grid; grid-template-columns: minmax(16rem, 22rem) 1fr; max-width: 1120px; margin: 0 auto; border: 1px solid var(--trait); border-radius: 14px; overflow: hidden; background: var(--carte); box-shadow: 0 22px 54px rgba(31, 48, 40, .13); }
