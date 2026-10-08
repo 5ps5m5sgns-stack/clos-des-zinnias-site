@@ -3451,50 +3451,41 @@ table.elegant thead th { font-size: .86rem; }
 
 /*REFONTE-V1-START*/
 /* REFONTE-V1 : Au quotidien (cartes), carte toujours affichée, lots, page fusionnée, galerie. */
-/* ---------- Vivre à Biver : « Au quotidien » (cartes) ---------- */
-.pv-legend { display: flex; justify-content: center; gap: 1.75rem; margin: -.5rem 0 1.75rem; font: 500 .8rem/1 var(--font-corps); letter-spacing: .14em; text-transform: uppercase; color: var(--or); }
-.pv-legend span { display: inline-flex; align-items: center; gap: .55rem; }
-.pv-legend svg { fill: currentColor; flex: none; }
-.pv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 1120px; margin: 0 auto; align-items: stretch; }
-.pv-card--autres { grid-column: 1 / -1; }
-.pv-card { position: relative; padding: 1.6rem 1.75rem 1.1rem; border: 1px solid rgba(201, 188, 150, .34); border-radius: 12px; background: linear-gradient(160deg, rgba(242, 237, 223, .075), rgba(0, 0, 0, .12)); overflow: hidden; transition: border-color .4s var(--ease), transform .4s var(--ease), box-shadow .4s var(--ease); }
-.pv-card::after { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, var(--or), rgba(201, 188, 150, 0)); opacity: .75; }
-.pv-card:hover { border-color: rgba(201, 188, 150, .7); transform: translateY(-3px); box-shadow: 0 18px 40px rgba(0, 0, 0, .22); }
-.pv-card__head { display: flex; align-items: center; gap: .9rem; padding-bottom: 1.1rem; margin-bottom: .3rem; border-bottom: 1px solid rgba(242, 237, 223, .2); }
-.pv-card__ico { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; flex: none; border-radius: 50%; background: rgba(201, 188, 150, .16); color: var(--or); }
+/* ---------- Vivre à Biver : « Au quotidien » (cartes aérées, icônes une seule fois en tête de colonne) ---------- */
+.pv .section-head { margin-bottom: clamp(2.5rem, 5vw, 3.75rem); }
+.pv-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.5rem, 3vw, 2.25rem); max-width: 880px; margin: 0 auto; }
+.pv-card { position: relative; padding: clamp(1.6rem, 3vw, 2.4rem) clamp(1.4rem, 3vw, 2.5rem) clamp(1.1rem, 2vw, 1.6rem); border: 1px solid rgba(201, 188, 150, .3); border-radius: 14px; background: rgba(0, 0, 0, .14); }
+.pv-card__head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.pv-card__ico { display: grid; place-items: center; width: 3rem; height: 3rem; flex: none; border-radius: 50%; background: rgba(201, 188, 150, .16); color: var(--or); }
 .pv-card__ico svg { width: 1.55rem; height: 1.55rem; }
-.pv-card__title { margin: 0; font: 500 1.7rem/1.1 var(--font-titre); color: var(--creme); }
-.pv-card__count { margin-left: auto; font: 500 .74rem/1 var(--font-corps); letter-spacing: .14em; text-transform: uppercase; color: #DCCFB6; white-space: nowrap; }
+.pv-card__title { margin: 0; font: 500 clamp(1.7rem, 2.6vw, 2rem)/1.1 var(--font-titre); color: var(--creme); }
+.pv-cols, .pv-row { display: grid; grid-template-columns: minmax(0, 1fr) 9rem 9rem; align-items: center; column-gap: .6rem; }
+.pv-cols { padding: 0 0 .8rem; border-bottom: 1px solid rgba(201, 188, 150, .45); font: 500 .74rem/1 var(--font-corps); letter-spacing: .14em; text-transform: uppercase; color: var(--or); }
+.pv-cols span { display: flex; align-items: center; gap: .5rem; }
+.pv-cols svg, .pv-val svg { fill: currentColor; flex: none; }
 .pv-list { list-style: none; margin: 0; padding: 0; }
-.pv-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem .5rem; margin-inline: -.5rem; border-bottom: 1px solid rgba(242, 237, 223, .14); border-radius: 6px; transition: background .25s; }
+.pv-row { padding: 1.15rem 0; border-bottom: 1px solid rgba(242, 237, 223, .12); }
 .pv-row:last-child { border-bottom: 0; }
-.pv-row:hover { background: rgba(242, 237, 223, .07); }
-.pv-name { font-size: 1.08rem; line-height: 1.3; color: var(--creme); }
-.pv-vals { display: flex; align-items: center; gap: .5rem; flex: none; }
-.pv-chip { display: inline-flex; align-items: center; justify-content: flex-start; gap: .5rem; min-width: 6.6rem; padding: .4rem .75rem; border-radius: 999px; font-size: 1rem; line-height: 1.2; white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
-.pv-chip svg { fill: currentColor; flex: none; opacity: .85; }
-.pv-chip b { font-weight: 500; }
-.pv-chip--walk { background: rgba(243, 221, 174, .16); color: #F3DDAE; }
-.pv-chip--car { background: rgba(242, 237, 223, .09); color: var(--creme); }
-.pv-chip--none { visibility: hidden; }
-.pv-card { display: flex; flex-direction: column; }
-.pv-note { margin: auto 0 .3rem !important; padding: 1rem 1.1rem; border-radius: 8px; background: rgba(243, 221, 174, .12); border-left: 3px solid var(--or); font-size: 1rem; line-height: 1.5; color: #F3E3BC !important; }
-.pv-card--autres .pv-chip--none { display: none; }
-.pv-card--autres .pv-list { columns: 2; column-gap: 3rem; }
-.pv-card--autres .pv-row { break-inside: avoid; }
-@media (max-width: 860px) {
-  .pv-grid { grid-template-columns: 1fr; }
-  .pv-card--autres .pv-list { columns: 1; }
-}
+.pv-name { font-size: 1.1rem; line-height: 1.35; color: var(--creme); padding-right: .8rem; }
+.pv-val { font: 500 1.2rem/1.2 var(--font-corps); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.pv-val--walk { color: #F3DDAE; }
+.pv-val--car { color: var(--creme); }
+.pv-row .pv-ico { display: none; }
+.pv-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.pv-tile { display: flex; flex-direction: column; gap: .55rem; padding: 1.3rem 1.35rem; border: 1px solid rgba(242, 237, 223, .16); border-radius: 12px; background: rgba(242, 237, 223, .04); }
+.pv-tile__val { display: flex; align-items: center; gap: .65rem; font: 500 1.9rem/1 var(--font-titre); font-variant-numeric: lining-nums; color: #F3DDAE; white-space: nowrap; }
+.pv-tile__val svg { fill: currentColor; opacity: .75; }
+.pv-tile__name { font-size: 1.02rem; line-height: 1.4; color: var(--creme); }
+@media (max-width: 760px) { .pv-tiles { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) {
-  .pv-card { padding: 1.3rem 1.1rem .8rem; }
-  .pv-card__head { flex-wrap: wrap; }
-  .pv-card__count { display: none; }
-  .pv-row { flex-direction: column; align-items: flex-start; gap: .55rem; }
-  .pv-chip { min-width: 0; }
-  .pv-chip--none { display: none; }
+  .pv-cols { display: none; }
+  .pv-row { grid-template-columns: 1fr 1fr; row-gap: .7rem; padding: 1.1rem 0; }
+  .pv-name { grid-column: 1 / -1; padding-right: 0; }
+  .pv-row .pv-ico { display: inline-block; margin-right: .5rem; vertical-align: -1px; }
+  .pv-card__head { margin-bottom: 1rem; }
+  .pv-tiles { grid-template-columns: 1fr; gap: .8rem; }
+  .pv-tile { padding: 1.1rem 1.2rem; }
 }
-@media (prefers-reduced-motion: reduce) { .pv-card, .pv-row { transition: none; } .pv-card:hover { transform: none; } }
 
 /* ---------- Vivre à Biver : carte toujours affichée ---------- */
 .map-card { display: grid; grid-template-columns: minmax(16rem, 22rem) 1fr; max-width: 1120px; margin: 0 auto; border: 1px solid var(--trait); border-radius: 14px; overflow: hidden; background: var(--carte); box-shadow: 0 22px 54px rgba(31, 48, 40, .13); }
@@ -3596,7 +3587,6 @@ section[id], div[id="permis"] { scroll-margin-top: 4.5rem; }
 .ed-sub { display: flex; align-items: baseline; gap: .9rem; margin: clamp(2.6rem, 5vw, 3.8rem) 0 1.15rem; font: 500 .86rem/1.2 var(--font-corps); letter-spacing: .16em; text-transform: uppercase; color: var(--or-deep); }
 .ed-sub::after { content: ""; flex: 1; height: 1px; background: var(--trait); order: 3; align-self: center; }
 .ed-sub small { order: 2; font: 500 .8rem/1 var(--font-corps); letter-spacing: .08em; text-transform: none; color: var(--muted-creme); white-space: nowrap; }
-.ed-sub + .ed-mosaic, .ed-mosaic + .ed-sub { margin-top: 0; }
 .wrap.mt-3 > .ed-sub:first-child { margin-top: 0; }
 .ed-mosaic .is-full img { aspect-ratio: 21 / 9; }
 .bg-brun .ed-sub { color: var(--or); }
