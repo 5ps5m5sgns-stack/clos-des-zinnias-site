@@ -69,7 +69,7 @@ Dans un lotissement, la règle est plus protectrice : le lot vendu doit être co
 4. **Quels risques et quelles servitudes ?** [Géorisques](https://www.georisques.gouv.fr/) pour les risques connus d'une adresse ; le notaire pour les servitudes.
 5. **Le terrain est-il borné ?** En lotissement, le bornage fait partie des obligations du vendeur.
 
-Au Clos des Cyprès, le [lotissement à Biver](/projet) prévoit des terrains livrés viabilisés ; la présentation du [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) est sur sa page dédiée. Le règlement de lotissement, l'état des risques et les études techniques vous sont présentés lors de notre échange téléphonique.
+Au Clos des Cyprès, le [lotissement à Biver](/lots) prévoit des terrains livrés viabilisés ; la présentation du [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) est sur sa page dédiée. Le règlement de lotissement, l'état des risques et les études techniques vous sont présentés lors de notre échange téléphonique.
 
 :::cta Un terrain à bâtir viabilisé à Biver ?
 Huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH à Biver. Le prix vous est communiqué lors de notre échange.

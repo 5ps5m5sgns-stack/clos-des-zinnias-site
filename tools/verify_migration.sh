@@ -308,7 +308,7 @@ case "$BLOG" in
 esac
 
 # Pages : 200 sans redirection
-PAGES="/ /lots /contact /terrain-a-batir-gardanne /terrain-a-batir-aix-en-provence /terrain-a-batir-marseille /terrain-a-batir-provence /projet /environnement /galerie /mentions-legales /confidentialite"
+PAGES="/ /lots /contact /terrain-a-batir-gardanne /terrain-a-batir-aix-en-provence /terrain-a-batir-marseille /terrain-a-batir-provence /environnement /galerie /mentions-legales /confidentialite"
 : >"$T/pages.lst"
 _i=0
 for _p in $PAGES; do

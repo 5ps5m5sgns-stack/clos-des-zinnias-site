@@ -590,6 +590,42 @@
   }
 
   /* ----------------------------------------------------------
+     BARRE D'ANCRES (.pagenav) — met en évidence la section visible
+     (pages /lots et /galerie). Sans JavaScript, la barre reste une
+     simple liste de liens.
+     ---------------------------------------------------------- */
+  function initPageNav() {
+    const links = Array.from(document.querySelectorAll(".pagenav__list a[href^='#']:not(.btn)"));
+    if (!links.length || !("IntersectionObserver" in window)) return;
+    const targets = new Map();
+    links.forEach((a) => {
+      const t = document.getElementById(a.getAttribute("href").slice(1));
+      if (t) targets.set(t, a);
+    });
+    const visible = new Set();
+    const update = () => {
+      let current = null;
+      targets.forEach((a, t) => { if (!current && visible.has(t)) current = a; });
+      links.forEach((a) => {
+        const on = a === current;
+        a.classList.toggle("is-current", on);
+        if (on) a.setAttribute("aria-current", "location"); else a.removeAttribute("aria-current");
+      });
+      if (current) {
+        const list = current.closest(".pagenav__list");
+        if (list && list.scrollWidth > list.clientWidth) {
+          list.scrollTo({ left: current.offsetLeft - (list.clientWidth - current.clientWidth) / 2, behavior: "smooth" });
+        }
+      }
+    };
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target); });
+      update();
+    }, { rootMargin: "-30% 0px -55% 0px" });
+    targets.forEach((a, t) => io.observe(t));
+  }
+
+  /* ----------------------------------------------------------
      CONTACT FORM
      ---------------------------------------------------------- */
   function initForm() {
@@ -734,6 +770,7 @@
       initLotPrefill();
       initFieldValidation();
       initMapFacade();
+      initPageNav();
       initForm();
       initContactIntent();
     };

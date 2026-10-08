@@ -267,7 +267,7 @@ Après le déploiement (quelques minutes), vérifier :
 
 | Message | Que faire |
 |---|---|
-| `lien « /xxx » : page introuvable` | Faute de frappe dans l'adresse, ou la page n'existe pas. Les pages sont `/lots`, `/projet`, `/environnement`, `/galerie`, `/contact`, `/terrain-a-batir-gardanne`. |
+| `lien « /xxx » : page introuvable` | Faute de frappe dans l'adresse, ou la page n'existe pas. Les pages sont `/lots` (le lotissement et ses 8 lots : l'ancienne page `/projet` y est fusionnée), `/environnement`, `/galerie`, `/contact`, `/terrain-a-batir-gardanne`. |
 | `ne mettez pas « .html »` | Écrivez `/lots` et non `/lots.html` (le serveur redirigerait). |
 | `ajoutez la barre finale` | Un article se lie ainsi : `/blog/mon-slug/`. |
 | `image sans texte alternatif` | Renseignez `image_alt` (couverture) ou le texte entre crochets `![ici](...)`. |

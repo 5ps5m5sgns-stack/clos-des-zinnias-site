@@ -74,7 +74,6 @@
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <a href="/environnement">Vivre à Biver</a>
-      <a href="/projet">Le lotissement</a>
       <a href="/lots">Les 8 lots</a>
       <a href="/galerie">Galerie</a>
       <a class="active" aria-current="page" href="/blog/">Blog</a>
@@ -87,7 +86,6 @@
 
   <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
     <a href="/environnement">Vivre à Biver</a>
-    <a href="/projet">Le lotissement</a>
     <a href="/lots">Les 8 lots</a>
     <a href="/galerie">Galerie</a>
     <a class="active" aria-current="page" href="/blog/">Blog</a>
@@ -95,21 +93,20 @@
   </nav>
 
   <main id="contenu" tabindex="-1">
-    <header class="post-head">
-      <div class="wrap post-head__inner">
+    <header class="post-head blog-hero">
+      <div class="blog-hero__decor" aria-hidden="true"><svg class="blog-hero__trees" viewBox="0 0 520 420" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path pathLength="1" d="M92 410V330M92 330c-18-22-22-56-22-92 0-30 10-58 22-86 12 28 22 56 22 86 0 36-4 70-22 92z"/><path pathLength="1" d="M236 410V290M236 290c-30-36-38-90-38-140 0-44 14-86 38-126 24 40 38 82 38 126 0 50-8 104-38 140z"/><path pathLength="1" d="M372 410V350M372 350c-14-18-17-44-17-68 0-24 8-46 17-68 9 22 17 44 17 68 0 24-3 50-17 68z"/><path pathLength="1" d="M430 410V312M430 312c-22-26-28-66-28-102 0-32 10-62 28-92 18 30 28 60 28 92 0 36-6 76-28 102z"/><path pathLength="1" d="M10 410h500"/></svg><span class="blog-hero__glow blog-hero__glow--a"></span><span class="blog-hero__glow blog-hero__glow--b"></span></div>
+      <div class="wrap post-head__inner blog-hero__inner">
         <nav class="crumbs" aria-label="Fil d'Ariane"><ol><li><a href="/">Accueil</a></li><li><span aria-current="page">Blog</span></li></ol></nav>
         <p class="label">Blog</p>
         <h1>Le blog&nbsp;: acheter un terrain à bâtir à Biver</h1>
           <p class="post-lead">Des guides pratiques pour acheter un terrain en lotissement, construire sa maison en Provence et connaître les règles à respecter. Chaque article cite ses sources officielles et indique la date de sa dernière mise à jour.</p>
+        <div class="blog-hero__contact"><p>Une question, un projet&nbsp;? <a href="tel:+33609204590">Appelez-nous au 06 09 20 45 90</a> ou <a href="/contact">envoyez-nous un message</a>. Les huit <a href="/lots">terrains libres de constructeur</a> du Clos des Cyprès sont à Biver.</p></div>
+        <ul class="blog-hero__stats"><li><strong>8</strong> guides</li><li><strong>Sources</strong> officielles citées</li><li><strong>Dates</strong> de mise à jour indiquées</li></ul>
       </div>
-    </header>
-    <div class="post-body">
-      <div class="wrap">
-        <div class="post-main"><div class="prose">
-<p>Une question, un projet&nbsp;? <a href="tel:+33609204590">Appelez-nous au 06 09 20 45 90</a> ou <a href="/contact">envoyez-nous un message</a>. Les huit <a href="/lots">terrains libres de constructeur</a> du Clos des Cyprès sont à Biver.</p>
-<div class="callout" role="note">
-<p class="callout__title">Par où commencer&nbsp;?</p>
-<ol>
+      <div class="wrap blog-hero__path">
+<div class="blog-path" role="note">
+<p class="blog-path__title">Par où commencer&nbsp;?</p>
+<ol class="blog-path__list">
 <li><a href="/blog/terrain-a-batir-constructible-viabilise-differences/">Terrain à bâtir, constructible, viabilisé&nbsp;: les différences</a></li>
 <li><a href="/blog/terrain-libre-de-constructeur-definition/">Terrain libre de constructeur&nbsp;: sens, avantages et limites</a></li>
 <li><a href="/blog/verifier-avant-dacheter-terrain-biver-gardanne/">Terrain constructible à Gardanne&nbsp;: ce qu'il faut vérifier</a></li>
@@ -120,74 +117,88 @@
 <li><a href="/blog/construire-sur-terrain-en-pente-restanques-provence/">Construire sur un terrain en pente en Provence&nbsp;: sol, budget</a></li>
 </ol>
 </div>
-        </div></div>
       </div>
-      <section class="post-related" aria-labelledby="guides-title">
+    </header>
+    <div class="post-body blog-body">
+      <section class="blog-feature" aria-label="À la une">
         <div class="wrap">
+<article class="bfeature" data-cat="construire-en-provence">
+<div class="bfeature__media"><img src="/images-optimized/villa-piscine-jardin-provencal-1024.avif" alt="" width="1024" height="683" loading="lazy" decoding="async"></div>
+<div class="bfeature__body">
+<p class="bfeature__kicker"><span>À la une</span></p>
+<p class="bcard__meta"><span class="bcard__cat">Construire en Provence</span><time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time><span>8&nbsp;min</span></p>
+<h3 class="bfeature__title"><a href="/blog/construire-sa-maison-etapes-du-terrain-aux-cles/">Construire sa maison&nbsp;: les étapes, du terrain aux clés</a></h3>
+<p class="bfeature__excerpt">Par où commencer pour construire sa maison&nbsp;? Les étapes dans l'ordre&nbsp;: budget, terrain, permis, contrat, chantier, réception. Liens officiels.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
+</div>
+</article>
+        </div>
+      </section>
+      <section class="post-related blog-all" aria-labelledby="guides-title">
+        <div class="wrap blog-all__wrap">
           <h2 id="guides-title">Tous les guides</h2>
-          <ul class="post-grid post-grid--index">
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/villa-piscine-jardin-provencal-1024.avif" alt="" width="1024" height="683" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Construire en Provence</span> · <time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time> · 8&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/construire-sa-maison-etapes-du-terrain-aux-cles/">Construire sa maison&nbsp;: les étapes, du terrain aux clés</a></h3>
-<p class="post-card__excerpt">Par où commencer pour construire sa maison&nbsp;? Les étapes dans l'ordre&nbsp;: budget, terrain, permis, contrat, chantier, réception. Liens officiels.</p>
+          <ul class="bento">
+<li class="bcard" style="--i:1" data-cat="acheter-un-terrain">
+<div class="bcard__media"><img src="/images-optimized/coucher-soleil-piscine-cypres-1024.avif" alt="" width="1024" height="683" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Acheter un terrain</span><time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time><span>8&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/surface-terrain-maison-piscine/">Quelle surface de terrain pour une maison avec piscine&nbsp;?</a></h3>
+<p class="bcard__excerpt">Surface de terrain pour une maison avec piscine&nbsp;: ce qui compte, comment faire le calcul et quoi vérifier (PLUi, autorisation, accès) avant d'acheter.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/coucher-soleil-piscine-cypres-1024.avif" alt="" width="1024" height="683" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Acheter un terrain</span> · <time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time> · 8&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/surface-terrain-maison-piscine/">Quelle surface de terrain pour une maison avec piscine&nbsp;?</a></h3>
-<p class="post-card__excerpt">Surface de terrain pour une maison avec piscine&nbsp;: ce qui compte, comment faire le calcul et quoi vérifier (PLUi, autorisation, accès) avant d'acheter.</p>
+<li class="bcard" style="--i:2" data-cat="acheter-un-terrain">
+<div class="bcard__media"><img src="/images-optimized/hero-aerial-villas-golden-hour-1024.avif" alt="" width="1024" height="682" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Acheter un terrain</span><time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time><span>7&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/terrain-a-batir-constructible-viabilise-differences/">Terrain à bâtir, constructible, viabilisé&nbsp;: les différences</a></h3>
+<p class="bcard__excerpt">Terrain à bâtir, constructible, viabilisé&nbsp;: trois expressions, trois sens. Ce que chacune garantit et ce qu'il faut vérifier avant d'acheter.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/hero-aerial-villas-golden-hour-1024.avif" alt="" width="1024" height="682" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Acheter un terrain</span> · <time datetime="2026-10-06">6&nbsp;octobre&nbsp;2026</time> · 7&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/terrain-a-batir-constructible-viabilise-differences/">Terrain à bâtir, constructible, viabilisé&nbsp;: les différences</a></h3>
-<p class="post-card__excerpt">Terrain à bâtir, constructible, viabilisé&nbsp;: trois expressions, trois sens. Ce que chacune garantit et ce qu'il faut vérifier avant d'acheter.</p>
+<li class="bcard" style="--i:3" data-cat="financer-son-projet">
+<div class="bcard__media"><img src="/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif" srcset="/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture-640.avif 640w, /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture-1024.avif 1024w, /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif 1600w" sizes="(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Financer son projet</span><time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time><span>10&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/budget-terrain-maison-pres-aix-gardanne/">Budget pour construire une maison près d'Aix-en-Provence</a></h3>
+<p class="bcard__excerpt">Budget pour construire une maison près d'Aix-en-Provence&nbsp;: les postes à prévoir du terrain à la livraison, le financement (PTZ, CCMI) et les leviers.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif" srcset="/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture-640.avif 640w, /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture-1024.avif 1024w, /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif 1600w" sizes="(min-width: 40rem) 300px, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Financer son projet</span> · <time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time> · 10&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/budget-terrain-maison-pres-aix-gardanne/">Budget pour construire une maison près d'Aix-en-Provence</a></h3>
-<p class="post-card__excerpt">Budget pour construire une maison près d'Aix-en-Provence&nbsp;: les postes à prévoir du terrain à la livraison, le financement (PTZ, CCMI) et les leviers.</p>
+<li class="bcard" style="--i:4" data-cat="construire-en-provence">
+<div class="bcard__media"><img src="/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif" srcset="/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture-640.avif 640w, /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture-1024.avif 1024w, /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif 1600w" sizes="(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Construire en Provence</span><time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time><span>9&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/construire-sur-terrain-en-pente-restanques-provence/">Construire sur un terrain en pente en Provence&nbsp;: sol, budget</a></h3>
+<p class="bcard__excerpt">Construire sur un terrain en pente en Provence&nbsp;: restanques, terrassement, soutènements, étude de sol G2, règles du PLUi et postes de coût à chiffrer.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif" srcset="/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture-640.avif 640w, /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture-1024.avif 1024w, /images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif 1600w" sizes="(min-width: 40rem) 300px, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Construire en Provence</span> · <time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time> · 9&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/construire-sur-terrain-en-pente-restanques-provence/">Construire sur un terrain en pente en Provence&nbsp;: sol, budget</a></h3>
-<p class="post-card__excerpt">Construire sur un terrain en pente en Provence&nbsp;: restanques, terrassement, soutènements, étude de sol G2, règles du PLUi et postes de coût à chiffrer.</p>
+<li class="bcard" style="--i:5" data-cat="acheter-un-terrain">
+<div class="bcard__media"><img src="/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif" srcset="/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture-640.avif 640w, /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture-1024.avif 1024w, /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif 1600w" sizes="(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Acheter un terrain</span><time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time><span>10&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/guide-acheter-terrain-lotissement-gardanne-biver/">Acheter un terrain en lotissement à Gardanne&nbsp;: les étapes</a></h3>
+<p class="bcard__excerpt">Acheter un terrain en lotissement à Gardanne&nbsp;: visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, pas à pas.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif" srcset="/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture-640.avif 640w, /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture-1024.avif 1024w, /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif 1600w" sizes="(min-width: 40rem) 300px, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Acheter un terrain</span> · <time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time> · 10&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/guide-acheter-terrain-lotissement-gardanne-biver/">Acheter un terrain en lotissement à Gardanne&nbsp;: les étapes</a></h3>
-<p class="post-card__excerpt">Acheter un terrain en lotissement à Gardanne&nbsp;: visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, pas à pas.</p>
+<li class="bcard" style="--i:6" data-cat="acheter-un-terrain">
+<div class="bcard__media"><img src="/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif" srcset="/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture-640.avif 640w, /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture-1024.avif 1024w, /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif 1600w" sizes="(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Acheter un terrain</span><time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time><span>10&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/terrain-libre-de-constructeur-definition/">Terrain libre de constructeur&nbsp;: sens, avantages et limites</a></h3>
+<p class="bcard__excerpt">Terrain libre de constructeur&nbsp;: ce que l'expression signifie, ce qu'elle ne garantit pas, et comment choisir entre CCMI, architecte et maître d'œuvre.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif" srcset="/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture-640.avif 640w, /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture-1024.avif 1024w, /images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif 1600w" sizes="(min-width: 40rem) 300px, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Acheter un terrain</span> · <time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time> · 10&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/terrain-libre-de-constructeur-definition/">Terrain libre de constructeur&nbsp;: sens, avantages et limites</a></h3>
-<p class="post-card__excerpt">Terrain libre de constructeur&nbsp;: ce que l'expression signifie, ce qu'elle ne garantit pas, et comment choisir entre CCMI, architecte et maître d'œuvre.</p>
-</div>
-</li>
-<li class="post-card">
-<div class="post-card__media"><img src="/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif" srcset="/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture-640.avif 640w, /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture-1024.avif 1024w, /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif 1600w" sizes="(min-width: 40rem) 300px, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
-<div class="post-card__body">
-<p class="post-card__meta"><span>Acheter un terrain</span> · <time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time> · 9&nbsp;min</p>
-<h3 class="post-card__title"><a href="/blog/verifier-avant-dacheter-terrain-biver-gardanne/">Terrain constructible à Gardanne&nbsp;: ce qu'il faut vérifier</a></h3>
-<p class="post-card__excerpt">Avant d'acheter un terrain constructible à Gardanne ou à Biver&nbsp;: zonage du PLUi, risques, argiles, débroussaillement, réseaux. Les vérifications pas à pas.</p>
+<li class="bcard" style="--i:7" data-cat="acheter-un-terrain">
+<div class="bcard__media"><img src="/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif" srcset="/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture-640.avif 640w, /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture-1024.avif 1024w, /images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif 1600w" sizes="(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+<div class="bcard__body">
+<p class="bcard__meta"><span class="bcard__cat">Acheter un terrain</span><time datetime="2026-10-05">5&nbsp;octobre&nbsp;2026</time><span>9&nbsp;min</span></p>
+<h3 class="bcard__title"><a href="/blog/verifier-avant-dacheter-terrain-biver-gardanne/">Terrain constructible à Gardanne&nbsp;: ce qu'il faut vérifier</a></h3>
+<p class="bcard__excerpt">Avant d'acheter un terrain constructible à Gardanne ou à Biver&nbsp;: zonage du PLUi, risques, argiles, débroussaillement, réseaux. Les vérifications pas à pas.</p>
+<span class="bcard__more" aria-hidden="true">Lire le guide <em>→</em></span>
 </div>
 </li>
           </ul>
@@ -221,7 +232,6 @@
           <ul>
             <li><a href="/">Accueil</a></li>
             <li><a href="/environnement">Vivre à Biver</a></li>
-            <li><a href="/projet">Le lotissement</a></li>
             <li><a href="/lots">Les 8 lots</a></li>
             <li><a href="/galerie">Galerie</a></li>
             <li><a href="/blog/">Blog</a></li>
@@ -238,8 +248,8 @@
         <div class="footer__col">
           <p class="footer__title">Informations légales</p>
           <ul>
-            <li><a href="/projet#adresse">PA n°&nbsp;013&nbsp;041 22 K0001</a></li>
-            <li><a href="/projet#adresse">Urbanisme&nbsp;: PLUi du Pays d'Aix</a></li>
+            <li><a href="/lots#adresse">PA n°&nbsp;013&nbsp;041 22 K0001</a></li>
+            <li><a href="/lots#adresse">Urbanisme&nbsp;: PLUi du Pays d'Aix</a></li>
             <li><a href="/lots#regles">Règles de construction</a></li>
           </ul>
         </div>

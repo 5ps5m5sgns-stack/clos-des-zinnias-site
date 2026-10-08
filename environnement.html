@@ -278,7 +278,6 @@
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <a href="/environnement" class="active" aria-current="page">Vivre à Biver</a>
-      <a href="/projet">Le lotissement</a>
       <a href="/lots">Les 8 lots</a>
       <a href="/galerie">Galerie</a>
       <a href="/blog/">Blog</a>
@@ -288,7 +287,6 @@
   </header>
   <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
     <a href="/environnement" class="active" aria-current="page">Vivre à Biver</a>
-    <a href="/projet">Le lotissement</a>
     <a href="/lots">Les 8 lots</a>
     <a href="/galerie">Galerie</a>
     <a href="/blog/">Blog</a>
@@ -377,44 +375,50 @@
       </div>
     </section>
 
-    <!-- 03 · SE DÉPLACER -->
-    <section id="ecoles" class="rule-top bg-brun">
+    <!-- 03 · AU QUOTIDIEN -->
+    <section id="ecoles" class="rule-top bg-brun pv">
       <div class="wrap">
         <div class="section-head reveal">
           <span class="kicker"><span class="num">03</span> Au quotidien</span>
           <h2 class="section-title">Écoles, commerces et services à proximité</h2>
+          <p class="lead">Écoles et commerces autour du lotissement&nbsp;: distance à pied (à vol d'oiseau) et trajet en voiture.</p>
         </div>
-        <div class="prox reveal">
-          <table class="matrix">
-            <caption class="lots-sr-only">Écoles et commerces autour du lotissement&nbsp;: distance à pied (à vol d'oiseau) et trajet en voiture.</caption>
-            <thead>
-              <tr><th scope="col"><span class="lots-sr-only">Lieu</span></th>
-                <th scope="col"><svg class="matrix__ico" width="20" height="33" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span>À pied</span></th>
-                <th scope="col"><svg class="matrix__ico" width="56" height="23" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span>En voiture</span></th></tr>
-            </thead>
-            <tbody>
-              <tr class="grp"><th colspan="3" scope="colgroup">Écoles</th></tr>
-              <tr><th scope="row">Maternelle Les Terrils bleus</th><td>≈ 400&nbsp;m</td><td>≈ 1&nbsp;min</td></tr>
-              <tr><th scope="row">Élémentaires Paul Cézanne et Frédéric Mistral</th><td>400 à 450&nbsp;m</td><td>≈ 2&nbsp;min</td></tr>
-              <tr><th scope="row">Collège Pesquier</th><td>≈ 1,5&nbsp;km</td><td>≈ 5&nbsp;min</td></tr>
-              <tr><th scope="row">Collège Gabriel Péri</th><td>≈ 2,5&nbsp;km</td><td>≈ 7&nbsp;min</td></tr>
-              <tr><th scope="row">Lycée Marie-Madeleine Fourcade</th><td>≈ 2,9&nbsp;km</td><td>8 à 9&nbsp;min</td></tr>
-              <tr class="grp"><th colspan="3" scope="colgroup">Commerces et services</th></tr>
-              <tr><th scope="row">Boulangerie</th><td>≈ 300&nbsp;m</td><td>≈ 1&nbsp;min</td></tr>
-              <tr><th scope="row">Alimentation (Vival)</th><td>≈ 450&nbsp;m</td><td>≈ 2&nbsp;min</td></tr>
-              <tr><th scope="row">Pharmacie</th><td>≈ 500&nbsp;m</td><td>≈ 2&nbsp;min</td></tr>
-              <tr><th scope="row">Bureau de poste</th><td>≈ 550&nbsp;m</td><td>≈ 2&nbsp;min</td></tr>
-            </tbody>
-          </table>
-          <div class="prox__card">
-            <h3 class="trip__title">Aussi à proximité</h3>
-            <div class="info-item-sm"><span>Centre médical</span><span>≈ 650&nbsp;m</span></div>
-            <div class="info-item-sm"><span>Intermarché (Mimet)</span><span>≈ 2&nbsp;min</span></div>
-            <div class="info-item-sm"><span>Gardanne&nbsp;: Intermarché, Grand Frais, Netto</span><span>7 à 8&nbsp;min</span></div>
-            <div class="info-item-sm"><span>Gardanne&nbsp;: Carrefour Market, Lidl</span><span>≈ 9&nbsp;min</span></div>
-            <div class="info-item-sm"><span>Piscine communautaire</span><span>≈ 9&nbsp;min</span></div>
-            <div class="info-item-sm"><span>Hôpital (Aix-en-Provence)</span><span>≈ 25&nbsp;min</span></div>
-          </div>
+        <p class="pv-legend reveal" aria-hidden="true">
+          <span><svg width="10" height="16" focusable="false"><use href="/icons-trajets.svg#walk"/></svg> À pied</span>
+          <span><svg width="30" height="12" focusable="false"><use href="/icons-trajets.svg#car"/></svg> En voiture</span>
+        </p>
+        <div class="pv-grid" data-stagger>
+        <article class="pv-card pv-card--ecoles reveal">
+          <header class="pv-card__head"><span class="pv-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2.5 9.5 9.5-5 9.5 5-9.5 5z"/><path d="M6.5 11.8V16c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.2"/><path d="M21.5 9.5v5.5"/></svg></span><h3 class="pv-card__title">Écoles</h3><span class="pv-card__count">5 établissements</span></header>
+          <ul class="pv-list">
+            <li class="pv-row"><span class="pv-name">Maternelle Les Terrils bleus</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 400&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 1&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Élémentaires Paul Cézanne et Frédéric Mistral</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>400 à 450&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 2&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Collège Pesquier</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 1,5&nbsp;km</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 5&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Collège Gabriel Péri</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 2,5&nbsp;km</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 7&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Lycée Marie-Madeleine Fourcade</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 2,9&nbsp;km</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>8 à 9&nbsp;min</b></span></span></li>
+          </ul>
+        </article>
+        <article class="pv-card pv-card--commerces reveal">
+          <header class="pv-card__head"><span class="pv-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span><h3 class="pv-card__title">Commerces et services</h3><span class="pv-card__count">4 adresses</span></header>
+          <ul class="pv-list">
+            <li class="pv-row"><span class="pv-name">Boulangerie</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 300&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 1&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Alimentation (Vival)</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 450&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 2&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Pharmacie</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 500&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 2&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Bureau de poste</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 550&nbsp;m</b></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 2&nbsp;min</b></span></span></li>
+          </ul>
+          <p class="pv-note">Boulangerie, alimentation, pharmacie, poste et centre médical&nbsp;: tout est à moins de 700&nbsp;m du terrain, à vol d'oiseau.</p>
+        </article>
+        <article class="pv-card pv-card--autres reveal">
+          <header class="pv-card__head"><span class="pv-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span><h3 class="pv-card__title">Aussi à proximité</h3><span class="pv-card__count">6 lieux</span></header>
+          <ul class="pv-list">
+            <li class="pv-row"><span class="pv-name">Centre médical</span><span class="pv-vals"><span class="pv-chip pv-chip--walk"><svg width="10" height="16" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#walk"/></svg><span class="lots-sr-only">À pied&nbsp;: </span><b>≈ 650&nbsp;m</b></span><span class="pv-chip pv-chip--none" aria-hidden="true"></span></span></li>
+            <li class="pv-row"><span class="pv-name">Intermarché (Mimet)</span><span class="pv-vals"><span class="pv-chip pv-chip--none" aria-hidden="true"></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 2&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Gardanne&nbsp;: Intermarché, Grand Frais, Netto</span><span class="pv-vals"><span class="pv-chip pv-chip--none" aria-hidden="true"></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>7 à 8&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Gardanne&nbsp;: Carrefour Market, Lidl</span><span class="pv-vals"><span class="pv-chip pv-chip--none" aria-hidden="true"></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 9&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Piscine communautaire</span><span class="pv-vals"><span class="pv-chip pv-chip--none" aria-hidden="true"></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 9&nbsp;min</b></span></span></li>
+            <li class="pv-row"><span class="pv-name">Hôpital (Aix-en-Provence)</span><span class="pv-vals"><span class="pv-chip pv-chip--none" aria-hidden="true"></span><span class="pv-chip pv-chip--car"><svg width="30" height="12" aria-hidden="true" focusable="false"><use href="/icons-trajets.svg#car"/></svg><span class="lots-sr-only">En voiture&nbsp;: </span><b>≈ 25&nbsp;min</b></span></span></li>
+          </ul>
+        </article>
         </div>
         <p class="table-note reveal" style="max-width:56rem;margin-inline:auto;text-align:center;margin-top:2rem;">Distances à vol d'oiseau&nbsp;; temps de trajet en voiture calculés sans trafic (<a href="https://www.openstreetmap.org/" rel="noopener">OpenStreetMap</a>).</p>
       </div>
@@ -452,22 +456,28 @@
       </div>
     </section>
 
-    <!-- 06 · TROUVER LE TERRAIN -->
+    <!-- 04 · TROUVER LE TERRAIN : carte OpenStreetMap affichée d'emblée (aucun cookie, aucun traceur : pas de consentement à demander) -->
     <section id="plan" class="bg-creme rule-top tint">
       <div class="wrap">
         <div class="section-head reveal">
           <span class="kicker"><span class="num">04</span> Plan d'accès</span>
           <h2 class="section-title">Trouver le terrain</h2>
         </div>
-        <div class="map-frame reveal">
-          <!-- Façade de consentement : l'iframe Google Maps (cookies tiers) n'est chargée qu'au clic de l'utilisateur -->
-          <div class="map-facade" data-map-src="https://www.google.com/maps?q=Le+Clos+des+Cypr%C3%A8s@43.43085,5.46575&amp;z=16&amp;hl=fr&amp;output=embed" data-map-title="Carte — Avenue du Pilon du Roy, Biver, 13120 Gardanne">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <p class="map-facade__txt">Avenue du Pilon du Roy, Biver, 13120 Gardanne</p>
-            <p class="map-facade__note">Carte Google Maps (cookies possibles), chargée seulement à votre demande.</p>
-            <button type="button" class="btn btn-gold" data-map-load style="display:none">Afficher la carte</button>
-            <a class="map-facade__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.43085,5.46575&amp;hl=fr" target="_blank" rel="noopener">Itinéraire (nouvel onglet) ↗</a>
-            <a class="map-facade__link" href="https://www.google.com/maps/search/?api=1&amp;query=43.43085,5.46575&amp;hl=fr" target="_blank" rel="noopener">Ouvrir dans Google Maps (nouvel onglet) ↗</a>
+        <div class="map-card reveal">
+          <div class="map-card__info">
+            <svg class="map-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <h3 class="map-card__title">Le Clos des Cyprès</h3>
+            <p class="map-card__addr">Avenue du Pilon du Roy<br>Biver, 13120 Gardanne</p>
+            <ul class="map-card__facts">
+              <li><b>≈&nbsp;25&nbsp;min</b> d'Aix-en-Provence</li>
+              <li><b>≈&nbsp;30&nbsp;min</b> de Marseille</li>
+              <li><b>≈&nbsp;10&nbsp;min</b> du centre de Gardanne</li>
+            </ul>
+            <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.43085,5.46575&amp;hl=fr" target="_blank" rel="noopener">Itinéraire<span class="lots-sr-only"> (nouvel onglet)</span> ↗</a>
+            <a class="map-card__link" href="https://www.google.com/maps/search/?api=1&amp;query=43.43085,5.46575&amp;hl=fr" target="_blank" rel="noopener">Ouvrir dans Google Maps (nouvel onglet) ↗</a>
+          </div>
+          <div class="map-card__map">
+            <iframe title="Carte OpenStreetMap — Avenue du Pilon du Roy, Biver, 13120 Gardanne" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4607%2C43.4278%2C5.4708%2C43.4339&amp;layer=mapnik&amp;marker=43.43085%2C5.46575" loading="lazy" referrerpolicy="no-referrer" width="800" height="480"></iframe>
           </div>
         </div>
       </div>
@@ -506,7 +516,6 @@
           <ul>
             <li><a href="/">Accueil</a></li>
             <li><a href="/environnement">Vivre à Biver</a></li>
-            <li><a href="/projet">Le lotissement</a></li>
             <li><a href="/lots">Les 8 lots</a></li>
             <li><a href="/galerie">Galerie</a></li>
             <li><a href="/blog/">Blog</a></li>
@@ -523,8 +532,8 @@
         <div class="footer__col">
           <p class="footer__title">Informations légales</p>
           <ul>
-            <li><a href="/projet#adresse">PA n°&nbsp;013&nbsp;041 22 K0001</a></li>
-            <li><a href="/projet#adresse">Urbanisme&nbsp;: PLUi du Pays d'Aix</a></li>
+            <li><a href="/lots#adresse">PA n°&nbsp;013&nbsp;041 22 K0001</a></li>
+            <li><a href="/lots#adresse">Urbanisme&nbsp;: PLUi du Pays d'Aix</a></li>
             <li><a href="/lots#regles">Règles de construction</a></li>
           </ul>
         </div>

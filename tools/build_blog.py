@@ -107,6 +107,17 @@ INDEX_BODY_MD = """Une question, un projet ? [Appelez-nous au 06 09 20 45 90](te
 :::
 """
 INDEX_GUIDES_TITLE = "Tous les guides"
+INDEX_FEATURE_LABEL = "À la une"
+INDEX_MORE_LABEL = "Lire le guide"
+# Décor du héros de l'index : cyprès au trait (même dessin que le logo), purement décoratif (aria-hidden)
+BLOG_HERO_DECOR = (
+    '<svg class="blog-hero__trees" viewBox="0 0 520 420" fill="none" stroke="currentColor" stroke-width="1.6" '
+    'stroke-linecap="round" stroke-linejoin="round" focusable="false">'
+    '<path pathLength="1" d="M92 410V330M92 330c-18-22-22-56-22-92 0-30 10-58 22-86 12 28 22 56 22 86 0 36-4 70-22 92z"/>'
+    '<path pathLength="1" d="M236 410V290M236 290c-30-36-38-90-38-140 0-44 14-86 38-126 24 40 38 82 38 126 0 50-8 104-38 140z"/>'
+    '<path pathLength="1" d="M372 410V350M372 350c-14-18-17-44-17-68 0-24 8-46 17-68 9 22 17 44 17 68 0 24-3 50-17 68z"/>'
+    '<path pathLength="1" d="M430 410V312M430 312c-22-26-28-66-28-102 0-32 10-62 28-92 18 30 28 60 28 92 0 36-6 76-28 102z"/>'
+    '<path pathLength="1" d="M10 410h500"/></svg>')
 # Bloc d'appel en bas de l'index (page 1)
 INDEX_CTA_MD = """:::cta Un projet de terrain à Biver ?
 Huit terrains à bâtir libres de constructeur, à Biver. Le prix vous est communiqué lors de notre échange.
@@ -144,7 +155,9 @@ CTA_DEFAULT_BUTTONS = (("Voir les huit lots", "/lots"), ("Envoyez-nous un messag
 # sinon l'image est servie seule, comme avant. « sizes » = largeur d'affichage réelle (voir blog.css).
 COVER_VARIANT_WIDTHS = (640, 1024)
 COVER_SIZES = "(min-width: 62rem) 864px, calc(100vw - 2.5rem)"          # couverture de l'article
-CARD_SIZES = "(min-width: 40rem) 300px, calc(100vw - 2.5rem)"           # vignettes (index, « À lire aussi »)
+CARD_SIZES = "(min-width: 40rem) 300px, calc(100vw - 2.5rem)"           # vignettes (« À lire aussi »)
+BENTO_SIZES = "(min-width: 64rem) 520px, (min-width: 40rem) 50vw, calc(100vw - 2.5rem)"   # grille de l'index
+FEATURE_SIZES = "(min-width: 64rem) 700px, calc(100vw - 2.5rem)"                       # article à la une
 NOTE_INFO = ("Information générale, non contractuelle. Elle ne remplace pas l'avis d'un notaire, "
              "d'un géomètre ou de la mairie.")
 
@@ -1561,6 +1574,38 @@ class Builder:
             level, a.path_url, nbsp_entities(esc(typo(a.title), quote=False)), level,
             nbsp_entities(esc(typo(a.description), quote=False)))
 
+    def _media(self, a, sizes, cls):
+        if not (a.image and a.image_w):
+            return '<div class="%s %s--none" aria-hidden="true"></div>\n' % (cls, cls)
+        return ('<div class="%s"><img src="%s"%s alt="" width="%d" height="%d" loading="lazy" decoding="async"></div>\n'
+                % (cls, esc(a.image), self.srcset_attrs(a, sizes), a.image_w, a.image_h))
+
+    def bento_card(self, a, i):
+        """Carte de la grille irrégulière de l'index : la forme vient du CSS (position dans la liste), pas du HTML."""
+        draft = '<span class="bcard__draft">Brouillon</span>' if a.draft else ""
+        return ('<li class="bcard" style="--i:%d" data-cat="%s">\n%s<div class="bcard__body">\n'
+                '<p class="bcard__meta">%s<span class="bcard__cat">%s</span><time datetime="%s">%s</time><span>%d&nbsp;min</span></p>\n'
+                '<h3 class="bcard__title"><a href="%s">%s</a></h3>\n'
+                '<p class="bcard__excerpt">%s</p>\n'
+                '<span class="bcard__more" aria-hidden="true">%s <em>→</em></span>\n</div>\n</li>') % (
+            i, esc(a.category, False), self._media(a, BENTO_SIZES, "bcard__media"), draft, esc(a.category_label, False),
+            a.date.isoformat(), nbsp_entities(fr_date(a.date)), a.minutes, a.path_url,
+            nbsp_entities(esc(typo(a.title), quote=False)), nbsp_entities(esc(typo(a.description), quote=False)),
+            esc(INDEX_MORE_LABEL, False))
+
+    def feature_card(self, a):
+        draft = '<span class="bcard__draft">Brouillon</span>' if a.draft else ""
+        return ('<article class="bfeature" data-cat="%s">\n%s<div class="bfeature__body">\n'
+                '<p class="bfeature__kicker"><span>%s</span></p>\n'
+                '<p class="bcard__meta">%s<span class="bcard__cat">%s</span><time datetime="%s">%s</time><span>%d&nbsp;min</span></p>\n'
+                '<h3 class="bfeature__title"><a href="%s">%s</a></h3>\n'
+                '<p class="bfeature__excerpt">%s</p>\n'
+                '<span class="bcard__more" aria-hidden="true">%s <em>→</em></span>\n</div>\n</article>') % (
+            esc(a.category, False), self._media(a, FEATURE_SIZES, "bfeature__media"), esc(INDEX_FEATURE_LABEL, False),
+            draft, esc(a.category_label, False), a.date.isoformat(), nbsp_entities(fr_date(a.date)), a.minutes, a.path_url,
+            nbsp_entities(esc(typo(a.title), quote=False)), nbsp_entities(esc(typo(a.description), quote=False)),
+            esc(INDEX_MORE_LABEL, False))
+
     def related_for(self, a):
         pool = [x for x in self.articles if x.slug != a.slug and (a.draft or not x.draft)]
         chosen = [x for r in a.related for x in pool if x.slug == r]
@@ -1643,20 +1688,50 @@ class Builder:
         intro = '\n          <p class="post-lead">%s</p>' % nbsp_entities(esc(typo(INDEX_INTRO), quote=False)) if n == 1 else \
             '\n          <p class="post-lead">Page %d sur %d</p>' % (n, pages)
         pagination = self.pagination(n, pages)
-        body_top, body_bottom = [], []
+        # texte d'accueil : le premier paragraphe (appels) reste sous le chapô ; l'encadré « Par où commencer ? » devient un parcours
+        contact_html, path_html = "", ""
         if n == 1:
-            body_top = ['      <div class="wrap">', '        <div class="post-main"><div class="prose">',
-                        self.render_md_block(INDEX_BODY_MD, "tools/build_blog.py (INDEX_BODY_MD)"), "        </div></div>", "      </div>"]
+            block = self.render_md_block(INDEX_BODY_MD, "tools/build_blog.py (INDEX_BODY_MD)")
+            head_md, sep, rest = block.partition('<div class="callout"')
+            contact_html = head_md.strip()
+            if sep:
+                path_html = ('<div class="callout"' + rest).strip()
+                path_html = (path_html.replace('<div class="callout" role="note">', '<div class="blog-path" role="note">', 1)
+                             .replace('class="callout__title"', 'class="blog-path__title"', 1)
+                             .replace("<ol>", '<ol class="blog-path__list">', 1))
+        published = [a for a in self.articles if not a.draft]
+        stats = ('<ul class="blog-hero__stats"><li><strong>%d</strong> guides</li>'
+                 '<li><strong>Sources</strong> officielles citées</li><li><strong>Dates</strong> de mise à jour indiquées</li></ul>'
+                 % len(published)) if n == 1 else ""
+        hero = ['    <header class="post-head blog-hero">',
+                '      <div class="blog-hero__decor" aria-hidden="true">%s<span class="blog-hero__glow blog-hero__glow--a"></span>'
+                '<span class="blog-hero__glow blog-hero__glow--b"></span></div>' % BLOG_HERO_DECOR,
+                '      <div class="wrap post-head__inner blog-hero__inner">',
+                "        " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/")]) + draft,
+                '        <p class="label">Blog</p>', "        <h1>%s</h1>%s" % (nbsp_entities(esc(typo(INDEX_H1), quote=False)), intro)]
+        if contact_html:
+            hero.append('        <div class="blog-hero__contact">%s</div>' % contact_html)
+        if stats:
+            hero.append("        " + stats)
+        hero.append("      </div>")
+        if path_html:
+            hero += ['      <div class="wrap blog-hero__path">', path_html, "      </div>"]
+        hero.append("    </header>")
+        feat_html, grid_items = "", chunk
+        if n == 1 and chunk:
+            feat_html = "\n".join(['      <section class="blog-feature" aria-label="%s">' % esc(INDEX_FEATURE_LABEL, False),
+                                   '        <div class="wrap">', self.feature_card(chunk[0]), "        </div>", "      </section>"])
+            grid_items = chunk[1:]
+        body_bottom = []
+        if n == 1:
             body_bottom = ['      <div class="wrap">', '        <div class="post-main">',
                            self.render_md_block(INDEX_CTA_MD, "tools/build_blog.py (INDEX_CTA_MD)"), "        </div>", "      </div>"]
-        main = "\n".join([
-            '  <main id="contenu" tabindex="-1">', '    <header class="post-head">', '      <div class="wrap post-head__inner">',
-            "        " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/")]) + draft,
-            '        <p class="label">Blog</p>', "        <h1>%s</h1>%s" % (nbsp_entities(esc(typo(INDEX_H1), quote=False)), intro),
-            "      </div>", "    </header>", '    <div class="post-body">'] + body_top + [
-            '      <section class="post-related" aria-labelledby="guides-title">', '        <div class="wrap">',
+        k0 = 1 if n == 1 else 0
+        main = "\n".join(['  <main id="contenu" tabindex="-1">'] + hero + ['    <div class="post-body blog-body">'] +
+            ([feat_html] if feat_html else []) + [
+            '      <section class="post-related blog-all" aria-labelledby="guides-title">', '        <div class="wrap blog-all__wrap">',
             '          <h2 id="guides-title">%s</h2>' % esc(INDEX_GUIDES_TITLE, False),
-            '          <ul class="post-grid post-grid--index">', "\n".join(self.card(a, 3) for a in chunk), "          </ul>",
+            '          <ul class="bento">', "\n".join(self.bento_card(a, k0 + k) for k, a in enumerate(grid_items)), "          </ul>",
             pagination, "        </div>", "      </section>"] + body_bottom + ["    </div>", "  </main>"])
         return self.shell(head, main, "page")
 

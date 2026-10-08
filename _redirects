@@ -2,3 +2,8 @@
 # (docs dans .assetsignore, ancienne marque). Redirection TEMPORAIRE (302) vers la page contact,
 # à supprimer quand la nouvelle plaquette sera publiée.
 /docs/plaquette-clos-des-zinnias.pdf  /contact  302
+
+# Les pages « Le lotissement » (/projet) et « Les 8 lots » (/lots) sont fusionnées sur /lots : redirection permanente (301).
+/projet  /lots  301
+/projet.html  /lots  301
+/projet/  /lots  301
