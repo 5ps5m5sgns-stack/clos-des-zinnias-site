@@ -60,7 +60,7 @@ AUTHOR_LD_NAME = "Le Clos des Cyprès"             # auteur dans le JSON-LD : l'
 PHONE_DISPLAY = "06 09 20 45 90"
 PHONE_TEL = "+33609204590"
 
-PAGE_SIZE = 12            # articles par page d'index
+PAGE_SIZE = 24            # articles par page d'index
 FEED_SIZE = 20            # articles dans le flux RSS
 RELATED_MAX = 3           # « À lire aussi »
 TOC_MIN_H2 = 3            # sommaire affiché à partir de 3 intertitres H2
@@ -177,7 +177,8 @@ MONTHS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "
              "septembre", "octobre", "novembre", "décembre"]
 
 FM_FIELDS = ("title", "description", "slug", "date", "updated", "category", "tags", "keyword",
-             "image", "image_alt", "image_width", "image_height", "og_image", "related", "draft")
+             "image", "image_alt", "image_width", "image_height", "og_image", "related", "draft",
+             "image_credit", "image_caption")
 FM_REQUIRED = ("title", "description", "date", "category", "keyword")
 DIRECTIVES = ("callout", "faq", "cta", "source")
 NBSP = " "
@@ -360,6 +361,8 @@ class Article:
     keyword: str = ""
     image: str = ""
     image_alt: str = ""
+    image_credit: str = ""        # crédit photo de la couverture (Markdown en ligne : liens admis)
+    image_caption: str = ""       # légende de la couverture (facultative)
     image_w: int = 0
     image_h: int = 0
     og_image: str = ""
@@ -467,6 +470,8 @@ def load_article(path, root, report):
     a.draft = draft in ("true", "oui", "yes")
     a.image, a.og_image = a.meta.get("image", "").strip(), a.meta.get("og_image", "").strip()
     a.image_alt = a.meta.get("image_alt", "").strip()
+    a.image_credit = a.meta.get("image_credit", "").strip()
+    a.image_caption = a.meta.get("image_caption", "").strip()
     for key, attr in (("image_width", "image_w"), ("image_height", "image_h")):
         raw = a.meta.get(key, "").strip()
         if raw:
@@ -675,7 +680,15 @@ class MarkdownRenderer:
             return ""
         size = self.b.image_dims(src, int(w) if w else 0, int(h) if h else 0, self.rel, ln)
         attrs = ' width="%d" height="%d"' % size if size else ""
-        cap = "<figcaption>%s</figcaption>" % self.inline(caption, ln) if caption else ""
+        cap = ""
+        if caption:
+            legend, _, credit = caption.partition("§")      # « Légende § Crédit photo » : le crédit passe sur sa propre ligne
+            cap = "<figcaption>"
+            if legend.strip():
+                cap += '<span class="cap">%s</span>' % self.inline(legend.strip(), ln)
+            if credit.strip():
+                cap += '<span class="credit">%s</span>' % self.inline(credit.strip(), ln)
+            cap += "</figcaption>"
         return ('<figure class="post-figure"><img src="%s" alt="%s"%s loading="lazy" decoding="async">%s</figure>'
                 % (esc(src), esc(alt), attrs, cap))
 
@@ -783,7 +796,8 @@ class MarkdownRenderer:
     def d_callout(self, arg, inner, first, ln):
         body = self.blocks(inner, first, nested=True)
         title = '<p class="callout__title">%s</p>\n' % self.inline(arg, ln) if arg else ""
-        return '<div class="callout" role="note">\n%s%s\n</div>' % (title, body)
+        key = " callout--key" if re.match(r"^(l['’]essentiel|en bref)\b", arg or "", re.I) else ""
+        return '<div class="callout%s" role="note">\n%s%s\n</div>' % (key, title, body)
 
     def d_source(self, arg, inner, first, ln):
         self.has_sources = True
@@ -1641,8 +1655,16 @@ class Builder:
                          ld=self.article_ld(a), a=a, extra=extra)
         cover = ""
         if a.image:
-            cover = ('\n<figure class="post-cover"><img src="%s"%s alt="%s" width="%d" height="%d" fetchpriority="high" decoding="async"></figure>'
-                     % (esc(a.image), self.srcset_attrs(a, COVER_SIZES), esc(a.image_alt), a.image_w, a.image_h))
+            cap = ""
+            if a.image_caption or a.image_credit:
+                cap = "<figcaption>"
+                if a.image_caption:
+                    cap += '<span class="cap">%s</span>' % self.inline_md(a.image_caption, a.at("image_caption"))
+                if a.image_credit:
+                    cap += '<span class="credit">%s</span>' % self.inline_md(a.image_credit, a.at("image_credit"))
+                cap += "</figcaption>"
+            cover = ('\n<figure class="post-cover"><img src="%s"%s alt="%s" width="%d" height="%d" fetchpriority="high" decoding="async">%s</figure>'
+                     % (esc(a.image), self.srcset_attrs(a, COVER_SIZES), esc(a.image_alt), a.image_w, a.image_h, cap))
         draft = '\n<p class="draft-note">BROUILLON : cette page n\'est pas publiée (noindex).</p>' if a.draft else ""
         related = self.related_for(a)
         rel_html = ""
@@ -1652,7 +1674,8 @@ class Builder:
                         % "\n".join(self.card(x, 3) for x in related))
         toc = self.toc_html(a)
         main = "\n".join([
-            '  <main id="contenu" tabindex="-1">', '    <article class="post">', '      <header class="post-head">',
+            '  <main id="contenu" tabindex="-1">', '    <div class="read-progress" aria-hidden="true"></div>',
+            '    <article class="post">', '      <header class="post-head">',
             '        <div class="wrap post-head__inner">',
             "          " + self.crumbs([("Accueil", "/"), ("Blog", "/blog/"), (truncate(a.title, 48), a.path_url)]) + draft,
             '          <p class="label">%s</p>' % esc(a.category_label, False),
@@ -1663,6 +1686,18 @@ class Builder:
             self.cta_final(a), '<p class="post-note">%s</p>' % esc(NOTE_INFO, False), "          </div>", "        </div>",
             rel_html, "      </div>", "    </article>", "  </main>"])
         return self.shell(head, main, "true")
+
+    def inline_md(self, md, where):
+        """Rend une courte ligne de Markdown (légende, crédit photo) ; les liens sont contrôlés comme ceux d'un article."""
+        stub = Article(path=Path(__file__), rel=where, body=md, body_line=1)
+        renderer = MarkdownRenderer(self, stub)
+        out = renderer.inline(md, 1)
+        by = self.by_slug()
+        for href, _ in renderer.links:
+            problem = self.check_link(href, by, stub)
+            if problem:
+                self.report.error(where, "lien « %s » : %s" % (href, problem))
+        return out
 
     def render_md_block(self, md, where):
         """Rend un court texte Markdown écrit dans ce fichier (texte de l'index) avec le même moteur que les articles ;
@@ -1836,6 +1871,11 @@ class Builder:
             blocks.append(self.url_block(SITE_URL + "/blog/", max(a.lastmod for a in pub).isoformat(), []))
         for a in pub:
             imgs = [(SITE_URL + a.image, a.image_alt)] if a.image else []
+            seen_img = {a.image}
+            for src, alt in re.findall(r'<figure class="post-figure"><img src="([^"]+)" alt="([^"]*)"', a.html):
+                if src not in seen_img and src.startswith("/"):
+                    seen_img.add(src)
+                    imgs.append((SITE_URL + html.unescape(src), html.unescape(alt)))
             blocks.append(self.url_block(a.url, a.lastmod.isoformat(), imgs))
         return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
                 '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n%s\n</urlset>\n' % "\n".join(blocks))

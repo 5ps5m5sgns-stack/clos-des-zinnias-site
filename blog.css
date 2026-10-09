@@ -271,3 +271,66 @@
   }
 }
 @media (prefers-reduced-motion:reduce){.bcard,.bcard__media img,.bfeature__media img,.bfeature__body,.blog-path__list li{transition:none}.bcard:hover,.bcard:focus-within{transform:none}}
+
+
+/* ============================================================
+   ARTICLES — v2 : lecture plus soignée (progression, chapô, intertitres numérotés, photos avec crédit, « L'essentiel »).
+   Animations en CSS seul, coupées si « réduire les animations » est demandé.
+   ============================================================ */
+.read-progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:60;background:linear-gradient(90deg,var(--or-deep),var(--or-light));transform:scaleX(0);transform-origin:0 50%;pointer-events:none;display:none}
+@supports (animation-timeline:scroll()){
+  .read-progress{display:block;animation:readp linear both;animation-timeline:scroll(root)}
+  @keyframes readp{to{transform:scaleX(1)}}
+}
+
+/* En-tête : même fond que l'index du blog, couverture large avec légende */
+.blog .post-head{background:radial-gradient(ellipse 85% 75% at 80% 0%,#2f4a3b 0%,#1f3028 55%,#18261f 100%)}
+.post-head h1{max-width:26ch}
+.post-meta{display:flex;flex-wrap:wrap;gap:.2rem .55rem;align-items:center;font-size:.9rem}
+.post-meta time{color:var(--creme)}
+.post-cover{margin-inline:0}
+.post-cover img{aspect-ratio:16/9;object-fit:cover;border-radius:6px;box-shadow:0 22px 50px -22px rgba(0,0,0,.65)}
+.post-cover figcaption{margin-top:.65rem;font-size:.85rem;color:var(--muted)}
+.post-cover .cap+.credit::before{content:" · "}
+
+/* Photos dans le texte : un peu plus larges que la colonne, légende + crédit sur deux niveaux */
+.post-figure{margin-top:2rem;margin-bottom:2rem}
+.post-figure img{border-radius:6px;box-shadow:0 14px 34px -20px rgba(24,38,31,.55)}
+.post-figure figcaption{display:grid;gap:.15rem;padding-left:.8rem;border-left:2px solid var(--or-deep);margin-top:.8rem;line-height:1.45}
+.post-figure .cap{color:var(--noir)}
+.credit{font-size:.78rem;letter-spacing:.01em;color:var(--muted-creme)}
+.post-figure .credit a,.post-cover .credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.post-cover .credit a:hover{color:var(--or-light)}
+@media (min-width:64rem){
+  .prose>.post-figure{margin-inline:-1.5rem}
+}
+
+/* Chapô et intertitres numérotés (même numérotation que le sommaire) */
+.prose{counter-reset:h2n}
+.prose>p:first-child{border-left:3px solid var(--or-deep);padding-left:1.1rem}
+.prose>h2{counter-increment:h2n}
+.prose>h2::before{content:counter(h2n,decimal-leading-zero);display:block;margin-bottom:.15em;font-family:var(--font-titre);font-style:italic;font-size:.62em;font-weight:400;letter-spacing:.1em;color:var(--or-deep)}
+
+/* « L'essentiel » : encadré de synthèse en tête d'article */
+.callout--key{background:linear-gradient(160deg,#243a2e,#1a2a21);color:var(--texte-inv);border:0;border-left:4px solid var(--or);border-radius:0 6px 6px 0;padding:1.3rem 1.5rem 1.35rem;box-shadow:0 18px 40px -26px rgba(0,0,0,.6)}
+.callout--key .callout__title{color:var(--or-light);font-size:1.5rem}
+.callout--key ul{list-style:none;padding-left:0;display:grid;gap:.55rem}
+.callout--key li{position:relative;padding-left:1.5rem;line-height:1.5}
+.callout--key li::before{content:"";position:absolute;left:0;top:.5em;width:.55rem;height:.55rem;border-radius:50%;background:var(--or)}
+.prose .callout--key a{color:var(--or-light)}
+.prose .callout--key strong{color:var(--creme)}
+
+/* Tableaux et encadrés un peu plus travaillés */
+.table-scroll{border-radius:6px;box-shadow:0 12px 30px -24px rgba(24,38,31,.5)}
+.callout{border-radius:0 6px 6px 0}
+
+/* Apparition douce (sans JavaScript) : seulement les photos, tableaux et encadrés, jamais le texte */
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .prose>.post-figure,.prose>.table-scroll,.prose>.callout,.prose>.cta-block{animation:artrise both linear;animation-timeline:view();animation-range:entry 0% entry 35%}
+    @keyframes artrise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  }
+}
+@media print{.read-progress{display:none}}
+.post-cover .credit{color:var(--muted);opacity:.85}
+.post-cover .cap{color:var(--creme)}

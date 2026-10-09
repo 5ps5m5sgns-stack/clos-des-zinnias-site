@@ -1,162 +1,190 @@
 ---
 title: Acheter un terrain en lotissement à Gardanne : les étapes
-description: Acheter un terrain en lotissement à Gardanne : visite, promesse de vente, rétractation, étude de sol, financement, acte et permis de construire, pas à pas.
+description: Acheter un terrain en lotissement à Gardanne : étapes, documents remis avant signature, promesse, rétractation et délais pour construire.
 slug: guide-acheter-terrain-lotissement-gardanne-biver
 date: 2026-10-05
-updated: 2026-10-06
+updated: 2026-10-09
 category: acheter-un-terrain
-tags: terrain en lotissement, achat terrain à bâtir, promesse de vente, cahier des charges, Gardanne, Biver
+tags: terrain en lotissement, promesse de vente, cahier des charges, permis d'aménager, Gardanne, Biver
 keyword: acheter un terrain en lotissement
 image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif
 image_width: 1600
 image_height: 900
 image_alt: Vue aérienne par drone d'une prairie en bordure d'un quartier résidentiel de jardins et de piscines, au pied d'un bois de pins, avec des collines boisées à l'horizon, à Biver
 og_image: /images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/partage.jpg
-related: terrain-a-batir-constructible-viabilise-differences, verifier-avant-dacheter-terrain-biver-gardanne, construire-sa-maison-etapes-du-terrain-aux-cles
+related: viabilisation-terrain-raccordements, frais-de-notaire-terrain-a-batir, construire-sa-maison-etapes-du-terrain-aux-cles
 draft: false
 ---
 
-Pour **acheter un terrain en lotissement**, on suit neuf étapes, de la visite du lot à l'ouverture du chantier : dossier de vente, promesse de vente avec dix jours de rétractation, étude de sol, financement, acte authentique, puis permis de construire. Un lot se vend avec le permis d'aménager et, s'il en existe, le règlement et le cahier des charges (art. L. 442-7), et c'est le lotisseur qui réalise la viabilisation. Ces étapes valent pour tout projet de construire sa maison dans un lotissement, sur un [terrain à bâtir en Provence](/terrain-a-batir-provence), près d'Aix-en-Provence comme de Marseille. Voici l'ordre à suivre, et la réponse nuancée à « peut-on construire librement ? ». À Biver, hameau de Gardanne, [huit terrains libres de constructeur](/lots) sont proposés par l'aménageur PONTHIEU DH : un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne) en lotissement, avec permis d'aménager.
+Pour **acheter un terrain en lotissement**, on visite le lot, on lit les documents du lotissement, on signe une promesse de vente (dix jours pour se rétracter), puis l'acte chez le notaire, et l'on dépose le permis de construire. Ces étapes valent à Gardanne comme ailleurs, et pour les [huit lots libres de constructeur du Clos des Cyprès](/lots), à Biver, vendus par l'aménageur.
 
-Règles en vigueur au 05/10/2026, pour un lotissement sous permis d'aménager ; pour votre situation, le notaire fait foi.
+Règles en vigueur au 09/10/2026, pour un lotissement sous permis d'aménager. Information générale : pour votre situation, le notaire fait foi.
+
+:::callout L'essentiel
+- Le permis d'aménager et, s'il existe, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7).
+- Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** pour vous rétracter (art. L. 442-8).
+- Faites prévoir dans la promesse une condition suspensive de prêt et de permis de construire : sans elle, renoncer après un refus de permis peut coûter l'indemnité d'immobilisation.
+- Le code de l'urbanisme ne fixe pas de délai pour construire un lot, mais le cahier des charges ou l'acte peut en prévoir un.
+- Le cahier des charges lie les colotis sans limite de durée ; le règlement d'urbanisme du lotissement devient caduc après dix ans si un PLU couvre le lotissement.
+:::
 
 ## Comment acheter un terrain en lotissement, étape par étape ?
 
-Dans un lotissement, le vendeur est le lotisseur : il obtient le permis d'aménager, réalise les travaux et vend les lots.
+Dans un lotissement, le vendeur est le lotisseur : il obtient le permis d'aménager, réalise les travaux d'aménagement et vend les lots. Voici la frise des étapes, de la visite au chantier.
 
-Tableau : Les neuf étapes d'un achat de lot
+Tableau : De la visite au chantier, les sept étapes
 
-| Étape | Ce qui se passe |
-|:------|:----------------|
-| 1. Visite | Plan de composition : limites du lot, voirie, espaces communs |
-| 2. Dossier de vente | Permis d'aménager, règlement, cahier des charges |
-| 3. Promesse et rétractation | Promesse unilatérale du lotisseur ; dix jours pour se rétracter |
-| 4. Étude de sol et risques | Fournis par le vendeur, annexés à la promesse |
-| 5. Financement | Prêt, contrat de construction, frais d'acquisition |
-| 6. Viabilisation | Voirie et réseaux réalisés par le lotisseur |
-| 7. Acte authentique | Signature chez le notaire, paiement du prix et des frais |
-| 8. Permis de construire | Dépôt, instruction, affichage, recours éventuels |
-| 9. Avant le chantier | Branchements, taxe d'aménagement, assurance dommages-ouvrage |
+| Étape | Ce qui se passe | Repère de délai |
+|:------|:----------------|:----------------|
+| 1. Visite du lot | Plan de composition : limites du lot, voirie, espaces communs | Avant tout engagement |
+| 2. Documents du lotissement | Permis d'aménager, règlement, cahier des charges, statuts de l'association syndicale | Communiqués avant la signature (art. L. 442-7) |
+| 3. Promesse unilatérale de vente | Possible seulement après le permis d'aménager ; indemnité d'immobilisation éventuelle | Dix jours de rétractation (art. L. 442-8) |
+| 4. Conditions suspensives | Prêt, permis de construire, absence de recours des tiers | Délai fixé librement dans la promesse |
+| 5. Acte authentique | Signature chez le notaire, paiement du prix et des frais | En principe après l'achèvement des équipements collectifs |
+| 6. Permis de construire | Dépôt, instruction, affichage, recours des tiers | Deux mois d'instruction, deux mois d'affichage |
+| 7. Chantier | Contrat de construction, ouverture, réception | Délai fixé par le contrat |
 
-À la visite, demandez le plan de composition. Le permis d'aménager et, s'il y a lieu, le cahier des charges doivent vous être communiqués avant la signature (art. L. 442-7 du code de l'urbanisme).
+Trois sujets ont leur propre guide ; voici l'essentiel de chacun.
 
-:::callout Un projet de terrain à Biver ?
-Vous hésitez sur une étape, ou vous voulez connaître les terrains du lotissement ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : nous vous répondons simplement, sans pression.
-:::
+- **Frais de notaire** : le prix et les frais se règlent à la signature de l'acte (Service-Public). Détail : [les frais de notaire d'un terrain à bâtir](/blog/frais-de-notaire-terrain-a-batir/).
+- **Certificat d'urbanisme** : gratuit, il renseigne sur les règles et les taxes applicables au terrain, sans valoir autorisation (Service-Public). Détail : [le certificat d'urbanisme](/blog/certificat-d-urbanisme-terrain-a-batir/).
+- **Étude de sol** : en zone d'argiles, une étude géotechnique préalable est annexée à la promesse ou à l'acte (Service-Public). Détail : [l'étude de sol d'un terrain à bâtir](/blog/etude-de-sol-terrain-a-batir/).
 
-## Que régissent le PLUi, le règlement et le cahier des charges ?
+![Rue d'un lotissement récent dans le Gard : maisons aux toits de tuiles, trottoirs neufs et jeunes arbres plantés](/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/rue-lotissement-maisons-neuves-gard.avif "Illustration : une rue de lotissement récent près de Rochefort-du-Gard (Gard), avec voirie et trottoirs posés. § Photo : Vi..Cult..., [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lotissement_pr%C3%A8s_de_Rochefort-du-Gard_%28voir_panneau_d%27information%29.JPG), recadrée"){1200x800}
 
-Trois niveaux de règles se superposent ; les confondre est l'erreur la plus courante.
+## Quels documents vous remet le lotisseur avant la signature ?
 
-Tableau : Ce que chaque document régit
+Le permis d'aménager et, s'il y a lieu, le cahier des charges sont remis à l'acquéreur lors de la signature de la promesse ou de l'acte. Ils doivent lui avoir été communiqués avant (art. L. 442-7 du code de l'urbanisme). Service-Public ajoute, parmi les annexes de la promesse, le règlement du lotissement, les statuts de l'association syndicale libre, l'état des risques et pollutions et, dans les zones exposées, l'étude de sol. Si le lotisseur répartit la surface de plancher entre les lots, il remet aussi un certificat de la surface constructible sur votre lot, à joindre au permis de construire (art. R. 442-11).
 
-| Document | Ce qu'il régit | À savoir |
+Tableau : Permis d'aménager, règlement, cahier des charges : qui régit quoi
+
+| Document | À quoi il sert | À savoir |
 |:---------|:---------------|:---------|
-| PLU ou PLUi | Zone, hauteur, emprise, risques | À Gardanne : PLUi du Pays d'Aix, opposable depuis le 19/12/2024 |
-| Règlement de lotissement | Compléments au PLU : implantation, matériaux, couleurs | Règles d'urbanisme caduques dix ans après la décision si un PLU couvre le lotissement (art. L. 442-9) |
-| Cahier des charges | Droits et obligations des colotis entre eux : charges, servitudes privées, entretien, plantations | Clauses contractuelles non touchées par cette caducité |
+| Permis d'aménager | Autorise le lotissement : création des lots, voirie, réseaux | Aucune promesse ni acompte avant sa délivrance (art. L. 442-4) |
+| Règlement du lotissement | Complète le PLU par des règles d'urbanisme plus strictes | Caduc dix ans après l'autorisation si un PLU couvre le lotissement (art. L. 442-9) |
+| Cahier des charges | Contrat entre les colotis : servitudes, entretien, restrictions | Ses clauses contractuelles ne tombent pas avec cette caducité |
 
-Si le lotisseur répartit la surface de plancher, il remet aussi un certificat de surface constructible pour votre lot (art. R. 442-11). En Pays d'Aix, on lit le PLUi (consultable sur le Géoportail de l'urbanisme), complété, le cas échéant, par le règlement et le cahier des charges.
+Ces trois documents s'ajoutent au plan local d'urbanisme. À Gardanne, le PLUi du Pays d'Aix, approuvé le 5 décembre 2024, est opposable depuis le 19 décembre 2024 (ville de Gardanne) : il se lit avec le règlement et le cahier des charges, jamais à leur place. Le vendeur doit enfin livrer un lot délimité par un acte de bornage (Service-Public).
 
-## Peut-on construire librement dans un lotissement ?
+![Borne en béton jaune surmontée d'un petit tube métallique, à la limite d'une propriété, entre le lierre et les feuilles mortes](/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/borne-cadastrale-limite-propriete.avif "Illustration : une borne cadastrale marque une limite de propriété (Saint-Cyr-sur-Menthon, Ain). § Photo : [Chabe01](https://commons.wikimedia.org/wiki/User:Chabe01), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Borne_Cadastrale_Route_Coudes_-_Saint-Cyr-sur-Menthon_%28FR01%29_-_2020-11-07_-_3.jpg), recadrée"){1200x800}
 
-**Librement pour le projet, pas hors cadre.** Vous choisissez maison, architecte et constructeur si le lot est libre de constructeur (voir la [définition d'un terrain libre de constructeur](/blog/terrain-libre-de-constructeur-definition/)), mais le permis de construire doit respecter le PLUi, le règlement, le cahier des charges, le plan de composition (avec la surface de plancher du lot) et les servitudes du terrain.
+:::cta Un projet de terrain à Biver ?
+Une question sur le dossier de vente, le règlement ou le calendrier des travaux ? Parlons-en : le plan, la disponibilité et le prix des lots vous sont communiqués lors de notre échange.
 
-Le lotissement protège aussi l'acquéreur : pendant cinq ans après l'achèvement des travaux d'aménagement, le permis ne peut être refusé au motif de règles d'urbanisme postérieures au permis d'aménager (art. L. 442-14).
-
-Le plan de composition indique ce « cadre » lot par lot : zone d'implantation, accès, surface de plancher.
-
-## Promesse de vente d'un lot : réservation et rétractation
-
-Aucune promesse de vente ni aucun acompte avant la délivrance du permis d'aménager (art. L. 442-4). Ensuite, le lotisseur peut consentir une **promesse unilatérale de vente** indiquant la consistance du lot, sa délimitation, son prix et son délai de livraison (art. L. 442-8) : c'est la « réservation ». Il s'engage, vous restez libre d'acheter. L'indemnité d'immobilisation éventuelle est plafonnée à 5 % du prix et consignée (art. L. 442-8 et R. 442-12). Selon Service-Public, elle mentionne aussi les conditions suspensives (prêt, permis de construire, absence de recours des tiers).
-
-### Le délai de rétractation de dix jours
-
-La promesse « ne devient définitive qu'au terme d'un délai de dix jours pendant lequel l'acquéreur a la faculté de se rétracter » (art. L. 442-8). Il court à partir du lendemain de la première présentation de la lettre recommandée qui notifie la promesse ou de sa remise en main propre ; la rétractation se notifie par lettre recommandée avec accusé de réception, et les fonds sont restitués sous vingt et un jours.
-
-L'article L. 271-1 du code de la construction et de l'habitation (CCH) ouvre dix jours de rétractation pour « la construction ou l'acquisition d'un immeuble à usage d'habitation ». Il ne cite pas expressément le terrain à bâtir : pour un lot sous permis d'aménager, c'est L. 442-8 qui fixe le délai et renvoie à L. 271-1 pour ses modalités. Hors lotissement, demandez au notaire.
-
-## Étude de sol, risques, financement : que vérifier avant de signer ?
-
-### Étude géotechnique et état des risques
-
-Dans les zones d'exposition moyenne ou forte au retrait-gonflement des argiles, la vente d'un terrain non bâti constructible suppose une **étude géotechnique préalable**, fournie par le vendeur et annexée à la promesse ou, à défaut, à l'acte (art. L. 132-5 du CCH), valable trente ans si le sol n'est pas remanié (art. R. 132-6). Elle est transmise à vos constructeurs (art. L. 132-6).
-
-L'état des risques et pollutions est annexé à la promesse ; le site [Géorisques](https://www.georisques.gouv.fr/) permet de consulter les risques connus d'une commune ou d'une parcelle. Dans les territoires exposés aux incendies, le code forestier impose en outre de débroussailler autour des constructions (art. L. 134-6) : voir [ce qu'il faut vérifier avant d'acheter un terrain constructible](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
-
-### Financement
-
-Chiffrez terrain, maison et frais, et vérifiez que la promesse comporte une condition suspensive de prêt. Les droits d'enregistrement dépendent du régime de TVA de la vente : 0,71 % si le vendeur facture la TVA sur la valeur totale du terrain, le plus souvent 5,81 % sinon (impots.gouv.fr) ; votre notaire vous les chiffre avant la promesse. Autres postes : le [budget terrain et maison près d'Aix et de Gardanne](/blog/budget-terrain-maison-pres-aix-gardanne/).
-
-## Après la signature : viabilisation, permis de construire et délais
-
-L'acte authentique se signe en principe après l'achèvement des équipements collectifs, sauf autorisation de différer les travaux de finition ou garantie d'achèvement (art. R. 442-13). Le lot doit être constructible, viabilisé et délimité (voir [terrain à bâtir, constructible, viabilisé : les différences](/blog/terrain-a-batir-constructible-viabilise-differences/)) ; le bornage est mentionné dans la promesse et l'acte (art. L. 115-4). Le lotisseur réalise et finance la viabilité du lotissement et son branchement sur les équipements publics (art. L. 332-15) ; le branchement de votre maison depuis la limite du lot se règle en principe avec votre constructeur : à vérifier dans les documents de vente.
-
-### Permis de construire et délais
-
-Le permis de construire d'un lot peut être accordé à l'achèvement des travaux d'aménagement, dès l'autorisation de vendre avant travaux si les équipements du lot sont achevés, ou dès le permis d'aménager, sauf pour une maison en contrat de construction de maison individuelle (CCMI) (art. R. 442-18). L'instruction de droit commun dure deux mois pour une maison individuelle (art. R. 423-23) ; le délai de recours des tiers court à partir de deux mois d'affichage continu sur le terrain (art. R. 600-2). Le permis est périmé si les travaux ne sont pas entrepris dans les trois ans ou sont interrompus plus d'un an (art. R. 424-17) ; il est prorogeable deux fois un an (art. R. 424-21).
-
-**Y a-t-il un délai pour construire après l'achat ?** Le code de l'urbanisme n'en fixe pas pour un lot de lotissement ; le cahier des charges ou l'acte de vente peuvent en prévoir un. À lire avant de signer et à faire confirmer par le notaire.
-
-### Taxe d'aménagement et assurance dommages-ouvrage
-
-La taxe d'aménagement suit le permis : en 2026, 892 € par m² de surface taxable (hors Île-de-France), auxquels s'appliquent un taux communal et un taux départemental, soit 5 % et 1,55 % à Gardanne d'après data.economie.gouv.fr ; le certificat d'urbanisme indique les taxes applicables (art. L. 410-1). Le maître d'ouvrage doit aussi souscrire une assurance dommages-ouvrage avant l'ouverture du chantier (art. L. 242-1 du code des assurances). Pour la suite, du contrat de construction à la réception, lisez [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/).
-
-## Quelles erreurs éviter quand on achète un lot ?
-
-- signer sans avoir lu le règlement, le cahier des charges et le plan de composition ;
-- croire que le PLUi suffit : règlement et cahier des charges ajoutent leurs règles ;
-- négliger l'étude de sol, ou oublier de la transmettre au constructeur ;
-- s'engager sans condition suspensive de prêt, ou sans chiffrer raccordements, taxe d'aménagement et assurance dommages-ouvrage ;
-- verser un acompte hors promesse, ou notifier la rétractation hors délai ou hors forme.
-
-### Ce qui change quand l'aménageur vend lui-même le lot
-
-Le vendeur est le lotisseur : il remet le permis d'aménager et, s'il y a lieu, le cahier des charges, fournit l'étude de sol et réalise les travaux. À Biver, à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture, le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, proposés par l'aménageur PONTHIEU DH. Selon votre trajet quotidien, voyez le [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence) ou le [terrain à bâtir près de Marseille](/terrain-a-batir-marseille). Renseignez-vous auprès de l'aménageur : les informations propres à chaque lot vous sont présentées lors de l'échange téléphonique. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact). Voir aussi [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/).
-
-:::callout À retenir
-- Ni promesse ni acompte avant le permis d'aménager ; ensuite, **dix jours** de rétractation.
-- PLUi, règlement et cahier des charges : trois documents à lire avant de signer.
-- On construit **librement dans le cadre** du lotissement, pas hors cadre.
-- Le notaire valide votre cas : interrogez-le avant la promesse.
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
+- [Voir les lots](/lots)
+- [Envoyez-nous un message](/contact)
 :::
+
+## Promesse de vente d'un terrain en lotissement : rétractation et condition suspensive
+
+Aucune promesse de vente ni aucun acompte avant la délivrance du permis d'aménager (art. L. 442-4). Ensuite, le lotisseur peut consentir une **promesse unilatérale de vente** : elle indique la consistance du lot, sa délimitation, son prix et son délai de livraison (art. L. 442-8). Il s'engage à vendre ; vous restez libre d'acheter ou non.
+
+### Dix jours pour se rétracter
+
+La promesse « ne devient définitive qu'au terme d'un délai de dix jours pendant lequel l'acquéreur a la faculté de se rétracter » (art. L. 442-8). Selon Service-Public, ce délai démarre le lendemain de la première présentation de la lettre recommandée qui notifie la promesse. Après rétractation, les fonds versés sont restitués sous vingt et un jours. Hors lotissement, l'acheteur d'un terrain à bâtir n'a pas ce droit (Service-Public) : le notaire vous indique le régime de votre avant-contrat.
+
+### L'indemnité d'immobilisation
+
+Le lotisseur peut demander une indemnité en contrepartie de l'immobilisation du lot ; le bénéficiaire « conserve la liberté de ne pas acquérir » (art. L. 442-8). Elle ne peut pas dépasser 5 % du prix de vente (art. R. 442-12) et reste consignée sur un compte bloqué. Elle est restituée dans les trois mois, « sauf si le contrat de vente n'est pas conclu de son fait alors que toutes les conditions de la promesse sont réalisées ».
+
+### Acheter sans condition suspensive de permis de construire : quel risque ?
+
+Pour un lot, Service-Public cite trois conditions suspensives possibles : le prêt, le permis de construire et l'absence de recours des tiers. Les parties en fixent librement le délai, sauf pour le prêt (un mois minimum). Si une condition ne se réalise pas, l'indemnité est rendue, à condition de prouver vos démarches (demande de prêt, demande de permis en mairie).
+
+Sans condition de permis, un refus de permis ne vous délie de rien : si vous renoncez à acheter, la règle de l'article L. 442-8 citée plus haut peut laisser l'indemnité au lotisseur. Avant de vous passer de cette clause, vérifiez que votre maison tient dans le règlement et le cahier des charges ; un certificat d'urbanisme opérationnel renseigne sur les règles applicables à votre projet.
+
+## Un terrain en lotissement est-il viabilisé ?
+
+En principe, oui. Selon Service-Public, le vendeur d'un terrain en lotissement doit s'assurer qu'il est constructible, viabilisé (raccordable aux réseaux d'eau, d'assainissement, d'électricité et de téléphone) et délimité par un acte de bornage. Le lotisseur réalise et finance les travaux de viabilité du lotissement et son branchement sur les équipements publics (art. L. 332-15).
+
+« Viabilisé » veut dire que les réseaux arrivent en limite du lot. Le branchement de la maison est en général à la charge de l'acquéreur : le détail, réseau par réseau, est dans [la viabilisation d'un terrain : eau, électricité, assainissement](/blog/viabilisation-terrain-raccordements/).
+
+![Terrain en lotissement en cours d'aménagement : sol nu, voirie en chantier et premières maisons devant une colline boisée](/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/lotissement-terrains-en-amenagement-gard.avif "Illustration : un lotissement en cours d'aménagement à Saze (Gard), en avril 2008, avant la construction des maisons. § Photo : Vi..Cult..., [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Construction_d%27un_lotissement_%C3%A0_Saze_en_avil_2008.JPG), recadrée"){1200x800}
+
+## Combien de temps pour construire après l'achat d'un terrain en lotissement ?
+
+Aucun total ne vaut pour tous les projets : le délai dépend de la livraison du lot, du dossier de permis et du chantier. Voici les délais que fixent les textes.
+
+Tableau : Les délais fixés par les textes
+
+| Étape | Délai | Source |
+|:------|:------|:-------|
+| Entre la promesse et l'acte | Fixé librement ; l'acte est en principe signé après l'achèvement des équipements collectifs | Service-Public, art. R. 442-13 |
+| Instruction du permis de construire d'une maison individuelle | Deux mois à compter d'un dossier complet | Art. R. 423-23 |
+| Recours des tiers | Court à partir de deux mois d'affichage continu sur le terrain | Art. R. 600-2 |
+| Retrait d'un permis illégal par la mairie | Trois mois | Service-Public |
+| Validité du permis | Trois ans pour entreprendre les travaux ; périmé s'ils sont interrompus plus d'un an ; prorogeable deux fois un an | Art. R. 424-17 et R. 424-21 |
+| Chantier | Fixé par le contrat ; en CCMI, pénalités de retard d'au moins 1/3 000 du prix par jour | Service-Public |
+
+Le permis de construire d'un lot peut être accordé à l'achèvement des travaux d'aménagement et, dans certains cas, plus tôt, sauf pour une maison sous contrat de construction de maison individuelle (art. R. 442-18). La suite est dans [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/).
+
+### Peut-on acheter un terrain en lotissement sans construire ?
+
+Oui : parmi les règles du code de l'urbanisme sur les lotissements (art. L. 442-1 à L. 442-14), aucune n'impose à l'acquéreur de construire dans un délai. Trois points demandent pourtant de la prudence :
+
+- le cahier des charges ou l'acte de vente peut prévoir une obligation de construire dans un délai : lisez-les avant de signer et faites-le confirmer par le notaire ;
+- vous restez propriétaire, avec les charges du terrain : entretien, cotisations à l'association syndicale s'il y en a une, débroussaillement là où le code forestier l'impose (art. L. 134-6) ;
+- le permis de construire ne peut être refusé sur la base de règles d'urbanisme nouvelles que pendant cinq ans à compter de l'achèvement des travaux d'aménagement (art. L. 442-14) : ce délai ne repart pas à votre achat.
+
+## Droits des colotis, revente, deux lots : ce qu'il faut savoir
+
+Les colotis sont les propriétaires des lots d'un même lotissement. Leurs droits et obligations viennent du cahier des charges : c'est un contrat entre colotis, qui ne se prescrit pas et s'impose aux propriétaires successifs (Chambre des notaires de la Gironde). Un coloti, même éloigné, peut agir en justice pour le faire respecter, et un permis de construire valide n'est pas une défense : la mairie contrôle le PLU, pas le cahier des charges (étude Fourez, notaires). Le juge peut ordonner la mise en conformité, la démolition ou des dommages et intérêts.
+
+![Vue aérienne par drone d'un lotissement : voie de desserte sinueuse, maisons aux toits de tuiles entourées de jardins et de haies, colline boisée au fond](/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/lotissement-vue-aerienne-voie-jardins.avif "Illustration : un lotissement résidentiel vu d'en haut, avec sa voie de desserte (Saint-Maurice-de-Beynost, Ain). § Photo : [Benoît Prieur](https://www.wikidata.org/wiki/Q42790984), [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Drone_-_vue_du_lotissement_de_la_rue_des_M%C3%BBriers_%C3%A0_Saint-Maurice-de-Beynost_%28mars_2020%29.JPG), recadrée"){1200x800}
+
+Le règlement d'urbanisme, lui, devient caduc dix ans après l'autorisation si un PLU couvre le lotissement, sans remettre en cause les droits et obligations entre colotis ni la gestion des parties communes (art. L. 442-9). Les documents peuvent aussi évoluer : lorsque la moitié des propriétaires, détenant ensemble la moitié au moins de la superficie, le demandent ou l'acceptent, l'autorité compétente peut modifier le règlement et les clauses de nature réglementaire du cahier des charges, si la modification est compatible avec l'urbanisme applicable. Pendant cinq ans après l'achèvement du lotissement, le lotisseur peut s'y opposer s'il possède encore un lot constructible (art. L. 442-10, version en vigueur depuis le 28/11/2025). S'il existe une association syndicale libre, vous en êtes membre de droit et vous contribuez à l'entretien des voies et des espaces communs (Chambre des notaires de la Gironde).
+
+### Vente d'un terrain en lotissement : que change la revente ?
+
+L'acquéreur reprend le même cadre : le cahier des charges, le règlement tant qu'il est en vigueur et les statuts de l'association syndicale s'il en existe une. Vendeur, rassemblez ces documents ; acheteur, demandez-les avant de signer.
+
+### Acheter deux terrains en lotissement : que vérifier ?
+
+Il n'existe pas de réponse générale : tout dépend du règlement, du cahier des charges et du plan de composition. Vérifiez au moins :
+
+- le nombre de logements autorisés par lot et la zone d'implantation de chaque lot ;
+- la surface de plancher attribuée à chaque lot, quand le lotisseur l'a répartie (certificat de l'article R. 442-11) ;
+- les clauses sur la division des lots : une interdiction de diviser un lot est une clause contractuelle (réponse ministérielle à la question écrite n° 93355) ; le notaire vous dit si une clause vise aussi le regroupement.
+
+Faites inscrire dans la promesse les deux lots et ce que le notaire a confirmé. Au Clos des Cyprès, posez la question dès le premier échange : la disponibilité des lots vous est communiquée à ce moment-là.
+
+## Acheter un lot au Clos des Cyprès, à Biver
+
+Le Clos des Cyprès réunit huit terrains à bâtir [libres de constructeur](/blog/terrain-libre-de-constructeur-definition/), de 500 à 1 133 m², à Biver (13120 Gardanne), à environ 25 minutes d'Aix-en-Provence et 30 minutes de Marseille en voiture. L'aménageur PONTHIEU DH les vend directement. Le permis d'aménager est délivré ; le dossier est consultable à la mairie de Gardanne (service urbanisme, bâtiment Saint-Roch, avenue de Nice). La livraison des terrains viabilisés est prévue en mars 2027, sous réserve de l'avancement du chantier, et l'acte authentique se signe à la livraison.
+
+Le règlement de lotissement, l'état des risques et les études techniques vous sont présentés lors de notre échange téléphonique, comme le plan, la disponibilité et le prix des lots. Avant de signer, relisez [ce qu'il faut vérifier avant d'acheter à Biver](/blog/verifier-avant-dacheter-terrain-biver-gardanne/) et parcourez notre page [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne).
 
 ## Questions fréquentes
 
 :::faq
 ### Quel est le délai de rétractation pour un terrain en lotissement ?
-Dix jours pour une promesse unilatérale de vente d'un lot vendu sous permis d'aménager (art. L. 442-8 du code de l'urbanisme), à compter du lendemain de la première présentation de la lettre recommandée qui la notifie. La rétractation se notifie par lettre recommandée avec accusé de réception. Hors de ce cadre, demandez au notaire si un délai s'applique.
+Dix jours pour la promesse unilatérale de vente d'un lot vendu sous permis d'aménager (art. L. 442-8 du code de l'urbanisme). Il démarre le lendemain de la première présentation de la lettre recommandée qui notifie la promesse. Hors lotissement, l'acheteur d'un terrain à bâtir n'a pas ce droit : demandez au notaire le régime de votre avant-contrat.
 
-### Dans quel délai faut-il construire après l'achat ?
-Le code de l'urbanisme n'en fixe pas pour un lot de lotissement, mais le cahier des charges ou l'acte de vente peut en prévoir un : faites-le confirmer par le notaire. Le permis de construire, lui, est périmé si les travaux ne sont pas entrepris dans les trois ans (art. R. 424-17).
+### Combien de temps faut-il pour construire après l'achat d'un terrain en lotissement ?
+Aucun total n'est fixé. Les textes donnent des délais partiels : deux mois d'instruction du permis pour une maison individuelle, deux mois d'affichage pour le recours des tiers, trois ans de validité du permis. Le chantier suit le délai du contrat de construction.
 
-### Faut-il une étude de sol pour acheter un terrain en lotissement ?
-Dans les zones d'exposition moyenne ou forte au retrait-gonflement des argiles, oui : le vendeur fournit une étude géotechnique préalable, annexée à la promesse ou à l'acte (art. L. 132-5 du CCH). Vérifiez l'exposition du lot sur Géorisques.
+### Peut-on acheter un terrain en lotissement sans construire ?
+Oui : le code de l'urbanisme n'impose pas de délai pour construire un lot. Mais le cahier des charges ou l'acte de vente peut en prévoir un, et vous restez propriétaire du terrain, avec ses charges. Faites relire ces clauses par le notaire avant de signer.
 
-### Le règlement de lotissement s'applique-t-il toujours au bout de dix ans ?
-Pas pour ses règles d'urbanisme : elles deviennent caduques dix ans après l'autorisation de lotir si un PLU couvre alors le lotissement (art. L. 442-9). Les droits et obligations entre colotis fixés par le cahier des charges demeurent.
+### Peut-on acheter un terrain sans condition suspensive de permis de construire ?
+Service-Public présente cette condition comme une clause que la promesse peut contenir. Sans elle, un refus de permis ne vous délie de rien : si vous renoncez à acheter, l'indemnité d'immobilisation peut rester au lotisseur (art. L. 442-8). Faites-la prévoir, avec une condition de prêt si vous empruntez.
 
-### Qui vend les lots du Clos des Cyprès ?
-Les terrains sont proposés par l'aménageur PONTHIEU DH. Appelez-nous au [06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+### Peut-on acheter deux terrains en lotissement ?
+Cela dépend du règlement, du cahier des charges et du plan de composition : nombre de logements par lot, zones d'implantation, surface de plancher de chaque lot. Faites-les lire par le notaire avant la promesse. Au Clos des Cyprès, posez la question lors de notre premier échange.
+
+### Un terrain en lotissement est-il viabilisé ?
+En principe, oui : selon Service-Public, le vendeur doit livrer un terrain constructible, viabilisé et délimité par un acte de bornage. Les réseaux arrivent en limite du lot ; le branchement de la maison est en général à la charge de l'acquéreur. Voir [la viabilisation d'un terrain](/blog/viabilisation-terrain-raccordements/).
 :::
 
 :::source Sources
-- [Promesse de vente d'un terrain situé dans un lotissement](https://www.service-public.fr/particuliers/vosdroits/F16455), Service-Public, consulté le 05/10/2026.
-- [Acte de vente d'un terrain situé dans un lotissement](https://www.service-public.fr/particuliers/vosdroits/F12702), Service-Public, consulté le 05/10/2026.
-- [Obligations du vendeur d'un terrain en lotissement](https://www.service-public.fr/particuliers/vosdroits/F2484), Service-Public, consulté le 05/10/2026.
-- [Taxe d'aménagement](https://www.service-public.fr/particuliers/vosdroits/F23263), Service-Public, consulté le 05/10/2026.
-- Code de l'urbanisme, Légifrance, consulté le 05/10/2026 : [L. 442-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815993), [L. 442-7](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815996), [L. 442-8](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667953), [L. 442-9](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052866874), [L. 442-14](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037694107), [R. 442-11](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047280445), [R. 442-12](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819520), [R. 442-13](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819794), [R. 442-18](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025430929), [L. 115-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210397), [L. 332-15](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054141958), [L. 410-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667619), [R. 423-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819920), [R. 424-17](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031830633), [R. 424-21](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043940372), [R. 600-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006820365).
-- Code de la construction et de l'habitation, Légifrance, consulté le 05/10/2026 : [L. 271-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667917), [L. 132-5](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041588033), [L. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041565667), [R. 132-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043818711).
-- [Code des assurances, art. L. 242-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019265425) et [code forestier, art. L. 134-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047810678), Légifrance, consultés le 05/10/2026.
-- [Achat d'un terrain à bâtir : droits et taxes](https://www.impots.gouv.fr/particulier/achat-dun-immeuble-batir), impots.gouv.fr, consulté le 05/10/2026.
-- [Taux de la taxe d'aménagement](https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/delta_deliberation_tam_17_01_23/), data.economie.gouv.fr, jeu mis à jour le 03/03/2026, consulté le 05/10/2026.
-- [Géorisques](https://www.georisques.gouv.fr/) et [PLUi à Gardanne](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/), consultés le 05/10/2026.
-:::
-
-:::cta Un projet de terrain à Biver ?
-Une question sur le dossier de vente, le plan de composition ou le calendrier des travaux ? Parlons-en : le prix et les informations de chaque lot vous sont communiqués lors de notre échange.
-
-- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
-- [Voir les lots](/lots)
-- [Envoyez-nous un message](/contact)
+- Service-Public, consulté le 09/10/2026 : [Promesse de vente d'un terrain situé dans un lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F16455) (page mise à jour le 06/10/2026) ; [Acte de vente d'un terrain situé dans un lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F12702) (mise à jour le 08/10/2026) ; [Obligations du vendeur d'un terrain situé dans un lotissement](https://www.service-public.gouv.fr/particuliers/vosdroits/F2484) (mise à jour le 20/06/2025).
+- Service-Public, consulté le 09/10/2026 : [Promesse de vente d'un terrain isolé à bâtir](https://www.service-public.gouv.fr/particuliers/vosdroits/F2057) (mise à jour le 24/06/2025) ; [Certificat d'urbanisme](https://www.service-public.gouv.fr/particuliers/vosdroits/F1633) (vérifié le 02/07/2025).
+- Service-Public, consulté le 09/10/2026 : [Permis de construire](https://www.service-public.gouv.fr/particuliers/vosdroits/F1986) (vérifié le 13/02/2026) ; [Construire sa maison : quel contrat passer ?](https://www.service-public.gouv.fr/particuliers/vosdroits/F34554).
+- Code de l'urbanisme, Légifrance, consulté le 09/10/2026 : [L. 442-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815993), [L. 442-7](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006815996), [L. 442-8](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667953), [L. 442-9](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052866874), [L. 442-10](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052866862), [L. 442-14](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037694107), [L. 332-15](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054141958), [R. 442-11](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047280445), [R. 442-12](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819520), [R. 442-13](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819794), [R. 442-18](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025430929), [R. 423-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006819920), [R. 424-17](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031830633), [R. 424-21](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043940372), [R. 600-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006820365).
+- [Code forestier, art. L. 134-6](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047810678), Légifrance, consulté le 09/10/2026.
+- Chambre des notaires de la Gironde, consulté le 09/10/2026 : [Acquérir un bien dans un lotissement](https://chambre-gironde.notaires.fr/2023/09/29/acquerir-un-bien-dans-un-lotissement/) (29/09/2023) ; [Achat d'un terrain à bâtir dans un lotissement](https://chambre-gironde.notaires.fr/2021/09/27/lachat-dun-terrain-a-batir-dans-un-lotissement/) (27/09/2021) ; [Construire sur un terrain dépendant d'un lotissement](https://chambre-gironde.notaires.fr/2024/01/02/construire-sur-un-terrain-dependant-dun-lotissement/) (02/01/2024).
+- Étude Fourez, notaires, consulté le 09/10/2026 : [Sanctions pour non-respect du cahier des charges du lotissement](https://fourez.notaires.fr/informations-et-conseils/travaux-en-lotissement-quels-risques-en-cas-de-non-respect-du-cahier-des-charges/1442) et [Cahier des charges et règlement de lotissement : les différences](https://fourez.notaires.fr/informations-et-conseils/lotissement-ne-confondez-plus-cahier-des-charges-et-reglement-de-lotissement/1440) (15/01/2026).
+- Assemblée nationale, consulté le 09/10/2026 : [question écrite n° 93355 sur les lotissements](https://questions.assemblee-nationale.fr/q14/14-93355QE.htm) et sa réponse.
+- Ville de Gardanne, consulté le 09/10/2026 : [Plan local d'urbanisme intercommunal du Pays d'Aix](https://www.ville-gardanne.fr/vivre-a-gardanne/urbanisme/plan-local-durbanisme/).
 :::

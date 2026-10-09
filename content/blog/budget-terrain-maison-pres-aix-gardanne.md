@@ -1,9 +1,9 @@
 ---
 title: Budget pour construire une maison près d'Aix-en-Provence
-description: Budget pour construire une maison près d'Aix-en-Provence : les postes à prévoir du terrain à la livraison, le financement (PTZ, CCMI) et les leviers.
+description: Budget pour construire une maison près d'Aix-en-Provence : postes, qui paie et quand, taxe d'aménagement, mise de fonds, financement et PTZ 2026.
 slug: budget-terrain-maison-pres-aix-gardanne
 date: 2026-10-05
-updated: 2026-10-06
+updated: 2026-10-09
 category: financer-son-projet
 tags: budget, financement, taxe d'aménagement, PTZ, CCMI, terrain à bâtir
 keyword: budget pour construire une maison près d'Aix-en-Provence
@@ -12,127 +12,176 @@ image_width: 1600
 image_height: 900
 image_alt: Vue aérienne par drone d'une prairie et du hameau de Biver, entouré de collines boisées, avec la montagne Sainte-Victoire à l'horizon
 og_image: /images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/partage.jpg
-related: construire-sa-maison-etapes-du-terrain-aux-cles, guide-acheter-terrain-lotissement-gardanne-biver, surface-terrain-maison-piscine
+related: construire-sa-maison-etapes-du-terrain-aux-cles, frais-de-notaire-terrain-a-batir, guide-acheter-terrain-lotissement-gardanne-biver
 draft: false
 ---
 
-Le **budget pour construire une maison près d'Aix-en-Provence** ne se résume pas à « terrain + maison » : il compte une dizaine de postes, dont plusieurs ne figurent ni dans le prix du terrain ni dans le devis du constructeur. Voici leur architecture, les seuls repères chiffrés officiels que nous ayons pu sourcer (moyennes de 2024, pas prix 2026), les règles de financement au 05/10/2026 et des leviers, pour tout [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), à Gardanne comme [au Clos des Cyprès](/terrain-a-batir-gardanne), ou pour tout autre [terrain à bâtir en Provence](/terrain-a-batir-provence).
+Le **budget pour construire une maison près d'Aix-en-Provence** ne se limite pas au terrain et à la maison : frais d'acquisition, étude de sol, taxes, assurances, extérieurs et financement s'y ajoutent. Voici qui paie chaque poste et quand, avec des repères officiels datés et aucun prix de terrain. Pour un [terrain à bâtir à Gardanne](/terrain-a-batir-gardanne), le prix est communiqué lors de notre échange.
+
+:::callout L'essentiel
+- Un budget compte onze postes ; le tableau ci-dessous indique qui paie et quand.
+- Repère officiel (DREAL PACA, publié le 08/01/2026) : en 2024, 270 840 € en moyenne pour construire une maison de 126 m², terrain non compris. Une moyenne passée, pas un devis.
+- À Gardanne, la taxe d'aménagement s'applique à 6,55 % (5 % et 1,55 %) en 2026 ; elle se paie après les travaux.
+- Les banques demandent le plus souvent au moins 10 % d'apport. Le PTZ 2026 peut financer de 10 à 30 % d'un coût plafonné pour une maison neuve.
+- Aucun prix de terrain ici : les références officielles sont indiquées plus bas.
+:::
 
 ## Que comprend le budget pour construire une maison près d'Aix-en-Provence ?
 
-Acheter le terrain, le rendre constructible, construire et assurer, aménager les extérieurs, financer : ce tableau sans montant indique ce qui fait varier chaque poste et où obtenir le chiffre.
+Le tableau ne donne aucun montant : il indique, pour onze postes, qui paie, quand, et où trouver le chiffre.
 
-Tableau : Les postes d'un budget terrain et maison, sans montants
+Tableau : Postes de dépenses, qui paie et quand
 
-| Poste | De quoi ça dépend | Où se renseigner |
-|:------|:------------------|:-----------------|
-| Terrain | Surface, pente, règles d'urbanisme, réseaux en limite de lot | Aménageur, notaire, PLUi (Géoportail de l'urbanisme) |
-| Frais d'acquisition (« frais de notaire ») | Régime de TVA du vendeur, droits et taxes, émoluments | Notaire, avant la promesse |
-| Étude de sol | Argiles, nature du sol, pente | Vendeur, bureau d'études, Géorisques |
-| Raccordements | Distance entre limite de lot et maison, gestionnaires de réseaux | Cahier des charges, gestionnaires, mairie |
-| Taxes d'urbanisme | Surface taxable, piscine, stationnements, taux votés | Mairie (urbanisme), Service-Public.fr |
-| Construction | Surface, plan, structure, finitions, énergie, contrat | Devis comparés sur une même notice descriptive |
-| Assurances et garanties | Dommages-ouvrage, garanties du CCMI | Assureur, courtier, constructeur |
-| Aménagements extérieurs | Terrassement, clôtures, accès, plantations, piscine, débroussaillement | Devis par corps de métier, mairie |
-| Imprévus | Sol, aléas de chantier, options, évolution des prix | Réserve à fixer avec banque et constructeur |
-| Financement et période de travaux | Durée, garanties, assurance emprunteur, intérêts intercalaires, taxe foncière du terrain avant construction, loyer actuel | Banque, courtier, Service-Public.fr |
+| Poste | Qui paie | Quand | Où trouver le chiffre |
+|:------|:---------|:------|:----------------------|
+| Terrain | L'acquéreur | À la signature de l'acte de vente | Aménageur ou vendeur, puis notaire |
+| Frais d'acquisition (« frais de notaire ») | L'acquéreur | À l'acte de vente | Notaire, avant la promesse |
+| Étude de sol | Fournie par le vendeur (zones d'argiles), puis par le maître d'ouvrage | Avant la vente, puis avant le chantier | Vendeur, bureau d'études |
+| Viabilisation et raccordements | À fixer dans l'acte de vente et le cahier des charges | Avant ou pendant le chantier | Aménageur, gestionnaires de réseaux |
+| Architecte, plans, dossier de permis | Le maître d'ouvrage | Avant le chantier | Architecte ou constructeur ; architecte obligatoire au-delà de 150 m² |
+| Construction | Le maître d'ouvrage | Par étapes, selon le contrat | Devis comparés sur une même notice descriptive |
+| Assurance dommages-ouvrage | Le propriétaire qui fait construire | Avant l'ouverture du chantier | Assureur, courtier |
+| Taxe d'aménagement | Le bénéficiaire de l'autorisation | Après les travaux, en un ou deux versements | Simulateur de impots.gouv.fr, mairie |
+| Aménagements extérieurs | Le propriétaire | Pendant et après le gros œuvre | Devis par corps de métier |
+| Financement (garantie, assurance emprunteur, dossier, intérêts intercalaires) | L'emprunteur | À l'offre de prêt, puis à chaque déblocage | Banque, courtier |
+| Imprévus | Le maître d'ouvrage | Tout au long du projet | Réserve fixée avec la banque et le constructeur |
 
-:::callout Un budget à comparer à un terrain précis ?
-Vous voulez situer votre projet sur un terrain à Biver ? [Appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact) : le prix vous est communiqué lors de notre échange.
-:::
+## Construire sa maison : quel prix, et quel budget pour 100 m² ou 120 m² ?
 
-## Quel est le prix de construction d'une maison en PACA, et que valent ces chiffres ?
+La source officielle la plus récente que nous ayons trouvée est l'enquête de la DREAL PACA (publiée le 08/01/2026), sur les permis délivrés en 2024 à des particuliers pour une maison individuelle en secteur diffus. Construire une maison hors terrain y coûte en moyenne **270 840 € pour 126 m²** (+ 5,9 % sur un an), soit 2 150 €/m², le niveau le plus élevé des régions de France métropolitaine ; dans les Bouches-du-Rhône, 253 433 € pour 125 m². Le terrain pèse en moyenne 44 % du coût total du projet.
 
-La source officielle la plus récente que nous ayons trouvée est l'enquête sur le prix du terrain et du bâti (DREAL PACA, 08/01/2026), sur les permis délivrés en 2024 à des particuliers pour une maison individuelle en secteur diffus. En 2024, le coût moyen de construction d'une maison hors terrain y est de **270 840 € pour 126 m²** (+ 5,9 % sur un an), soit 2 150 €/m², le niveau le plus élevé des régions de France métropolitaine selon la DREAL ; dans les Bouches-du-Rhône, 253 433 € pour 125 m². Quand le terrain est acheté, il pèse en moyenne **44 %** du coût total du projet.
+![Maison individuelle à étage en construction : murs en blocs gris, toiture sombre à fenêtres de toit et menuiseries en bois, au bord d'une rue de village](/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/maison-en-construction-murs-toiture.avif "Illustration : une maison individuelle dont les murs et la toiture sont posés (Bielsko-Biała, Pologne). Ce n'est pas le Clos des Cyprès. § Photo : [Kamil Czaiński](https://commons.wikimedia.org/wiki/User:Gaj777), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bielsko-Bia%C5%82a,_ulica_Jesienna_19_-_Mak%C3%B3w_20,_budowa_domu.jpg), recadrée"){1200x800}
 
-Ce sont des moyennes de 2024, et la publication ne détaille pas ce que recouvre le coût de construction : nous n'en tirons ni fourchette ni prix 2026. Seul un devis détaillé fait foi.
+**Pour 100 m² ou 120 m² ?** Aucune source officielle lue ne publie un prix pour ces surfaces en 2026, et multiplier 2 150 €/m² par une surface donnerait un chiffre trompeur : la moyenne porte sur des maisons de 126 m², et la publication ne précise pas ce que recouvre le coût de construction. La surface fait en revanche varier un poste qui se calcule, la taxe d'aménagement.
 
-## Frais annexes d'un terrain à bâtir : que prévoir en plus du prix ?
+Tableau : Ce que change la surface pour la taxe d'aménagement à Gardanne (estimation)
 
-### Les frais d'acquisition
+| Surface taxable | Calcul | Taxe d'aménagement |
+|:----------------|:-------|-------------------:|
+| 100 m² | 100 × 446 € × 6,55 % | environ 2 920 € |
+| 120 m² | (100 × 446 € + 20 × 892 €) × 6,55 % | environ 4 090 € |
 
-Les « frais de notaire » regroupent les émoluments du notaire, des droits et taxes, et des débours. Pour un terrain acheté à un professionnel, la TVA s'applique (20 % dans la majorité des cas) ; la taxe de publicité foncière est de 0,71 % si le vendeur facture la TVA sur la valeur totale du terrain, le plus souvent de 5,81 % sinon, plus 0,10 % de contribution de sécurité immobilière (impots.gouv.fr). Le régime dépend de la façon dont le vendeur a acquis le terrain : nous ne donnons aucun pourcentage global, votre notaire vous chiffre le total avant la promesse.
+Hypothèses : résidence principale, sans piscine ni stationnement extérieur, sans exonération, hors redevance d'archéologie préventive. La surface taxable n'est pas la surface habitable : elle compte tous les niveaux clos et couverts de plus de 1,80 m sous plafond. Pour le reste, seul un devis fait foi.
 
-### L'étude de sol et les raccordements
+Vos leviers : la surface, le mode de construction (CCMI à prix forfaitaire, ou architecte qui coordonne des entreprises, sans la garantie de livraison du CCMI) et la mise en concurrence de devis, facilitée par un terrain [libre de constructeur](/blog/terrain-libre-de-constructeur-definition/). L'ordre des démarches : [construire sa maison, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/).
 
-Selon l'article L. 132-5 du code de la construction et de l'habitation, le vendeur d'un terrain constructible en zone d'exposition moyenne ou forte au retrait-gonflement des argiles fournit une étude géotechnique préalable, annexée à la promesse ; la carte d'exposition se consulte sur [Géorisques](https://www.georisques.gouv.fr/). Sans étude annexée au titre de propriété, le maître d'ouvrage doit fournir lui-même une étude équivalente ou une étude de conception (art. L. 132-6) : à budgéter.
+## Taxe d'aménagement : calcul, piscine et simulateur
 
-Dans un lotissement, l'aménageur réalise les réseaux (art. L. 332-15 du code de l'urbanisme) ; le branchement de la maison depuis la limite du lot reste en principe à la charge de l'acquéreur, selon le cahier des charges. Le raccordement à l'égout génère aussi une participation (PFAC).
+Selon Service-Public (page vérifiée le 01/01/2026), la taxe vaut : surface taxable × valeur forfaitaire × (taux communal + taux départemental). En 2026, la valeur forfaitaire est de **892 € par m²** hors Île-de-France, avec un abattement de 50 % sur les 100 premiers m² d'une résidence principale et de ses annexes.
 
-### La taxe d'aménagement à Gardanne
+À Gardanne, d'après les délibérations publiées par data.economie.gouv.fr (mises à jour le 03/03/2026), le taux communal est de **5 %** et le taux départemental de **1,55 %**, soit 6,55 %. Ces taux se revotent chaque année : confirmez-les en mairie.
 
-Calcul : surface taxable × valeur forfaitaire (892 € par m² en 2026) × (taux communal + taux départemental). À Gardanne, les taux en vigueur au 05/10/2026 sont de **5 %** (part communale, Métropole) et de **1,55 %** (part départementale), révisables chaque année. Un abattement de 50 % s'applique aux 100 premiers m² d'une résidence principale ; la piscine est taxée 251 € par m² (pour la place qu'elle occupe sur le terrain, voir [quelle surface de terrain pour une maison avec piscine](/blog/surface-terrain-maison-piscine/)), chaque place de stationnement extérieure 5 000 € à Gardanne. La taxe est due après les travaux, pas à l'acte : on la déclare sur impots.gouv.fr dans les 90 jours suivant l'achèvement (autorisation délivrée depuis le 21/02/2026).
+Une **piscine** est taxée 251 € par m² de bassin, aux mêmes taux : pour 32 m² (8 m sur 4 m), environ 526 €. Sa place sur le terrain : [quelle surface de terrain pour une maison avec piscine](/blog/surface-terrain-maison-piscine/).
 
-*Exemple fictif.* Hypothèses : 120 m² de surface taxable, résidence principale, sans piscine, stationnement extérieur ni exonération, hors redevance d'archéologie préventive. 100 m² × 446 € + 20 m² × 892 € = 62 440 € ; × 6,55 % ≈ 4 090 €. Gardanne a par ailleurs voté, d'après le même jeu de données, une exonération partielle (taux de 40 %) pour les surfaces de résidence principale financées par un prêt à taux zéro, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) : cet exemple n'en tient pas compte. À vérifier en mairie.
+La taxe n'est pas due à l'acte : vous déclarez les travaux terminés sur impots.gouv.fr dans les 90 jours après leur achèvement. Sous 1 500 €, le paiement est unique ; au-delà, il est divisé en deux parts égales, à 90 jours puis 6 mois (projets de moins de 3 000 m² de surface de plancher). Le [simulateur des taxes d'urbanisme](https://www.impots.gouv.fr/simulateur-des-taxes-urbanisme) de l'État ajoute la taxe d'archéologie préventive ; son résultat est indicatif.
 
-## Quelles assurances et garanties faut-il budgéter ?
-
-L'assurance dommages-ouvrage est obligatoire : le propriétaire qui fait construire la souscrit avant l'ouverture du chantier ; elle finance la réparation des dommages relevant de la garantie décennale pendant 10 ans après la réception. Demandez des devis dès l'avant-projet.
-
-Avec un contrat de construction de maison individuelle (CCMI), le prix est forfaitaire, définitif et TTC, et comprend la garantie de livraison à prix et délais convenus. Lisez la notice descriptive : elle distingue ce qui est compris ou non dans le prix et chiffre les travaux à votre charge.
+Gardanne exonère en partie (taux de 40 %) les surfaces de résidence principale financées par un PTZ, dans la limite de 50 % de la surface (art. 1635 quater E du code général des impôts) : à confirmer en mairie.
 
 :::cta Comparer ce budget à un terrain précis ?
-Le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, à Biver (13120 Gardanne), proposés par l'aménageur PONTHIEU DH. Le prix et les informations de chaque lot vous sont communiqués lors de notre échange téléphonique.
+Le Clos des Cyprès réunit huit terrains à bâtir libres de constructeur, de 500 à 1 133 m², à Biver (13120 Gardanne), proposés par l'aménageur PONTHIEU DH. Le plan, la disponibilité et le prix vous sont communiqués lors de notre échange.
 
-- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Voir les huit lots](/lots)
+- [Appelez-nous au 06 09 20 45 90](tel:+33609204590)
 - [Envoyez-nous un message](/contact)
 :::
 
-## Comment financer le terrain et la construction (prêt, PTZ 2026, CCMI) ?
+## Quels frais annexes prévoir pour un terrain à bâtir ?
 
-### Prêt et déblocage par étapes
+### Frais de notaire : le résumé
 
-Un prêt immobilier peut financer le terrain et la construction. Le montant à financer additionne le terrain, la construction, la garantie du prêteur (caution ou hypothèque), les frais de notaire, de dossier et d'assurance. Le terrain se règle à l'acte, la construction par étapes : les fonds sont débloqués selon le calendrier du constructeur, avec des intérêts intercalaires dès le premier déblocage.
+Pour un terrain à bâtir, le total dépend du vendeur. Acheté à un professionnel : TVA (le plus souvent 20 %) et taxe de publicité foncière de 0,71 % si le vendeur facture la TVA sur la valeur totale, de 5,81 % sinon. Acheté à un particulier : pas de TVA, taxe de publicité foncière de 5,81 %. S'ajoute dans tous les cas 0,10 % de contribution de sécurité immobilière (impots.gouv.fr, page modifiée le 07/01/2026). Détail : [frais de notaire d'un terrain à bâtir](/blog/frais-de-notaire-terrain-a-batir/).
 
-Dans un CCMI, le total versé ne peut pas dépasser 15 % à l'ouverture du chantier, 25 % à l'achèvement des fondations, 40 % des murs, 60 % de la mise hors d'eau, 75 % des cloisons et de la mise hors d'air, 95 % des équipements ; le solde est payable à la levée des réserves ou, s'il n'y en a pas, à l'issue de la réception (dans les huit jours de la remise des clés si vous ne vous faites pas assister pour la réception), 5 % au plus du prix étant consignés tant que des réserves ne sont pas levées (art. R. 231-7). Le contrat peut être signé sous conditions suspensives (terrain, permis, prêts).
+### Étude de sol et raccordements
 
-### Le PTZ 2026 pour une maison neuve
+En zone exposée au retrait-gonflement des argiles, le vendeur d'un terrain non bâti constructible fournit une étude géotechnique préalable, annexée à la promesse ou à l'acte ; sinon, le maître d'ouvrage doit en fournir une équivalente ou adaptée à sa maison (code de la construction et de l'habitation, art. L. 132-5 et L. 132-6). Vérifiez votre adresse sur [Géorisques](https://www.georisques.gouv.fr/) ; détail dans [l'étude de sol d'un terrain à bâtir](/blog/etude-de-sol-terrain-a-batir/).
 
-Selon la réglementation en vigueur au 05/10/2026, le prêt à taux zéro finance en partie la construction d'une résidence principale, en complément d'un autre prêt, sans intérêts ni frais de dossier. Pour les offres émises depuis avril 2025, une maison individuelle neuve est éligible, y compris hors zones A, A bis et B1. Il faut notamment ne pas avoir été propriétaire de sa résidence principale dans les 2 dernières années, y habiter au plus tard un an après la fin des travaux, et respecter des plafonds de revenus et de coût selon la zone et le foyer. Il ne couvre qu'une part du coût plafonné (de 10 % à 30 % pour une maison individuelle, selon la tranche de revenus), et la banque n'est pas tenue de l'accorder.
+Pour les réseaux, la page [les huit lots](/lots) indique des lots livrés viabilisés, réseaux amenés en limite de chaque lot ; le reste se confirme dans l'acte et auprès des gestionnaires. Voir [viabilisation d'un terrain : eau, électricité, assainissement](/blog/viabilisation-terrain-raccordements/).
 
-## Comment garder la main sur le budget ?
+### Les extérieurs
 
-Quelques leviers, utiles pour construire sa maison près d'Aix-en-Provence comme ailleurs en Provence (l'ordre des démarches est détaillé dans [construire sa maison : les étapes, du terrain aux clés](/blog/construire-sa-maison-etapes-du-terrain-aux-cles/)) :
+Clôtures, accès, terrassements, plantations, piscine : vérifiez ce que le contrat inclut. La notice descriptive d'un CCMI distingue les éléments compris ou non dans le prix et indique le coût des travaux à la charge du maître d'ouvrage (Service-Public).
 
-- **La surface.** Chaque m² compte à la construction, dans la taxe d'aménagement et dans les consommations. Au-delà de 150 m² de surface de plancher, un architecte est obligatoire.
-- **Un plan simple.** Un volume compact, une toiture simple et peu de décrochés limitent en général la structure et les finitions.
-- **Le mode de construction.** Le CCMI apporte prix forfaitaire et garanties ; un architecte ou un maître d'œuvre qui coordonne des entreprises laisse plus de liberté, mais vous gérez des contrats séparés, sans la garantie de livraison du CCMI. Comparez des devis établis sur la même base ; un terrain [libre de constructeur](/blog/terrain-libre-de-constructeur-definition/) permet de mettre plusieurs professionnels en concurrence.
-- **La pente du terrain.** Terrassements, soutènements et fondations se chiffrent à partir de l'étude de sol : voir [construire sur un terrain en pente](/blog/construire-sur-terrain-en-pente-restanques-provence/).
-- **Les extérieurs.** Clôtures, accès, terrassements, plantations, piscine : vérifiez ce que la notice descriptive inclut. Là où il s'applique, le débroussaillement obligatoire est à la charge du propriétaire (code forestier, art. L. 134-8).
-- **Un chiffrage avant de signer.** Faites chiffrer chaque poste du tableau et gardez une réserve pour les imprévus. Voir aussi notre [guide pour acheter un terrain en lotissement à Gardanne et Biver](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
+![Allée en pavés de granit en cours de pose entre un trottoir et un chantier, avec une brouette verte au fond](/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/acces-pave-maison-en-chantier.avif "Illustration : l'accès d'une maison en chantier, pavé en cours de pose (Beynost, Ain). Ce n'est pas le Clos des Cyprès. § Photo : [Benoît Prieur](https://www.wikidata.org/wiki/Q42790984), [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Un_chantier_ext%C3%A9rieur_d%27une_maison_de_la_rue_des_Pommi%C3%A8res_%C3%A0_Beynost_en_f%C3%A9vrier_2021.jpg), recadrée"){1200x800}
 
-:::callout À retenir
-- Un budget compte une dizaine de postes ; en PACA en 2024, le terrain pèse en moyenne 44 % du coût total (moyenne officielle, ni devis ni prix 2026).
-- Les frais d'acquisition dépendent du régime de TVA ; la taxe d'aménagement se paie après les travaux.
-- L'assurance dommages-ouvrage est obligatoire ; le CCMI apporte un prix forfaitaire et des garanties.
-- Le PTZ n'est jamais acquis : simulez-le et faites valider votre financement.
-:::
+Là où il s'applique (terrain à moins de 200 mètres d'un massif forestier exposé aux incendies), le propriétaire est responsable du débroussaillement autour de sa construction, sur 50 mètres au minimum (Service-Public, vérifié le 07/01/2025) : renseignez-vous en mairie.
+
+## Prix d'un terrain constructible à Aix-en-Provence : de quoi dépend-il ?
+
+Nous ne donnons aucun prix de terrain ni de lot. Près d'Aix-en-Provence, le prix d'un terrain constructible dépend de la situation et de la surface, de ce qu'on peut y bâtir (zone et règlement du plan local d'urbanisme), de son état (nu, à viabiliser ou viabilisé), de la pente, du sol, des risques et servitudes, et du vendeur (son régime de TVA change les frais).
+
+![Mas de pierre entouré de pins et de vignes sous un ciel bleu](/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/mas-provencal-vigne-pins.avif "Illustration : un mas provençal au milieu des vignes. Ce n'est pas le Clos des Cyprès. § Photo : [Arnaud 25](https://commons.wikimedia.org/wiki/User:Arnaud_25), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mas_02.jpg), recadrée"){1200x800}
+
+Trois références officielles pour situer un prix :
+
+- **Les valeurs foncières (DVF).** La DGFiP publie les ventes des cinq dernières années, issues des actes notariés et du cadastre, (mise à jour en avril et en octobre) ; l'[explorateur de data.gouv.fr](https://explore.data.gouv.fr/fr/immobilier) cherche par adresse. Comparez seulement des terrains comparables (surface, constructibilité, viabilisation).
+- **L'enquête DREAL PACA.** Prix moyens de terrains en secteur diffus, à l'échelle de la région ; le prix y est celui de l'acte, hors frais de notaire, d'agence et taxe d'aménagement.
+- **Le plan local d'urbanisme.** Le [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.gouv.fr/) donne la zone et le règlement ; à Gardanne, c'est le PLUi du Pays d'Aix (voir [les huit lots](/lots)).
+
+Au sens fiscal, un terrain à bâtir est un terrain sur lequel des constructions peuvent être autorisées par les documents d'urbanisme (impots.gouv.fr). Pour acheter un [terrain à bâtir près d'Aix-en-Provence](/terrain-a-batir-aix-en-provence), l'ordre est le suivant :
+
+1. fixer l'enveloppe globale avec le tableau ci-dessus ;
+2. vérifier la constructibilité : zone du PLU, [certificat d'urbanisme](/blog/certificat-d-urbanisme-terrain-a-batir/) ;
+3. faire chiffrer le sol, les raccordements et l'accès ;
+4. faire valider le financement par la banque ;
+5. signer la promesse, puis l'acte chez le notaire.
+
+Détail de chaque étape : [acheter un terrain en lotissement à Gardanne](/blog/guide-acheter-terrain-lotissement-gardanne-biver/).
+
+## Quelles assurances et garanties budgéter ?
+
+**Dommages-ouvrage.** Service-Public la présente comme obligatoire, pour un particulier comme pour un professionnel qui fait construire, avant le début des travaux ; elle prend en charge les dommages relevant de la garantie décennale apparus dans les 10 ans après la réception. Les sanctions pénales (6 mois d'emprisonnement et 75 000 €) ne s'appliquent pas à un particulier qui construit pour l'occuper lui-même ou pour un membre de sa famille.
+
+**CCMI.** Obligatoire quand un constructeur réalise la maison complète, ou au moins le gros œuvre, la mise hors d'eau et la mise hors d'air. Prix TTC forfaitaire et définitif, garantie de livraison comprise ; pénalités de retard d'au moins 1/3 000 du prix par jour ; 10 jours pour se rétracter. La garantie de livraison, souscrite par le constructeur, couvre l'inexécution ou la mauvaise exécution des travaux prévus et les dépassements de prix nécessaires à l'achèvement.
+
+## Acheter un terrain : financement, mise de fonds et PTZ 2026
+
+### Financer le terrain puis la construction
+
+Un prêt immobilier peut financer l'achat d'un terrain à bâtir et la construction d'un logement. Le montant à emprunter dépasse le prix : notaire, dossier, assurance emprunteur et garantie s'ajoutent. La banque débloque les fonds en une ou plusieurs fois selon le calendrier de l'offre ; les intérêts payés pendant ces déblocages sont les intérêts intercalaires (Service-Public, page vérifiée le 05/04/2024).
+
+Dans un CCMI, les versements sont plafonnés : 15 % à l'ouverture du chantier, 25 % à l'achèvement des fondations, 40 % des murs, 60 % de la mise hors d'eau, 75 % des cloisons et de la mise hors d'air, 95 % des équipements ; le solde se règle à la réception, la somme étant consignée en cas de réserves.
+
+### Quelle mise de fonds pour acheter un terrain ?
+
+Aucune page officielle lue ne fixe un minimum d'apport pour un terrain. Selon les notaires de France (20/06/2025), les banques demandent le plus souvent au moins 10 % du prix du bien, pour couvrir notaire, garantie et dossier ; ce repère vaut pour l'immobilier en général, et chaque banque décide. Faites-vous simuler avant de signer la promesse.
+
+### PTZ 2026 pour une maison neuve
+
+Selon Service-Public (page vérifiée le 15/09/2026), le prêt à taux zéro finance en partie la construction d'une résidence principale, en complément d'au moins un autre prêt. Pour les offres émises depuis avril 2025, le neuf est éligible dans toutes les zones, maisons individuelles comprises, jusqu'au 31 décembre 2027 (actualité du 07/03/2025).
+
+Pour une maison individuelle neuve, il couvre une part d'un coût plafonné : 30 % en tranche de revenus 1, 20 % en tranches 2 et 3, 10 % en tranche 4. Conditions : ne pas avoir été propriétaire de sa résidence principale dans les 2 ans précédant la demande, y habiter au plus tard 1 an après la fin des travaux, respecter les plafonds de ressources (revenu fiscal N-2) et de coût selon la zone et le foyer. Seules les banques conventionnées l'accordent, sans obligation. [Calculez votre PTZ sur Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/R2974).
 
 ## Questions fréquentes
 
 :::faq
-### Combien prévoir en plus du prix du terrain ?
-Il n'existe pas de pourcentage officiel unique : frais d'acquisition, étude de sol, raccordements, taxes, assurances et extérieurs varient selon le terrain et le projet. Reprenez les postes du tableau, faites chiffrer chacun et gardez une réserve. Pour un cas précis, [contactez-nous](/contact) ou consultez votre notaire.
+### Quel budget prévoir pour une maison de 100 m² ou de 120 m² ?
+Aucune source officielle lue ne publie de prix pour ces surfaces en 2026. Repère le plus proche : la moyenne 2024 de la DREAL PACA, 270 840 € pour 126 m², terrain non compris. Demandez des devis pour les deux surfaces sur la même notice descriptive ; la taxe d'aménagement se calcule (environ 2 920 € et 4 090 € à Gardanne dans notre exemple).
 
-### Le PTZ est-il possible pour une maison neuve à Gardanne en 2026 ?
-Selon la réglementation en vigueur au 05/10/2026, une maison individuelle neuve est éligible pour les offres émises depuis avril 2025, sous conditions de situation (résidence principale, ressources, composition du foyer, zone de la commune) ; seule la banque peut accorder le prêt. Vérifiez la zone de la commune et simulez votre cas sur Service-Public.fr.
+### Comment calculer la taxe d'aménagement d'une maison avec piscine ?
+Multipliez la surface taxable par 892 € (valeur 2026 hors Île-de-France) et par la somme des taux communal et départemental, avec un abattement de 50 % sur les 100 premiers m² d'une résidence principale. Ajoutez la piscine : 251 € par m² de bassin, aux mêmes taux. Le [simulateur de impots.gouv.fr](https://www.impots.gouv.fr/simulateur-des-taxes-urbanisme) donne une estimation indicative.
 
-### Qu'est-ce qu'un CCMI et que garantit-il ?
-Ce contrat de construction de maison individuelle est obligatoire quand un constructeur réalise la maison complète, ou au moins le gros œuvre avec la mise hors d'eau et hors d'air. Il fixe un prix forfaitaire et définitif, un délai et des pénalités de retard. Le constructeur fournit une garantie de livraison, et de remboursement si un dépôt de garantie est versé avant l'ouverture du chantier.
+### Quelle mise de fonds pour acheter un terrain à bâtir ?
+Aucune règle officielle lue ne fixe un minimum. Les banques demandent le plus souvent au moins 10 % du prix du bien, pour couvrir notaire, garantie et dossier (notaires de France, 20/06/2025). Chaque banque décide : faites simuler votre projet avant la promesse de vente.
+
+### Quel est le prix d'un terrain constructible à Aix-en-Provence ?
+Nous n'en donnons pas : il dépend de la situation, de la surface, de la constructibilité, de la viabilisation, du sol et du vendeur. Les ventes passées se consultent dans les valeurs foncières (DVF). Pour un lot du Clos des Cyprès, le prix est communiqué lors de notre échange : [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+
+### Le PTZ est-il possible en 2026 pour construire une maison ?
+Selon Service-Public (page vérifiée le 15/09/2026), une maison individuelle neuve est éligible pour les offres émises depuis avril 2025, dans toutes les zones, sous conditions : résidence principale, pas de propriété de la résidence principale depuis 2 ans, plafonds de ressources et de coût. Seule la banque peut accorder le prêt.
 
 ### L'assurance dommages-ouvrage est-elle obligatoire pour un particulier ?
-Oui : le propriétaire qui fait construire, particulier ou professionnel, doit la souscrire avant l'ouverture du chantier. Elle prend en charge les dommages relevant de la garantie décennale apparus dans les 10 ans après la réception. Dans un CCMI, le contrat en mentionne la référence.
-
-### Quel est le prix d'un terrain au Clos des Cyprès ?
-Le prix vous est communiqué lors de notre échange : [appelez-nous au 06 09 20 45 90](tel:+33609204590) ou [envoyez-nous un message](/contact).
+Service-Public la présente comme obligatoire, avant le début des travaux. Les sanctions pénales ne s'appliquent toutefois pas à un particulier qui construit pour l'occuper lui-même ou pour un membre de sa famille. Elle couvre les dommages relevant de la garantie décennale, apparus dans les 10 ans après la réception.
 :::
 
 :::source
-- [Prix du terrain et du bâti pour les maisons individuelles en PACA en 2024](https://dreal.statistiques.developpement-durable.gouv.fr/eptb/2024/paca/index.html), DREAL PACA, 08/01/2026, consulté le 05/10/2026.
-- [Achat d'un immeuble à bâtir](https://www.impots.gouv.fr/particulier/achat-dun-immeuble-batir), impots.gouv.fr, modifié le 07/01/2026, consulté le 05/10/2026.
-- [Taux de taxe d'aménagement votés](https://data.economie.gouv.fr/explore/dataset/delta_deliberation_tam_17_01_23/), data.economie.gouv.fr, mis à jour le 03/03/2026, consulté le 05/10/2026.
-- Service-Public.fr, consulté le 05/10/2026 : [taxe d'aménagement](https://www.service-public.gouv.fr/particuliers/vosdroits/F23263) ; [prêt à taux zéro](https://www.service-public.gouv.fr/particuliers/vosdroits/F10871) (vérifié le 15/09/2026) ; [CCMI](https://www.service-public.gouv.fr/particuliers/vosdroits/F34554) ; [garantie de livraison](https://www.service-public.gouv.fr/particuliers/vosdroits/F34253) ; [dommages-ouvrage](https://www.service-public.gouv.fr/particuliers/vosdroits/F2032) ; [crédit immobilier](https://www.service-public.gouv.fr/particuliers/vosdroits/F16123) ; [questions d'urbanisme](https://www.service-public.gouv.fr/particuliers/vosdroits/F36909).
-- [Géorisques](https://www.georisques.gouv.fr/), consulté le 05/10/2026.
-- Légifrance, consulté le 05/10/2026 : [Code général des impôts](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069577) (art. 1635 quater E) ; [Code de l'urbanisme](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074075) (art. L. 332-15) ; [Code de la construction et de l'habitation](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074096) (art. L. 132-5, L. 132-6) ; [Code forestier](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000025244092) (art. L. 134-8).
+- DREAL PACA, enquête sur le prix du terrain et du bâti en 2024, publiée le 08/01/2026, consultée le 09/10/2026 : [présentation](https://dreal.statistiques.developpement-durable.gouv.fr/eptb/2024/paca/index.html), [caractéristiques des maisons construites](https://dreal.statistiques.developpement-durable.gouv.fr/eptb/2024/paca/caracteristiques_maisons_contruites.html), [coût total du projet](https://dreal.statistiques.developpement-durable.gouv.fr/eptb/2024/paca/cout_total_projet.html), [méthodologie](https://dreal.statistiques.developpement-durable.gouv.fr/eptb/2024/paca/methodo.html).
+- [Achat d'un immeuble à bâtir](https://www.impots.gouv.fr/particulier/achat-dun-immeuble-batir), impots.gouv.fr, modifié le 07/01/2026, consulté le 09/10/2026.
+- Taxe d'aménagement, consultée le 09/10/2026 : [Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F23263) (vérifié le 01/01/2026) ; [Service-Public, actualité du 07/01/2026](https://www.service-public.gouv.fr/particuliers/actualites/A15416) ; [simulateur des taxes d'urbanisme](https://www.impots.gouv.fr/simulateur-des-taxes-urbanisme), impots.gouv.fr.
+- [Délibérations de taxe d'aménagement](https://data.economie.gouv.fr/explore/dataset/delta_deliberation_tam_17_01_23/), data.economie.gouv.fr, mis à jour le 03/03/2026, consulté le 09/10/2026.
+- Financement, Service-Public, consulté le 09/10/2026 : [prêt à taux zéro](https://www.service-public.gouv.fr/particuliers/vosdroits/F10871) (vérifié le 15/09/2026) ; [PTZ étendu au neuf](https://www.service-public.gouv.fr/particuliers/actualites/A17337) (07/03/2025) ; [crédit immobilier](https://www.service-public.gouv.fr/particuliers/vosdroits/F16123) (vérifié le 05/04/2024).
+- Construction, Service-Public, consulté le 09/10/2026 : [CCMI](https://www.service-public.gouv.fr/particuliers/vosdroits/F34554) (vérifié le 10/07/2026) ; [garantie de livraison](https://www.service-public.gouv.fr/particuliers/vosdroits/F34253) (12/12/2025) ; [dommages-ouvrage](https://www.service-public.gouv.fr/particuliers/vosdroits/F2032) (17/09/2026) ; [débroussaillement](https://www.service-public.gouv.fr/particuliers/vosdroits/F33298) (07/01/2025).
+- Notaires de France, consulté le 09/10/2026 : [Faire construire sa maison](https://www.notaires.fr/fr/immobilier-fiscalite/achat-et-vente-cas-particuliers/faire-construire-sa-maison) (13/03/2026) ; [Optimiser son apport personnel](https://www.immobilier.notaires.fr/fr/articles/conseils-et-actualites/achat-vente/optimiser-son-apport-personnel-pour-bien-acheter-en-2025) (20/06/2025).
+- Légifrance, consulté le 09/10/2026 : [code général des impôts, art. 1635 quater E](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045913744/2023-01-01) ; [code de la construction et de l'habitation, art. L. 132-4 à L. 132-9](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074096/LEGISCTA000041565555/).
+- Valeurs foncières, consulté le 09/10/2026 : [Demandes de valeurs foncières](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/), DGFiP, data.gouv.fr (mise à jour du 07/04/2026) ; [explorateur DVF](https://www.data.gouv.fr/posts/le-nouvel-explorateur-des-donnees-de-valeur-fonciere), data.gouv.fr (20/11/2023).
+- [Géoportail de l'urbanisme](https://www.geoportail-urbanisme.gouv.fr/) et [Géorisques](https://www.georisques.gouv.fr/), services de l'État, consultés le 09/10/2026.
 :::

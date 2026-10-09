@@ -3,126 +3,358 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clos-des-cypres.fr/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/lots</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-gardanne</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-aix-en-provence</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/terrain-provence-collines-doree.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-marseille</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/terrain-a-batir-provence</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/villa-piscine-jardin-provencal.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/environnement</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/galerie</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/contact</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/mentions-legales</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/confidentialite</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/certificat-d-urbanisme-terrain-a-batir/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/couverture.avif</image:loc>
+      <image:title>Façade en pierre claire de l'hôtel de ville de Gardanne, surmontée d'une tour d'horloge et d'un campanile en fer forgé, sous un ciel bleu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/plan-cadastral-parcelles-numerotees.avif</image:loc>
+      <image:title>Extrait de plan cadastral en noir et blanc : parcelles numérotées, bâtiments hachurés et une rue</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/gardanne-vue-mont-venturi-champ.avif</image:loc>
+      <image:title>Champ labouré au premier plan, collines boisées et maisons, avec le Mont Venturi à l'arrière-plan sous un ciel nuageux</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/geometre-lotissement-en-amenagement.avif</image:loc>
+      <image:title>Géomètre : un tachéomètre sur trépied au-dessus d'un chantier de lotissement, avec des terrassements et des maisons au loin</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/etude-de-sol-terrain-a-batir/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/etude-de-sol-terrain-a-batir/couverture.avif</image:loc>
+      <image:title>Sol argileux ocre craquelé en plaques irrégulières par la sécheresse, avec quelques tiges d'herbe sèche en haut à droite</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/etude-de-sol-terrain-a-batir/fissure-verticale-facade-enduit.avif</image:loc>
+      <image:title>Mur de maison enduit de crépi beige, traversé par une longue fissure verticale, avec une fenêtre grillagée à gauche</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/etude-de-sol-terrain-a-batir/sondage-percussion-terrain-herbe.avif</image:loc>
+      <image:title>Petite machine de sondage orange dressée sur une pelouse en pente, avec un marteau de battage au premier plan, devant un bâtiment en briques et des arbres</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/etude-de-sol-terrain-a-batir/champ-coquelicots-sainte-victoire-provence.avif</image:loc>
+      <image:title>Champ de coquelicots rouges au premier plan, la montagne Sainte-Victoire grise et des bois de pins en arrière-plan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/etude-de-sol-terrain-a-batir/semelle-filante-armatures-tranchee.avif</image:loc>
+      <image:title>Cage d'armatures en acier posée sur des cales de brique au fond d'une tranchée creusée dans un sol de terre ocre et de graviers</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/frais-de-notaire-terrain-a-batir/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/frais-de-notaire-terrain-a-batir/couverture.avif</image:loc>
+      <image:title>Un stylo plume posé sur un contrat imprimé, près des lignes de signature, sous une lumière chaude</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/frais-de-notaire-terrain-a-batir/cachets-cire-sceau.avif</image:loc>
+      <image:title>Deux enveloppes fermées par des cachets de cire rouge et verte, avec un sceau à manche de bois et une bougie allumée</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/frais-de-notaire-terrain-a-batir/calculatrice-touches.avif</image:loc>
+      <image:title>Gros plan sur les touches d'une calculatrice de bureau grise : chiffres, opérations et touche pourcentage</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/frais-de-notaire-terrain-a-batir/mas-cypres-champ-provence.avif</image:loc>
+      <image:title>Un mas en pierre au bord d'un champ de céréales, avec un alignement de cyprès à gauche et un ciel bleu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/frais-de-notaire-terrain-a-batir/cle-porte-porte-cle-maison.avif</image:loc>
+      <image:title>Une clé dans une serrure blanche, avec un porte-clés en forme de petite maison</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/viabilisation-terrain-raccordements/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/viabilisation-terrain-raccordements/couverture.avif</image:loc>
+      <image:title>Parcelle herbeuse en bordure d'une rue neuve, avec un camion et une mini-pelle jaune au fond, devant des maisons à toit de tuiles et des pins</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/viabilisation-terrain-raccordements/voirie-lotissement-bordures-coffrets.avif</image:loc>
+      <image:title>Rue de lotissement avec bordures neuves, murets en parpaings en cours de montage et balises de chantier, devant des maisons à toit de tuiles</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/viabilisation-terrain-raccordements/boitier-compteur-eau-branchement.avif</image:loc>
+      <image:title>Boîtier noir de compteur d'eau enterré, mis à nu dans une fouille au pied d'un mur, avec les canalisations visibles</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/viabilisation-terrain-raccordements/fibre-optique-fourreau-trancheuse.avif</image:loc>
+      <image:title>Trancheuse orange et grand touret de gaine noire en polyéthylène posés sur une pelouse, devant des maisons</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/viabilisation-terrain-raccordements/tuyaux-regards-assainissement-chantier.avif</image:loc>
+      <image:title>Tuyaux en béton de gros diamètre et couronne de canalisation noire posés au sol sur un chantier, derrière une clôture jaune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clos-des-cypres.fr/blog/vivre-a-gardanne-et-biver/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/vivre-a-gardanne-et-biver/couverture.avif</image:loc>
+      <image:title>Panorama de collines couvertes de pins, avec au loin la plaine de Gardanne et de Meyreuil, les tours d'une centrale thermique et un massif bleuté à l'horizon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/vivre-a-gardanne-et-biver/terrils-hameau-biver.avif</image:loc>
+      <image:title>Deux grands terrils boisés derrière les toits de tuiles du hameau de Biver</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/vivre-a-gardanne-et-biver/puits-morandat-gardanne.avif</image:loc>
+      <image:title>Tour d'extraction en béton de couleur sable portant le nom de Gardanne, à côté d'un bâtiment bas, sous un ciel nuageux</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/vivre-a-gardanne-et-biver/gare-de-gardanne.avif</image:loc>
+      <image:title>Façade rose et blanche de la gare de Gardanne, bâtiment à deux niveaux sous un ciel bleu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/vivre-a-gardanne-et-biver/hotel-de-ville-gardanne.avif</image:loc>
+      <image:title>Façade en pierre claire de l'hôtel de ville de Gardanne, surmontée d'une tour d'horloge, avec des bacs de fleurs colorés sur la place</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/construire-sa-maison-etapes-du-terrain-aux-cles/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/villa-piscine-jardin-provencal-1024.avif</image:loc>
       <image:title>Visualisation illustrative, non contractuelle : maison provençale à étage aux murs clairs et aux toits de tuiles, avec terrasse, jardin planté de lavande et piscine rectangulaire</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sa-maison-etapes-du-terrain-aux-cles/plan-etage-maison-dessin-architecte-1753.avif</image:loc>
+      <image:title>Plan d'étage dessiné à la main sur papier ancien : murs en rose et gris, escalier, terrasses et pièces annotées</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sa-maison-etapes-du-terrain-aux-cles/fondations-coffrage-maison-chantier.avif</image:loc>
+      <image:title>Fond de fouille d'une maison avec des coffrages de bois posés sur le gravier et un talus de roche à l'arrière</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sa-maison-etapes-du-terrain-aux-cles/murs-blocs-charpente-maison-chantier.avif</image:loc>
+      <image:title>Maison en construction : murs en blocs, échafaudage et charpente en bois posée, sous un ciel blanc</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sa-maison-etapes-du-terrain-aux-cles/facades-tuiles-volets-provence.avif</image:loc>
+      <image:title>Façades à tuiles de terre cuite et volets bleu-vert sous un ciel clair, vues en contre-plongée</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/surface-terrain-maison-piscine/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
-      <image:loc>https://clos-des-cypres.fr/images-optimized/coucher-soleil-piscine-cypres-1024.avif</image:loc>
-      <image:title>Visualisation illustrative, non contractuelle : terrasse et piscine rectangulaire au coucher du soleil, entre cyprès et oliviers</image:title>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/surface-terrain-maison-piscine/couverture.avif</image:loc>
+      <image:title>Pelouse entre deux cyprès, avec un long bassin rectangulaire et un pavillon de jardin à portes-fenêtres cintrées</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/surface-terrain-maison-piscine/plan-villa-nice-rez-de-chaussee.avif</image:loc>
+      <image:title>Plan ancien d'un rez-de-chaussée de villa, avec cotes et esquisse des allées du jardin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/surface-terrain-maison-piscine/terrasse-couverte-piscine-bouches-du-rhone.avif</image:loc>
+      <image:title>Maison à toit de tuiles et galerie à trois arcs, devant le bord dallé d'une piscine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/surface-terrain-maison-piscine/piscine-vue-aerienne-plage-dallee.avif</image:loc>
+      <image:title>Vue de dessus d'une piscine rectangulaire à escalier d'angle, entourée d'une plage dallée et de gazon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/surface-terrain-maison-piscine/bassin-ferraillage-beton-projete-chantier.avif</image:loc>
+      <image:title>Fouille d'un bassin, avec armature d'acier en grillage et paroi de béton projeté</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/terrain-a-batir-constructible-viabilise-differences/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/hero-aerial-villas-golden-hour-1024.avif</image:loc>
       <image:title>Visualisation aérienne illustrative, non contractuelle : maisons à toits de tuiles et piscines en lisière de bois</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-a-batir-constructible-viabilise-differences/bouc-bel-air-village-pinede.avif</image:loc>
+      <image:title>Village provençal aux toits de tuiles sur une colline, vu à travers des pins et des coquelicots</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-a-batir-constructible-viabilise-differences/panneau-terrain-a-batir-a-vendre.avif</image:loc>
+      <image:title>Panneau blanc peint à la main indiquant « À vendre, terrain à bâtir, à 100 ml », avec des flèches rouges, planté dans l'herbe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-a-batir-constructible-viabilise-differences/voie-lotissement-reseaux-regard.avif</image:loc>
+      <image:title>Rue d'un lotissement bordée de haies, avec lampadaires, plaque de regard et petit local en béton</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-a-batir-constructible-viabilise-differences/sainte-victoire-barrage-zola-espace-naturel.avif</image:loc>
+      <image:title>Massif rocheux de la Sainte-Victoire au loin, retenue d'eau et barrage dans un vallon couvert de pins</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/budget-terrain-maison-pres-aix-gardanne/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/couverture.avif</image:loc>
       <image:title>Vue aérienne par drone d'une prairie et du hameau de Biver, entouré de collines boisées, avec la montagne Sainte-Victoire à l'horizon</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/maison-en-construction-murs-toiture.avif</image:loc>
+      <image:title>Maison individuelle à étage en construction : murs en blocs gris, toiture sombre à fenêtres de toit et menuiseries en bois, au bord d'une rue de village</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/acces-pave-maison-en-chantier.avif</image:loc>
+      <image:title>Allée en pavés de granit en cours de pose entre un trottoir et un chantier, avec une brouette verte au fond</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/budget-terrain-maison-pres-aix-gardanne/mas-provencal-vigne-pins.avif</image:loc>
+      <image:title>Mas de pierre entouré de pins et de vignes sous un ciel bleu</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/construire-sur-terrain-en-pente-restanques-provence/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/couverture.avif</image:loc>
       <image:title>Vue de drone d'une prairie bordée d'une voie étroite et d'une haie de conifères, avec les toits du hameau de Biver au loin sur la colline</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/restanques-oliviers-luberon.avif</image:loc>
+      <image:title>Oliviers sur une terrasse bordée d'un muret de pierres sèches, au pied d'une pinède</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/mur-pierre-seche-restanque.avif</image:loc>
+      <image:title>Long mur de pierres sèches soutenant une terrasse, dominé par de grands cyprès</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/mur-soutenement-bouches-du-rhone.avif</image:loc>
+      <image:title>Grand mur de soutènement en maçonnerie, parsemé de plaques en croix, au bord d'une route</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/construire-sur-terrain-en-pente-restanques-provence/terrasses-golfe-saint-tropez.avif</image:loc>
+      <image:title>Terrasses en gradins bordées de balustrades blanches, face à un golfe bordé de pins</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/guide-acheter-terrain-lotissement-gardanne-biver/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/couverture.avif</image:loc>
       <image:title>Vue aérienne par drone d'une prairie en bordure d'un quartier résidentiel de jardins et de piscines, au pied d'un bois de pins, avec des collines boisées à l'horizon, à Biver</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/rue-lotissement-maisons-neuves-gard.avif</image:loc>
+      <image:title>Rue d'un lotissement récent dans le Gard : maisons aux toits de tuiles, trottoirs neufs et jeunes arbres plantés</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/borne-cadastrale-limite-propriete.avif</image:loc>
+      <image:title>Borne en béton jaune surmontée d'un petit tube métallique, à la limite d'une propriété, entre le lierre et les feuilles mortes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/lotissement-terrains-en-amenagement-gard.avif</image:loc>
+      <image:title>Terrain en lotissement en cours d'aménagement : sol nu, voirie en chantier et premières maisons devant une colline boisée</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/guide-acheter-terrain-lotissement-gardanne-biver/lotissement-vue-aerienne-voie-jardins.avif</image:loc>
+      <image:title>Vue aérienne par drone d'un lotissement : voie de desserte sinueuse, maisons aux toits de tuiles entourées de jardins et de haies, colline boisée au fond</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/terrain-libre-de-constructeur-definition/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/couverture.avif</image:loc>
       <image:title>Vue de drone prise à la verticale d'une prairie close, bordée d'une route et de haies de conifères, avec les jardins et les piscines d'un quartier résidentiel de l'autre côté de la route</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/mas-provencal-cypres-lavande.avif</image:loc>
+      <image:title>Un mas de pierre entouré de cyprès et de haies, au milieu d'un champ de lavande, sous un ciel rosé de fin de journée</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/maison-individuelle-gros-oeuvre-brique.avif</image:loc>
+      <image:title>Maison individuelle en cours de construction : murs en briques rouges, toit en ardoise, fenêtres posées, tas de gravier et de sable devant</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/terrain-libre-de-constructeur-definition/panonceau-office-notarial.avif</image:loc>
+      <image:title>Panonceau en laiton d'un office notarial, orné d'une figure allégorique assise et de l'inscription « République française »</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clos-des-cypres.fr/blog/verifier-avant-dacheter-terrain-biver-gardanne/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <image:image>
       <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/couverture.avif</image:loc>
       <image:title>Vue de drone rapprochée d'une prairie close par un grillage et un muret, avec une voie étroite à gauche, des pins et des conifères, et un bois de pins au fond</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/mimet-village-arriere-pays-aixois.avif</image:loc>
+      <image:title>Village de Mimet, maisons ocre au milieu des pins, avec un massif calcaire à l'horizon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/engin-debroussaillement-pinede.avif</image:loc>
+      <image:title>Engin à chenilles jaune débroussaillant une zone de pins et de garrigue</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clos-des-cypres.fr/images-optimized/blog/verifier-avant-dacheter-terrain-biver-gardanne/pinede-maisons-collines-biver.avif</image:loc>
+      <image:title>Villa au milieu des pins sur les collines de Biver, à Gardanne, avec deux terrils boisés au loin</image:title>
     </image:image>
   </url>
 </urlset>

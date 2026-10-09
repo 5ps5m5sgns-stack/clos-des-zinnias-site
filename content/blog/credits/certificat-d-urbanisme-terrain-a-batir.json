@@ -1,0 +1,50 @@
+[
+ {
+  "file": "/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/couverture.avif",
+  "kind": "cover",
+  "source": "https://commons.wikimedia.org/wiki/File:Gardanne-FR-13-mairie-a5.jpg",
+  "title": "File:Gardanne-FR-13-mairie-a5.jpg",
+  "author": "François GOGLINS",
+  "author_url": "https://commons.wikimedia.org/wiki/User:Fran%C3%A7ois_GOGLINS",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "checked": "2026-10-09",
+  "credit_markdown": "Photo : [François GOGLINS](https://commons.wikimedia.org/wiki/User:Fran%C3%A7ois_GOGLINS), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gardanne-FR-13-mairie-a5.jpg), recadrée"
+ },
+ {
+  "file": "/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/plan-cadastral-parcelles-numerotees.avif",
+  "kind": "inline",
+  "source": "https://commons.wikimedia.org/wiki/File:Parcelle_Cadastrale.png",
+  "title": "File:Parcelle Cadastrale.png",
+  "author": "State of Belgium - Administration of the Belgian Cadastre",
+  "author_url": "",
+  "license": "Public domain",
+  "license_url": "",
+  "checked": "2026-10-09",
+  "credit_markdown": "Photo : State of Belgium - Administration of the Belgian Cadastre, domaine public, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Parcelle_Cadastrale.png), recadrée"
+ },
+ {
+  "file": "/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/gardanne-vue-mont-venturi-champ.avif",
+  "kind": "inline",
+  "source": "https://commons.wikimedia.org/wiki/File:Gardanne-FR-13-vue_sur_Venturi-a1.jpg",
+  "title": "File:Gardanne-FR-13-vue sur Venturi-a1.jpg",
+  "author": "François GOGLINS",
+  "author_url": "https://commons.wikimedia.org/wiki/User:Fran%C3%A7ois_GOGLINS",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "checked": "2026-10-09",
+  "credit_markdown": "Photo : [François GOGLINS](https://commons.wikimedia.org/wiki/User:Fran%C3%A7ois_GOGLINS), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gardanne-FR-13-vue_sur_Venturi-a1.jpg), recadrée"
+ },
+ {
+  "file": "/images-optimized/blog/certificat-d-urbanisme-terrain-a-batir/geometre-lotissement-en-amenagement.avif",
+  "kind": "inline",
+  "source": "https://commons.wikimedia.org/wiki/File:Total_station_overlooking_a_residential_development.jpg",
+  "title": "File:Total station overlooking a residential development.jpg",
+  "author": "Cvstr",
+  "author_url": "",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "checked": "2026-10-09",
+  "credit_markdown": "Photo : Cvstr, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Total_station_overlooking_a_residential_development.jpg), recadrée"
+ }
+]
