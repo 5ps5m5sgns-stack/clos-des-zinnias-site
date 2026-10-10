@@ -25,8 +25,8 @@
 #   DNSCHECK   1 (défaut) : contrôle DNS (NS, MX, SPF, www) ; 0 : ignoré
 #   MX_EXPECT  texte qui doit figurer dans les MX de NEW         (défaut ovh.net : courrier OVH)
 #   SPF_EXPECT texte qui doit figurer dans le SPF de NEW         (défaut include:mx.ovh.com)
-#   EMAIL_OK   adresse qui doit être affichée                    (défaut cypres@ponthieu.fr : l'adresse UNIQUE du site, D48 bis)
-#   EMAIL_OLD  adresse qui ne doit plus apparaître               (défaut zinnias@ponthieu.fr)
+#   EMAIL_OK   adresse qui doit être affichée                    (défaut ventes@ponthieu.fr : l'adresse UNIQUE du site, D48 bis)
+#   EMAIL_OLD  adresse qui ne doit plus apparaître               (défaut cypres@ponthieu.fr)
 #   WA_EXPECT  numéro du lien WhatsApp (wa.me/NUMERO)            (défaut 33609204590 : le numéro affiché, D48)
 #   EXPECT_URLS nombre d'URLs attendu dans sitemap.xml           (défaut 18 : 9 pages + 3 pages d'atterrissage + /blog/ + 5 articles)
 #   OLDWORD    ancien nom de marque cherché dans les pages       (défaut zinnias)
@@ -56,7 +56,7 @@
 #      URL inconnue -> 404 avec un corps HTML non vide (page 404 stylée, chemins absolus).
 #   C. Balises : canonical = URL propre sur NEW (sans .html, barre finale seulement pour /blog/...) ;
 #      og:url identique ; aucune trace de OLD dans canonical, og:*, twitter:*, JSON-LD ;
-#      aucun noindex sur les pages indexables ; e-mail affiché (cypres@ponthieu.fr) ; ancien e-mail absent ;
+#      aucun noindex sur les pages indexables ; e-mail affiché (ventes@ponthieu.fr) ; ancien e-mail absent ;
 #      aucune trace de « ownimmobilier », « jessica@ » ni de l'ancien numéro WhatsApp 33630073601 ;
 #      liens WhatsApp = wa.me/33609204590 sur chaque page ; lien tel:+33609204590 sur chaque page ;
 #      mention résiduelle de l'ancien nom.
@@ -100,8 +100,8 @@ TIMEOUT=${TIMEOUT:-20}
 DNSCHECK=${DNSCHECK:-1}
 MX_EXPECT=${MX_EXPECT:-ovh.net}
 SPF_EXPECT=${SPF_EXPECT:-include:mx.ovh.com}
-EMAIL_OK=${EMAIL_OK:-cypres@ponthieu.fr}
-EMAIL_OLD=${EMAIL_OLD:-zinnias@ponthieu.fr}
+EMAIL_OK=${EMAIL_OK:-ventes@ponthieu.fr}
+EMAIL_OLD=${EMAIL_OLD:-cypres@ponthieu.fr}
 WA_EXPECT=${WA_EXPECT:-33609204590}
 EXPECT_URLS=${EXPECT_URLS:-18}
 OLDWORD=${OLDWORD:-zinnias}
